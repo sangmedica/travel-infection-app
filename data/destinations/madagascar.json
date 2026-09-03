@@ -144,7 +144,7 @@
     },
     {
       "name_en": "Plague (Bubonic, Pneumonic, Septicemic)",
-      "name_ja": null,
+      "name_ja": "ペスト（腺・肺・敗血症型）",
       "transmission_en": "Avoid bug bites",
       "transmission_ja": "虫刺されを避ける",
       "spread_en": "• Flea bite\n• Contact with infected people (pneumonic) or animals",

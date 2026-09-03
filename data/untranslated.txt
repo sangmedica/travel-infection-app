@@ -1,6 +1,2 @@
 # 未対訳の語（section<TAB>term）。data/translations.json の該当セクションに日本語を追記してください。
 # 最終更新: 2026-09-03
-diseases	Ciguatera Fish Poisoning
-diseases	Monkeypox
-diseases	Plague (Bubonic, Pneumonic, Septicemic)
-diseases	Ross River virus disease

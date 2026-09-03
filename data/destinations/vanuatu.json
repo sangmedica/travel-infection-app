@@ -91,7 +91,7 @@
   "diseases": [
     {
       "name_en": "Ciguatera Fish Poisoning",
-      "name_ja": null,
+      "name_ja": "シガテラ中毒",
       "transmission_en": "Avoid contaminated food and water",
       "transmission_ja": "汚染された飲食物を避ける",
       "spread_en": "• Eating contaminated fish",

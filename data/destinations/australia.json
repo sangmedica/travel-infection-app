@@ -84,7 +84,7 @@
     },
     {
       "name_en": "Ross River virus disease",
-      "name_ja": null,
+      "name_ja": "ロスリバーウイルス感染症",
       "transmission_en": "Avoid bug bites",
       "transmission_ja": "虫刺されを避ける",
       "spread_en": "• Mosquito bite",
@@ -111,7 +111,7 @@
     },
     {
       "name_en": "Ciguatera Fish Poisoning",
-      "name_ja": null,
+      "name_ja": "シガテラ中毒",
       "transmission_en": "Avoid contaminated food and water",
       "transmission_ja": "汚染された飲食物を避ける",
       "spread_en": "• Eating contaminated fish",

@@ -6,17 +6,8 @@
     "destinations_with_data": 242,
     "destinations_configured": 244,
     "notices": 24,
-    "untranslated": 4
+    "untranslated": 0
   },
-  "errors": [
-    {
-      "scope": "antarctica",
-      "reason": "必須セクションを解析できませんでした（vaccines=0, diseases=0）"
-    },
-    {
-      "scope": "united-states",
-      "reason": "必須セクションを解析できませんでした（vaccines=0, diseases=0）"
-    }
-  ],
+  "errors": [],
   "scope": "full"
 }
