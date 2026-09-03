@@ -158,6 +158,7 @@ async function main() {
         slug: d.slug,
         name_en: d.name_en,
         name_ja: d.name_ja,
+        kind: d.kind || "country",
         aliases: d.aliases || [],
         has_data: !!f,
         retrieved_at: f?.retrieved_at ?? null,

@@ -2,6 +2,7 @@
   "slug": "philippines",
   "name_en": "Philippines",
   "name_ja": "フィリピン",
+  "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/philippines",
   "retrieved_at": "2026-09-03",
   "page_notice_level": 1,

@@ -105,6 +105,42 @@ main {
   font-weight: 600;
   margin-bottom: 6px;
 }
+.kind-filter {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 12px 8px;
+  margin: 0 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  align-items: center;
+}
+.kind-filter legend {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  padding: 0 4px;
+}
+.kind-filter label {
+  display: inline-flex;
+  font-weight: 400;
+  font-size: 0.88rem;
+  margin: 0;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.kind-filter .cnt {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+.kind-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 1px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-dim);
+}
 #dest-input {
   width: 100%;
   padding: 12px 14px;

@@ -20,6 +20,8 @@ const LEVEL_JA = {
   0: "レベル不明",
 };
 
+const KIND_JA = { country: "国", territory: "属領・地域" };
+
 // ---- ユーティリティ ---------------------------------------------------------
 
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -78,10 +80,36 @@ async function init() {
     return;
   }
 
-  // datalist
-  const dl = $("#dest-list");
-  for (const d of INDEX) {
-    dl.append(el("option", { value: d.name_ja, label: `${d.name_en} / ${d.slug}` }));
+  // 種別フィルタ
+  const counts = {
+    all: INDEX.length,
+    country: INDEX.filter((d) => d.kind === "country").length,
+    territory: INDEX.filter((d) => d.kind === "territory").length,
+  };
+  $("#cnt-all").textContent = `（${counts.all}）`;
+  $("#cnt-country").textContent = `（${counts.country}）`;
+  $("#cnt-territory").textContent = `（${counts.territory}）`;
+
+  const currentKind = () =>
+    document.querySelector('input[name="kind"]:checked')?.value || "all";
+
+  function buildDatalist() {
+    const kind = currentKind();
+    const dl = $("#dest-list");
+    dl.replaceChildren();
+    for (const d of INDEX) {
+      if (kind !== "all" && d.kind !== kind) continue;
+      dl.append(
+        el("option", {
+          value: d.name_ja,
+          label: `${d.name_en}${d.has_data ? "" : "（データ未取得）"} · ${KIND_JA[d.kind] || d.kind}`,
+        })
+      );
+    }
+  }
+  buildDatalist();
+  for (const r of document.querySelectorAll('input[name="kind"]')) {
+    r.addEventListener("change", buildDatalist);
   }
 
   // last updated / meta
@@ -147,11 +175,12 @@ async function resolveAndShow(raw) {
   const hint = $("#search-hint");
   const match = matchDestination(raw);
   if (!match) {
-    hint.textContent = `「${raw}」に一致する渡航先が見つかりません。対応地域: ${INDEX.map((d) => d.name_ja).join("、")}`;
+    const sample = INDEX.slice(0, 8).map((d) => d.name_ja).join("、");
+    hint.textContent = `「${raw}」に一致する渡航先が見つかりません。日本語名・英語名・slug で入力してください（例: ${sample} …）。`;
     return;
   }
   if (!match.has_data) {
-    hint.textContent = `${match.name_ja} はまだデータがありません。`;
+    hint.textContent = `${match.name_ja}（${KIND_JA[match.kind] || match.kind}）のデータはまだ取得されていません。月次のデータ更新後に表示されます。`;
     return;
   }
   hint.textContent = "";
@@ -185,6 +214,7 @@ function renderDestination(data) {
       "div",
       { class: "dest-head" },
       el("h2", {}, data.name_ja, " ", el("span", { class: "en", text: data.name_en })),
+      el("span", { class: "kind-tag", text: KIND_JA[data.kind] || data.kind || "" }),
       data.page_notice_level ? levelBadge(data.page_notice_level) : null,
       el("span", { class: "retrieved", text: `CDC取得日: ${data.retrieved_at || "―"}` })
     )

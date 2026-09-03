@@ -2,6 +2,7 @@
   "slug": "brazil",
   "name_en": "Brazil",
   "name_ja": "ブラジル",
+  "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/brazil",
   "retrieved_at": "2026-09-03",
   "page_notice_level": 1,

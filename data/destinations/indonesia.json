@@ -2,6 +2,7 @@
   "slug": "indonesia",
   "name_en": "Indonesia",
   "name_ja": "インドネシア",
+  "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/indonesia",
   "retrieved_at": "2026-09-03",
   "page_notice_level": 2,

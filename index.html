@@ -30,6 +30,12 @@
     <main>
       <section class="search-box">
         <label for="dest-input">渡航先の国・地域</label>
+        <fieldset class="kind-filter">
+          <legend>種別で絞り込み</legend>
+          <label><input type="radio" name="kind" value="all" checked /> すべて<span id="cnt-all" class="cnt"></span></label>
+          <label><input type="radio" name="kind" value="country" /> 国<span id="cnt-country" class="cnt"></span></label>
+          <label><input type="radio" name="kind" value="territory" /> 属領・地域<span id="cnt-territory" class="cnt"></span></label>
+        </fieldset>
         <input
           id="dest-input"
           type="text"

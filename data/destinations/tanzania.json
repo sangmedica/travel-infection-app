@@ -2,6 +2,7 @@
   "slug": "tanzania",
   "name_en": "Tanzania",
   "name_ja": "タンザニア",
+  "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/tanzania",
   "retrieved_at": "2026-09-03",
   "page_notice_level": 2,

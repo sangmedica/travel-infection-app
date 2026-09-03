@@ -17,7 +17,7 @@
 | パス | 役割 |
 |---|---|
 | `index.html` / `app.js` / `styles.css` | フロントエンド（実行時は同梱 JSON を読むだけ・外部通信なし） |
-| `config/destinations.json` | ★手管理: 取得対象の国リスト。ここに追記すれば対象が増える |
+| `config/destinations.json` | 取得対象リスト（CDC 全 244 目的地）。`kind`: `country`=国 / `territory`=属領・地域。`scripts/build-config.mjs` で生成（直接編集も可） |
 | `data/translations.json` | ★手管理: 日本語対訳辞書 |
 | `data/notices.json` | 自動生成: Travel Notices 全件 |
 | `data/destinations/<slug>.json` | 自動生成: 渡航先ごとのワクチン＋疾患 |
@@ -25,6 +25,7 @@
 | `data/untranslated.txt` | 自動生成: 未対訳語の一覧（毎月ここを見て辞書に追記） |
 | `data/meta.json` | 自動生成: 最終取得日・エラー・件数 |
 | `scripts/scrape.mjs` | スクレイパ本体 |
+| `scripts/build-config.mjs` | `config/destinations.json`（244件・日本語名・kind）の生成／`--check` |
 | `.github/workflows/update.yml` | 月次データ更新（cron: 毎月1日 03:00 UTC） |
 | `.github/workflows/deploy.yml` | GitHub Pages へデプロイ（main への push で発火） |
 
@@ -33,7 +34,8 @@
 ```bash
 npm ci
 
-# データ取得（robots.txt の Crawl-delay 20 秒を尊重。全 15 地域で約5分）
+# データ取得（robots.txt の Crawl-delay 20 秒を尊重。全 244 目的地で約80分。
+# GitHub Actions では月次で自動実行。手元では下記のように範囲を絞るのが実用的）
 npm run scrape
 
 # 素早く試す
@@ -60,11 +62,15 @@ npm run serve   # → http://localhost:8000
   `data/meta.json` の `errors` に記録します（CDC のサイト改装でデータが消えるのを防止）。
 - フロントは `meta.json.errors` があると「一部地域は前回データを表示中」と表示します。
 
-## 対象地域を増やす
+## 対象地域
 
-`config/destinations.json` の `destinations` 配列に
-`{ "slug": "...", "name_en": "...", "name_ja": "...", "aliases": [...] }` を追記して
-`node scripts/scrape.mjs --only=<slug>` を実行するだけです。`slug` は CDC の
+`config/destinations.json` は CDC の全 244 目的地（国 195 / 属領・地域 49）を収録済みです。
+各項目に `kind`（`country` / `territory`）があり、フロントの「種別で絞り込み」ラジオと
+結果ヘッダの種別タグに使われます。
+
+CDC 側に新しい目的地が増えた場合は `scripts/build-config.mjs` の `ROWS` に
+`[slug, name_en, name_ja, kind, "別名;別名"]` を1行足して `node scripts/build-config.mjs`
+を実行します（`config/destinations.json` を直接編集しても構いません）。`slug` は
 `https://wwwnc.cdc.gov/travel/destinations/traveler/none/<slug>` の末尾に対応します。
 
 ## データと免責

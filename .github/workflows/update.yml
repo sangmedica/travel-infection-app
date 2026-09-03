@@ -21,7 +21,8 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 244 目的地 × Crawl-delay 20 秒 ≈ 81 分 + パース + Notices。余裕をみて 150 分。
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
 

@@ -1,11 +1,272 @@
 [
   {
+    "slug": "iceland",
+    "name_en": "Iceland",
+    "name_ja": "アイスランド",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "ireland",
+    "name_en": "Ireland",
+    "name_ja": "アイルランド",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "azerbaijan",
+    "name_en": "Azerbaijan",
+    "name_ja": "アゼルバイジャン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "azores",
+    "name_en": "Azores",
+    "name_ja": "アゾレス諸島",
+    "kind": "territory",
+    "aliases": [
+      "Azores Islands"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "afghanistan",
+    "name_en": "Afghanistan",
+    "name_ja": "アフガニスタン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "united-states",
+    "name_en": "United States",
+    "name_ja": "アメリカ合衆国",
+    "kind": "country",
+    "aliases": [
+      "USA",
+      "United States of America",
+      "U.S."
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "american-samoa",
+    "name_en": "American Samoa",
+    "name_ja": "アメリカ領サモア",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "united-arab-emirates",
+    "name_en": "United Arab Emirates",
+    "name_ja": "アラブ首長国連邦",
+    "kind": "country",
+    "aliases": [
+      "UAE"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "algeria",
+    "name_en": "Algeria",
+    "name_ja": "アルジェリア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "argentina",
+    "name_en": "Argentina",
+    "name_ja": "アルゼンチン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "aruba",
+    "name_en": "Aruba",
+    "name_ja": "アルバ",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "albania",
+    "name_en": "Albania",
+    "name_ja": "アルバニア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "armenia",
+    "name_en": "Armenia",
+    "name_ja": "アルメニア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "anguilla",
+    "name_en": "Anguilla",
+    "name_ja": "アンギラ",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "angola",
+    "name_en": "Angola",
+    "name_ja": "アンゴラ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "antigua-and-barbuda",
+    "name_en": "Antigua and Barbuda",
+    "name_ja": "アンティグア・バーブーダ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "andorra",
+    "name_en": "Andorra",
+    "name_ja": "アンドラ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "easter-island",
+    "name_en": "Easter Island",
+    "name_ja": "イースター島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "yemen",
+    "name_en": "Yemen",
+    "name_ja": "イエメン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "united-kingdom",
+    "name_en": "United Kingdom",
+    "name_ja": "イギリス",
+    "kind": "country",
+    "aliases": [
+      "UK",
+      "Great Britain",
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "israel",
+    "name_en": "Israel, the West Bank and Gaza",
+    "name_ja": "イスラエル、ヨルダン川西岸・ガザ",
+    "kind": "country",
+    "aliases": [
+      "Israel",
+      "West Bank",
+      "Gaza"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "italy",
+    "name_en": "Italy",
+    "name_ja": "イタリア",
+    "kind": "country",
+    "aliases": [
+      "Vatican City",
+      "Holy See"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "iraq",
+    "name_en": "Iraq",
+    "name_ja": "イラク",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "iran",
+    "name_en": "Iran",
+    "name_ja": "イラン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
     "slug": "india",
     "name_en": "India",
     "name_ja": "インド",
-    "aliases": [
-      "india"
-    ],
+    "kind": "country",
+    "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
@@ -14,159 +275,2292 @@
     "slug": "indonesia",
     "name_en": "Indonesia",
     "name_ja": "インドネシア",
+    "kind": "country",
     "aliases": [
-      "indonesia",
-      "bali"
+      "Bali"
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 2
+  },
+  {
+    "slug": "wake-island",
+    "name_en": "Wake Island",
+    "name_ja": "ウェーク島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "uganda",
+    "name_en": "Uganda",
+    "name_ja": "ウガンダ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "ukraine",
+    "name_en": "Ukraine",
+    "name_ja": "ウクライナ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "uzbekistan",
+    "name_en": "Uzbekistan",
+    "name_ja": "ウズベキスタン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "uruguay",
+    "name_en": "Uruguay",
+    "name_ja": "ウルグアイ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "ecuador",
+    "name_en": "Ecuador",
+    "name_ja": "エクアドル",
+    "kind": "country",
+    "aliases": [
+      "Galápagos Islands"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
   },
   {
     "slug": "egypt",
     "name_en": "Egypt",
     "name_ja": "エジプト",
-    "aliases": [
-      "egypt"
-    ],
+    "kind": "country",
+    "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
+  },
+  {
+    "slug": "estonia",
+    "name_en": "Estonia",
+    "name_ja": "エストニア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "eswatini",
+    "name_en": "Eswatini (Swaziland)",
+    "name_ja": "エスワティニ（旧スワジランド）",
+    "kind": "country",
+    "aliases": [
+      "Swaziland"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "ethiopia",
+    "name_en": "Ethiopia",
+    "name_ja": "エチオピア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "eritrea",
+    "name_en": "Eritrea",
+    "name_ja": "エリトリア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "el-salvador",
+    "name_en": "El Salvador",
+    "name_ja": "エルサルバドル",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "australia",
+    "name_en": "Australia",
+    "name_ja": "オーストラリア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "austria",
+    "name_en": "Austria",
+    "name_ja": "オーストリア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "oman",
+    "name_en": "Oman",
+    "name_ja": "オマーン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "netherlands",
+    "name_en": "The Netherlands",
+    "name_ja": "オランダ",
+    "kind": "country",
+    "aliases": [
+      "Netherlands, The",
+      "Holland"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "ghana",
+    "name_en": "Ghana",
+    "name_ja": "ガーナ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "cape-verde",
+    "name_en": "Cape Verde",
+    "name_ja": "カーボベルデ",
+    "kind": "country",
+    "aliases": [
+      "Cabo Verde"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "guyana",
+    "name_en": "Guyana",
+    "name_ja": "ガイアナ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "kazakhstan",
+    "name_en": "Kazakhstan",
+    "name_ja": "カザフスタン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "qatar",
+    "name_en": "Qatar",
+    "name_ja": "カタール",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "canada",
+    "name_en": "Canada",
+    "name_ja": "カナダ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "canary-islands",
+    "name_en": "Canary Islands",
+    "name_ja": "カナリア諸島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "gabon",
+    "name_en": "Gabon",
+    "name_ja": "ガボン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "cameroon",
+    "name_en": "Cameroon",
+    "name_ja": "カメルーン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "the-gambia",
+    "name_en": "The Gambia",
+    "name_ja": "ガンビア",
+    "kind": "country",
+    "aliases": [
+      "Gambia, The"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
   },
   {
     "slug": "cambodia",
     "name_en": "Cambodia",
     "name_ja": "カンボジア",
-    "aliases": [
-      "cambodia"
-    ],
+    "kind": "country",
+    "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
+  },
+  {
+    "slug": "guinea",
+    "name_en": "Guinea",
+    "name_ja": "ギニア",
+    "kind": "country",
+    "aliases": [
+      "Guinea-Conakry"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "guinea-bissau",
+    "name_en": "Guinea-Bissau",
+    "name_ja": "ギニアビサウ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "cyprus",
+    "name_en": "Cyprus",
+    "name_ja": "キプロス",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "cuba",
+    "name_en": "Cuba",
+    "name_ja": "キューバ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "curacao",
+    "name_en": "Curaçao",
+    "name_ja": "キュラソー",
+    "kind": "territory",
+    "aliases": [
+      "Curacao"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "greece",
+    "name_en": "Greece",
+    "name_ja": "ギリシャ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "kiribati",
+    "name_en": "Kiribati",
+    "name_ja": "キリバス",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "kyrgyzstan",
+    "name_en": "Kyrgyzstan",
+    "name_ja": "キルギス",
+    "kind": "country",
+    "aliases": [
+      "Kyrgyz Republic"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "guatemala",
+    "name_en": "Guatemala",
+    "name_ja": "グアテマラ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "guadeloupe",
+    "name_en": "Guadeloupe",
+    "name_ja": "グアドループ",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "guam",
+    "name_en": "Guam",
+    "name_ja": "グアム",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "kuwait",
+    "name_en": "Kuwait",
+    "name_ja": "クウェート",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "cook-islands",
+    "name_en": "Cook Islands",
+    "name_ja": "クック諸島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "greenland",
+    "name_en": "Greenland",
+    "name_ja": "グリーンランド",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "christmas-island",
+    "name_en": "Christmas Island",
+    "name_ja": "クリスマス島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "grenada",
+    "name_en": "Grenada",
+    "name_ja": "グレナダ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "croatia",
+    "name_en": "Croatia",
+    "name_ja": "クロアチア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "cayman-islands",
+    "name_en": "Cayman Islands",
+    "name_ja": "ケイマン諸島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
   },
   {
     "slug": "kenya",
     "name_en": "Kenya",
     "name_ja": "ケニア",
-    "aliases": [
-      "kenya"
-    ],
+    "kind": "country",
+    "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
+  },
+  {
+    "slug": "ivory-coast",
+    "name_en": "Côte d'Ivoire (Ivory Coast)",
+    "name_ja": "コートジボワール",
+    "kind": "country",
+    "aliases": [
+      "Ivory Coast",
+      "Cote d'Ivoire"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "cocos-islands",
+    "name_en": "Cocos (Keeling) Islands",
+    "name_ja": "ココス（キーリング）諸島",
+    "kind": "territory",
+    "aliases": [
+      "Keeling Islands"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "costa-rica",
+    "name_en": "Costa Rica",
+    "name_ja": "コスタリカ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "kosovo",
+    "name_en": "Kosovo",
+    "name_ja": "コソボ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "comoros",
+    "name_en": "Comoros",
+    "name_ja": "コモロ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "colombia",
+    "name_en": "Colombia",
+    "name_ja": "コロンビア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "congo",
+    "name_en": "Republic of the Congo",
+    "name_ja": "コンゴ共和国",
+    "kind": "country",
+    "aliases": [
+      "Congo, Republic of the",
+      "Congo-Brazzaville"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "democratic-republic-of-congo",
+    "name_en": "Democratic Republic of the Congo",
+    "name_ja": "コンゴ民主共和国",
+    "kind": "country",
+    "aliases": [
+      "DRC",
+      "Congo-Kinshasa"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "saudi-arabia",
+    "name_en": "Saudi Arabia",
+    "name_ja": "サウジアラビア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "south-georgia-south-sandwich-islands",
+    "name_en": "South Georgia and the South Sandwich Islands",
+    "name_ja": "サウスジョージア・サウスサンドウィッチ諸島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "saba",
+    "name_en": "Saba",
+    "name_ja": "サバ（オランダ領）",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "samoa",
+    "name_en": "Samoa",
+    "name_ja": "サモア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "saint-barthelemy",
+    "name_en": "Saint Barthelemy",
+    "name_ja": "サン・バルテルミー",
+    "kind": "territory",
+    "aliases": [
+      "St. Barts"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "saint-martin",
+    "name_en": "Saint Martin",
+    "name_ja": "サン・マルタン",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "sao-tome-and-principe",
+    "name_en": "São Tomé and Príncipe",
+    "name_ja": "サントメ・プリンシペ",
+    "kind": "country",
+    "aliases": [
+      "Sao Tome and Principe"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "zambia",
+    "name_en": "Zambia",
+    "name_ja": "ザンビア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "saint-pierre-and-miquelon",
+    "name_en": "Saint Pierre and Miquelon",
+    "name_ja": "サンピエール島・ミクロン島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "san-marino",
+    "name_en": "San Marino",
+    "name_ja": "サンマリノ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "sierra-leone",
+    "name_en": "Sierra Leone",
+    "name_ja": "シエラレオネ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "djibouti",
+    "name_en": "Djibouti",
+    "name_ja": "ジブチ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "gibraltar",
+    "name_en": "Gibraltar",
+    "name_ja": "ジブラルタル",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "jamaica",
+    "name_en": "Jamaica",
+    "name_ja": "ジャマイカ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "georgia",
+    "name_en": "Georgia",
+    "name_ja": "ジョージア（グルジア）",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "syria",
+    "name_en": "Syria",
+    "name_ja": "シリア",
+    "kind": "country",
+    "aliases": [
+      "Syrian Arab Republic"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "singapore",
+    "name_en": "Singapore",
+    "name_ja": "シンガポール",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "sint-maarten",
+    "name_en": "Sint Maarten",
+    "name_ja": "シント・マールテン",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "sint-eustatius",
+    "name_en": "Sint Eustatius",
+    "name_ja": "シント・ユースタティウス",
+    "kind": "territory",
+    "aliases": [
+      "Statia"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "zimbabwe",
+    "name_en": "Zimbabwe",
+    "name_ja": "ジンバブエ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "switzerland",
+    "name_en": "Switzerland",
+    "name_ja": "スイス",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "sweden",
+    "name_en": "Sweden",
+    "name_ja": "スウェーデン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "sudan",
+    "name_en": "Sudan",
+    "name_ja": "スーダン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "spain",
+    "name_en": "Spain",
+    "name_ja": "スペイン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "suriname",
+    "name_en": "Suriname",
+    "name_ja": "スリナム",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "sri-lanka",
+    "name_en": "Sri Lanka",
+    "name_ja": "スリランカ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "slovakia",
+    "name_en": "Slovakia",
+    "name_ja": "スロバキア",
+    "kind": "country",
+    "aliases": [
+      "Slovak Republic"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "slovenia",
+    "name_en": "Slovenia",
+    "name_ja": "スロベニア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "seychelles",
+    "name_en": "Seychelles",
+    "name_ja": "セーシェル",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "senegal",
+    "name_en": "Senegal",
+    "name_ja": "セネガル",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "serbia",
+    "name_en": "Serbia",
+    "name_ja": "セルビア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "st-kitts-and-nevis",
+    "name_en": "Saint Kitts and Nevis",
+    "name_ja": "セントクリストファー・ネイビス",
+    "kind": "country",
+    "aliases": [
+      "St. Kitts and Nevis"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "saint-vincent-and-the-grenadines",
+    "name_en": "Saint Vincent and the Grenadines",
+    "name_ja": "セントビンセント及びグレナディーン諸島",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "saint-helena",
+    "name_en": "Saint Helena",
+    "name_ja": "セントヘレナ",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "saint-lucia",
+    "name_en": "Saint Lucia",
+    "name_ja": "セントルシア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "somalia",
+    "name_en": "Somalia",
+    "name_ja": "ソマリア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "solomon-islands",
+    "name_en": "Solomon Islands",
+    "name_ja": "ソロモン諸島",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "turks-and-caicos",
+    "name_en": "Turks and Caicos Islands",
+    "name_ja": "タークス・カイコス諸島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
   },
   {
     "slug": "thailand",
     "name_en": "Thailand",
     "name_ja": "タイ",
-    "aliases": [
-      "thailand"
-    ],
+    "kind": "country",
+    "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
   },
   {
+    "slug": "tajikistan",
+    "name_en": "Tajikistan",
+    "name_ja": "タジキスタン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
     "slug": "tanzania",
     "name_en": "Tanzania",
     "name_ja": "タンザニア",
+    "kind": "country",
     "aliases": [
-      "tanzania",
-      "united republic of tanzania"
+      "United Republic of Tanzania",
+      "Zanzibar"
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 2
   },
   {
+    "slug": "czechia",
+    "name_en": "Czechia",
+    "name_ja": "チェコ",
+    "kind": "country",
+    "aliases": [
+      "Czech Republic"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "chad",
+    "name_en": "Chad",
+    "name_ja": "チャド",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "tunisia",
+    "name_en": "Tunisia",
+    "name_ja": "チュニジア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "chile",
+    "name_en": "Chile",
+    "name_ja": "チリ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "tuvalu",
+    "name_en": "Tuvalu",
+    "name_ja": "ツバル",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "denmark",
+    "name_en": "Denmark",
+    "name_ja": "デンマーク",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "germany",
+    "name_en": "Germany",
+    "name_ja": "ドイツ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "togo",
+    "name_en": "Togo",
+    "name_ja": "トーゴ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "tokelau",
+    "name_en": "Tokelau",
+    "name_ja": "トケラウ",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "dominican-republic",
+    "name_en": "Dominican Republic",
+    "name_ja": "ドミニカ共和国",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "dominica",
+    "name_en": "Dominica",
+    "name_ja": "ドミニカ国",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "trinidad-and-tobago",
+    "name_en": "Trinidad and Tobago",
+    "name_ja": "トリニダード・トバゴ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "turkmenistan",
+    "name_en": "Turkmenistan",
+    "name_ja": "トルクメニスタン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "turkey",
+    "name_en": "Türkiye (Turkey)",
+    "name_ja": "トルコ",
+    "kind": "country",
+    "aliases": [
+      "Turkey",
+      "Turkiye"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "tonga",
+    "name_en": "Tonga",
+    "name_ja": "トンガ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "nigeria",
+    "name_en": "Nigeria",
+    "name_ja": "ナイジェリア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "nauru",
+    "name_en": "Nauru",
+    "name_ja": "ナウル",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "namibia",
+    "name_en": "Namibia",
+    "name_ja": "ナミビア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "niue",
+    "name_en": "Niue",
+    "name_ja": "ニウエ",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "nicaragua",
+    "name_en": "Nicaragua",
+    "name_ja": "ニカラグア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "niger",
+    "name_en": "Niger",
+    "name_ja": "ニジェール",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "new-caledonia",
+    "name_en": "New Caledonia",
+    "name_ja": "ニューカレドニア",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "new-zealand",
+    "name_en": "New Zealand",
+    "name_ja": "ニュージーランド",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
     "slug": "nepal",
     "name_en": "Nepal",
     "name_ja": "ネパール",
-    "aliases": [
-      "nepal"
-    ],
+    "kind": "country",
+    "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
+  },
+  {
+    "slug": "norfolk-island",
+    "name_en": "Norfolk Island",
+    "name_ja": "ノーフォーク島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "norway",
+    "name_en": "Norway",
+    "name_ja": "ノルウェー",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "bahrain",
+    "name_en": "Bahrain",
+    "name_ja": "バーレーン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "haiti",
+    "name_en": "Haiti",
+    "name_ja": "ハイチ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "pakistan",
+    "name_en": "Pakistan",
+    "name_ja": "パキスタン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "panama",
+    "name_en": "Panama",
+    "name_ja": "パナマ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "vanuatu",
+    "name_en": "Vanuatu",
+    "name_ja": "バヌアツ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "the-bahamas",
+    "name_en": "The Bahamas",
+    "name_ja": "バハマ",
+    "kind": "country",
+    "aliases": [
+      "Bahamas, The"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "papua-new-guinea",
+    "name_en": "Papua New Guinea",
+    "name_ja": "パプアニューギニア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "bermuda",
+    "name_en": "Bermuda",
+    "name_ja": "バミューダ",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "palau",
+    "name_en": "Palau",
+    "name_ja": "パラオ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "paraguay",
+    "name_en": "Paraguay",
+    "name_ja": "パラグアイ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "barbados",
+    "name_en": "Barbados",
+    "name_ja": "バルバドス",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "hungary",
+    "name_en": "Hungary",
+    "name_ja": "ハンガリー",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "bangladesh",
+    "name_en": "Bangladesh",
+    "name_ja": "バングラデシュ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "pitcairn-islands",
+    "name_en": "Pitcairn Islands",
+    "name_ja": "ピトケアン諸島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "fiji",
+    "name_en": "Fiji",
+    "name_ja": "フィジー",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
   },
   {
     "slug": "philippines",
     "name_en": "Philippines",
     "name_ja": "フィリピン",
+    "kind": "country",
     "aliases": [
-      "philippines",
-      "the philippines"
+      "The Philippines"
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
+  },
+  {
+    "slug": "finland",
+    "name_en": "Finland",
+    "name_ja": "フィンランド",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "bhutan",
+    "name_en": "Bhutan",
+    "name_ja": "ブータン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "puerto-rico",
+    "name_en": "Puerto Rico",
+    "name_ja": "プエルトリコ",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "faroe-island",
+    "name_en": "Faroe Islands",
+    "name_ja": "フェロー諸島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "falkland-islands",
+    "name_en": "Falkland Islands",
+    "name_ja": "フォークランド諸島",
+    "kind": "territory",
+    "aliases": [
+      "Islas Malvinas"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
   },
   {
     "slug": "brazil",
     "name_en": "Brazil",
     "name_ja": "ブラジル",
-    "aliases": [
-      "brazil"
-    ],
+    "kind": "country",
+    "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
+  },
+  {
+    "slug": "france",
+    "name_en": "France",
+    "name_ja": "フランス",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "bulgaria",
+    "name_en": "Bulgaria",
+    "name_ja": "ブルガリア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "burkina-faso",
+    "name_en": "Burkina Faso",
+    "name_ja": "ブルキナファソ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "brunei",
+    "name_en": "Brunei",
+    "name_ja": "ブルネイ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "burundi",
+    "name_en": "Burundi",
+    "name_ja": "ブルンジ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
   },
   {
     "slug": "vietnam",
     "name_en": "Vietnam",
     "name_ja": "ベトナム",
+    "kind": "country",
     "aliases": [
-      "vietnam",
-      "viet nam"
+      "Viet Nam"
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
+  },
+  {
+    "slug": "benin",
+    "name_en": "Benin",
+    "name_ja": "ベナン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "venezuela",
+    "name_en": "Venezuela",
+    "name_ja": "ベネズエラ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "belarus",
+    "name_en": "Belarus",
+    "name_ja": "ベラルーシ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "belize",
+    "name_en": "Belize",
+    "name_ja": "ベリーズ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
   },
   {
     "slug": "peru",
     "name_en": "Peru",
     "name_ja": "ペルー",
-    "aliases": [
-      "peru"
-    ],
+    "kind": "country",
+    "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
+  },
+  {
+    "slug": "belgium",
+    "name_en": "Belgium",
+    "name_ja": "ベルギー",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "poland",
+    "name_en": "Poland",
+    "name_ja": "ポーランド",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "bosnia-and-herzegovina",
+    "name_en": "Bosnia and Herzegovina",
+    "name_ja": "ボスニア・ヘルツェゴビナ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "botswana",
+    "name_en": "Botswana",
+    "name_ja": "ボツワナ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "bonaire",
+    "name_en": "Bonaire",
+    "name_ja": "ボネール",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "bolivia",
+    "name_en": "Bolivia",
+    "name_ja": "ボリビア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "portugal",
+    "name_en": "Portugal",
+    "name_ja": "ポルトガル",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "honduras",
+    "name_en": "Honduras",
+    "name_ja": "ホンジュラス",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "marshall-islands",
+    "name_en": "Marshall Islands",
+    "name_ja": "マーシャル諸島",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "macau-sar",
+    "name_en": "Macau",
+    "name_ja": "マカオ",
+    "kind": "territory",
+    "aliases": [
+      "Macao",
+      "Macau SAR"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "madagascar",
+    "name_en": "Madagascar",
+    "name_ja": "マダガスカル",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "madeira-islands",
+    "name_en": "Madeira Islands",
+    "name_ja": "マデイラ諸島",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "mayotte",
+    "name_en": "Mayotte",
+    "name_ja": "マヨット",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "malawi",
+    "name_en": "Malawi",
+    "name_ja": "マラウイ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "mali",
+    "name_en": "Mali",
+    "name_ja": "マリ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "malta",
+    "name_en": "Malta",
+    "name_ja": "マルタ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "martinique",
+    "name_en": "Martinique",
+    "name_ja": "マルティニーク",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "malaysia",
+    "name_en": "Malaysia",
+    "name_ja": "マレーシア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "micronesia",
+    "name_en": "Federated States of Micronesia",
+    "name_ja": "ミクロネシア連邦",
+    "kind": "country",
+    "aliases": [
+      "Micronesia",
+      "Yap",
+      "Chuuk",
+      "Pohnpei",
+      "Kosrae"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "burma",
+    "name_en": "Burma (Myanmar)",
+    "name_ja": "ミャンマー（ビルマ）",
+    "kind": "country",
+    "aliases": [
+      "Myanmar",
+      "Burma"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
   },
   {
     "slug": "mexico",
     "name_en": "Mexico",
     "name_ja": "メキシコ",
-    "aliases": [
-      "mexico"
-    ],
+    "kind": "country",
+    "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
+  },
+  {
+    "slug": "mauritius",
+    "name_en": "Mauritius",
+    "name_ja": "モーリシャス",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "mauritania",
+    "name_en": "Mauritania",
+    "name_ja": "モーリタニア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "mozambique",
+    "name_en": "Mozambique",
+    "name_ja": "モザンビーク",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "monaco",
+    "name_en": "Monaco",
+    "name_ja": "モナコ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "maldives",
+    "name_en": "Maldives",
+    "name_ja": "モルディブ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "moldova",
+    "name_en": "Moldova",
+    "name_ja": "モルドバ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "morocco",
+    "name_en": "Morocco",
+    "name_ja": "モロッコ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "mongolia",
+    "name_en": "Mongolia",
+    "name_ja": "モンゴル",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "montenegro",
+    "name_en": "Montenegro",
+    "name_ja": "モンテネグロ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "montserrat",
+    "name_en": "Montserrat",
+    "name_ja": "モントセラト",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "jordan",
+    "name_en": "Jordan",
+    "name_ja": "ヨルダン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "laos",
+    "name_en": "Laos",
+    "name_ja": "ラオス",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "latvia",
+    "name_en": "Latvia",
+    "name_ja": "ラトビア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "lithuania",
+    "name_en": "Lithuania",
+    "name_ja": "リトアニア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "libya",
+    "name_en": "Libya",
+    "name_ja": "リビア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "liechtenstein",
+    "name_en": "Liechtenstein",
+    "name_ja": "リヒテンシュタイン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "liberia",
+    "name_en": "Liberia",
+    "name_ja": "リベリア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "romania",
+    "name_en": "Romania",
+    "name_ja": "ルーマニア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "luxembourg",
+    "name_en": "Luxembourg",
+    "name_ja": "ルクセンブルク",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "rwanda",
+    "name_en": "Rwanda",
+    "name_ja": "ルワンダ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "lesotho",
+    "name_en": "Lesotho",
+    "name_ja": "レソト",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "lebanon",
+    "name_en": "Lebanon",
+    "name_ja": "レバノン",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "reunion",
+    "name_en": "Réunion",
+    "name_ja": "レユニオン",
+    "kind": "territory",
+    "aliases": [
+      "Reunion"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "russia",
+    "name_en": "Russia",
+    "name_ja": "ロシア",
+    "kind": "country",
+    "aliases": [
+      "Russian Federation"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "british-indian-ocean-territory",
+    "name_en": "British Indian Ocean Territory",
+    "name_ja": "英領インド洋地域",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "british-virgin-islands",
+    "name_en": "British Virgin Islands",
+    "name_ja": "英領ヴァージン諸島",
+    "kind": "territory",
+    "aliases": [
+      "Virgin Islands, British"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "south-korea",
+    "name_en": "South Korea",
+    "name_ja": "韓国",
+    "kind": "country",
+    "aliases": [
+      "Republic of Korea",
+      "Korea, South"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "hong-kong-sar",
+    "name_en": "Hong Kong",
+    "name_ja": "香港",
+    "kind": "territory",
+    "aliases": [
+      "Hong Kong SAR"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "equatorial-guinea",
+    "name_en": "Equatorial Guinea",
+    "name_ja": "赤道ギニア",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "taiwan",
+    "name_en": "Taiwan",
+    "name_ja": "台湾",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "central-african-republic",
+    "name_en": "Central African Republic",
+    "name_ja": "中央アフリカ共和国",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
   },
   {
     "slug": "china",
     "name_en": "China",
     "name_ja": "中国",
+    "kind": "country",
     "aliases": [
-      "china",
-      "people's republic of china"
+      "People's Republic of China"
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
   },
   {
+    "slug": "east-timor",
+    "name_en": "Timor-Leste (East Timor)",
+    "name_ja": "東ティモール",
+    "kind": "country",
+    "aliases": [
+      "Timor-Leste",
+      "East Timor"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "south-africa",
+    "name_en": "South Africa",
+    "name_ja": "南アフリカ",
+    "kind": "country",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "south-sudan",
+    "name_en": "South Sudan",
+    "name_ja": "南スーダン",
+    "kind": "country",
+    "aliases": [
+      "Republic of South Sudan"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "antarctica",
+    "name_en": "Antarctica",
+    "name_ja": "南極",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
     "slug": "japan",
     "name_en": "Japan",
-    "name_ja": "日本（参考）",
-    "aliases": [
-      "japan"
-    ],
+    "name_ja": "日本",
+    "kind": "country",
+    "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
     "page_notice_level": 1
+  },
+  {
+    "slug": "french-guiana",
+    "name_en": "French Guiana",
+    "name_ja": "仏領ギアナ",
+    "kind": "territory",
+    "aliases": [],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "french-polynesia",
+    "name_en": "French Polynesia",
+    "name_ja": "仏領ポリネシア",
+    "kind": "territory",
+    "aliases": [
+      "Tahiti",
+      "Bora-Bora"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "usvirgin-islands",
+    "name_en": "U.S. Virgin Islands",
+    "name_ja": "米領ヴァージン諸島",
+    "kind": "territory",
+    "aliases": [
+      "Virgin Islands, U.S.",
+      "US Virgin Islands"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "north-macedonia",
+    "name_en": "North Macedonia",
+    "name_ja": "北マケドニア",
+    "kind": "country",
+    "aliases": [
+      "Macedonia"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "northern-mariana-islands",
+    "name_en": "Northern Mariana Islands",
+    "name_ja": "北マリアナ諸島",
+    "kind": "territory",
+    "aliases": [
+      "Saipan",
+      "Tinian",
+      "Rota"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
+  },
+  {
+    "slug": "north-korea",
+    "name_en": "North Korea",
+    "name_ja": "北朝鮮",
+    "kind": "country",
+    "aliases": [
+      "DPRK"
+    ],
+    "has_data": false,
+    "retrieved_at": null,
+    "page_notice_level": 0
   }
 ]

@@ -2,6 +2,7 @@
   "slug": "egypt",
   "name_en": "Egypt",
   "name_ja": "エジプト",
+  "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/egypt",
   "retrieved_at": "2026-09-03",
   "page_notice_level": 1,

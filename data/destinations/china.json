@@ -2,6 +2,7 @@
   "slug": "china",
   "name_en": "China",
   "name_ja": "中国",
+  "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/china",
   "retrieved_at": "2026-09-03",
   "page_notice_level": 1,

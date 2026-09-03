@@ -3,11 +3,11 @@
   "last_run": "2026-09-03",
   "last_change": "2026-09-03",
   "counts": {
-    "destinations_with_data": 15,
-    "destinations_configured": 15,
+    "destinations_with_data": 16,
+    "destinations_configured": 244,
     "notices": 24,
     "untranslated": 0
   },
   "errors": [],
-  "scope": "notices-only"
+  "scope": "full"
 }

@@ -165,6 +165,7 @@ export function parseDestination(html, meta) {
     slug: meta.slug,
     name_en: meta.name_en,
     name_ja: meta.name_ja,
+    kind: meta.kind || "country",
     source_url: destUrl(meta.slug),
     retrieved_at: new Date().toISOString().slice(0, 10),
     page_notice_level: pageNoticeLevel,

@@ -2,6 +2,7 @@
   "slug": "kenya",
   "name_en": "Kenya",
   "name_ja": "ケニア",
+  "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/kenya",
   "retrieved_at": "2026-09-03",
   "page_notice_level": 1,

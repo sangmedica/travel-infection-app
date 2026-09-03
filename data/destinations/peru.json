@@ -2,6 +2,7 @@
   "slug": "peru",
   "name_en": "Peru",
   "name_ja": "ペルー",
+  "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/peru",
   "retrieved_at": "2026-09-03",
   "page_notice_level": 1,

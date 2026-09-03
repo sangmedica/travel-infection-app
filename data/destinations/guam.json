@@ -1,9 +1,9 @@
 {
-  "slug": "nepal",
-  "name_en": "Nepal",
-  "name_ja": "ネパール",
-  "kind": "country",
-  "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/nepal",
+  "slug": "guam",
+  "name_en": "Guam",
+  "name_ja": "グアム",
+  "kind": "territory",
+  "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/guam",
   "retrieved_at": "2026-09-03",
   "page_notice_level": 1,
   "vaccines": [
@@ -24,27 +24,11 @@
       "clinical_guidance_en": "COVID-19 vaccine"
     },
     {
-      "name_en": "Chikungunya",
-      "name_ja": "チクングニア熱",
-      "category": "not_recommended",
-      "category_ja": "推奨しない",
-      "recommendation_en": "All travelers should take steps to prevent mosquito bites. Chikungunya vaccination is generally not recommended. Travelers who wish to consider vaccination can visit “What to consider before traveling” on the chikungunya vaccines page to learn more.",
-      "clinical_guidance_en": "Chikungunya - CDC Yellow Book"
-    },
-    {
-      "name_en": "Cholera",
-      "name_ja": "コレラ",
-      "category": "consider",
-      "category_ja": "検討",
-      "recommendation_en": "Active cholera transmission is widespread in Nepal. Cholera is rare in travelers. Certain factors may increase the risk of getting cholera or having severe disease (more information). Avoiding unsafe food and water and washing your hands can also help prevent cholera.\nVaccination may be considered for children and adults who are traveling to areas of active cholera transmission.",
-      "clinical_guidance_en": "Cholera - CDC Yellow Book"
-    },
-    {
       "name_en": "Hepatitis A",
       "name_ja": "A型肝炎",
       "category": "some",
       "category_ja": "一部の渡航者に推奨（条件付き）",
-      "recommendation_en": "Recommended for unvaccinated travelers one year old or older going to Nepal.\nInfants 6 to 11 months old should also be vaccinated against Hepatitis A. The dose does not count toward the routine 2-dose series.\nTravelers allergic to a vaccine component should receive a single dose of immune globulin, which provides effective protection for up to 2 months depending on dosage given.\nUnvaccinated travelers who are over 40 years old, are immunocompromised, or have chronic medical conditions planning to depart to a risk area in less than 2 weeks should get the initial dose of vaccine and at the same appointment receive immune globulin.",
+      "recommendation_en": "Recommended for unvaccinated travelers one year old or older going to Guam.\nInfants 6 to 11 months old should also be vaccinated against Hepatitis A. The dose does not count toward the routine 2-dose series.\nTravelers allergic to a vaccine component should receive a single dose of immune globulin, which provides effective protection for up to 2 months depending on dosage given.\nUnvaccinated travelers who are over 40 years old, are immunocompromised, or have chronic medical conditions planning to depart to a risk area in less than 2 weeks should get the initial dose of vaccine and at the same appointment receive immune globulin.",
       "clinical_guidance_en": "Hepatitis A - CDC Yellow Book\nVaccine dosing information - Hep A"
     },
     {
@@ -52,24 +36,8 @@
       "name_ja": "B型肝炎",
       "category": "some",
       "category_ja": "一部の渡航者に推奨（条件付き）",
-      "recommendation_en": "Recommended for unvaccinated travelers younger than 60 years old traveling to Nepal. Unvaccinated travelers 60 years and older may get vaccinated before traveling to Nepal.",
+      "recommendation_en": "Recommended for unvaccinated travelers of all ages traveling to Guam.",
       "clinical_guidance_en": "Sex and Travel - CDC Yellow Book"
-    },
-    {
-      "name_en": "Japanese Encephalitis",
-      "name_ja": "日本脳炎",
-      "category": "some",
-      "category_ja": "一部の渡航者に推奨（条件付き）",
-      "recommendation_en": "Recommended for travelers who\n• Are moving to an area with Japanese encephalitis to live\n• Spend long periods of time, such as a month or more, in areas with Japanese encephalitis\n• Frequently travel to areas with Japanese encephalitis\nConsider vaccination for travelers\n• Spending less than a month in areas with Japanese encephalitis but will be doing activities that increase risk of infection, such as visiting rural areas, hiking or camping, or staying in places without air conditioning, screens, or bed nets\n• Going to areas with Japanese encephalitis who are uncertain of their activities or how long they will be there\nNot recommended for travelers planning short-term travel to urban areas or travel to areas with no clear Japanese encephalitis season.",
-      "clinical_guidance_en": "Japanese encephalitis - CDC Yellow Book"
-    },
-    {
-      "name_en": "Malaria",
-      "name_ja": "マラリア（予防内服）",
-      "category": "some",
-      "category_ja": "一部の渡航者に推奨（条件付き）",
-      "recommendation_en": "CDC recommends that travelers going to certain areas of Nepal take prescription medicine to prevent malaria. Depending on the medicine you take, you will need to start taking this medicine multiple days before your trip, as well as during and after your trip. Talk to your doctor about which malaria medication you should take.\nTransmission areas\n• Sudurpashchim and Karnali provinces in areas <2,000m (~6,500 ft) elevation\n• Rare cases in other areas throughout the country in areas <2,000 m (~6,500 ft) elevation\n• No malaria transmission in Kathmandu (the capital), Pokhara, or on typical Himalayan treks\nDrug resistance1\n• Chloroquine\nSpecies\n• P. vivax (primarily)\n• P. falciparum (<10%)\nRecommended chemoprophylaxis\n• Areas <2,000m in Sudurpashchim and Kernali Provinces: Atovaquone-proguanil, doxycycline, mefloquine, tafenoquine2\n• All other areas with reported malaria transmission: No chemoprophylaxis recommended (insect bite precautions and mosquito avoidance only)4\nSee footnotes",
-      "clinical_guidance_en": "Malaria - CDC Yellow Book\nConsiderations when choosing a drug for malaria prophylaxis (CDC Yellow Book)\nMap: Malaria prevention in Nepal"
     },
     {
       "name_en": "Measles",
@@ -92,7 +60,7 @@
       "name_ja": "狂犬病",
       "category": "consider",
       "category_ja": "検討",
-      "recommendation_en": "Dogs infected with rabies are commonly found in Nepal.\nIf rabies exposures occur while in Nepal, rabies vaccines may only be available in larger suburban/urban medical facilities.\nRabies pre-exposure vaccination considerations include whether travelers 1) will be performing occupational or recreational activities that increase risk for exposure to potentially rabid animals and 2) might have difficulty getting prompt access to safe post-exposure prophylaxis.\nPlease consult with a healthcare provider to determine whether you should receive pre-exposure vaccination before travel.\nFor more information, see country rabies status assessments.",
+      "recommendation_en": "Dogs infected with rabies are not commonly found in Guam.\nIf rabies exposures occur while in Guam, rabies vaccines may only be available in larger suburban/urban medical facilities.\nRabies pre-exposure vaccination considerations include whether travelers 1) will be performing occupational or recreational activities that increase risk for exposure to potentially rabid animals and 2) might have difficulty getting prompt access to safe post-exposure prophylaxis.\nPlease consult with a healthcare provider to determine whether you should receive pre-exposure vaccination before travel.\nFor more information, see country rabies status assessments.",
       "clinical_guidance_en": "Rabies - CDC Yellow Book"
     },
     {
@@ -108,7 +76,7 @@
       "name_ja": "黄熱",
       "category": "not_recommended",
       "category_ja": "推奨しない",
-      "recommendation_en": "CDC recommendations: Vaccine is not recommended.\nCountry entry requirements:\n• Direct travel from United States: Vaccine is not required.\n• Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥9 months old; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.3\nSee footnotes",
+      "recommendation_en": "CDC recommendations: Vaccine is not recommended.\nCountry entry requirements: Vaccine is not required.",
       "clinical_guidance_en": "Yellow Fever - CDC Yellow Book\nYellow Fever Vaccine and Malaria Prevention Information, by Country"
     }
   ],
@@ -130,15 +98,6 @@
       "spread_en": "• Mosquito bite",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Dengue"
-    },
-    {
-      "name_en": "Leishmaniasis",
-      "name_ja": "リーシュマニア症",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
-      "spread_en": "• Sand fly bite",
-      "advice_en": "• Avoid bug bites",
-      "clinical_guidance_en": "Leishmaniasis"
     },
     {
       "name_en": "Hantavirus",
