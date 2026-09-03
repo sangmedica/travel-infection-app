@@ -1,0 +1,172 @@
+[
+  {
+    "slug": "india",
+    "name_en": "India",
+    "name_ja": "インド",
+    "aliases": [
+      "india"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "indonesia",
+    "name_en": "Indonesia",
+    "name_ja": "インドネシア",
+    "aliases": [
+      "indonesia",
+      "bali"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
+  },
+  {
+    "slug": "egypt",
+    "name_en": "Egypt",
+    "name_ja": "エジプト",
+    "aliases": [
+      "egypt"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "cambodia",
+    "name_en": "Cambodia",
+    "name_ja": "カンボジア",
+    "aliases": [
+      "cambodia"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "kenya",
+    "name_en": "Kenya",
+    "name_ja": "ケニア",
+    "aliases": [
+      "kenya"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "thailand",
+    "name_en": "Thailand",
+    "name_ja": "タイ",
+    "aliases": [
+      "thailand"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "tanzania",
+    "name_en": "Tanzania",
+    "name_ja": "タンザニア",
+    "aliases": [
+      "tanzania",
+      "united republic of tanzania"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
+  },
+  {
+    "slug": "nepal",
+    "name_en": "Nepal",
+    "name_ja": "ネパール",
+    "aliases": [
+      "nepal"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "philippines",
+    "name_en": "Philippines",
+    "name_ja": "フィリピン",
+    "aliases": [
+      "philippines",
+      "the philippines"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "brazil",
+    "name_en": "Brazil",
+    "name_ja": "ブラジル",
+    "aliases": [
+      "brazil"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "vietnam",
+    "name_en": "Vietnam",
+    "name_ja": "ベトナム",
+    "aliases": [
+      "vietnam",
+      "viet nam"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "peru",
+    "name_en": "Peru",
+    "name_ja": "ペルー",
+    "aliases": [
+      "peru"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "mexico",
+    "name_en": "Mexico",
+    "name_ja": "メキシコ",
+    "aliases": [
+      "mexico"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "china",
+    "name_en": "China",
+    "name_ja": "中国",
+    "aliases": [
+      "china",
+      "people's republic of china"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  },
+  {
+    "slug": "japan",
+    "name_en": "Japan",
+    "name_ja": "日本（参考）",
+    "aliases": [
+      "japan"
+    ],
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
+  }
+]

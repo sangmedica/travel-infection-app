@@ -1,0 +1,73 @@
+name: Monthly CDC data refresh
+
+on:
+  schedule:
+    # 毎月1日 03:00 UTC（日本時間 12:00）
+    - cron: "0 3 1 * *"
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "特定の渡航先 slug のみ取得（空欄で全件）"
+        required: false
+        default: ""
+
+concurrency:
+  group: cdc-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Scrape CDC Travelers' Health
+        env:
+          SCRAPE_DELAY_MS: "20000" # robots.txt の Crawl-delay を厳守
+          SCRAPE_CONTACT: ${{ secrets.SCRAPE_CONTACT || 'travel-infection-app@users.noreply.github.com' }}
+        run: |
+          if [ -n "${{ github.event.inputs.only }}" ]; then
+            node scripts/scrape.mjs --only="${{ github.event.inputs.only }}"
+          else
+            node scripts/scrape.mjs
+          fi
+        continue-on-error: true # 一部地域が失敗しても前回データは保持済み。差分コミットは行う。
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/; then
+            echo "No data changes."
+            exit 0
+          fi
+          git add data/
+          git commit -m "chore: monthly CDC data refresh $(date -u +%Y-%m-%d)
+
+          Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
+          git push
+
+      - name: Summarize
+        if: always()
+        run: |
+          echo "### CDC refresh result" >> $GITHUB_STEP_SUMMARY
+          echo '```json' >> $GITHUB_STEP_SUMMARY
+          cat data/meta.json >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          if [ -s data/untranslated.txt ]; then
+            echo "#### 未対訳の語（data/translations.json に追記してください）" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            cat data/untranslated.txt >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          fi

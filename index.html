@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>渡航先感染症・推奨ワクチン検索</title>
+    <meta
+      name="description"
+      content="渡航先を入力すると、CDC Travelers' Health のデータをもとに流行感染症の注意喚起レベルと推奨ワクチン（推奨度別）を表示します。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>渡航先 感染症・推奨ワクチン検索</h1>
+      <p class="tagline">
+        出典: <a href="https://wwwnc.cdc.gov/travel/" target="_blank" rel="noopener">CDC Travelers' Health</a>
+        <span id="last-updated"></span>
+      </p>
+      <div class="disclaimer" role="note">
+        <strong>ご利用にあたって</strong>
+        本アプリは情報提供のみを目的とし、医学的助言ではありません。渡航前に必ずトラベルクリニック／医師にご相談ください。
+        個々の渡航者のリスクは日程・活動・基礎疾患・接種歴により異なります。最新かつ正確な情報は
+        <a href="https://wwwnc.cdc.gov/travel/" target="_blank" rel="noopener">CDC 原文</a>
+        および <a href="https://www.forth.go.jp/" target="_blank" rel="noopener">FORTH（厚生労働省検疫所）</a>
+        をご確認ください。表示される英語本文は CDC の原文をそのまま掲載しています。
+      </div>
+    </header>
+
+    <main>
+      <section class="search-box">
+        <label for="dest-input">渡航先の国・地域</label>
+        <input
+          id="dest-input"
+          type="text"
+          list="dest-list"
+          autocomplete="off"
+          placeholder="例: タイ / Thailand / thailand"
+        />
+        <datalist id="dest-list"></datalist>
+        <p id="search-hint" class="hint"></p>
+      </section>
+
+      <section id="result" class="result" hidden></section>
+
+      <section id="global-notices" class="global-notices" hidden>
+        <h2>世界的な流行・広域の注意喚起<span class="count" id="global-count"></span></h2>
+        <p class="hint">特定の国ではなく、地域規模・世界規模で出ている CDC Travel Notice です（全渡航先に共通）。</p>
+        <div id="global-notices-body"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p id="meta-line"></p>
+      <p>
+        CDC のコンテンツは米国政府の著作物（パブリックドメイン）です。本サイトは非公式であり CDC とは関係ありません。
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

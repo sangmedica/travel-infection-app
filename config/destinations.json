@@ -1,0 +1,20 @@
+{
+  "_comment": "MVP対象の渡航先。slug は CDC の /travel/destinations/traveler/none/<slug> に対応。aliases は検索と Travel Notices の国名マッチングに使用（英語表記のゆれを含める）。拡張する場合はこの配列に追記するだけでよい。",
+  "destinations": [
+    { "slug": "thailand",    "name_en": "Thailand",    "name_ja": "タイ",             "aliases": ["thailand"] },
+    { "slug": "vietnam",     "name_en": "Vietnam",     "name_ja": "ベトナム",         "aliases": ["vietnam", "viet nam"] },
+    { "slug": "indonesia",   "name_en": "Indonesia",   "name_ja": "インドネシア",     "aliases": ["indonesia", "bali"] },
+    { "slug": "philippines", "name_en": "Philippines", "name_ja": "フィリピン",       "aliases": ["philippines", "the philippines"] },
+    { "slug": "india",       "name_en": "India",       "name_ja": "インド",           "aliases": ["india"] },
+    { "slug": "cambodia",    "name_en": "Cambodia",    "name_ja": "カンボジア",       "aliases": ["cambodia"] },
+    { "slug": "nepal",       "name_en": "Nepal",       "name_ja": "ネパール",         "aliases": ["nepal"] },
+    { "slug": "china",       "name_en": "China",       "name_ja": "中国",             "aliases": ["china", "people's republic of china"] },
+    { "slug": "kenya",       "name_en": "Kenya",       "name_ja": "ケニア",           "aliases": ["kenya"] },
+    { "slug": "tanzania",    "name_en": "Tanzania",    "name_ja": "タンザニア",       "aliases": ["tanzania", "united republic of tanzania"] },
+    { "slug": "egypt",       "name_en": "Egypt",       "name_ja": "エジプト",         "aliases": ["egypt"] },
+    { "slug": "brazil",      "name_en": "Brazil",      "name_ja": "ブラジル",         "aliases": ["brazil"] },
+    { "slug": "peru",        "name_en": "Peru",        "name_ja": "ペルー",           "aliases": ["peru"] },
+    { "slug": "mexico",      "name_en": "Mexico",      "name_ja": "メキシコ",         "aliases": ["mexico"] },
+    { "slug": "japan",       "name_en": "Japan",       "name_ja": "日本（参考）",     "aliases": ["japan"] }
+  ]
+}

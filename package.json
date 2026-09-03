@@ -1,0 +1,15 @@
+{
+  "name": "travel-infection-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "渡航先の流行感染症・推奨ワクチンを CDC Travelers' Health から取得して表示する静的 Web アプリ",
+  "scripts": {
+    "scrape": "node scripts/scrape.mjs",
+    "scrape:dry": "node scripts/scrape.mjs --dry-run",
+    "serve": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

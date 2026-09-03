@@ -1,0 +1,13 @@
+{
+  "source": "CDC Travelers' Health (https://wwwnc.cdc.gov/travel/)",
+  "last_run": "2026-09-03",
+  "last_change": "2026-09-03",
+  "counts": {
+    "destinations_with_data": 15,
+    "destinations_configured": 15,
+    "notices": 24,
+    "untranslated": 0
+  },
+  "errors": [],
+  "scope": "notices-only"
+}
