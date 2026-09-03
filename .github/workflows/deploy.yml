@@ -3,6 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # 月次データ更新（update.yml）が GITHUB_TOKEN でコミットした push は
+  # 再帰防止のため push イベントを発火しない。そこで workflow_run で拾って自動デプロイする。
+  workflow_run:
+    workflows: ["Monthly CDC data refresh"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -16,6 +21,8 @@ concurrency:
 
 jobs:
   deploy:
+    # workflow_run 経由のときは、更新ジョブが成功したときだけデプロイ
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
