@@ -5,9 +5,9 @@
     "name_ja": "アイスランド",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "ireland",
@@ -15,9 +15,9 @@
     "name_ja": "アイルランド",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "azerbaijan",
@@ -25,9 +25,9 @@
     "name_ja": "アゼルバイジャン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "azores",
@@ -37,9 +37,9 @@
     "aliases": [
       "Azores Islands"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "afghanistan",
@@ -47,9 +47,9 @@
     "name_ja": "アフガニスタン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "united-states",
@@ -71,9 +71,9 @@
     "name_ja": "アメリカ領サモア",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "united-arab-emirates",
@@ -83,9 +83,9 @@
     "aliases": [
       "UAE"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "algeria",
@@ -93,9 +93,9 @@
     "name_ja": "アルジェリア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "argentina",
@@ -103,9 +103,9 @@
     "name_ja": "アルゼンチン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "aruba",
@@ -113,9 +113,9 @@
     "name_ja": "アルバ",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "albania",
@@ -123,9 +123,9 @@
     "name_ja": "アルバニア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "armenia",
@@ -133,9 +133,9 @@
     "name_ja": "アルメニア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "anguilla",
@@ -143,9 +143,9 @@
     "name_ja": "アンギラ",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "angola",
@@ -153,9 +153,9 @@
     "name_ja": "アンゴラ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "antigua-and-barbuda",
@@ -163,9 +163,9 @@
     "name_ja": "アンティグア・バーブーダ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "andorra",
@@ -173,9 +173,9 @@
     "name_ja": "アンドラ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "easter-island",
@@ -183,9 +183,9 @@
     "name_ja": "イースター島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "yemen",
@@ -193,9 +193,9 @@
     "name_ja": "イエメン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "united-kingdom",
@@ -210,9 +210,9 @@
       "Wales",
       "Northern Ireland"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "israel",
@@ -224,9 +224,9 @@
       "West Bank",
       "Gaza"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "italy",
@@ -237,9 +237,9 @@
       "Vatican City",
       "Holy See"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "iraq",
@@ -247,9 +247,9 @@
     "name_ja": "イラク",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "iran",
@@ -257,9 +257,9 @@
     "name_ja": "イラン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "india",
@@ -289,9 +289,9 @@
     "name_ja": "ウェーク島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "uganda",
@@ -299,9 +299,9 @@
     "name_ja": "ウガンダ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "ukraine",
@@ -309,9 +309,9 @@
     "name_ja": "ウクライナ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "uzbekistan",
@@ -319,9 +319,9 @@
     "name_ja": "ウズベキスタン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "uruguay",
@@ -329,9 +329,9 @@
     "name_ja": "ウルグアイ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "ecuador",
@@ -341,9 +341,9 @@
     "aliases": [
       "Galápagos Islands"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "egypt",
@@ -361,9 +361,9 @@
     "name_ja": "エストニア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "eswatini",
@@ -373,9 +373,9 @@
     "aliases": [
       "Swaziland"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "ethiopia",
@@ -383,9 +383,9 @@
     "name_ja": "エチオピア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "eritrea",
@@ -393,9 +393,9 @@
     "name_ja": "エリトリア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "el-salvador",
@@ -403,9 +403,9 @@
     "name_ja": "エルサルバドル",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "australia",
@@ -413,9 +413,9 @@
     "name_ja": "オーストラリア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "austria",
@@ -423,9 +423,9 @@
     "name_ja": "オーストリア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "oman",
@@ -433,9 +433,9 @@
     "name_ja": "オマーン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "netherlands",
@@ -446,9 +446,9 @@
       "Netherlands, The",
       "Holland"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "ghana",
@@ -456,9 +456,9 @@
     "name_ja": "ガーナ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "cape-verde",
@@ -468,9 +468,9 @@
     "aliases": [
       "Cabo Verde"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "guyana",
@@ -478,9 +478,9 @@
     "name_ja": "ガイアナ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "kazakhstan",
@@ -488,9 +488,9 @@
     "name_ja": "カザフスタン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "qatar",
@@ -498,9 +498,9 @@
     "name_ja": "カタール",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "canada",
@@ -508,9 +508,9 @@
     "name_ja": "カナダ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "canary-islands",
@@ -518,9 +518,9 @@
     "name_ja": "カナリア諸島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "gabon",
@@ -528,9 +528,9 @@
     "name_ja": "ガボン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "cameroon",
@@ -538,9 +538,9 @@
     "name_ja": "カメルーン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "the-gambia",
@@ -550,9 +550,9 @@
     "aliases": [
       "Gambia, The"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "cambodia",
@@ -572,9 +572,9 @@
     "aliases": [
       "Guinea-Conakry"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "guinea-bissau",
@@ -582,9 +582,9 @@
     "name_ja": "ギニアビサウ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "cyprus",
@@ -592,9 +592,9 @@
     "name_ja": "キプロス",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "cuba",
@@ -602,9 +602,9 @@
     "name_ja": "キューバ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "curacao",
@@ -614,9 +614,9 @@
     "aliases": [
       "Curacao"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "greece",
@@ -624,9 +624,9 @@
     "name_ja": "ギリシャ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "kiribati",
@@ -634,9 +634,9 @@
     "name_ja": "キリバス",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "kyrgyzstan",
@@ -646,9 +646,9 @@
     "aliases": [
       "Kyrgyz Republic"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "guatemala",
@@ -656,9 +656,9 @@
     "name_ja": "グアテマラ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "guadeloupe",
@@ -666,9 +666,9 @@
     "name_ja": "グアドループ",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "guam",
@@ -686,9 +686,9 @@
     "name_ja": "クウェート",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "cook-islands",
@@ -696,9 +696,9 @@
     "name_ja": "クック諸島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "greenland",
@@ -706,9 +706,9 @@
     "name_ja": "グリーンランド",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "christmas-island",
@@ -716,9 +716,9 @@
     "name_ja": "クリスマス島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "grenada",
@@ -726,9 +726,9 @@
     "name_ja": "グレナダ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "croatia",
@@ -736,9 +736,9 @@
     "name_ja": "クロアチア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "cayman-islands",
@@ -746,9 +746,9 @@
     "name_ja": "ケイマン諸島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "kenya",
@@ -769,9 +769,9 @@
       "Ivory Coast",
       "Cote d'Ivoire"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "cocos-islands",
@@ -781,9 +781,9 @@
     "aliases": [
       "Keeling Islands"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "costa-rica",
@@ -791,9 +791,9 @@
     "name_ja": "コスタリカ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "kosovo",
@@ -801,9 +801,9 @@
     "name_ja": "コソボ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "comoros",
@@ -811,9 +811,9 @@
     "name_ja": "コモロ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "colombia",
@@ -821,9 +821,9 @@
     "name_ja": "コロンビア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "congo",
@@ -834,9 +834,9 @@
       "Congo, Republic of the",
       "Congo-Brazzaville"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "democratic-republic-of-congo",
@@ -847,9 +847,9 @@
       "DRC",
       "Congo-Kinshasa"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 4
   },
   {
     "slug": "saudi-arabia",
@@ -857,9 +857,9 @@
     "name_ja": "サウジアラビア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "south-georgia-south-sandwich-islands",
@@ -867,9 +867,9 @@
     "name_ja": "サウスジョージア・サウスサンドウィッチ諸島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "saba",
@@ -877,9 +877,9 @@
     "name_ja": "サバ（オランダ領）",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "samoa",
@@ -887,9 +887,9 @@
     "name_ja": "サモア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "saint-barthelemy",
@@ -899,9 +899,9 @@
     "aliases": [
       "St. Barts"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "saint-martin",
@@ -909,9 +909,9 @@
     "name_ja": "サン・マルタン",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "sao-tome-and-principe",
@@ -921,9 +921,9 @@
     "aliases": [
       "Sao Tome and Principe"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "zambia",
@@ -931,9 +931,9 @@
     "name_ja": "ザンビア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "saint-pierre-and-miquelon",
@@ -941,9 +941,9 @@
     "name_ja": "サンピエール島・ミクロン島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "san-marino",
@@ -951,9 +951,9 @@
     "name_ja": "サンマリノ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "sierra-leone",
@@ -961,9 +961,9 @@
     "name_ja": "シエラレオネ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "djibouti",
@@ -971,9 +971,9 @@
     "name_ja": "ジブチ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "gibraltar",
@@ -981,9 +981,9 @@
     "name_ja": "ジブラルタル",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "jamaica",
@@ -991,9 +991,9 @@
     "name_ja": "ジャマイカ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "georgia",
@@ -1001,9 +1001,9 @@
     "name_ja": "ジョージア（グルジア）",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "syria",
@@ -1013,9 +1013,9 @@
     "aliases": [
       "Syrian Arab Republic"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "singapore",
@@ -1023,9 +1023,9 @@
     "name_ja": "シンガポール",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "sint-maarten",
@@ -1033,9 +1033,9 @@
     "name_ja": "シント・マールテン",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "sint-eustatius",
@@ -1045,9 +1045,9 @@
     "aliases": [
       "Statia"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "zimbabwe",
@@ -1055,9 +1055,9 @@
     "name_ja": "ジンバブエ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "switzerland",
@@ -1065,9 +1065,9 @@
     "name_ja": "スイス",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "sweden",
@@ -1075,9 +1075,9 @@
     "name_ja": "スウェーデン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "sudan",
@@ -1085,9 +1085,9 @@
     "name_ja": "スーダン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "spain",
@@ -1095,9 +1095,9 @@
     "name_ja": "スペイン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "suriname",
@@ -1105,9 +1105,9 @@
     "name_ja": "スリナム",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "sri-lanka",
@@ -1115,9 +1115,9 @@
     "name_ja": "スリランカ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "slovakia",
@@ -1127,9 +1127,9 @@
     "aliases": [
       "Slovak Republic"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "slovenia",
@@ -1137,9 +1137,9 @@
     "name_ja": "スロベニア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "seychelles",
@@ -1147,9 +1147,9 @@
     "name_ja": "セーシェル",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "senegal",
@@ -1157,9 +1157,9 @@
     "name_ja": "セネガル",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "serbia",
@@ -1167,9 +1167,9 @@
     "name_ja": "セルビア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "st-kitts-and-nevis",
@@ -1179,9 +1179,9 @@
     "aliases": [
       "St. Kitts and Nevis"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "saint-vincent-and-the-grenadines",
@@ -1189,9 +1189,9 @@
     "name_ja": "セントビンセント及びグレナディーン諸島",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "saint-helena",
@@ -1199,9 +1199,9 @@
     "name_ja": "セントヘレナ",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "saint-lucia",
@@ -1209,9 +1209,9 @@
     "name_ja": "セントルシア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "somalia",
@@ -1219,9 +1219,9 @@
     "name_ja": "ソマリア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "solomon-islands",
@@ -1229,9 +1229,9 @@
     "name_ja": "ソロモン諸島",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "turks-and-caicos",
@@ -1239,9 +1239,9 @@
     "name_ja": "タークス・カイコス諸島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "thailand",
@@ -1259,9 +1259,9 @@
     "name_ja": "タジキスタン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "tanzania",
@@ -1284,9 +1284,9 @@
     "aliases": [
       "Czech Republic"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "chad",
@@ -1294,9 +1294,9 @@
     "name_ja": "チャド",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "tunisia",
@@ -1304,9 +1304,9 @@
     "name_ja": "チュニジア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "chile",
@@ -1314,9 +1314,9 @@
     "name_ja": "チリ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "tuvalu",
@@ -1324,9 +1324,9 @@
     "name_ja": "ツバル",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "denmark",
@@ -1334,9 +1334,9 @@
     "name_ja": "デンマーク",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "germany",
@@ -1344,9 +1344,9 @@
     "name_ja": "ドイツ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "togo",
@@ -1354,9 +1354,9 @@
     "name_ja": "トーゴ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "tokelau",
@@ -1364,9 +1364,9 @@
     "name_ja": "トケラウ",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "dominican-republic",
@@ -1374,9 +1374,9 @@
     "name_ja": "ドミニカ共和国",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "dominica",
@@ -1384,9 +1384,9 @@
     "name_ja": "ドミニカ国",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "trinidad-and-tobago",
@@ -1394,9 +1394,9 @@
     "name_ja": "トリニダード・トバゴ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "turkmenistan",
@@ -1404,9 +1404,9 @@
     "name_ja": "トルクメニスタン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "turkey",
@@ -1417,9 +1417,9 @@
       "Turkey",
       "Turkiye"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "tonga",
@@ -1427,9 +1427,9 @@
     "name_ja": "トンガ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "nigeria",
@@ -1437,9 +1437,9 @@
     "name_ja": "ナイジェリア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "nauru",
@@ -1447,9 +1447,9 @@
     "name_ja": "ナウル",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "namibia",
@@ -1457,9 +1457,9 @@
     "name_ja": "ナミビア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "niue",
@@ -1467,9 +1467,9 @@
     "name_ja": "ニウエ",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "nicaragua",
@@ -1477,9 +1477,9 @@
     "name_ja": "ニカラグア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "niger",
@@ -1487,9 +1487,9 @@
     "name_ja": "ニジェール",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "new-caledonia",
@@ -1497,9 +1497,9 @@
     "name_ja": "ニューカレドニア",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "new-zealand",
@@ -1507,9 +1507,9 @@
     "name_ja": "ニュージーランド",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "nepal",
@@ -1527,9 +1527,9 @@
     "name_ja": "ノーフォーク島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "norway",
@@ -1537,9 +1537,9 @@
     "name_ja": "ノルウェー",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "bahrain",
@@ -1547,9 +1547,9 @@
     "name_ja": "バーレーン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "haiti",
@@ -1557,9 +1557,9 @@
     "name_ja": "ハイチ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "pakistan",
@@ -1567,9 +1567,9 @@
     "name_ja": "パキスタン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "panama",
@@ -1577,9 +1577,9 @@
     "name_ja": "パナマ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "vanuatu",
@@ -1587,9 +1587,9 @@
     "name_ja": "バヌアツ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "the-bahamas",
@@ -1599,9 +1599,9 @@
     "aliases": [
       "Bahamas, The"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "papua-new-guinea",
@@ -1609,9 +1609,9 @@
     "name_ja": "パプアニューギニア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "bermuda",
@@ -1619,9 +1619,9 @@
     "name_ja": "バミューダ",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "palau",
@@ -1629,9 +1629,9 @@
     "name_ja": "パラオ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "paraguay",
@@ -1639,9 +1639,9 @@
     "name_ja": "パラグアイ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "barbados",
@@ -1649,9 +1649,9 @@
     "name_ja": "バルバドス",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "hungary",
@@ -1659,9 +1659,9 @@
     "name_ja": "ハンガリー",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "bangladesh",
@@ -1669,9 +1669,9 @@
     "name_ja": "バングラデシュ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "pitcairn-islands",
@@ -1679,9 +1679,9 @@
     "name_ja": "ピトケアン諸島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "fiji",
@@ -1689,9 +1689,9 @@
     "name_ja": "フィジー",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "philippines",
@@ -1711,9 +1711,9 @@
     "name_ja": "フィンランド",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "bhutan",
@@ -1721,9 +1721,9 @@
     "name_ja": "ブータン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "puerto-rico",
@@ -1731,9 +1731,9 @@
     "name_ja": "プエルトリコ",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "faroe-island",
@@ -1741,9 +1741,9 @@
     "name_ja": "フェロー諸島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "falkland-islands",
@@ -1753,9 +1753,9 @@
     "aliases": [
       "Islas Malvinas"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "brazil",
@@ -1773,9 +1773,9 @@
     "name_ja": "フランス",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "bulgaria",
@@ -1783,9 +1783,9 @@
     "name_ja": "ブルガリア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "burkina-faso",
@@ -1793,9 +1793,9 @@
     "name_ja": "ブルキナファソ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "brunei",
@@ -1803,9 +1803,9 @@
     "name_ja": "ブルネイ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "burundi",
@@ -1813,9 +1813,9 @@
     "name_ja": "ブルンジ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "vietnam",
@@ -1835,9 +1835,9 @@
     "name_ja": "ベナン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "venezuela",
@@ -1845,9 +1845,9 @@
     "name_ja": "ベネズエラ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "belarus",
@@ -1855,9 +1855,9 @@
     "name_ja": "ベラルーシ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "belize",
@@ -1865,9 +1865,9 @@
     "name_ja": "ベリーズ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "peru",
@@ -1885,9 +1885,9 @@
     "name_ja": "ベルギー",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "poland",
@@ -1895,9 +1895,9 @@
     "name_ja": "ポーランド",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "bosnia-and-herzegovina",
@@ -1905,9 +1905,9 @@
     "name_ja": "ボスニア・ヘルツェゴビナ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "botswana",
@@ -1915,9 +1915,9 @@
     "name_ja": "ボツワナ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "bonaire",
@@ -1925,9 +1925,9 @@
     "name_ja": "ボネール",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "bolivia",
@@ -1935,9 +1935,9 @@
     "name_ja": "ボリビア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "portugal",
@@ -1945,9 +1945,9 @@
     "name_ja": "ポルトガル",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "honduras",
@@ -1955,9 +1955,9 @@
     "name_ja": "ホンジュラス",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "marshall-islands",
@@ -1965,9 +1965,9 @@
     "name_ja": "マーシャル諸島",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "macau-sar",
@@ -1978,9 +1978,9 @@
       "Macao",
       "Macau SAR"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "madagascar",
@@ -1988,9 +1988,9 @@
     "name_ja": "マダガスカル",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "madeira-islands",
@@ -1998,9 +1998,9 @@
     "name_ja": "マデイラ諸島",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "mayotte",
@@ -2008,9 +2008,9 @@
     "name_ja": "マヨット",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "malawi",
@@ -2018,9 +2018,9 @@
     "name_ja": "マラウイ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "mali",
@@ -2028,9 +2028,9 @@
     "name_ja": "マリ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "malta",
@@ -2038,9 +2038,9 @@
     "name_ja": "マルタ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "martinique",
@@ -2048,9 +2048,9 @@
     "name_ja": "マルティニーク",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "malaysia",
@@ -2058,9 +2058,9 @@
     "name_ja": "マレーシア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "micronesia",
@@ -2074,9 +2074,9 @@
       "Pohnpei",
       "Kosrae"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "burma",
@@ -2087,9 +2087,9 @@
       "Myanmar",
       "Burma"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "mexico",
@@ -2107,9 +2107,9 @@
     "name_ja": "モーリシャス",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "mauritania",
@@ -2117,9 +2117,9 @@
     "name_ja": "モーリタニア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "mozambique",
@@ -2127,9 +2127,9 @@
     "name_ja": "モザンビーク",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "monaco",
@@ -2137,9 +2137,9 @@
     "name_ja": "モナコ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "maldives",
@@ -2147,9 +2147,9 @@
     "name_ja": "モルディブ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "moldova",
@@ -2157,9 +2157,9 @@
     "name_ja": "モルドバ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "morocco",
@@ -2167,9 +2167,9 @@
     "name_ja": "モロッコ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "mongolia",
@@ -2177,9 +2177,9 @@
     "name_ja": "モンゴル",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "montenegro",
@@ -2187,9 +2187,9 @@
     "name_ja": "モンテネグロ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "montserrat",
@@ -2197,9 +2197,9 @@
     "name_ja": "モントセラト",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "jordan",
@@ -2207,9 +2207,9 @@
     "name_ja": "ヨルダン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "laos",
@@ -2217,9 +2217,9 @@
     "name_ja": "ラオス",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "latvia",
@@ -2227,9 +2227,9 @@
     "name_ja": "ラトビア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "lithuania",
@@ -2237,9 +2237,9 @@
     "name_ja": "リトアニア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "libya",
@@ -2247,9 +2247,9 @@
     "name_ja": "リビア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "liechtenstein",
@@ -2257,9 +2257,9 @@
     "name_ja": "リヒテンシュタイン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "liberia",
@@ -2267,9 +2267,9 @@
     "name_ja": "リベリア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "romania",
@@ -2277,9 +2277,9 @@
     "name_ja": "ルーマニア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "luxembourg",
@@ -2287,9 +2287,9 @@
     "name_ja": "ルクセンブルク",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "rwanda",
@@ -2297,9 +2297,9 @@
     "name_ja": "ルワンダ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "lesotho",
@@ -2307,9 +2307,9 @@
     "name_ja": "レソト",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "lebanon",
@@ -2317,9 +2317,9 @@
     "name_ja": "レバノン",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "reunion",
@@ -2329,9 +2329,9 @@
     "aliases": [
       "Reunion"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "russia",
@@ -2341,9 +2341,9 @@
     "aliases": [
       "Russian Federation"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "british-indian-ocean-territory",
@@ -2351,9 +2351,9 @@
     "name_ja": "英領インド洋地域",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "british-virgin-islands",
@@ -2363,9 +2363,9 @@
     "aliases": [
       "Virgin Islands, British"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "south-korea",
@@ -2376,9 +2376,9 @@
       "Republic of Korea",
       "Korea, South"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "hong-kong-sar",
@@ -2388,9 +2388,9 @@
     "aliases": [
       "Hong Kong SAR"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "equatorial-guinea",
@@ -2398,9 +2398,9 @@
     "name_ja": "赤道ギニア",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "taiwan",
@@ -2408,9 +2408,9 @@
     "name_ja": "台湾",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "central-african-republic",
@@ -2418,9 +2418,9 @@
     "name_ja": "中央アフリカ共和国",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "china",
@@ -2443,9 +2443,9 @@
       "Timor-Leste",
       "East Timor"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "south-africa",
@@ -2453,9 +2453,9 @@
     "name_ja": "南アフリカ",
     "kind": "country",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "south-sudan",
@@ -2465,9 +2465,9 @@
     "aliases": [
       "Republic of South Sudan"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "antarctica",
@@ -2495,9 +2495,9 @@
     "name_ja": "仏領ギアナ",
     "kind": "territory",
     "aliases": [],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 2
   },
   {
     "slug": "french-polynesia",
@@ -2508,9 +2508,9 @@
       "Tahiti",
       "Bora-Bora"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "usvirgin-islands",
@@ -2521,9 +2521,9 @@
       "Virgin Islands, U.S.",
       "US Virgin Islands"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "north-macedonia",
@@ -2533,9 +2533,9 @@
     "aliases": [
       "Macedonia"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "northern-mariana-islands",
@@ -2547,9 +2547,9 @@
       "Tinian",
       "Rota"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   },
   {
     "slug": "north-korea",
@@ -2559,8 +2559,8 @@
     "aliases": [
       "DPRK"
     ],
-    "has_data": false,
-    "retrieved_at": null,
-    "page_notice_level": 0
+    "has_data": true,
+    "retrieved_at": "2026-09-03",
+    "page_notice_level": 1
   }
 ]

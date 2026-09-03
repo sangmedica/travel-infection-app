@@ -1,9 +1,9 @@
 {
-  "slug": "japan",
-  "name_en": "Japan",
-  "name_ja": "日本",
-  "kind": "country",
-  "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan",
+  "slug": "martinique",
+  "name_en": "Martinique",
+  "name_ja": "マルティニーク",
+  "kind": "territory",
+  "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/martinique",
   "retrieved_at": "2026-09-03",
   "page_notice_level": 1,
   "vaccines": [
@@ -28,7 +28,7 @@
       "name_ja": "A型肝炎",
       "category": "some",
       "category_ja": "一部の渡航者に推奨（条件付き）",
-      "recommendation_en": "Consider hepatitis A vaccination for most travelers. It is recommended for travelers who will be doing higher risk activities, such as visiting smaller cities, villages, or rural areas where a traveler might get infected through food or water. It is recommended for travelers who plan on eating street food.",
+      "recommendation_en": "Recommended for unvaccinated travelers one year old or older going to Martinique.\nInfants 6 to 11 months old should also be vaccinated against Hepatitis A. The dose does not count toward the routine 2-dose series.\nTravelers allergic to a vaccine component should receive a single dose of immune globulin, which provides effective protection for up to 2 months depending on dosage given.\nUnvaccinated travelers who are over 40 years old, are immunocompromised, or have chronic medical conditions planning to depart to a risk area in less than 2 weeks should get the initial dose of vaccine and at the same appointment receive immune globulin.",
       "clinical_guidance_en": "Hepatitis A - CDC Yellow Book\nVaccine dosing information - Hep A"
     },
     {
@@ -36,16 +36,8 @@
       "name_ja": "B型肝炎",
       "category": "some",
       "category_ja": "一部の渡航者に推奨（条件付き）",
-      "recommendation_en": "Recommended for unvaccinated travelers younger than 60 years old traveling to Japan. Unvaccinated travelers 60 years and older may get vaccinated before traveling to Japan.",
+      "recommendation_en": "Recommended for unvaccinated travelers of all ages traveling to Martinique.",
       "clinical_guidance_en": "Sex and Travel - CDC Yellow Book"
-    },
-    {
-      "name_en": "Japanese Encephalitis",
-      "name_ja": "日本脳炎",
-      "category": "some",
-      "category_ja": "一部の渡航者に推奨（条件付き）",
-      "recommendation_en": "Recommended for travelers who\n• Are moving to an area with Japanese encephalitis to live\n• Spend long periods of time, such as a month or more, in areas with Japanese encephalitis\n• Frequently travel to areas with Japanese encephalitis\nConsider vaccination for travelers\n• Spending less than a month in areas with Japanese encephalitis but will be doing activities that increase risk of infection, such as visiting rural areas, hiking or camping, or staying in places without air conditioning, screens, or bed nets\n• Going to areas with Japanese encephalitis who are uncertain of their activities or how long they will be there\nNot recommended for travelers planning short-term travel to urban areas or travel to areas with no clear Japanese encephalitis season.",
-      "clinical_guidance_en": "Japanese encephalitis - CDC Yellow Book"
     },
     {
       "name_en": "Measles",
@@ -68,23 +60,23 @@
       "name_ja": "狂犬病",
       "category": "consider",
       "category_ja": "検討",
-      "recommendation_en": "Dogs infected with rabies are not commonly found in Japan.\nIf rabies exposures occur while in Japan, rabies vaccines are typically available throughout most of the country.\nRabies pre-exposure vaccination considerations include whether travelers 1) will be performing occupational or recreational activities that increase risk for exposure to potentially rabid animals and 2) might have difficulty getting prompt access to safe post-exposure prophylaxis.\nPlease consult with a healthcare provider to determine whether you should receive pre-exposure vaccination before travel.\nFor more information, see country rabies status assessments.",
+      "recommendation_en": "Dogs infected with rabies are not commonly found in Martinique.\nIf rabies exposures occur while in Martinique, rabies vaccines are typically available throughout most of the country.\nRabies pre-exposure vaccination considerations include whether travelers 1) will be performing occupational or recreational activities that increase risk for exposure to potentially rabid animals and 2) might have difficulty getting prompt access to safe post-exposure prophylaxis.\nPlease consult with a healthcare provider to determine whether you should receive pre-exposure vaccination before travel.\nFor more information, see country rabies status assessments.",
       "clinical_guidance_en": "Rabies - CDC Yellow Book"
     },
     {
-      "name_en": "Tick-borne Encephalitis",
-      "name_ja": "ダニ媒介脳炎",
-      "category": "other",
-      "category_ja": "その他（CDC原文を参照）",
-      "recommendation_en": "Avoid bug bites\nLearn more about tick-borne encephalitis at your destination.",
-      "clinical_guidance_en": "Tick-borne Encephalitis - CDC Yellow Book"
+      "name_en": "Typhoid",
+      "name_ja": "腸チフス",
+      "category": "consider",
+      "category_ja": "検討",
+      "recommendation_en": "Consider getting a typhoid vaccine if you might:\n• Travel to areas with poor sanitation and unsafe water, including rural areas\n• Spend a long time in Martinique, such as a month or more\n• Visit friends or relatives\nTyphoid vaccine is not 100% effective. Practicing safe food and water habits, including washing hands at key times, can also help prevent typhoid fever.",
+      "clinical_guidance_en": "Clinical Guidance for Typhoid Fever and Paratyphoid Fever\nTyphoid - CDC Yellow Book\nTyphoid fever vaccines licensed in the U.S."
     },
     {
       "name_en": "Yellow Fever",
       "name_ja": "黄熱",
       "category": "not_recommended",
       "category_ja": "推奨しない",
-      "recommendation_en": "CDC recommendations: Vaccine is not recommended.\nCountry entry requirements: Vaccine is not required.",
+      "recommendation_en": "CDC recommendations: Vaccine is not recommended.\nCountry entry requirements:\n• Direct travel from United States: Vaccine is not required.\n• Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥1 year old; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.3\nSee footnotes",
       "clinical_guidance_en": "Yellow Fever - CDC Yellow Book\nYellow Fever Vaccine and Malaria Prevention Information, by Country"
     }
   ],
@@ -97,6 +89,42 @@
       "spread_en": "• Touching urine or other body fluids from an animal infected with leptospirosis\n• Swimming or wading in urine-contaminated fresh water, or contact with urine-contaminated mud\n• Drinking water or eating food contaminated with animal urine",
       "advice_en": "• Avoid contaminated water and soil\n• Avoid floodwater",
       "clinical_guidance_en": "Leptospirosis"
+    },
+    {
+      "name_en": "Melioidosis",
+      "name_ja": "類鼻疽（メリオイドーシス）",
+      "transmission_en": "Avoid contaminated food and water",
+      "transmission_ja": "汚染された飲食物を避ける",
+      "spread_en": "• Contact with contaminated fresh water, mud, or soil, especially after heavy rains\n• Drinking contaminated water\n• Breathing in contaminated dust or water droplets, especially during severe weather",
+      "advice_en": "• Avoid floodwater and contact with soil or muddy water, particularly after heavy rains\n• Bandage open wounds, cuts, or burns to protect them from coming into contact with soil or water",
+      "clinical_guidance_en": "Melioidosis"
+    },
+    {
+      "name_en": "African Tick-Bite Fever",
+      "name_ja": "アフリカダニ咬熱",
+      "transmission_en": "Avoid bug bites",
+      "transmission_ja": "虫刺されを避ける",
+      "spread_en": "• Tick bite",
+      "advice_en": "• Avoid bug bites",
+      "clinical_guidance_en": "Rickettsial Diseases"
+    },
+    {
+      "name_en": "Dengue",
+      "name_ja": "デング熱",
+      "transmission_en": "Avoid bug bites",
+      "transmission_ja": "虫刺されを避ける",
+      "spread_en": "• Mosquito bite",
+      "advice_en": "• Avoid bug bites",
+      "clinical_guidance_en": "Dengue"
+    },
+    {
+      "name_en": "Zika",
+      "name_ja": "ジカウイルス感染症",
+      "transmission_en": "Avoid bug bites",
+      "transmission_ja": "虫刺されを避ける",
+      "spread_en": "• Mosquito bite\n• An infected pregnant woman can spread it to her unborn baby",
+      "advice_en": "• Avoid bug bites",
+      "clinical_guidance_en": "Zika"
     },
     {
       "name_en": "Hantavirus",

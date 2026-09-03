@@ -1,0 +1,174 @@
+{
+  "slug": "guatemala",
+  "name_en": "Guatemala",
+  "name_ja": "グアテマラ",
+  "kind": "country",
+  "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/guatemala",
+  "retrieved_at": "2026-09-03",
+  "page_notice_level": 1,
+  "vaccines": [
+    {
+      "name_en": "Routine vaccines",
+      "name_ja": "定期接種ワクチン",
+      "category": "routine",
+      "category_ja": "定期接種（渡航前に最新化）",
+      "recommendation_en": "Make sure you are up-to-date on all routine vaccines before every trip. Some of these vaccines include\n• Chickenpox (Varicella)\n• Diphtheria-Tetanus-Pertussis (DTaP, Tdap, or Td)\n• Flu (influenza)\n• Measles-Mumps-Rubella (MMR)\n• Polio\n• Shingles",
+      "clinical_guidance_en": "Immunization schedules\nMacrolide-resistant Bordetella pertussis"
+    },
+    {
+      "name_en": "COVID-19",
+      "name_ja": "新型コロナウイルス（COVID-19）",
+      "category": "all",
+      "category_ja": "全渡航者に推奨",
+      "recommendation_en": "All eligible travelers should be up to date with their COVID-19 vaccines. Please see Your COVID-19 Vaccination for more information.",
+      "clinical_guidance_en": "COVID-19 vaccine"
+    },
+    {
+      "name_en": "Chikungunya",
+      "name_ja": "チクングニア熱",
+      "category": "not_recommended",
+      "category_ja": "推奨しない",
+      "recommendation_en": "All travelers should take steps to prevent mosquito bites. Chikungunya vaccination is generally not recommended. Travelers who wish to consider vaccination can visit “What to consider before traveling” on the chikungunya vaccines page to learn more.",
+      "clinical_guidance_en": "Chikungunya - CDC Yellow Book"
+    },
+    {
+      "name_en": "Hepatitis A",
+      "name_ja": "A型肝炎",
+      "category": "some",
+      "category_ja": "一部の渡航者に推奨（条件付き）",
+      "recommendation_en": "Recommended for unvaccinated travelers one year old or older going to Guatemala.\nInfants 6 to 11 months old should also be vaccinated against Hepatitis A. The dose does not count toward the routine 2-dose series.\nTravelers allergic to a vaccine component should receive a single dose of immune globulin, which provides effective protection for up to 2 months depending on dosage given.\nUnvaccinated travelers who are over 40 years old, are immunocompromised, or have chronic medical conditions planning to depart to a risk area in less than 2 weeks should get the initial dose of vaccine and at the same appointment receive immune globulin.",
+      "clinical_guidance_en": "Hepatitis A - CDC Yellow Book\nVaccine dosing information - Hep A"
+    },
+    {
+      "name_en": "Hepatitis B",
+      "name_ja": "B型肝炎",
+      "category": "some",
+      "category_ja": "一部の渡航者に推奨（条件付き）",
+      "recommendation_en": "Recommended for unvaccinated travelers younger than 60 years old traveling to Guatemala. Unvaccinated travelers 60 years and older may get vaccinated before traveling to Guatemala.",
+      "clinical_guidance_en": "Sex and Travel - CDC Yellow Book"
+    },
+    {
+      "name_en": "Malaria",
+      "name_ja": "マラリア（予防内服）",
+      "category": "some",
+      "category_ja": "一部の渡航者に推奨（条件付き）",
+      "recommendation_en": "CDC recommends that travelers going to certain areas of Guatemala take prescription medicine to prevent malaria. Depending on the medicine you take, you will need to start taking this medicine multiple days before your trip, as well as during and after your trip. Talk to your doctor about which malaria medication you should take.\nTransmission areas\n• Primarily in the departments of Alta Verapaz, Baja Verapaz, Escuintla, Izabal, and Petén\n• Few cases reported in other departments\n• No malaria transmission in the cities of Antigua or Guatemala City (the capital)\n• No malaria transmission at Lake Atitlán\nDrug resistance1\n• None\nSpecies\n• P. vivax (99%)\n• P. falciparum (1%)\nRecommended chemoprophylaxis\n• Departments of Alta Verapaz, Baja Verapaz, Escuintla, Izabal, and Petén: Atovaquone-proguanil, chloroquine, doxycycline, mefloquine, primaquine5, tafenoquine2\n• Other areas with reported malaria transmission: No chemoprophylaxis recommended (insect bite precautions and mosquito avoidance only)4\nSee footnotes",
+      "clinical_guidance_en": "Malaria - CDC Yellow Book\nConsiderations when choosing a drug for malaria prophylaxis (CDC Yellow Book)\nMap: Malaria prevention in Guatemala"
+    },
+    {
+      "name_en": "Measles",
+      "name_ja": "麻疹（はしか）",
+      "category": "all",
+      "category_ja": "全渡航者に推奨",
+      "recommendation_en": "Cases of measles are on the rise worldwide. Travelers are at risk of measles if they have not been fully vaccinated at least two weeks prior to departure, or have not had measles in the past, and travel internationally to areas where measles is spreading.\nAll international travelers should be fully vaccinated against measles with the measles-mumps-rubella (MMR) vaccine, including an early dose for infants 6–11 months, according to CDC’s measles vaccination recommendations for international travel.",
+      "clinical_guidance_en": "Measles (Rubeola) - CDC Yellow Book"
+    },
+    {
+      "name_en": "Monkeypox",
+      "name_ja": "エムポックス（サル痘）",
+      "category": "some",
+      "category_ja": "一部の渡航者に推奨（条件付き）",
+      "recommendation_en": "Monkeypox vaccination is recommended for any adult who anticipates any of the following activities during travel:\n• Sexual or intimate contact with a new partner\n• Sexual or intimate contact at a commercial sex venue, like a sex club or bathhouse\n• Sexual or intimate contact in exchange for money, goods, drugs, or other trade\n• Sexual or intimate contact in association with a large public event, such as a rave, party, or festival\nGet your first monkeypox vaccine at least 6 weeks before traveling if you can, or as far as possible before travel if fewer than 6 weeks before you leave. Two doses of vaccine, given 4 weeks apart, are recommended. After completing your first and second vaccine doses it takes about 2 more weeks to get the best protection against monkeypox. Whether or not you've been vaccinated, continue to take steps to reduce your risk of getting monkeypox while you are away.",
+      "clinical_guidance_en": "Monkeypox Vaccination | Monkeypox | CDC"
+    },
+    {
+      "name_en": "Rabies",
+      "name_ja": "狂犬病",
+      "category": "consider",
+      "category_ja": "検討",
+      "recommendation_en": "Dogs infected with rabies are sometimes found in Guatemala.\nRabies is also present in bats.\nIf rabies exposures occur while in Guatemala, rabies vaccines may only be available in larger suburban/urban medical facilities.\nRabies pre-exposure vaccination considerations include whether travelers 1) will be performing occupational or recreational activities that increase risk for exposure to potentially rabid animals and 2) might have difficulty getting prompt access to safe post-exposure prophylaxis.\nPlease consult with a healthcare provider to determine whether you should receive pre-exposure vaccination before travel.\nFor more information, see country rabies status assessments.",
+      "clinical_guidance_en": "Rabies - CDC Yellow Book"
+    },
+    {
+      "name_en": "Typhoid",
+      "name_ja": "腸チフス",
+      "category": "most",
+      "category_ja": "ほとんどの渡航者に推奨",
+      "recommendation_en": "Recommended for most travelers.\nTyphoid vaccine is not 100% effective. Practicing safe food and water habits, including washing hands at key times, can also help prevent typhoid fever.",
+      "clinical_guidance_en": "Clinical Guidance for Typhoid Fever and Paratyphoid Fever\nTyphoid - CDC Yellow Book\nTyphoid fever vaccines licensed in the U.S."
+    },
+    {
+      "name_en": "Yellow Fever",
+      "name_ja": "黄熱",
+      "category": "not_recommended",
+      "category_ja": "推奨しない",
+      "recommendation_en": "CDC recommendations: Vaccine is not recommended.\nCountry entry requirements:\n• Direct travel from United States: Vaccine is not required.\n• Travel from countries with risk for YF virus transmission: Vaccine is required for travelers ≥1 year old; this includes >12-hour airport transits or layovers in countries with risk for YF virus transmission.3\nSee footnotes",
+      "clinical_guidance_en": "Yellow Fever - CDC Yellow Book\nYellow Fever Vaccine and Malaria Prevention Information, by Country"
+    }
+  ],
+  "diseases": [
+    {
+      "name_en": "Leptospirosis",
+      "name_ja": "レプトスピラ症",
+      "transmission_en": "Avoid contaminated food and water",
+      "transmission_ja": "汚染された飲食物を避ける",
+      "spread_en": "• Touching urine or other body fluids from an animal infected with leptospirosis\n• Swimming or wading in urine-contaminated fresh water, or contact with urine-contaminated mud\n• Drinking water or eating food contaminated with animal urine",
+      "advice_en": "• Avoid contaminated water and soil\n• Avoid floodwater",
+      "clinical_guidance_en": "Leptospirosis"
+    },
+    {
+      "name_en": "Melioidosis",
+      "name_ja": "類鼻疽（メリオイドーシス）",
+      "transmission_en": "Avoid contaminated food and water",
+      "transmission_ja": "汚染された飲食物を避ける",
+      "spread_en": "• Contact with contaminated fresh water, mud, or soil, especially after heavy rains\n• Drinking contaminated water\n• Breathing in contaminated dust or water droplets, especially during severe weather",
+      "advice_en": "• Avoid floodwater and contact with soil or muddy water, particularly after heavy rains\n• Bandage open wounds, cuts, or burns to protect them from coming into contact with soil or water",
+      "clinical_guidance_en": "Melioidosis"
+    },
+    {
+      "name_en": "Chagas disease (American Trypanosomiasis)",
+      "name_ja": "シャーガス病（アメリカトリパノソーマ症）",
+      "transmission_en": "Avoid bug bites",
+      "transmission_ja": "虫刺されを避ける",
+      "spread_en": "• Accidentally rub feces (poop) of the triatomine bug into the bug bite, other breaks in the skin, your eyes, or mouth\n• From pregnant woman to her baby, contaminated blood products (transfusions), or contaminated food or drink.",
+      "advice_en": "• Avoid bug bites",
+      "clinical_guidance_en": "Post-Travel Parasitic Disease Including Evaluation of Eosinophilia"
+    },
+    {
+      "name_en": "Dengue",
+      "name_ja": "デング熱",
+      "transmission_en": "Avoid bug bites",
+      "transmission_ja": "虫刺されを避ける",
+      "spread_en": "• Mosquito bite",
+      "advice_en": "• Avoid bug bites",
+      "clinical_guidance_en": "Dengue"
+    },
+    {
+      "name_en": "Leishmaniasis",
+      "name_ja": "リーシュマニア症",
+      "transmission_en": "Avoid bug bites",
+      "transmission_ja": "虫刺されを避ける",
+      "spread_en": "• Sand fly bite",
+      "advice_en": "• Avoid bug bites",
+      "clinical_guidance_en": "Leishmaniasis"
+    },
+    {
+      "name_en": "Zika",
+      "name_ja": "ジカウイルス感染症",
+      "transmission_en": "Avoid bug bites",
+      "transmission_ja": "虫刺されを避ける",
+      "spread_en": "• Mosquito bite\n• An infected pregnant woman can spread it to her unborn baby",
+      "advice_en": "• Avoid bug bites",
+      "clinical_guidance_en": "Zika"
+    },
+    {
+      "name_en": "Hantavirus",
+      "name_ja": "ハンタウイルス感染症",
+      "transmission_en": "Airborne & droplet",
+      "transmission_ja": "空気・飛沫感染",
+      "spread_en": "• Breathing in air or accidentally eating food contaminated with the urine, droppings, or saliva of infected rodents\n• Bite from an infected rodent\n• Less commonly, being around someone sick with hantavirus (only occurs with Andes virus)",
+      "advice_en": "• Avoid rodents and areas where they live\n• Avoid sick people",
+      "clinical_guidance_en": "Post-Travel Evaluation to Rule Out Viral Special Pathogen Infection"
+    },
+    {
+      "name_en": "Tuberculosis (TB)",
+      "name_ja": "結核",
+      "transmission_en": "Airborne & droplet",
+      "transmission_ja": "空気・飛沫感染",
+      "spread_en": "• Breathe in TB bacteria that is in the air from an infected and contagious person coughing, speaking, or singing.",
+      "advice_en": "• Avoid sick people",
+      "clinical_guidance_en": "Tuberculosis (TB)"
+    }
+  ],
+  "parse_ok": true
+}

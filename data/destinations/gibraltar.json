@@ -1,9 +1,9 @@
 {
-  "slug": "japan",
-  "name_en": "Japan",
-  "name_ja": "日本",
-  "kind": "country",
-  "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan",
+  "slug": "gibraltar",
+  "name_en": "Gibraltar",
+  "name_ja": "ジブラルタル",
+  "kind": "territory",
+  "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/gibraltar",
   "retrieved_at": "2026-09-03",
   "page_notice_level": 1,
   "vaccines": [
@@ -36,16 +36,8 @@
       "name_ja": "B型肝炎",
       "category": "some",
       "category_ja": "一部の渡航者に推奨（条件付き）",
-      "recommendation_en": "Recommended for unvaccinated travelers younger than 60 years old traveling to Japan. Unvaccinated travelers 60 years and older may get vaccinated before traveling to Japan.",
+      "recommendation_en": "Recommended for unvaccinated travelers of all ages traveling to Gibraltar.",
       "clinical_guidance_en": "Sex and Travel - CDC Yellow Book"
-    },
-    {
-      "name_en": "Japanese Encephalitis",
-      "name_ja": "日本脳炎",
-      "category": "some",
-      "category_ja": "一部の渡航者に推奨（条件付き）",
-      "recommendation_en": "Recommended for travelers who\n• Are moving to an area with Japanese encephalitis to live\n• Spend long periods of time, such as a month or more, in areas with Japanese encephalitis\n• Frequently travel to areas with Japanese encephalitis\nConsider vaccination for travelers\n• Spending less than a month in areas with Japanese encephalitis but will be doing activities that increase risk of infection, such as visiting rural areas, hiking or camping, or staying in places without air conditioning, screens, or bed nets\n• Going to areas with Japanese encephalitis who are uncertain of their activities or how long they will be there\nNot recommended for travelers planning short-term travel to urban areas or travel to areas with no clear Japanese encephalitis season.",
-      "clinical_guidance_en": "Japanese encephalitis - CDC Yellow Book"
     },
     {
       "name_en": "Measles",
@@ -68,16 +60,8 @@
       "name_ja": "狂犬病",
       "category": "consider",
       "category_ja": "検討",
-      "recommendation_en": "Dogs infected with rabies are not commonly found in Japan.\nIf rabies exposures occur while in Japan, rabies vaccines are typically available throughout most of the country.\nRabies pre-exposure vaccination considerations include whether travelers 1) will be performing occupational or recreational activities that increase risk for exposure to potentially rabid animals and 2) might have difficulty getting prompt access to safe post-exposure prophylaxis.\nPlease consult with a healthcare provider to determine whether you should receive pre-exposure vaccination before travel.\nFor more information, see country rabies status assessments.",
+      "recommendation_en": "Dogs infected with rabies are not commonly found in Gibraltar.\nIf rabies exposures occur while in Gibraltar, rabies vaccines are typically available throughout most of the country.\nRabies pre-exposure vaccination considerations include whether travelers 1) will be performing occupational or recreational activities that increase risk for exposure to potentially rabid animals and 2) might have difficulty getting prompt access to safe post-exposure prophylaxis.\nPlease consult with a healthcare provider to determine whether you should receive pre-exposure vaccination before travel.\nFor more information, see country rabies status assessments.",
       "clinical_guidance_en": "Rabies - CDC Yellow Book"
-    },
-    {
-      "name_en": "Tick-borne Encephalitis",
-      "name_ja": "ダニ媒介脳炎",
-      "category": "other",
-      "category_ja": "その他（CDC原文を参照）",
-      "recommendation_en": "Avoid bug bites\nLearn more about tick-borne encephalitis at your destination.",
-      "clinical_guidance_en": "Tick-borne Encephalitis - CDC Yellow Book"
     },
     {
       "name_en": "Yellow Fever",

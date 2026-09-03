@@ -1,9 +1,9 @@
 {
-  "slug": "japan",
-  "name_en": "Japan",
-  "name_ja": "日本",
+  "slug": "south-korea",
+  "name_en": "South Korea",
+  "name_ja": "韓国",
   "kind": "country",
-  "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan",
+  "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/south-korea",
   "retrieved_at": "2026-09-03",
   "page_notice_level": 1,
   "vaccines": [
@@ -28,7 +28,7 @@
       "name_ja": "A型肝炎",
       "category": "some",
       "category_ja": "一部の渡航者に推奨（条件付き）",
-      "recommendation_en": "Consider hepatitis A vaccination for most travelers. It is recommended for travelers who will be doing higher risk activities, such as visiting smaller cities, villages, or rural areas where a traveler might get infected through food or water. It is recommended for travelers who plan on eating street food.",
+      "recommendation_en": "Recommended for unvaccinated travelers one year old or older going to South Korea.\nInfants 6 to 11 months old should also be vaccinated against Hepatitis A. The dose does not count toward the routine 2-dose series.\nTravelers allergic to a vaccine component should receive a single dose of immune globulin, which provides effective protection for up to 2 months depending on dosage given.\nUnvaccinated travelers who are over 40 years old, are immunocompromised, or have chronic medical conditions planning to depart to a risk area in less than 2 weeks should get the initial dose of vaccine and at the same appointment receive immune globulin.",
       "clinical_guidance_en": "Hepatitis A - CDC Yellow Book\nVaccine dosing information - Hep A"
     },
     {
@@ -36,7 +36,7 @@
       "name_ja": "B型肝炎",
       "category": "some",
       "category_ja": "一部の渡航者に推奨（条件付き）",
-      "recommendation_en": "Recommended for unvaccinated travelers younger than 60 years old traveling to Japan. Unvaccinated travelers 60 years and older may get vaccinated before traveling to Japan.",
+      "recommendation_en": "Recommended for unvaccinated travelers younger than 60 years old traveling to South Korea. Unvaccinated travelers 60 years and older may get vaccinated before traveling to South Korea.",
       "clinical_guidance_en": "Sex and Travel - CDC Yellow Book"
     },
     {
@@ -46,6 +46,14 @@
       "category_ja": "一部の渡航者に推奨（条件付き）",
       "recommendation_en": "Recommended for travelers who\n• Are moving to an area with Japanese encephalitis to live\n• Spend long periods of time, such as a month or more, in areas with Japanese encephalitis\n• Frequently travel to areas with Japanese encephalitis\nConsider vaccination for travelers\n• Spending less than a month in areas with Japanese encephalitis but will be doing activities that increase risk of infection, such as visiting rural areas, hiking or camping, or staying in places without air conditioning, screens, or bed nets\n• Going to areas with Japanese encephalitis who are uncertain of their activities or how long they will be there\nNot recommended for travelers planning short-term travel to urban areas or travel to areas with no clear Japanese encephalitis season.",
       "clinical_guidance_en": "Japanese encephalitis - CDC Yellow Book"
+    },
+    {
+      "name_en": "Malaria",
+      "name_ja": "マラリア（予防内服）",
+      "category": "some",
+      "category_ja": "一部の渡航者に推奨（条件付き）",
+      "recommendation_en": "CDC recommends that travelers going to certain areas of South Korea take prescription medicine to prevent malaria. Depending on the medicine you take, you will need to start taking this medicine multiple days before your trip, as well as during and after your trip. Talk to your doctor about which malaria medication you should take.\nTransmission areas\n• Limited to the months of March–December in rural areas in the northern parts of the provinces of Incheon (also spelled Inch’ŏn), Gangwon (also spelled Kangwŏn), and Gyeonggi (also spelled Kyŏnggi), including the demilitarized zone (DMZ)\nDrug resistance1\n• None\nSpecies\n• P. vivax (100%)\nRecommended chemoprophylaxis\n• Atovaquone-proguanil, chloroquine, doxycycline, mefloquine, primaquine5, or tafenoquine2\nSee footnotes",
+      "clinical_guidance_en": "Malaria - CDC Yellow Book\nConsiderations when choosing a drug for malaria prophylaxis (CDC Yellow Book)\nMap: Malaria prevention in South Korea"
     },
     {
       "name_en": "Measles",
@@ -68,7 +76,7 @@
       "name_ja": "狂犬病",
       "category": "consider",
       "category_ja": "検討",
-      "recommendation_en": "Dogs infected with rabies are not commonly found in Japan.\nIf rabies exposures occur while in Japan, rabies vaccines are typically available throughout most of the country.\nRabies pre-exposure vaccination considerations include whether travelers 1) will be performing occupational or recreational activities that increase risk for exposure to potentially rabid animals and 2) might have difficulty getting prompt access to safe post-exposure prophylaxis.\nPlease consult with a healthcare provider to determine whether you should receive pre-exposure vaccination before travel.\nFor more information, see country rabies status assessments.",
+      "recommendation_en": "Dogs infected with rabies are not commonly found in South Korea.\nRabies is present in some terrestrial wildlife species.\nIf rabies exposures occur while in South Korea, rabies vaccines are typically available throughout most of the country.\nRabies pre-exposure vaccination considerations include whether travelers 1) will be performing occupational or recreational activities that increase risk for exposure to potentially rabid animals and 2) might have difficulty getting prompt access to safe post-exposure prophylaxis.\nPlease consult with a healthcare provider to determine whether you should receive pre-exposure vaccination before travel.\nFor more information, see country rabies status assessments.",
       "clinical_guidance_en": "Rabies - CDC Yellow Book"
     },
     {
@@ -78,6 +86,14 @@
       "category_ja": "その他（CDC原文を参照）",
       "recommendation_en": "Avoid bug bites\nLearn more about tick-borne encephalitis at your destination.",
       "clinical_guidance_en": "Tick-borne Encephalitis - CDC Yellow Book"
+    },
+    {
+      "name_en": "Typhoid",
+      "name_ja": "腸チフス",
+      "category": "consider",
+      "category_ja": "検討",
+      "recommendation_en": "Consider getting a typhoid vaccine if you might:\n• Travel to areas with poor sanitation and unsafe water, including rural areas\n• Spend a long time in South Korea, such as a month or more\n• Visit friends or relatives\nTyphoid vaccine is not 100% effective. Practicing safe food and water habits, including washing hands at key times, can also help prevent typhoid fever.",
+      "clinical_guidance_en": "Clinical Guidance for Typhoid Fever and Paratyphoid Fever\nTyphoid - CDC Yellow Book\nTyphoid fever vaccines licensed in the U.S."
     },
     {
       "name_en": "Yellow Fever",
