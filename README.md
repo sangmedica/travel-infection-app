@@ -1,12 +1,18 @@
 # 渡航先 感染症・推奨ワクチン検索
 
-渡航先の国・地域を入力すると、[CDC Travelers' Health](https://wwwnc.cdc.gov/travel/) のデータをもとに
+フレームワーク不使用の静的 Web アプリ。2つのモードがあります。
 
+**① 地域から調べる** — 渡航先の国・地域を入力すると、[CDC Travelers' Health](https://wwwnc.cdc.gov/travel/) のデータをもとに
 - **推奨ワクチン・医薬品**（推奨度別グルーピング）
 - **ワクチンで予防できない疾患**（感染経路別）
 - **現在の流行情報**（CDC Travel Notices / Level 1–4）＋世界的な注意喚起
+- **新規更新** — 月次更新の差分（英語原文つき）
 
-を表示する、フレームワーク不使用の静的 Web アプリです。データは月1回 GitHub Actions が自動更新します。
+**② 症状から鑑別** — 症状・曝露歴・検査所見・潜伏期・渡航先をクリックで選ぶと、想定される鑑別診断を
+No.1〜No.5 の優先度順で表示（各項目に一致所見・地理・潜伏期の根拠と CDC 英語原文つき）。手キュレートの
+疾患知識ベース（`data/kb/`）と決定論的スコアリング（`dx.js`）による**意思決定支援**で、確定診断ではありません。
+
+地域データは月1回 GitHub Actions が自動更新。症状知識ベースは静的（自動更新の対象外）。
 
 > ⚠️ 情報提供のみを目的とし、医学的助言ではありません。渡航前に必ずトラベルクリニック／医師にご相談ください。
 
@@ -21,6 +27,10 @@
 | `data/translations.json` | ★手管理: 日本語対訳辞書 |
 | `data/notices.json` | 自動生成: Travel Notices 全件 |
 | `data/changelog.json` | 自動生成: 月次更新ごとの差分（トップの「新規更新」）。各項目に英語原文つき |
+| `data/kb/findings.json` | ★手キュレート: 鑑別モードのクリック用リスト（症状・曝露歴・検査所見） |
+| `data/kb/diseases.json` | ★手キュレート: 疾患知識ベース（症状/検査の重み・潜伏期・鑑別ポイント・推奨検査・出典）。約66疾患 |
+| `data/kb/region-map.json` | 生成: slug→地域タグ（`scripts/build-region-map.mjs`）。鑑別の地理判定用 |
+| `dx.js` | 鑑別スコアリング（決定論的・ESM。ブラウザと Node で共用） |
 | `data/destinations/<slug>.json` | 自動生成: 渡航先ごとのワクチン＋疾患 |
 | `data/destinations-index.json` | 自動生成: 検索インデックス |
 | `data/untranslated.txt` | 自動生成: 未対訳語の一覧（毎月ここを見て辞書に追記） |
@@ -28,6 +38,9 @@
 | `scripts/scrape.mjs` | スクレイパ本体 |
 | `scripts/lib/diff.mjs` | 前回データとの差分計算＋「新規更新」エントリ生成（全件フェッチ時のみ） |
 | `scripts/build-config.mjs` | `config/destinations.json`（244件・日本語名・kind）の生成／`--check` |
+| `scripts/build-region-map.mjs` | `data/kb/region-map.json` の生成／`--check` |
+| `scripts/kb-check.mjs` | 疾患KBの整合性チェック（`npm run kb:check`） |
+| `scripts/dx.test.mjs` | 鑑別スコアリングの臨床ビネットテスト（`npm run kb:test`） |
 | `.github/workflows/update.yml` | 月次データ更新（cron: 毎月1日 03:00 UTC） |
 | `.github/workflows/deploy.yml` | GitHub Pages へデプロイ（main への push で発火） |
 

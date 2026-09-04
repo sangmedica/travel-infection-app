@@ -483,6 +483,250 @@ table.diseases td .en {
   border-color: var(--accent);
 }
 
+/* ---------- mode switch ---------- */
+.mode-switch {
+  display: flex;
+  gap: 4px;
+  margin: 16px 0 4px;
+  border-bottom: 1px solid var(--border);
+}
+.mode-tab {
+  appearance: none;
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  padding: 8px 14px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.mode-tab.is-active {
+  color: var(--text);
+  background: var(--surface);
+  border-color: var(--border);
+  margin-bottom: -1px;
+}
+
+/* ---------- dx: symptom-based differential ---------- */
+.dx-disclaimer {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--lvl4);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin: 14px 0;
+  box-shadow: var(--shadow);
+}
+.dx-disclaimer strong {
+  color: var(--text);
+}
+.dx-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.dx-field {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.dx-label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+.dx-label-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.dx-label-row .dx-label {
+  margin: 0;
+  flex: 1 1 auto;
+}
+.dx-label-row #dx-sym-filter {
+  flex: 0 1 180px;
+  padding: 5px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.83rem;
+}
+.dx-mini-btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+#dx-dest {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+}
+#dx-dest-clear {
+  margin-top: 8px;
+}
+.dx-radios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+}
+.dx-radios label {
+  font-size: 0.87rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.dx-checkgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 10px 16px;
+}
+.dx-group > h5 {
+  margin: 4px 0 4px;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 2px;
+}
+.dx-chk {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  font-size: 0.85rem;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.dx-chk .en {
+  color: var(--text-dim);
+  font-size: 0.85em;
+}
+
+.dx-result {
+  margin-top: 22px;
+}
+.dx-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow);
+}
+.dx-card-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.dx-card-head h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+.dx-rank {
+  font-weight: 800;
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.dx-scorebar {
+  height: 6px;
+  background: var(--surface-2);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 8px 0 10px;
+}
+.dx-scorebar > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--cat-consider), var(--cat-most));
+}
+.dx-why {
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.dx-why b {
+  color: var(--text-dim);
+  font-weight: 600;
+}
+.dx-chip {
+  display: inline-block;
+  font-size: 0.76rem;
+  padding: 1px 7px;
+  border-radius: 999px;
+  margin: 2px 3px 0 0;
+}
+.dx-chip-sym {
+  background: rgba(74, 143, 60, 0.16);
+  color: var(--cat-routine);
+}
+.dx-chip-lab {
+  background: rgba(10, 108, 189, 0.16);
+  color: var(--cat-consider);
+}
+.dx-chip-against {
+  background: var(--surface-2);
+  color: var(--text-dim);
+  text-decoration: line-through;
+}
+.dx-card details {
+  margin-top: 8px;
+}
+.dx-card summary {
+  cursor: pointer;
+  font-size: 0.83rem;
+  color: var(--accent);
+}
+.dx-card details p {
+  font-size: 0.84rem;
+  margin: 6px 0 0;
+}
+
+.dx-mnm {
+  margin-top: 20px;
+  border: 1px solid var(--lvl3);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: var(--surface);
+}
+.dx-mnm > h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+.dx-mnm-item {
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+  margin-top: 8px;
+  font-size: 0.85rem;
+}
+.dx-mnm-item:first-of-type {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+.dx-mnm-item .en {
+  color: var(--text-dim);
+}
+
 /* ---------- footer ---------- */
 .site-footer {
   max-width: 940px;

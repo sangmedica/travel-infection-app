@@ -29,11 +29,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate data & knowledge base
+        run: |
+          node scripts/build-config.mjs --check
+          node scripts/build-region-map.mjs --check
+          node scripts/kb-check.mjs
+          node scripts/dx.test.mjs
       - uses: actions/configure-pages@v5
       - name: Assemble static site
         run: |
           mkdir -p _site
-          cp index.html app.js styles.css _site/
+          cp index.html app.js styles.css dx.js _site/
           cp -r data _site/
           cp -r assets _site/
           touch _site/.nojekyll

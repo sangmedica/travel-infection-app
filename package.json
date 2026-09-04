@@ -7,7 +7,11 @@
   "scripts": {
     "scrape": "node scripts/scrape.mjs",
     "scrape:dry": "node scripts/scrape.mjs --dry-run",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "kb:check": "node scripts/kb-check.mjs",
+    "kb:test": "node scripts/dx.test.mjs",
+    "build:config": "node scripts/build-config.mjs",
+    "build:regions": "node scripts/build-region-map.mjs"
   },
   "dependencies": {
     "cheerio": "^1.0.0"

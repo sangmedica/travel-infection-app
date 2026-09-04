@@ -1,4 +1,4 @@
-"use strict";
+import { rankDifferentials, INCUBATION_BUCKETS } from "./dx.js";
 
 // ---- 表示メタ情報 -------------------------------------------------------------
 
@@ -33,10 +33,15 @@ const el = (tag, props = {}, ...kids) => {
     else if (k === "text") node.textContent = v;
     else if (v != null) node.setAttribute(k, v);
   }
-  for (const kid of kids) {
-    if (kid == null) continue;
+  const add = (kid) => {
+    if (kid == null || kid === false) return;
+    if (Array.isArray(kid)) {
+      kid.forEach(add);
+      return;
+    }
     node.append(kid.nodeType ? kid : document.createTextNode(String(kid)));
-  }
+  };
+  kids.forEach(add);
   return node;
 };
 const bulletized = (text) => {
@@ -66,16 +71,22 @@ let INDEX = [];
 let NOTICES = [];
 let META = null;
 let CHANGELOG = [];
+let FINDINGS = null;
+let DISEASES = [];
+let REGIONMAP = {};
 
 // ---- 初期化 -------------------------------------------------------------------
 
 async function init() {
   try {
-    [INDEX, NOTICES, META, CHANGELOG] = await Promise.all([
+    [INDEX, NOTICES, META, CHANGELOG, FINDINGS, DISEASES, REGIONMAP] = await Promise.all([
       getJSON("data/destinations-index.json"),
       getJSON("data/notices.json").catch(() => []),
       getJSON("data/meta.json").catch(() => null),
       getJSON("data/changelog.json").catch(() => []),
+      getJSON("data/kb/findings.json").catch(() => null),
+      getJSON("data/kb/diseases.json").then((d) => d.diseases).catch(() => []),
+      getJSON("data/kb/region-map.json").then((d) => d.regions).catch(() => ({})),
     ]);
   } catch (err) {
     $("#search-hint").textContent = "データの読み込みに失敗しました: " + err.message;
@@ -149,12 +160,296 @@ async function init() {
     if (names.has(input.value.trim().toLowerCase())) resolveAndShow(input.value);
   });
 
-  // ?d=slug ディープリンク
-  const q = new URLSearchParams(location.search).get("d");
+  // モード切替
+  $("#tab-region").addEventListener("click", () => setMode("region"));
+  $("#tab-dx").addEventListener("click", () => setMode("dx"));
+
+  // ?d=slug / ?mode=dx ディープリンク
+  const params = new URLSearchParams(location.search);
+  const q = params.get("d");
   if (q) {
     input.value = q;
     resolveAndShow(q);
   }
+  if (params.get("mode") === "dx") setMode("dx");
+}
+
+// ---- モード管理 -----------------------------------------------------------
+
+let dxBuilt = false;
+
+function setMode(m) {
+  const dx = m === "dx";
+  $("#mode-region").hidden = dx;
+  $("#mode-dx").hidden = !dx;
+  $("#tab-region").classList.toggle("is-active", !dx);
+  $("#tab-dx").classList.toggle("is-active", dx);
+  const u = new URL(location.href);
+  if (dx) u.searchParams.set("mode", "dx");
+  else u.searchParams.delete("mode");
+  history.replaceState(null, "", u);
+  if (dx && !dxBuilt) buildDxView();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// ---- モード②: 症状から鑑別 ----------------------------------------------
+
+const dxState = { destSlug: null, symptoms: new Set(), labs: new Set(), incubation: "" };
+let dxDestData = null;
+let findingLabelMap = null;
+
+function findingLabel(id) {
+  if (!findingLabelMap) {
+    findingLabelMap = new Map();
+    for (const f of [...(FINDINGS?.symptoms || []), ...(FINDINGS?.labs || [])]) findingLabelMap.set(f.id, f);
+  }
+  return findingLabelMap.get(id) || { label_ja: id, label_en: "" };
+}
+
+function buildDxView() {
+  dxBuilt = true;
+  if (!FINDINGS || DISEASES.length === 0) {
+    $("#dx-result").textContent = "鑑別データの読み込みに失敗しました。";
+    return;
+  }
+  renderCheckGrid($("#dx-symptoms"), FINDINGS.symptoms, dxState.symptoms);
+  renderCheckGrid($("#dx-labs"), FINDINGS.labs, dxState.labs);
+
+  for (const r of document.querySelectorAll('input[name="incu"]')) {
+    r.addEventListener("change", () => {
+      dxState.incubation = r.value;
+      runDx();
+    });
+  }
+  const di = $("#dx-dest");
+  const dxNames = new Set(
+    INDEX.flatMap((d) => [d.slug, d.name_ja, d.name_en, ...(d.aliases || [])].map((s) => s.toLowerCase()))
+  );
+  di.addEventListener("change", () => setDxDest(di.value));
+  di.addEventListener("input", () => {
+    if (dxNames.has(di.value.trim().toLowerCase())) setDxDest(di.value);
+  });
+  $("#dx-dest-clear").addEventListener("click", () => {
+    di.value = "";
+    setDxDest("");
+  });
+  $("#dx-sym-filter").addEventListener("input", (e) => {
+    const q = e.target.value.trim().toLowerCase();
+    for (const lab of $("#dx-symptoms").querySelectorAll(".dx-chk")) {
+      lab.hidden = q && !lab.dataset.search.includes(q);
+    }
+  });
+  $("#dx-clear").addEventListener("click", () => {
+    dxState.symptoms.clear();
+    dxState.labs.clear();
+    for (const c of document.querySelectorAll("#dx-symptoms input, #dx-labs input")) c.checked = false;
+    runDx();
+  });
+  runDx();
+}
+
+function renderCheckGrid(container, items, stateSet) {
+  const groups = new Map();
+  for (const it of items) {
+    if (!groups.has(it.group)) groups.set(it.group, []);
+    groups.get(it.group).push(it);
+  }
+  container.replaceChildren();
+  for (const [g, list] of groups) {
+    const box = el("div", { class: "dx-group" }, el("h5", { text: g }));
+    for (const it of list) {
+      const cb = el("input", {
+        type: "checkbox",
+        "data-fid": it.id,
+      });
+      cb.checked = stateSet.has(it.id);
+      cb.addEventListener("change", () => {
+        cb.checked ? stateSet.add(it.id) : stateSet.delete(it.id);
+        runDx();
+      });
+      const lab = el(
+        "label",
+        { class: "dx-chk" },
+        cb,
+        el("span", {}, it.label_ja, el("span", { class: "en", text: " " + it.label_en }))
+      );
+      lab.dataset.search = (it.label_ja + " " + it.label_en).toLowerCase();
+      box.append(lab);
+    }
+    container.append(box);
+  }
+}
+
+async function setDxDest(raw) {
+  const status = $("#dx-dest-status");
+  if (!raw.trim()) {
+    dxState.destSlug = null;
+    dxDestData = null;
+    status.textContent = "渡航先を指定すると、その地域で報告のある疾患を重みづけします。";
+    runDx();
+    return;
+  }
+  const m = matchDestination(raw);
+  if (!m) {
+    status.textContent = `「${raw}」に一致する渡航先がありません。`;
+    return;
+  }
+  dxState.destSlug = m.slug;
+  dxDestData = m.has_data
+    ? await getJSON(`data/destinations/${m.slug}.json`).catch(() => null)
+    : null;
+  status.textContent =
+    `${m.name_ja}（${KIND_JA[m.kind] || m.kind}）で地理的重みづけを適用` +
+    (m.has_data ? "" : "（CDC疾患データ未取得のため地域タグのみ使用）");
+  runDx();
+}
+
+function runDx() {
+  if (!dxBuilt) return;
+  const incDay = dxState.incubation ? INCUBATION_BUCKETS[dxState.incubation].day : null;
+  const out = rankDifferentials({
+    symptoms: [...dxState.symptoms],
+    labs: [...dxState.labs],
+    destSlug: dxState.destSlug,
+    destData: dxDestData,
+    notices: NOTICES,
+    regionMap: REGIONMAP,
+    incubationDays: incDay,
+    diseases: DISEASES,
+  });
+  renderDxResult(out);
+}
+
+const GEO_REASON_JA = {
+  dest_list: (n) => `${n} で CDC が挙げている疾患`,
+  notice: (n) => `${n} に関する現行の Travel Notice あり`,
+  region: (n) => `${n} の地域で分布・流行`,
+  worldwide: () => "世界的に分布",
+  cosmo_tropical: () => "熱帯地域に広く分布",
+  none: (n) => `${n} との既知の地理的関連なし`,
+  no_dest: () => "渡航先未指定（地理的重みづけなし）",
+};
+const INC_FIT_JA = {
+  typical: "入力された日数は潜伏期の典型範囲内",
+  plausible: "潜伏期の範囲内",
+  early: "入力された日数は潜伏期より短め（曝露が旅行の早い時期なら可）",
+  late: "入力された日数は潜伏期より長い（再燃・再発性を除き考えにくい）",
+  unknown: "潜伏期は未評価（日数未入力）",
+};
+const BASE_RATE_JA = {
+  very_common: "帰国後発熱で高頻度",
+  common: "しばしばみられる",
+  uncommon: "比較的まれ",
+  rare: "まれ",
+};
+
+function chip(text, cls) {
+  return el("span", { class: `dx-chip ${cls}`, text });
+}
+
+function renderDxResult(out) {
+  const root = $("#dx-result");
+  root.replaceChildren();
+  const destName = dxState.destSlug
+    ? INDEX.find((d) => d.slug === dxState.destSlug)?.name_ja || dxState.destSlug
+    : "渡航先";
+
+  if (out.noInput) {
+    root.append(
+      el("p", { class: "empty", text: "症状・曝露歴または検査所見を1つ以上選択してください。" })
+    );
+    return;
+  }
+  if (out.ranked.length === 0) {
+    root.append(el("p", { class: "empty", text: "該当する候補がありません。所見を見直してください。" }));
+  }
+
+  const top = out.ranked[0]?.total || 1;
+  out.ranked.forEach((r, i) => {
+    const d = r.disease;
+    const pct = Math.max(6, Math.round((r.total / top) * 100));
+    const card = el("article", { class: "dx-card" });
+    card.append(
+      el(
+        "div",
+        { class: "dx-card-head" },
+        el("span", { class: "dx-rank", text: `No.${i + 1}` }),
+        el("h3", {}, d.name_ja, " ", el("span", { class: "en", text: d.name_en })),
+        d.must_not_miss ? el("span", { class: "badge cl-badge-yes", text: "見逃し注意" }) : null
+      )
+    );
+    card.append(el("div", { class: "dx-scorebar" }, el("span", { style: `width:${pct}%` })));
+
+    const why = el("div", { class: "dx-why" });
+    const symChips = r.matchedSymptoms.map((m) => chip(findingLabel(m.id).label_ja, "dx-chip-sym"));
+    const labChips = r.matchedLabs.map((m) => chip(findingLabel(m.id).label_ja, "dx-chip-lab"));
+    const againstChips = [...r.againstSymptoms, ...r.againstLabs].map((id) =>
+      chip(findingLabel(id).label_ja, "dx-chip-against")
+    );
+    why.append(
+      el("div", {}, el("b", { text: "一致した症状: " }), symChips.length ? symChips : el("span", { class: "en", text: "なし" }))
+    );
+    if (labChips.length || dxState.labs.size)
+      why.append(el("div", {}, el("b", { text: "一致した検査: " }), labChips.length ? labChips : el("span", { class: "en", text: "なし" })));
+    if (againstChips.length)
+      why.append(el("div", {}, el("b", { text: "打ち消す所見: " }), againstChips));
+    why.append(el("div", {}, el("b", { text: "地理: " }), (GEO_REASON_JA[r.factors.geoReason] || (() => ""))(destName)));
+    const inc = d.incubation_days;
+    why.append(
+      el(
+        "div",
+        {},
+        el("b", { text: "潜伏期: " }),
+        `${inc.min}–${inc.max}日` + (inc.relapse_max ? `（再発は最長 ${inc.relapse_max}日）` : "") + " ／ " + INC_FIT_JA[r.factors.incFit]
+      )
+    );
+    why.append(el("div", {}, el("b", { text: "頻度の目安: " }), BASE_RATE_JA[d.base_rate] || d.base_rate));
+    card.append(why);
+
+    card.append(
+      el(
+        "details",
+        {},
+        el("summary", { text: "鑑別ポイント・推奨検査（CDC 英語原文つき）" }),
+        el("p", { class: "cl-change-ja", text: d.discriminators_ja }),
+        el("blockquote", { class: "cl-en", text: d.discriminators_en }),
+        el("p", {}, el("b", { text: "推奨検査: " }), d.workup_ja),
+        d.red_flags_ja ? el("p", { class: "warn" }, el("b", { text: "Red flags: " }), d.red_flags_ja) : null,
+        el("a", { class: "cl-link", href: d.cdc_url, target: "_blank", rel: "noopener", text: "CDC Yellow Book →" })
+      )
+    );
+    root.append(card);
+  });
+
+  // 見逃してはいけない疾患
+  const mnmBox = el("section", { class: "dx-mnm" }, el("h3", { text: "🚩 見逃してはいけない疾患（除外を検討）" }));
+  if (out.mustNotMiss.length) {
+    for (const r of out.mustNotMiss) {
+      const d = r.disease;
+      mnmBox.append(
+        el(
+          "div",
+          { class: "dx-mnm-item" },
+          el("div", {}, el("b", {}, d.name_ja), el("span", { class: "en", text: " " + d.name_en })),
+          el("p", { class: "cl-change-ja", text: d.discriminators_ja }),
+          el(
+            "p",
+            { class: "notice-meta" },
+            `理由: ${(GEO_REASON_JA[r.factors.geoReason] || (() => ""))(destName)}／${INC_FIT_JA[r.factors.incFit]}`
+          ),
+          el("a", { class: "cl-link", href: d.cdc_url, target: "_blank", rel: "noopener", text: "CDC Yellow Book →" })
+        )
+      );
+    }
+  } else {
+    mnmBox.append(
+      el("p", {
+        class: "hint",
+        text: "上位の候補に含まれています。ただしマラリア・VHF・髄膜炎菌感染症・腸チフスは、所見が乏しくても常に鑑別に。",
+      })
+    );
+  }
+  root.append(mnmBox);
 }
 
 function matchDestination(raw) {

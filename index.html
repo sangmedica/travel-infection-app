@@ -29,6 +29,14 @@
     </header>
 
     <main>
+      <div class="mode-switch" role="tablist" aria-label="表示モード">
+        <button id="tab-region" class="mode-tab is-active" type="button" role="tab">① 地域から調べる</button>
+        <button id="tab-dx" class="mode-tab" type="button" role="tab">② 症状から鑑別</button>
+      </div>
+
+      <datalist id="dest-list"></datalist>
+
+      <div id="mode-region">
       <section id="changelog" class="changelog" hidden>
         <div class="cl-head">
           <h2>新規更新<span id="changelog-latest" class="cl-date"></span></h2>
@@ -56,7 +64,6 @@
           autocomplete="off"
           placeholder="例: タイ / Thailand / thailand"
         />
-        <datalist id="dest-list"></datalist>
         <p id="search-hint" class="hint"></p>
       </section>
 
@@ -67,6 +74,55 @@
         <p class="hint">特定の国ではなく、地域規模・世界規模で出ている CDC Travel Notice です（全渡航先に共通）。</p>
         <div id="global-notices-body"></div>
       </section>
+      </div>
+
+      <div id="mode-dx" hidden>
+        <div class="dx-disclaimer" role="note">
+          <strong>症状からの鑑別支援について</strong>
+          この機能は臨床意思決定支援・教育を目的とした<strong>可能性の順位づけ</strong>であり、確定診断ではありません。
+          スコアは選択された所見・潜伏期・地域から機械的に算出したものです。最終判断は病歴・身体所見・検査、
+          および <a href="https://www.cdc.gov/yellow-book/" target="_blank" rel="noopener">CDC Yellow Book</a> に基づいてください。
+          <strong>マラリア・ウイルス性出血熱・髄膜炎菌感染症・腸チフス</strong>など、見逃すと致命的な疾患は、
+          症状の一致が乏しくても常に除外を検討してください。
+        </div>
+
+        <section class="dx-inputs">
+          <div class="dx-field">
+            <label class="dx-label" for="dx-dest">渡航先の国・地域（任意）</label>
+            <input id="dx-dest" type="text" list="dest-list" autocomplete="off" placeholder="例: タイ / Thailand（未入力なら地域の重みづけなし）" />
+            <button id="dx-dest-clear" class="dx-mini-btn" type="button">クリア</button>
+            <p id="dx-dest-status" class="hint">渡航先を指定すると、その地域で報告のある疾患を重みづけします。</p>
+          </div>
+
+          <div class="dx-field">
+            <span class="dx-label">曝露終了（帰国）から発症までの日数</span>
+            <div id="dx-incubation" class="dx-radios">
+              <label><input type="radio" name="incu" value="" checked /> 不明</label>
+              <label><input type="radio" name="incu" value="lt7" /> 7日未満</label>
+              <label><input type="radio" name="incu" value="d7_13" /> 7〜13日</label>
+              <label><input type="radio" name="incu" value="d14_28" /> 14〜28日</label>
+              <label><input type="radio" name="incu" value="d29_90" /> 1〜3か月</label>
+              <label><input type="radio" name="incu" value="gt90" /> 3か月以上</label>
+            </div>
+          </div>
+
+          <div class="dx-field">
+            <div class="dx-label-row">
+              <span class="dx-label">症状・曝露歴（複数選択可）</span>
+              <input id="dx-sym-filter" type="text" placeholder="絞り込み…" />
+              <button id="dx-clear" class="dx-mini-btn" type="button">すべて解除</button>
+            </div>
+            <div id="dx-symptoms" class="dx-checkgrid"></div>
+          </div>
+
+          <div class="dx-field">
+            <span class="dx-label">検査所見（複数選択可）</span>
+            <div id="dx-labs" class="dx-checkgrid"></div>
+          </div>
+        </section>
+
+        <section id="dx-result" class="dx-result"></section>
+      </div>
     </main>
 
     <footer class="site-footer">
@@ -76,6 +132,6 @@
       </p>
     </footer>
 
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

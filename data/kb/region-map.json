@@ -1,0 +1,987 @@
+{
+  "_comment": "slug -> 地域タグ。scripts/build-region-map.mjs で生成。鑑別スコアの粗い地理判定用。",
+  "regions": {
+    "afghanistan": [
+      "s_asia",
+      "subtropics"
+    ],
+    "albania": [
+      "europe",
+      "temperate"
+    ],
+    "algeria": [
+      "africa_north",
+      "mena",
+      "subtropics"
+    ],
+    "american-samoa": [
+      "oceania",
+      "tropics"
+    ],
+    "andorra": [
+      "europe",
+      "subtropics"
+    ],
+    "angola": [
+      "africa_sub",
+      "tropics"
+    ],
+    "anguilla": [
+      "caribbean",
+      "tropics"
+    ],
+    "antarctica": [
+      "polar",
+      "temperate"
+    ],
+    "antigua-and-barbuda": [
+      "caribbean",
+      "tropics"
+    ],
+    "argentina": [
+      "latin_america",
+      "subtropics"
+    ],
+    "armenia": [
+      "c_asia",
+      "subtropics"
+    ],
+    "aruba": [
+      "caribbean",
+      "tropics"
+    ],
+    "australia": [
+      "oceania",
+      "subtropics"
+    ],
+    "austria": [
+      "europe",
+      "temperate"
+    ],
+    "azerbaijan": [
+      "c_asia",
+      "subtropics"
+    ],
+    "azores": [
+      "europe",
+      "subtropics"
+    ],
+    "bahrain": [
+      "mena",
+      "subtropics"
+    ],
+    "bangladesh": [
+      "s_asia",
+      "tropics"
+    ],
+    "barbados": [
+      "caribbean",
+      "tropics"
+    ],
+    "belarus": [
+      "europe",
+      "temperate"
+    ],
+    "belgium": [
+      "europe",
+      "temperate"
+    ],
+    "belize": [
+      "latin_america",
+      "tropics"
+    ],
+    "benin": [
+      "africa_sub",
+      "tropics"
+    ],
+    "bermuda": [
+      "n_america",
+      "subtropics"
+    ],
+    "bhutan": [
+      "s_asia",
+      "subtropics"
+    ],
+    "bolivia": [
+      "latin_america",
+      "tropics"
+    ],
+    "bonaire": [
+      "caribbean",
+      "tropics"
+    ],
+    "bosnia-and-herzegovina": [
+      "europe",
+      "temperate"
+    ],
+    "botswana": [
+      "africa_sub",
+      "tropics"
+    ],
+    "brazil": [
+      "latin_america",
+      "tropics"
+    ],
+    "british-indian-ocean-territory": [
+      "s_asia",
+      "tropics"
+    ],
+    "british-virgin-islands": [
+      "caribbean",
+      "tropics"
+    ],
+    "brunei": [
+      "se_asia",
+      "tropics"
+    ],
+    "bulgaria": [
+      "europe",
+      "temperate"
+    ],
+    "burkina-faso": [
+      "africa_sub",
+      "tropics"
+    ],
+    "burma": [
+      "se_asia",
+      "tropics"
+    ],
+    "burundi": [
+      "africa_sub",
+      "tropics"
+    ],
+    "cambodia": [
+      "se_asia",
+      "tropics"
+    ],
+    "cameroon": [
+      "africa_sub",
+      "tropics"
+    ],
+    "canada": [
+      "n_america",
+      "temperate"
+    ],
+    "canary-islands": [
+      "africa_north",
+      "europe",
+      "subtropics"
+    ],
+    "cape-verde": [
+      "africa_sub",
+      "tropics"
+    ],
+    "cayman-islands": [
+      "caribbean",
+      "tropics"
+    ],
+    "central-african-republic": [
+      "africa_sub",
+      "tropics"
+    ],
+    "chad": [
+      "africa_sub",
+      "tropics"
+    ],
+    "chile": [
+      "latin_america",
+      "subtropics"
+    ],
+    "china": [
+      "e_asia",
+      "subtropics"
+    ],
+    "christmas-island": [
+      "se_asia",
+      "tropics"
+    ],
+    "cocos-islands": [
+      "se_asia",
+      "tropics"
+    ],
+    "colombia": [
+      "latin_america",
+      "tropics"
+    ],
+    "comoros": [
+      "africa_sub",
+      "tropics"
+    ],
+    "congo": [
+      "africa_sub",
+      "tropics"
+    ],
+    "cook-islands": [
+      "oceania",
+      "tropics"
+    ],
+    "costa-rica": [
+      "latin_america",
+      "tropics"
+    ],
+    "croatia": [
+      "europe",
+      "temperate"
+    ],
+    "cuba": [
+      "caribbean",
+      "tropics"
+    ],
+    "curacao": [
+      "caribbean",
+      "tropics"
+    ],
+    "cyprus": [
+      "europe",
+      "subtropics"
+    ],
+    "czechia": [
+      "europe",
+      "temperate"
+    ],
+    "democratic-republic-of-congo": [
+      "africa_sub",
+      "tropics"
+    ],
+    "denmark": [
+      "europe",
+      "temperate"
+    ],
+    "djibouti": [
+      "africa_sub",
+      "tropics"
+    ],
+    "dominica": [
+      "caribbean",
+      "tropics"
+    ],
+    "dominican-republic": [
+      "caribbean",
+      "tropics"
+    ],
+    "east-timor": [
+      "se_asia",
+      "tropics"
+    ],
+    "easter-island": [
+      "latin_america",
+      "subtropics"
+    ],
+    "ecuador": [
+      "latin_america",
+      "tropics"
+    ],
+    "egypt": [
+      "africa_north",
+      "mena",
+      "subtropics"
+    ],
+    "el-salvador": [
+      "latin_america",
+      "tropics"
+    ],
+    "equatorial-guinea": [
+      "africa_sub",
+      "tropics"
+    ],
+    "eritrea": [
+      "africa_sub",
+      "tropics"
+    ],
+    "estonia": [
+      "europe",
+      "temperate"
+    ],
+    "eswatini": [
+      "africa_sub",
+      "tropics"
+    ],
+    "ethiopia": [
+      "africa_sub",
+      "tropics"
+    ],
+    "falkland-islands": [
+      "latin_america",
+      "temperate"
+    ],
+    "faroe-island": [
+      "europe",
+      "temperate"
+    ],
+    "fiji": [
+      "oceania",
+      "tropics"
+    ],
+    "finland": [
+      "europe",
+      "temperate"
+    ],
+    "france": [
+      "europe",
+      "temperate"
+    ],
+    "french-guiana": [
+      "latin_america",
+      "tropics"
+    ],
+    "french-polynesia": [
+      "oceania",
+      "tropics"
+    ],
+    "gabon": [
+      "africa_sub",
+      "tropics"
+    ],
+    "georgia": [
+      "europe",
+      "subtropics"
+    ],
+    "germany": [
+      "europe",
+      "temperate"
+    ],
+    "ghana": [
+      "africa_sub",
+      "tropics"
+    ],
+    "gibraltar": [
+      "europe",
+      "subtropics"
+    ],
+    "greece": [
+      "europe",
+      "subtropics"
+    ],
+    "greenland": [
+      "n_america",
+      "temperate"
+    ],
+    "grenada": [
+      "caribbean",
+      "tropics"
+    ],
+    "guadeloupe": [
+      "caribbean",
+      "tropics"
+    ],
+    "guam": [
+      "oceania",
+      "tropics"
+    ],
+    "guatemala": [
+      "latin_america",
+      "tropics"
+    ],
+    "guinea": [
+      "africa_sub",
+      "tropics"
+    ],
+    "guinea-bissau": [
+      "africa_sub",
+      "tropics"
+    ],
+    "guyana": [
+      "latin_america",
+      "tropics"
+    ],
+    "haiti": [
+      "caribbean",
+      "tropics"
+    ],
+    "honduras": [
+      "latin_america",
+      "tropics"
+    ],
+    "hong-kong-sar": [
+      "e_asia",
+      "tropics"
+    ],
+    "hungary": [
+      "europe",
+      "temperate"
+    ],
+    "iceland": [
+      "europe",
+      "temperate"
+    ],
+    "india": [
+      "s_asia",
+      "tropics"
+    ],
+    "indonesia": [
+      "se_asia",
+      "tropics"
+    ],
+    "iran": [
+      "mena",
+      "subtropics"
+    ],
+    "iraq": [
+      "mena",
+      "subtropics"
+    ],
+    "ireland": [
+      "europe",
+      "temperate"
+    ],
+    "israel": [
+      "mena",
+      "subtropics"
+    ],
+    "italy": [
+      "europe",
+      "temperate"
+    ],
+    "ivory-coast": [
+      "africa_sub",
+      "tropics"
+    ],
+    "jamaica": [
+      "caribbean",
+      "tropics"
+    ],
+    "japan": [
+      "e_asia",
+      "subtropics"
+    ],
+    "jordan": [
+      "mena",
+      "subtropics"
+    ],
+    "kazakhstan": [
+      "c_asia",
+      "temperate"
+    ],
+    "kenya": [
+      "africa_sub",
+      "tropics"
+    ],
+    "kiribati": [
+      "oceania",
+      "tropics"
+    ],
+    "kosovo": [
+      "europe",
+      "temperate"
+    ],
+    "kuwait": [
+      "mena",
+      "subtropics"
+    ],
+    "kyrgyzstan": [
+      "c_asia",
+      "temperate"
+    ],
+    "laos": [
+      "se_asia",
+      "tropics"
+    ],
+    "latvia": [
+      "europe",
+      "temperate"
+    ],
+    "lebanon": [
+      "mena",
+      "subtropics"
+    ],
+    "lesotho": [
+      "africa_sub",
+      "subtropics"
+    ],
+    "liberia": [
+      "africa_sub",
+      "tropics"
+    ],
+    "libya": [
+      "africa_north",
+      "mena",
+      "subtropics"
+    ],
+    "liechtenstein": [
+      "europe",
+      "temperate"
+    ],
+    "lithuania": [
+      "europe",
+      "temperate"
+    ],
+    "luxembourg": [
+      "europe",
+      "temperate"
+    ],
+    "macau-sar": [
+      "e_asia",
+      "tropics"
+    ],
+    "madagascar": [
+      "africa_sub",
+      "tropics"
+    ],
+    "madeira-islands": [
+      "europe",
+      "subtropics"
+    ],
+    "malawi": [
+      "africa_sub",
+      "tropics"
+    ],
+    "malaysia": [
+      "se_asia",
+      "tropics"
+    ],
+    "maldives": [
+      "s_asia",
+      "tropics"
+    ],
+    "mali": [
+      "africa_sub",
+      "tropics"
+    ],
+    "malta": [
+      "europe",
+      "subtropics"
+    ],
+    "marshall-islands": [
+      "oceania",
+      "tropics"
+    ],
+    "martinique": [
+      "caribbean",
+      "tropics"
+    ],
+    "mauritania": [
+      "africa_sub",
+      "tropics"
+    ],
+    "mauritius": [
+      "africa_sub",
+      "tropics"
+    ],
+    "mayotte": [
+      "africa_sub",
+      "tropics"
+    ],
+    "mexico": [
+      "latin_america",
+      "subtropics"
+    ],
+    "micronesia": [
+      "oceania",
+      "tropics"
+    ],
+    "moldova": [
+      "europe",
+      "temperate"
+    ],
+    "monaco": [
+      "europe",
+      "subtropics"
+    ],
+    "mongolia": [
+      "e_asia",
+      "temperate"
+    ],
+    "montenegro": [
+      "europe",
+      "temperate"
+    ],
+    "montserrat": [
+      "caribbean",
+      "tropics"
+    ],
+    "morocco": [
+      "africa_north",
+      "mena",
+      "subtropics"
+    ],
+    "mozambique": [
+      "africa_sub",
+      "tropics"
+    ],
+    "namibia": [
+      "africa_sub",
+      "tropics"
+    ],
+    "nauru": [
+      "oceania",
+      "tropics"
+    ],
+    "nepal": [
+      "s_asia",
+      "subtropics"
+    ],
+    "netherlands": [
+      "europe",
+      "temperate"
+    ],
+    "new-caledonia": [
+      "oceania",
+      "tropics"
+    ],
+    "new-zealand": [
+      "oceania",
+      "subtropics"
+    ],
+    "nicaragua": [
+      "latin_america",
+      "tropics"
+    ],
+    "niger": [
+      "africa_sub",
+      "tropics"
+    ],
+    "nigeria": [
+      "africa_sub",
+      "tropics"
+    ],
+    "niue": [
+      "oceania",
+      "tropics"
+    ],
+    "norfolk-island": [
+      "oceania",
+      "subtropics"
+    ],
+    "north-korea": [
+      "e_asia",
+      "subtropics"
+    ],
+    "north-macedonia": [
+      "europe",
+      "temperate"
+    ],
+    "northern-mariana-islands": [
+      "oceania",
+      "tropics"
+    ],
+    "norway": [
+      "europe",
+      "temperate"
+    ],
+    "oman": [
+      "mena",
+      "tropics"
+    ],
+    "pakistan": [
+      "s_asia",
+      "subtropics"
+    ],
+    "palau": [
+      "oceania",
+      "tropics"
+    ],
+    "panama": [
+      "latin_america",
+      "tropics"
+    ],
+    "papua-new-guinea": [
+      "oceania",
+      "tropics"
+    ],
+    "paraguay": [
+      "latin_america",
+      "subtropics"
+    ],
+    "peru": [
+      "latin_america",
+      "tropics"
+    ],
+    "philippines": [
+      "se_asia",
+      "tropics"
+    ],
+    "pitcairn-islands": [
+      "oceania",
+      "subtropics"
+    ],
+    "poland": [
+      "europe",
+      "temperate"
+    ],
+    "portugal": [
+      "europe",
+      "subtropics"
+    ],
+    "puerto-rico": [
+      "caribbean",
+      "tropics"
+    ],
+    "qatar": [
+      "mena",
+      "subtropics"
+    ],
+    "reunion": [
+      "africa_sub",
+      "tropics"
+    ],
+    "romania": [
+      "europe",
+      "temperate"
+    ],
+    "russia": [
+      "europe",
+      "temperate"
+    ],
+    "rwanda": [
+      "africa_sub",
+      "tropics"
+    ],
+    "saba": [
+      "caribbean",
+      "tropics"
+    ],
+    "saint-barthelemy": [
+      "caribbean",
+      "tropics"
+    ],
+    "saint-helena": [
+      "africa_sub",
+      "temperate"
+    ],
+    "saint-lucia": [
+      "caribbean",
+      "tropics"
+    ],
+    "saint-martin": [
+      "caribbean",
+      "tropics"
+    ],
+    "saint-pierre-and-miquelon": [
+      "n_america",
+      "temperate"
+    ],
+    "saint-vincent-and-the-grenadines": [
+      "caribbean",
+      "tropics"
+    ],
+    "samoa": [
+      "oceania",
+      "tropics"
+    ],
+    "san-marino": [
+      "europe",
+      "subtropics"
+    ],
+    "sao-tome-and-principe": [
+      "africa_sub",
+      "tropics"
+    ],
+    "saudi-arabia": [
+      "mena",
+      "subtropics"
+    ],
+    "senegal": [
+      "africa_sub",
+      "tropics"
+    ],
+    "serbia": [
+      "europe",
+      "temperate"
+    ],
+    "seychelles": [
+      "africa_sub",
+      "tropics"
+    ],
+    "sierra-leone": [
+      "africa_sub",
+      "tropics"
+    ],
+    "singapore": [
+      "se_asia",
+      "tropics"
+    ],
+    "sint-eustatius": [
+      "caribbean",
+      "tropics"
+    ],
+    "sint-maarten": [
+      "caribbean",
+      "tropics"
+    ],
+    "slovakia": [
+      "europe",
+      "temperate"
+    ],
+    "slovenia": [
+      "europe",
+      "temperate"
+    ],
+    "solomon-islands": [
+      "oceania",
+      "tropics"
+    ],
+    "somalia": [
+      "africa_sub",
+      "tropics"
+    ],
+    "south-africa": [
+      "africa_sub",
+      "subtropics"
+    ],
+    "south-georgia-south-sandwich-islands": [
+      "polar",
+      "temperate"
+    ],
+    "south-korea": [
+      "e_asia",
+      "subtropics"
+    ],
+    "south-sudan": [
+      "africa_sub",
+      "tropics"
+    ],
+    "spain": [
+      "europe",
+      "subtropics"
+    ],
+    "sri-lanka": [
+      "s_asia",
+      "tropics"
+    ],
+    "st-kitts-and-nevis": [
+      "caribbean",
+      "tropics"
+    ],
+    "sudan": [
+      "africa_sub",
+      "tropics"
+    ],
+    "suriname": [
+      "latin_america",
+      "tropics"
+    ],
+    "sweden": [
+      "europe",
+      "temperate"
+    ],
+    "switzerland": [
+      "europe",
+      "temperate"
+    ],
+    "syria": [
+      "mena",
+      "subtropics"
+    ],
+    "taiwan": [
+      "e_asia",
+      "tropics"
+    ],
+    "tajikistan": [
+      "c_asia",
+      "subtropics"
+    ],
+    "tanzania": [
+      "africa_sub",
+      "tropics"
+    ],
+    "thailand": [
+      "se_asia",
+      "tropics"
+    ],
+    "the-bahamas": [
+      "caribbean",
+      "tropics"
+    ],
+    "the-gambia": [
+      "africa_sub",
+      "tropics"
+    ],
+    "togo": [
+      "africa_sub",
+      "tropics"
+    ],
+    "tokelau": [
+      "oceania",
+      "tropics"
+    ],
+    "tonga": [
+      "oceania",
+      "tropics"
+    ],
+    "trinidad-and-tobago": [
+      "caribbean",
+      "tropics"
+    ],
+    "tunisia": [
+      "africa_north",
+      "mena",
+      "subtropics"
+    ],
+    "turkey": [
+      "mena",
+      "subtropics"
+    ],
+    "turkmenistan": [
+      "c_asia",
+      "subtropics"
+    ],
+    "turks-and-caicos": [
+      "caribbean",
+      "tropics"
+    ],
+    "tuvalu": [
+      "oceania",
+      "tropics"
+    ],
+    "uganda": [
+      "africa_sub",
+      "tropics"
+    ],
+    "ukraine": [
+      "europe",
+      "temperate"
+    ],
+    "united-arab-emirates": [
+      "mena",
+      "subtropics"
+    ],
+    "united-kingdom": [
+      "europe",
+      "temperate"
+    ],
+    "united-states": [
+      "n_america",
+      "temperate"
+    ],
+    "uruguay": [
+      "latin_america",
+      "subtropics"
+    ],
+    "usvirgin-islands": [
+      "caribbean",
+      "tropics"
+    ],
+    "uzbekistan": [
+      "c_asia",
+      "subtropics"
+    ],
+    "vanuatu": [
+      "oceania",
+      "tropics"
+    ],
+    "venezuela": [
+      "latin_america",
+      "tropics"
+    ],
+    "vietnam": [
+      "se_asia",
+      "tropics"
+    ],
+    "wake-island": [
+      "oceania",
+      "tropics"
+    ],
+    "yemen": [
+      "mena",
+      "tropics"
+    ],
+    "zambia": [
+      "africa_sub",
+      "tropics"
+    ],
+    "zimbabwe": [
+      "africa_sub",
+      "tropics"
+    ]
+  }
+}
