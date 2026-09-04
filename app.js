@@ -65,15 +65,17 @@ async function getJSON(path) {
 let INDEX = [];
 let NOTICES = [];
 let META = null;
+let CHANGELOG = [];
 
 // ---- 初期化 -------------------------------------------------------------------
 
 async function init() {
   try {
-    [INDEX, NOTICES, META] = await Promise.all([
+    [INDEX, NOTICES, META, CHANGELOG] = await Promise.all([
       getJSON("data/destinations-index.json"),
       getJSON("data/notices.json").catch(() => []),
       getJSON("data/meta.json").catch(() => null),
+      getJSON("data/changelog.json").catch(() => []),
     ]);
   } catch (err) {
     $("#search-hint").textContent = "データの読み込みに失敗しました: " + err.message;
@@ -131,6 +133,7 @@ async function init() {
     }
   }
 
+  renderChangelog();
   renderGlobalNotices();
 
   const input = $("#dest-input");
@@ -390,6 +393,156 @@ function noticeItem(n, currentSlug) {
       el("a", { href: n.url, target: "_blank", rel: "noopener", text: "CDC の原文を開く →" })
     )
   );
+}
+
+// ---- 描画: 新規更新（changelog） -----------------------------------------
+
+const noticeLabelJa = (n) =>
+  n.topic_ja ? `${n.topic_ja}（${n.topic_en}）` : n.topic_en || n.title_en;
+
+function renderChangelog() {
+  const sec = $("#changelog");
+  if (!Array.isArray(CHANGELOG) || CHANGELOG.length === 0) return;
+  sec.hidden = false;
+  $("#changelog-latest").textContent = `（最終更新 ${CHANGELOG[0].date}）`;
+
+  const body = $("#changelog-body");
+  const INITIAL = 1;
+  const render = (count) => {
+    body.replaceChildren();
+    CHANGELOG.slice(0, count).forEach((entry, i) => body.append(changelogEntry(entry, i === 0)));
+  };
+  render(INITIAL);
+
+  const moreBtn = $("#changelog-more");
+  if (CHANGELOG.length > INITIAL) {
+    let expanded = false;
+    moreBtn.hidden = false;
+    moreBtn.textContent = `過去の更新履歴を表示（全 ${CHANGELOG.length} 件）`;
+    moreBtn.addEventListener("click", () => {
+      expanded = !expanded;
+      render(expanded ? CHANGELOG.length : INITIAL);
+      moreBtn.textContent = expanded
+        ? "更新履歴を折りたたむ"
+        : `過去の更新履歴を表示（全 ${CHANGELOG.length} 件）`;
+    });
+  }
+}
+
+function changelogEntry(entry, open) {
+  const wrap = el("article", { class: "cl-entry" });
+  wrap.append(
+    el(
+      "h3",
+      { class: "cl-entry-head" },
+      entry.date,
+      " ",
+      el("span", {
+        class: `badge ${entry.has_changes ? "cl-badge-yes" : "cl-badge-no"}`,
+        text: entry.has_changes ? "更新あり" : "変更なし",
+      })
+    )
+  );
+  wrap.append(el("p", { class: "cl-summary", text: entry.summary_ja }));
+
+  const nd = entry.notices || {};
+  const dests = entry.destinations || [];
+  const hasDetail =
+    (nd.added && nd.added.length) ||
+    (nd.removed && nd.removed.length) ||
+    (nd.level_changed && nd.level_changed.length) ||
+    dests.length;
+  if (!hasDetail) return wrap;
+
+  const det = el("details", open ? { open: "" } : {});
+  det.append(el("summary", { text: "詳細（CDC 英語原文つき）" }));
+
+  if ((nd.added && nd.added.length) || (nd.level_changed && nd.level_changed.length) || (nd.removed && nd.removed.length)) {
+    const box = el("div", { class: "cl-block" }, el("h4", { text: "Travel Notices" }));
+    for (const n of nd.added || [])
+      box.append(clItem(`新規: ${noticeLabelJa(n)}`, n.title_en, n.summary_en, n.url));
+    for (const n of nd.level_changed || [])
+      box.append(
+        clItem(
+          `レベル変更: ${noticeLabelJa(n)}  Level ${n.level_from} → ${n.level_to}`,
+          n.title_en,
+          n.summary_en,
+          n.url
+        )
+      );
+    for (const n of nd.removed || [])
+      box.append(clItem(`掲載終了: ${noticeLabelJa(n)}`, n.title_en, "", n.url));
+    det.append(box);
+  }
+
+  const SHOW = 30;
+  for (const dd of dests.slice(0, SHOW)) {
+    const box = el("div", { class: "cl-block" }, el("h4", {}, `${dd.name_ja}（${dd.name_en}）`));
+    const ul = el("ul", { class: "cl-changes" });
+    for (const c of dd.changes) ul.append(el("li", {}, ...changeLine(c)));
+    box.append(ul);
+    det.append(box);
+  }
+  if (dests.length > SHOW)
+    det.append(el("p", { class: "hint", text: `ほか ${dests.length - SHOW} 地域で変更があります。` }));
+
+  wrap.append(det);
+  return wrap;
+}
+
+function clItem(titleJa, enLine, enBody, url) {
+  const item = el("div", { class: "cl-item" }, el("div", { class: "cl-item-ja", text: titleJa }));
+  if (enLine) item.append(el("div", { class: "cl-en cl-en-line", text: enLine }));
+  if (enBody) item.append(el("blockquote", { class: "cl-en", text: enBody }));
+  if (url)
+    item.append(
+      el("a", { class: "cl-link", href: url, target: "_blank", rel: "noopener", text: "CDC 原文 →" })
+    );
+  return item;
+}
+
+function changeLine(c) {
+  const nm = c.name_ja ? `${c.name_ja}（${c.name_en}）` : c.name_en;
+  const out = [];
+  const ja = (t) => el("span", { class: "cl-change-ja", text: t });
+  const en = (t, cls) => el("blockquote", { class: `cl-en${cls ? " " + cls : ""}`, text: t });
+  const lbl = (t) => el("div", { class: "cl-en-label", text: t });
+
+  switch (c.type) {
+    case "vaccine_category":
+      out.push(ja(`ワクチン「${nm}」の推奨度: ${c.from_ja} → ${c.to_ja}`));
+      if (c.recommendation_en) out.push(en(c.recommendation_en));
+      break;
+    case "vaccine_added":
+      out.push(ja(`ワクチン追加「${nm}」— ${c.category_ja}`));
+      if (c.recommendation_en) out.push(en(c.recommendation_en));
+      break;
+    case "vaccine_removed":
+      out.push(ja(`ワクチン削除「${nm}」`));
+      break;
+    case "vaccine_text":
+      out.push(ja(`「${nm}」（${c.category_ja}）の推奨文が更新されました`));
+      out.push(lbl("新（CDC 原文）:"));
+      out.push(en(c.recommendation_en));
+      if (c.recommendation_en_old) {
+        out.push(lbl("旧:"));
+        out.push(en(c.recommendation_en_old, "cl-en-old"));
+      }
+      break;
+    case "disease_added":
+      out.push(ja(`疾患追加「${nm}」— 感染経路: ${c.transmission_en || "―"}`));
+      if (c.spread_en) out.push(en(c.spread_en));
+      break;
+    case "disease_removed":
+      out.push(ja(`疾患削除「${nm}」`));
+      break;
+    case "page_notice_level":
+      out.push(ja(`地域の Travel Notice レベル: ${c.from} → ${c.to}`));
+      break;
+    default:
+      out.push(ja(JSON.stringify(c)));
+  }
+  return out;
 }
 
 function renderGlobalNotices(currentSlug) {

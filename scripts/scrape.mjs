@@ -19,6 +19,7 @@ import { fileURLToPath } from "node:url";
 import { fetchNotices } from "./lib/notices.mjs";
 import { fetchDestination } from "./lib/destination.mjs";
 import { loadDict, makeTranslator, writeUntranslated } from "./lib/translate.mjs";
+import { diffNotices, diffDestination, buildChangelogEntry } from "./lib/diff.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -73,6 +74,11 @@ async function main() {
   const errors = [];
   let anyChange = false;
 
+  // changelog は「フェッチを伴う全件実行」でのみ作成する
+  const buildChangelog = !RETRANSLATE && !ONLY && !NOTICES_ONLY && !DEST_ONLY;
+  let noticeDiff = { added: [], removed: [], level_changed: [] };
+  const destDiffs = [];
+
   const applyDict = (data) => {
     for (const v of data.vaccines || []) {
       v.name_ja = tr.lookup("vaccines", v.name_en);
@@ -88,6 +94,7 @@ async function main() {
   // ---------- Travel Notices ----------
   if (!DEST_ONLY) {
     const outPath = path.join(DATA_DIR, "notices.json");
+    const oldNotices = readJSON(outPath, []);
     try {
       let notices;
       if (RETRANSLATE) {
@@ -102,6 +109,7 @@ async function main() {
         n.topic_ja = tr.lookup("notice_topics", n.topic_en);
       }
       notices.sort((a, b) => (b.published || "").localeCompare(a.published || "") || b.level - a.level);
+      if (buildChangelog) noticeDiff = diffNotices(oldNotices, notices);
       if (changedVsDisk(outPath, notices)) anyChange = true;
       writeJSON(outPath, notices);
       console.log(`  ✓ ${notices.length} 件`);
@@ -115,6 +123,7 @@ async function main() {
   if (!NOTICES_ONLY) {
     for (const meta of destList) {
       const outPath = path.join(DEST_DIR, `${meta.slug}.json`);
+      const oldData = readJSON(outPath);
       try {
         let data;
         if (RETRANSLATE) {
@@ -134,6 +143,17 @@ async function main() {
           }
         }
         applyDict(data);
+        if (buildChangelog && oldData?.parse_ok && data.parse_ok) {
+          const ch = diffDestination(oldData, data);
+          if (ch.length)
+            destDiffs.push({
+              slug: meta.slug,
+              name_ja: meta.name_ja,
+              name_en: meta.name_en,
+              kind: meta.kind || "country",
+              changes: ch,
+            });
+        }
         if (changedVsDisk(outPath, data)) anyChange = true;
         writeJSON(outPath, data);
         console.log(
@@ -175,11 +195,28 @@ async function main() {
   const missingCount = writeUntranslated(tr.dumpMissing(), { dryRun: DRY, partial });
   if (missingCount) console.log(`● 未対訳の語: ${missingCount} 件（data/untranslated.txt）`);
 
+  // ---------- changelog.json（トップページ「新規更新」用） ----------
+  if (buildChangelog) {
+    const clPath = path.join(DATA_DIR, "changelog.json");
+    const log = readJSON(clPath, []) || [];
+    const entry = buildChangelogEntry(TODAY, noticeDiff, destDiffs);
+    // 同日再実行なら置き換え、そうでなければ先頭に追加。直近36件を保持。
+    const rest = log.filter((e) => e.date !== TODAY);
+    const next = [entry, ...rest].slice(0, 36);
+    if (changedVsDisk(clPath, next)) anyChange = true;
+    writeJSON(clPath, next);
+    console.log(
+      `● changelog: ${entry.has_changes ? entry.summary_ja : "変更なし"}` +
+        `（notices +${noticeDiff.added.length}/△${noticeDiff.level_changed.length}/-${noticeDiff.removed.length}, 地域 ${destDiffs.length}）`
+    );
+  }
+
   // ---------- meta.json ----------
   const prevMeta = readJSON(path.join(DATA_DIR, "meta.json"), {});
   const meta = {
     source: "CDC Travelers' Health (https://wwwnc.cdc.gov/travel/)",
-    last_run: TODAY,
+    // last_run は「CDC を実際に取得した日」。対訳の再適用だけの実行では更新しない。
+    last_run: RETRANSLATE ? prevMeta.last_run ?? TODAY : TODAY,
     last_change: anyChange ? TODAY : prevMeta.last_change ?? null,
     counts: {
       destinations_with_data: index.filter((d) => d.has_data).length,

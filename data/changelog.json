@@ -1,0 +1,9 @@
+[
+  {
+    "date": "2026-09-03",
+    "has_changes": true,
+    "summary_ja": "初回公開。CDC Travelers' Health の全244目的地（うち242地域でデータ取得。united-states と antarctica は CDC にワクチン表がなく対象外）と Travel Notice 24件を掲載しました。以降は毎月1日の自動更新で、前回からの変更点をこの「新規更新」に日付つきで追記します（誤訳防止のため英語原文つき）。",
+    "notices": { "added": [], "removed": [], "level_changed": [] },
+    "destinations": []
+  }
+]

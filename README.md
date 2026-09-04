@@ -20,11 +20,13 @@
 | `config/destinations.json` | 取得対象リスト（CDC 全 244 目的地）。`kind`: `country`=国 / `territory`=属領・地域。`scripts/build-config.mjs` で生成（直接編集も可） |
 | `data/translations.json` | ★手管理: 日本語対訳辞書 |
 | `data/notices.json` | 自動生成: Travel Notices 全件 |
+| `data/changelog.json` | 自動生成: 月次更新ごとの差分（トップの「新規更新」）。各項目に英語原文つき |
 | `data/destinations/<slug>.json` | 自動生成: 渡航先ごとのワクチン＋疾患 |
 | `data/destinations-index.json` | 自動生成: 検索インデックス |
 | `data/untranslated.txt` | 自動生成: 未対訳語の一覧（毎月ここを見て辞書に追記） |
 | `data/meta.json` | 自動生成: 最終取得日・エラー・件数 |
 | `scripts/scrape.mjs` | スクレイパ本体 |
+| `scripts/lib/diff.mjs` | 前回データとの差分計算＋「新規更新」エントリ生成（全件フェッチ時のみ） |
 | `scripts/build-config.mjs` | `config/destinations.json`（244件・日本語名・kind）の生成／`--check` |
 | `.github/workflows/update.yml` | 月次データ更新（cron: 毎月1日 03:00 UTC） |
 | `.github/workflows/deploy.yml` | GitHub Pages へデプロイ（main への push で発火） |
