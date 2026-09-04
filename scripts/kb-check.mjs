@@ -43,7 +43,7 @@ for (const d of diseases) {
   const tag = `diseases:${d.id}`;
   if (dIds.has(d.id)) E(`${tag}: id 重複`);
   dIds.add(d.id);
-  for (const f of ["name_en", "name_ja", "cdc_url", "category", "discriminators_ja", "discriminators_en", "workup_ja"])
+  for (const f of ["name_en", "name_ja", "cdc_url", "category", "discriminators_ja", "discriminators_en", "workup_ja", "treatment_ja", "treatment_en"])
     if (!d[f]) E(`${tag}: "${f}" が空`);
   if (typeof d.must_not_miss !== "boolean") E(`${tag}: must_not_miss が boolean でない`);
   if (!BASE_RATES.has(d.base_rate)) E(`${tag}: base_rate 不正 "${d.base_rate}"`);

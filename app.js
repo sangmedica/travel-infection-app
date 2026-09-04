@@ -410,10 +410,18 @@ function renderDxResult(out) {
       el(
         "details",
         {},
-        el("summary", { text: "鑑別ポイント・推奨検査（CDC 英語原文つき）" }),
+        el("summary", { text: "鑑別ポイント・検査・治療（CDC 英語原文つき）" }),
         el("p", { class: "cl-change-ja", text: d.discriminators_ja }),
         el("blockquote", { class: "cl-en", text: d.discriminators_en }),
         el("p", {}, el("b", { text: "推奨検査: " }), d.workup_ja),
+        d.treatment_ja
+          ? el(
+              "div",
+              { class: "dx-tx" },
+              el("p", {}, el("b", { text: "治療（要参照確認）: " }), d.treatment_ja),
+              el("blockquote", { class: "cl-en", text: d.treatment_en })
+            )
+          : null,
         d.red_flags_ja ? el("p", { class: "warn" }, el("b", { text: "Red flags: " }), d.red_flags_ja) : null,
         el("a", { class: "cl-link", href: d.cdc_url, target: "_blank", rel: "noopener", text: "CDC Yellow Book →" })
       )

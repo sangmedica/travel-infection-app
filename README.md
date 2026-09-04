@@ -28,7 +28,7 @@ No.1〜No.5 の優先度順で表示（各項目に一致所見・地理・潜�
 | `data/notices.json` | 自動生成: Travel Notices 全件 |
 | `data/changelog.json` | 自動生成: 月次更新ごとの差分（トップの「新規更新」）。各項目に英語原文つき |
 | `data/kb/findings.json` | ★手キュレート: 鑑別モードのクリック用リスト（症状・曝露歴・検査所見） |
-| `data/kb/diseases.json` | ★手キュレート: 疾患知識ベース（症状/検査の重み・潜伏期・鑑別ポイント・推奨検査・出典）。約66疾患 |
+| `data/kb/diseases.json` | ★手キュレート: 疾患知識ベース（症状/検査の重み・潜伏期・鑑別ポイント・推奨検査・**治療の要点**・出典）。66疾患。日本語＋英語原文 |
 | `data/kb/region-map.json` | 生成: slug→地域タグ（`scripts/build-region-map.mjs`）。鑑別の地理判定用 |
 | `dx.js` | 鑑別スコアリング（決定論的・ESM。ブラウザと Node で共用） |
 | `data/destinations/<slug>.json` | 自動生成: 渡航先ごとのワクチン＋疾患 |

@@ -700,6 +700,17 @@ table.diseases td .en {
   font-size: 0.84rem;
   margin: 6px 0 0;
 }
+.dx-tx {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--cat-routine);
+  border-radius: 6px;
+  background: var(--surface-2);
+}
+.dx-tx p {
+  margin: 0;
+}
 
 .dx-mnm {
   margin-top: 20px;
