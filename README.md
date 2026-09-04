@@ -2,7 +2,7 @@
 
 フレームワーク不使用の静的 Web アプリ。2つのモードがあります。
 
-**① 地域から調べる** — 渡航先の国・地域を入力すると、[CDC Travelers' Health](https://wwwnc.cdc.gov/travel/) のデータをもとに
+**① 流行疾患・推奨ワクチンの検索** — 渡航先の国・地域を入力すると、[CDC Travelers' Health](https://wwwnc.cdc.gov/travel/) のデータをもとに
 - **推奨ワクチン・医薬品**（推奨度別グルーピング）
 - **ワクチンで予防できない疾患**（感染経路別）
 - **現在の流行情報**（CDC Travel Notices / Level 1–4）＋世界的な注意喚起
