@@ -328,6 +328,9 @@ table.diseases td .en {
 .notice-item .notice-title {
   font-weight: 600;
 }
+.notice-item .notice-title .badge {
+  margin-right: 4px;
+}
 .notice-item .notice-meta {
   font-size: 0.8rem;
   color: var(--text-dim);
@@ -736,6 +739,87 @@ table.diseases td .en {
 }
 .dx-mnm-item .en {
   color: var(--text-dim);
+}
+
+/* ---------- source sections (THP / FORTH) ---------- */
+.src-section {
+  margin: 14px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.src-section > summary {
+  cursor: pointer;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+.src-section[open] > summary {
+  border-bottom: 1px solid var(--border);
+}
+.src-body {
+  padding: 10px 14px;
+  font-size: 0.86rem;
+}
+.src-thp > summary {
+  border-left: 4px solid #1d70b8;
+}
+.src-forth > summary {
+  border-left: 4px solid #b3272d;
+}
+.src-meta {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  margin: 0 0 8px;
+}
+.src-attr {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--border);
+  font-size: 0.74rem;
+  color: var(--text-dim);
+  word-break: break-all;
+}
+.thp-tier {
+  margin: 10px 0;
+}
+.thp-tier > h4 {
+  margin: 0 0 6px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 3px;
+}
+.thp-dis {
+  margin: 6px 0;
+}
+.thp-dis > b {
+  font-size: 0.88rem;
+}
+
+/* source badge on notice items */
+.src-badge {
+  color: #fff;
+}
+.src-badge-cdc {
+  background: #0a6cbd;
+}
+.src-badge-thp {
+  background: #1d70b8;
+}
+.src-badge-forth {
+  background: #b3272d;
+}
+
+/* changelog per-source block */
+.cl-src-block {
+  margin: 12px 0 4px;
+}
+.cl-src-head {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  padding: 3px 8px;
+  background: var(--surface-2);
+  border-radius: 6px;
 }
 
 /* ---------- footer ---------- */

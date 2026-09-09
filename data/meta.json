@@ -1,13 +1,39 @@
 {
-  "source": "CDC Travelers' Health (https://wwwnc.cdc.gov/travel/)",
-  "last_run": "2026-09-03",
-  "last_change": "2026-09-03",
+  "sources_note": "CDC Travelers' Health / TravelHealthPro (NaTHNaC) / FORTH（厚生労働省検疫所）",
+  "last_run": "2026-09-09",
+  "last_change": "2026-09-09",
   "counts": {
-    "destinations_with_data": 242,
     "destinations_configured": 244,
+    "destinations_with_data": 242,
     "notices": 24,
     "untranslated": 0
   },
+  "sources": {
+    "cdc": {
+      "last_run": "2026-09-09",
+      "errors": [],
+      "counts": {
+        "destinations_with_data": 242,
+        "notices": 24
+      }
+    },
+    "thp": {
+      "last_run": "2026-09-09",
+      "errors": [],
+      "counts": {
+        "countries": 4,
+        "outbreaks": 20
+      }
+    },
+    "forth": {
+      "last_run": "2026-09-09",
+      "errors": [],
+      "counts": {
+        "countries": 4,
+        "topics": 50
+      }
+    }
+  },
   "errors": [],
-  "scope": "full"
+  "scope": "all"
 }

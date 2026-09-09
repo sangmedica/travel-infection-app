@@ -1,0 +1,323 @@
+[
+  {
+    "id": "ebola-disease-in-drc",
+    "source": "thp",
+    "level": null,
+    "title_en": "Ebola disease in DRC",
+    "topic_en": "Ebola disease",
+    "place_en": "DRC",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "congo",
+      "democratic-republic-of-congo"
+    ],
+    "summary_en": "As of 6 September 2026, a total of 6,686 confirmed Ebola disease (Bundibugyo virus) cases and 3,226 confirmed deaths have now been reported across six provinces in the Democratic Republic of the Congo: Ituri, North Kivu, South Kivu, Tshopo, Haut-Uele and Bas-Uele. Please see our Topics in Brief article for further details on Ebola disease.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-09-08"
+  },
+  {
+    "id": "dengue-in-usa",
+    "source": "thp",
+    "level": null,
+    "title_en": "Dengue in USA",
+    "topic_en": "Dengue",
+    "place_en": "USA",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "united-states"
+    ],
+    "summary_en": "As of 29 August 2026, 73 cases of locally acquired dengue have been confirmed in Florida, USA. Please see our Topics in Brief article for more details on dengue.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-09-07"
+  },
+  {
+    "id": "dengue-in-italy",
+    "source": "thp",
+    "level": null,
+    "title_en": "Dengue in Italy",
+    "topic_en": "Dengue",
+    "place_en": "Italy",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "italy"
+    ],
+    "summary_en": "As of 30 August 2026, a total of three confirmed locally acquired dengue cases have been reported during 2026 in the Puglia and Tuscany regions of Italy. Please see our Topics in Brief article for further details on dengue.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-09-03"
+  },
+  {
+    "id": "lassa-fever-in-nigeria",
+    "source": "thp",
+    "level": null,
+    "title_en": "Lassa fever in Nigeria",
+    "topic_en": "Lassa fever",
+    "place_en": "Nigeria",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "nigeria"
+    ],
+    "summary_en": "As of 23 August 2026, a total of 1,056 confirmed Lassa fever cases, with 7,580 suspected cases, six probable cases and 253 deaths, have been reported across 24 states in Nigeria for 2026. Please see our Topics in Brief article for further details on Lassa fever.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-09-03"
+  },
+  {
+    "id": "chikungunya-in-france",
+    "source": "thp",
+    "level": null,
+    "title_en": "Chikungunya in France",
+    "topic_en": "Chikungunya",
+    "place_en": "France",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "france"
+    ],
+    "summary_en": "As of 30 August 2026, a total of 46 locally acquired chikungunya cases have been reported during 2026 in Tarn, Lot (Occitanie), Gironde (Nouvelle-Aquitaine) and Val-de-Marne (&Icirc;le-de-France) in France. Please see our Topics in Brief article for further details on chikungunya.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-09-03"
+  },
+  {
+    "id": "west-nile-virus-in-netherlands",
+    "source": "thp",
+    "level": null,
+    "title_en": "West Nile virus in Netherlands",
+    "topic_en": "West Nile virus",
+    "place_en": "Netherlands",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "netherlands"
+    ],
+    "summary_en": "As of 2 September 2026, a total of nine locally acquired West Nile virus cases have now been confirmed in the Netherlands for 2026. These infections occurred in North Brabant, North Holland, South Holland and Utrecht provinces. Please see our Topics in Brief article for further details on West Nile virus.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-09-03"
+  },
+  {
+    "id": "dengue-in-marshall-islands",
+    "source": "thp",
+    "level": null,
+    "title_en": "Dengue in Marshall Islands",
+    "topic_en": "Dengue",
+    "place_en": "Marshall Islands",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "marshall-islands"
+    ],
+    "summary_en": "As of 24 August 2026, Marshall Island's Ministry of Health and Human Services has reported 17 confirmed dengue cases. DENV-1 has been confirmed in circulation. Please see our Topics in Brief article for further details on dengue.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-09-02"
+  },
+  {
+    "id": "dengue-in-vanuatu",
+    "source": "thp",
+    "level": null,
+    "title_en": "Dengue in Vanuatu",
+    "topic_en": "Dengue",
+    "place_en": "Vanuatu",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "vanuatu"
+    ],
+    "summary_en": "As of 31 August 2026, a total of 112 confirmed dengue cases have been reported in Vanuatu since 14 June 2026. The outbreak remains active, with ongoing local transmission in affected communities across South-West Efate, Shefa Province. The most affected areas continue to be Erakor (31%), Port Vila (22%), Eratap (21%), and Pango (16%). DENV-1 has been confirmed as the circulating serotype. Please see our Topics in Brief article for further details on dengue.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-09-02"
+  },
+  {
+    "id": "west-nile-virus-in-usa",
+    "source": "thp",
+    "level": null,
+    "title_en": "West Nile virus in USA",
+    "topic_en": "West Nile virus",
+    "place_en": "USA",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "united-states"
+    ],
+    "summary_en": "As of 1 September 2026, a total of 407 human cases of West Nile virus have been reported across 40 states in the United States. Of these, 285 cases were reported to be the neuroinvasive form. The highest number of cases have been reported in Arizona (88 cases), California (66 cases) and Texas (46 cases). Please see our Topics in Brief article for further details on West Nile virus.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-09-02"
+  },
+  {
+    "id": "diphtheria-in-italy",
+    "source": "thp",
+    "level": null,
+    "title_en": "Diphtheria in Italy",
+    "topic_en": "Diphtheria",
+    "place_en": "Italy",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "italy"
+    ],
+    "summary_en": "On 20 August 2026, a fatal case of diphtheria has been confirmed in a child in Palermo, Sicily. A second probable case has been reported in another child who is unwell and is a contact of the first case. A further ten family members are reported to have tested positive, but remain well. Please see our Topics in Brief article for further details on diphtheria.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-09-01"
+  },
+  {
+    "id": "cyclosporiasis-in-usa",
+    "source": "thp",
+    "level": null,
+    "title_en": "Cyclosporiasis in USA",
+    "topic_en": "Cyclosporiasis",
+    "place_en": "USA",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "united-states"
+    ],
+    "summary_en": "As of 24 August 2026, 17,180 confirmed locally acquired cyclosporiasis cases, including two deaths have been reported in 48 states and the district of Columbia in the USA. A further 11,844 cases are under investigation.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-09-01"
+  },
+  {
+    "id": "measles-in-sweden",
+    "source": "thp",
+    "level": null,
+    "title_en": "Measles in Sweden",
+    "topic_en": "Measles",
+    "place_en": "Sweden",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "sweden"
+    ],
+    "summary_en": "As of 27 August 2026, a total of 35 measles cases have been reported in Sweden in connection with the Ukult festival which took place between 30 July and 2 August 2026. Please see our Topics in Brief article for further details on measles.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-08-27"
+  },
+  {
+    "id": "malaria-in-germany",
+    "source": "thp",
+    "level": null,
+    "title_en": "Malaria in Germany",
+    "topic_en": "Malaria",
+    "place_en": "Germany",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "germany"
+    ],
+    "summary_en": "As of 27 August 2026, a total of six malaria cases, including two deaths, have been reported from individuals working at Frankfurt Airport. There is no increased risk to the general public. Please see our Topics in Brief article for further details on malaria.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-08-27"
+  },
+  {
+    "id": "dengue-in-france",
+    "source": "thp",
+    "level": null,
+    "title_en": "Dengue in France",
+    "topic_en": "Dengue",
+    "place_en": "France",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "france"
+    ],
+    "summary_en": "As of 26 August 2026, five locally acquired cases of dengue have been reported in the Tarn and Herault (both in Occitanie), la Dordogne (Nouvelle-Aquitaine) and Bouches-du-Rh&ocirc;ne (Provence-Alpes-C&ocirc;te d'Azur) departments in France. Please see our Topics in Brief article for further details on dengue.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-08-27"
+  },
+  {
+    "id": "usutu-virus-in-italy",
+    "source": "thp",
+    "level": null,
+    "title_en": "Usutu virus in Italy",
+    "topic_en": "Usutu virus",
+    "place_en": "Italy",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "italy"
+    ],
+    "summary_en": "As of 26 August 2026, a total of 10 Usutu virus cases have been reported in five regions of Italy during 2026.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-08-27"
+  },
+  {
+    "id": "mpox-in-taiwan",
+    "source": "thp",
+    "level": null,
+    "title_en": "Mpox in Taiwan",
+    "topic_en": "Mpox",
+    "place_en": "Taiwan",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "taiwan"
+    ],
+    "summary_en": "On 26 August 2026, Taiwan's Centers for Disease Control confirmed two locally acquired clade Ib mpox cases in 2026. These are the first locally acquired clade Ib mpox cases in Taiwan. Please see our Topics in Brief article for further details on Mpox.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-08-26"
+  },
+  {
+    "id": "diphtheria-in-australia",
+    "source": "thp",
+    "level": null,
+    "title_en": "Diphtheria in Australia",
+    "topic_en": "Diphtheria",
+    "place_en": "Australia",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "australia"
+    ],
+    "summary_en": "As of 26 August 2026, a total of 539 confirmed diphtheria cases have now been reported across Australia during 2026. The majority of cases have been reported in the Northern Territory (289 cases) and Western Australia (227 cases). Please see our Topics in Brief article for further details on diphtheria.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-08-26"
+  },
+  {
+    "id": "dermatophilus-congolensis-in-austria",
+    "source": "thp",
+    "level": null,
+    "title_en": "Dermatophilus congolensis in Austria",
+    "topic_en": "Dermatophilus congolensis",
+    "place_en": "Austria",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "austria"
+    ],
+    "summary_en": "As of 20 August 2026, a total of 20 confirmed cases of dermatophilosis caused by Dermatophilus congolensis have been reported in Austria between 2025 and July 2026. This includes 18 cases reported in Vienna and two in Salzburg.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-08-25"
+  },
+  {
+    "id": "dermatophilus-congolensis-in-denmark",
+    "source": "thp",
+    "level": null,
+    "title_en": "Dermatophilus congolensis in Denmark",
+    "topic_en": "Dermatophilus congolensis",
+    "place_en": "Denmark",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "denmark"
+    ],
+    "summary_en": "As of 20 August 2026, one confirmed case of dermatophilosis caused by Dermatophilus congolensis has been reported in Denmark.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-08-25"
+  },
+  {
+    "id": "dermatophilus-congolensis-in-france",
+    "source": "thp",
+    "level": null,
+    "title_en": "Dermatophilus congolensis in France",
+    "topic_en": "Dermatophilus congolensis",
+    "place_en": "France",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "france"
+    ],
+    "summary_en": "As of 20 August 2026, a total of 70 confirmed cases of dermatophilosis caused by Dermatophilus congolensis have been reported in France. Cases were predominantly, but not exclusively, among gay, bisexual and other men who have sex with men.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-08-25"
+  }
+]

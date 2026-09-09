@@ -1,9 +1,22 @@
 [
   {
+    "date": "2026-09-09",
+    "has_changes": true,
+    "summary_ja": "情報源に TravelHealthPro（英国 NaTHNaC）と FORTH（厚生労働省検疫所）を追加しました。以降は毎月、CDC を含む3ソースそれぞれの流行情報・国別データの変更点を、ソース別にこの「新規更新」へ日付つきで要約します（誤訳防止のため CDC/THP は英語原文、FORTH は日本語原文を併記）。",
+    "sources": {
+      "cdc": { "has_changes": false, "feed": { "added": [], "removed": [], "level_changed": [] }, "countries": [] },
+      "thp": { "has_changes": false, "feed": { "added": [], "removed": [], "level_changed": [] }, "countries": [] },
+      "forth": { "has_changes": false, "feed": { "added": [], "removed": [], "level_changed": [] }, "countries": [] }
+    }
+  },
+  {
     "date": "2026-09-03",
     "has_changes": true,
-    "summary_ja": "初回公開。CDC Travelers' Health の全244目的地（うち242地域でデータ取得。united-states と antarctica は CDC にワクチン表がなく対象外）と Travel Notice 24件を掲載しました。以降は毎月1日の自動更新で、前回からの変更点をこの「新規更新」に日付つきで追記します（誤訳防止のため英語原文つき）。",
-    "notices": { "added": [], "removed": [], "level_changed": [] },
-    "destinations": []
+    "summary_ja": "初回公開。CDC Travelers' Health の全244目的地（うち242地域でデータ取得）と Travel Notice 24件を掲載しました。",
+    "sources": {
+      "cdc": { "has_changes": true, "feed": { "added": [], "removed": [], "level_changed": [] }, "countries": [] },
+      "thp": { "has_changes": false, "feed": { "added": [], "removed": [], "level_changed": [] }, "countries": [] },
+      "forth": { "has_changes": false, "feed": { "added": [], "removed": [], "level_changed": [] }, "countries": [] }
+    }
   }
 ]

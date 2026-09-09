@@ -14,9 +14,10 @@ let lastRequestAt = 0;
 
 export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function waitForSlot() {
+async function waitForSlot(delayMs) {
+  const d = Number.isFinite(delayMs) ? delayMs : DELAY_MS;
   const now = Date.now();
-  const wait = lastRequestAt + DELAY_MS - now;
+  const wait = lastRequestAt + d - now;
   if (wait > 0) await sleep(wait);
   lastRequestAt = Date.now();
 }
@@ -24,7 +25,8 @@ async function waitForSlot() {
 /**
  * URL を GET してテキストを返す。失敗時は指数バックオフで最大3回リトライ。
  * @param {string} url
- * @param {{retries?: number, timeoutMs?: number}} [opts]
+ * @param {{retries?: number, timeoutMs?: number, delayMs?: number}} [opts]
+ *   delayMs: このリクエストの直前待機（ソースごとの Crawl-delay 上書き用）
  * @returns {Promise<string>}
  */
 export async function fetchText(url, opts = {}) {
@@ -33,7 +35,7 @@ export async function fetchText(url, opts = {}) {
 
   let lastErr;
   for (let attempt = 0; attempt <= retries; attempt++) {
-    await waitForSlot();
+    await waitForSlot(opts.delayMs);
     const ac = new AbortController();
     const timer = setTimeout(() => ac.abort(), timeoutMs);
     try {

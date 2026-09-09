@@ -36,7 +36,9 @@ jobs:
         run: |
           node scripts/build-config.mjs --check
           node scripts/build-region-map.mjs --check
+          node scripts/build-source-map.mjs --check
           node scripts/kb-check.mjs
+          node scripts/sources-check.mjs
           node scripts/dx.test.mjs
       - uses: actions/configure-pages@v5
       - name: Assemble static site

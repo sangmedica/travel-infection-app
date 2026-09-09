@@ -10,8 +10,10 @@
     "serve": "node scripts/serve.mjs",
     "kb:check": "node scripts/kb-check.mjs",
     "kb:test": "node scripts/dx.test.mjs",
+    "sources:check": "node scripts/sources-check.mjs",
     "build:config": "node scripts/build-config.mjs",
-    "build:regions": "node scripts/build-region-map.mjs"
+    "build:regions": "node scripts/build-region-map.mjs",
+    "build:sourcemap": "node scripts/build-source-map.mjs"
   },
   "dependencies": {
     "cheerio": "^1.0.0"

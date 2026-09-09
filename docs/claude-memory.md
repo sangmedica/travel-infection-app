@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 8f8e20a4-6865-47c5-8bdf-3d14c0fb4b99
-  modified: 2026-09-09T01:50:57.022Z
+  modified: 2026-09-09T09:14:54.681Z
 ---
 
 `C:\Users\406\Claude\travel-infection-app` — 渡航先を入力すると CDC Travelers' Health
@@ -24,6 +24,7 @@ metadata:
 - トップに「新規更新（日付つき）」: `scripts/lib/diff.mjs` が全件フェッチ時に前回との差分を `data/changelog.json` に記録し、`app.js` が英語原文つきで表示（誤訳防止）。
 - モード②「症状から鑑別」(2026-09-04追加): 症状/曝露/検査/潜伏期/渡航先 → 鑑別 No.1〜5。手キュレートの `data/kb/`（diseases.json 66疾患・findings.json・region-map.json）＋決定論スコアリング `dx.js`（ブラウザ/Node 共用）。意思決定支援であり確定診断ではない旨と「見逃してはいけない疾患」枠あり。`scripts/kb-check.mjs` と `scripts/dx.test.mjs`（ビネット8件）で検証、deploy.yml が公開前に実行。`app.js` は module 化済み、`?mode=dx` でディープリンク。
 - 各疾患に `treatment_ja`/`treatment_en`（治療の要点、日英）を追加済み。UI では折りたたみ詳細内に「治療（要参照確認）」枠で表示、免責に用量・相互作用・妊娠等の確認を明記。KB 拡張は `diseases.json` に追記（自動更新の対象外・作り切り）。
+- 情報源3ソース化(2026-09-09): CDC に加え **TravelHealthPro**（英国NaTHNaC, OGL v3.0, `scripts/lib/thp.mjs`, RSS `rss-outbreaks.php`＋`/countries/<slug>` の All/Most/Some ティア。robots で `/news/` 不可）と **FORTH**（厚労省検疫所, 公共データ利用規約1.0＝出典＋編集加工明示, `scripts/lib/forth.mjs`, `/topics/fragment1.html`＋`/destinations/country/<page>.html`。RSS無し・日本語散文・地域まとめページ多い）。`config/source-map.json`（`scripts/build-source-map.mjs`、CDC slug→{thp,forth}、THP 240/FORTH 195）。`scrape.mjs --source=cdc|thp|forth|all`。データは `data/thp/` `data/forth/`（outbreaks.json/topics.json＋<slug>.json）。UI は渡航先ビューにソース別折りたたみ、流行情報ブロックと dx.js に3ソース統合（`ALL_FEED`）、changelog は `entry.sources.{cdc,thp,forth}` 構造でソース別・原文つき（CDC/THP=英語, FORTH=日本語）。`scripts/sources-check.mjs`、`update.yml` timeout 240、THP/FORTH は 6 秒間隔（`http.mjs` の `delayMs`）。
 
 - 技術: フレームワーク無し。`index.html`/`app.js`/`styles.css` + 事前生成 `data/*.json`。スクレイパは Node ESM + cheerio (`scripts/scrape.mjs`)。
 - 更新モデル: `.github/workflows/update.yml` が毎月1日にスクレイプ→`data/` 差分を main へコミット→`deploy.yml` が GitHub Pages へデプロイ。

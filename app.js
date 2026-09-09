@@ -74,24 +74,44 @@ let CHANGELOG = [];
 let FINDINGS = null;
 let DISEASES = [];
 let REGIONMAP = {};
-
-// ---- 初期化 -------------------------------------------------------------------
+let SOURCES = {};
+let THP_OUTBREAKS = [];
+let FORTH_TOPICS = [];
+let ALL_FEED = []; // CDC + THP + FORTH の流行情報を統合した配列
 
 async function init() {
   try {
-    [INDEX, NOTICES, META, CHANGELOG, FINDINGS, DISEASES, REGIONMAP] = await Promise.all([
-      getJSON("data/destinations-index.json"),
-      getJSON("data/notices.json").catch(() => []),
-      getJSON("data/meta.json").catch(() => null),
-      getJSON("data/changelog.json").catch(() => []),
-      getJSON("data/kb/findings.json").catch(() => null),
-      getJSON("data/kb/diseases.json").then((d) => d.diseases).catch(() => []),
-      getJSON("data/kb/region-map.json").then((d) => d.regions).catch(() => ({})),
-    ]);
+    [INDEX, NOTICES, META, CHANGELOG, FINDINGS, DISEASES, REGIONMAP, SOURCES, THP_OUTBREAKS, FORTH_TOPICS] =
+      await Promise.all([
+        getJSON("data/destinations-index.json"),
+        getJSON("data/notices.json").catch(() => []),
+        getJSON("data/meta.json").catch(() => null),
+        getJSON("data/changelog.json").catch(() => []),
+        getJSON("data/kb/findings.json").catch(() => null),
+        getJSON("data/kb/diseases.json").then((d) => d.diseases).catch(() => []),
+        getJSON("data/kb/region-map.json").then((d) => d.regions).catch(() => ({})),
+        getJSON("data/sources.json").then((d) => d.sources).catch(() => ({})),
+        getJSON("data/thp/outbreaks.json").catch(() => []),
+        getJSON("data/forth/topics.json").catch(() => []),
+      ]);
   } catch (err) {
     $("#search-hint").textContent = "データの読み込みに失敗しました: " + err.message;
     return;
   }
+
+  // FORTH topics は発生情報のみ流行フィードに載せる（日本語→topic_en 補完は KB から）
+  const kbJaToEn = new Map(DISEASES.map((d) => [d.name_ja, d.name_en]));
+  const forthFeed = (FORTH_TOPICS || [])
+    .filter((t) => t.is_outbreak)
+    .map((t) => ({
+      ...t,
+      topic_en: t.topic_en || (t.topic_ja ? kbJaToEn.get(t.topic_ja) || null : null),
+    }));
+  ALL_FEED = [
+    ...(NOTICES || []).map((n) => ({ ...n, source: n.source || "cdc" })),
+    ...(THP_OUTBREAKS || []),
+    ...forthFeed,
+  ];
 
   // 種別フィルタ
   const counts = {
@@ -312,7 +332,7 @@ function runDx() {
     labs: [...dxState.labs],
     destSlug: dxState.destSlug,
     destData: dxDestData,
-    notices: NOTICES,
+    notices: ALL_FEED,
     regionMap: REGIONMAP,
     incubationDays: incDay,
     diseases: DISEASES,
@@ -644,20 +664,25 @@ function renderDestination(data) {
     disSection.append(el("p", { class: "empty", text: "このページに掲載なし" }));
   root.append(disSection);
 
-  // 3) この地域の流行情報
-  const local = NOTICES.filter(
+  // 3) TravelHealthPro / FORTH の国別セクション（折りたたみ・遅延読み込み）
+  const dIdx = INDEX.find((d) => d.slug === data.slug) || {};
+  if (dIdx.thp) root.append(sourceCollapsible("thp", data.slug, data.name_ja));
+  if (dIdx.forth) root.append(sourceCollapsible("forth", data.slug, data.name_ja));
+
+  // 4) この地域の流行情報（CDC + THP + FORTH を統合）
+  const local = ALL_FEED.filter(
     (n) => !n.is_global && (n.matched_slugs || []).includes(data.slug)
-  ).sort((a, b) => (b.level || 0) - (a.level || 0));
+  ).sort((a, b) => (b.published || "").localeCompare(a.published || ""));
   const noticeSection = el(
     "section",
     { class: "card-section" },
-    el("h3", {}, `${data.name_ja} の流行情報（CDC Travel Notices）`)
+    el("h3", {}, `${data.name_ja} の流行情報（CDC / TravelHealthPro / FORTH）`)
   );
   if (local.length === 0) {
     noticeSection.append(
       el("p", {
         class: "empty",
-        text: "この地域を名指しする現行の Travel Notice はありません（世界的な注意喚起は下部を参照）。",
+        text: "この地域を名指しする現行の情報はありません（世界的な注意喚起は下部を参照）。",
       })
     );
   } else {
@@ -669,31 +694,143 @@ function renderDestination(data) {
   root.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
+// ---- ソース別セクション（TravelHealthPro / FORTH） ----------------------
+
+const SRC_LABEL = { thp: "TravelHealthPro（NaTHNaC・英国）", forth: "FORTH（厚生労働省検疫所・日本）" };
+
+function sourceCollapsible(src, slug, nameJa) {
+  const det = el("details", { class: `src-section src-${src}` });
+  det.append(el("summary", {}, el("b", { text: SRC_LABEL[src] }), " ", el("span", { class: "en", text: "— クリックで表示" })));
+  const body = el("div", { class: "src-body", text: "読み込み中…" });
+  det.append(body);
+  let loaded = false;
+  det.addEventListener("toggle", async () => {
+    if (!det.open || loaded) return;
+    loaded = true;
+    try {
+      const d = await getJSON(`data/${src}/${slug}.json`);
+      body.replaceChildren(src === "thp" ? renderThp(d) : renderForth(d));
+    } catch (e) {
+      body.textContent = "読み込みに失敗しました。";
+    }
+  });
+  return det;
+}
+
+function srcAttribution(src, url) {
+  const s = SOURCES[src] || {};
+  return el(
+    "p",
+    { class: "src-attr" },
+    `出典: `,
+    el("a", { href: url, target: "_blank", rel: "noopener", text: url }),
+    s.license_ja ? ` ／ ${s.license_ja}` : "",
+    s.edited_note_ja ? ` ／ ${s.edited_note_ja}` : ""
+  );
+}
+
+const THP_TIER_JA = { all: "全渡航者", most: "ほとんどの渡航者に推奨", some: "一部の渡航者に推奨（条件付き）" };
+
+function renderThp(d) {
+  const wrap = el("div", {});
+  wrap.append(el("p", { class: "src-meta", text: `取得日 ${d.retrieved_at}` }));
+  for (const t of ["all", "most", "some"]) {
+    const tier = d.tiers?.[t] || { diseases: [] };
+    if (!tier.diseases.length && !tier.intro_en) continue;
+    const g = el("div", { class: "thp-tier" }, el("h4", { text: THP_TIER_JA[t] }));
+    if (tier.intro_en) g.append(el("p", { class: "cl-en cl-en-line", text: tier.intro_en }));
+    for (const dis of tier.diseases)
+      g.append(
+        el(
+          "div",
+          { class: "thp-dis" },
+          el("b", { text: dis.name_en }),
+          dis.desc_en ? el("p", { class: "cl-en", text: dis.desc_en }) : null
+        )
+      );
+    wrap.append(g);
+  }
+  if (d.malaria_en)
+    wrap.append(el("div", { class: "thp-tier" }, el("h4", { text: "マラリア（Malaria）" }), el("p", { class: "cl-en", text: d.malaria_en })));
+  if (d.certificate_en)
+    wrap.append(el("div", { class: "thp-tier" }, el("h4", { text: "証明書要件（Certificate requirements）" }), el("p", { class: "cl-en", text: d.certificate_en })));
+  if (d.other_risks_en)
+    wrap.append(el("details", {}, el("summary", { text: "その他のリスク（Other risks）" }), el("p", { class: "cl-en", text: d.other_risks_en })));
+  wrap.append(srcAttribution("thp", d.source_url));
+  return wrap;
+}
+
+function renderForth(d) {
+  const wrap = el("div", {});
+  wrap.append(
+    el("p", { class: "src-meta", text: `取得日 ${d.retrieved_at}｜FORTH ページ: ${d.page_title_ja}${d.is_regional_page ? "（地域情報）" : ""}` })
+  );
+  if (d.watch_diseases_ja.length) {
+    wrap.append(el("h4", { text: "気をつけたい病気（FORTH 日本語原文）" }));
+    wrap.append(
+      el(
+        "p",
+        {},
+        d.watch_diseases_ja.map((x) => el("span", { class: "dx-chip dx-chip-sym", text: x }))
+      )
+    );
+  }
+  if (d.watch_text_ja) wrap.append(el("blockquote", { class: "cl-en", text: d.watch_text_ja }));
+  if (d.vaccines_ja.length) {
+    wrap.append(el("h4", { text: "受けておきたい予防接種（FORTH 日本語原文）" }));
+    const ul = el("ul", { class: "cl-changes" });
+    for (const v of d.vaccines_ja)
+      ul.append(
+        el("li", {}, v.name_ja + (v.conditional ? "（条件付き）" : ""), v.note_ja ? el("span", { class: "en", text: " " + v.note_ja }) : null)
+      );
+    wrap.append(ul);
+  }
+  if (d.vaccine_line_ja) wrap.append(el("blockquote", { class: "cl-en", text: d.vaccine_line_ja }));
+  wrap.append(srcAttribution("forth", d.source_url));
+  return wrap;
+}
+
+const SRC_SHORT = { cdc: "CDC", thp: "THP", forth: "FORTH" };
+const SRC_LINK_JA = { cdc: "CDC の原文", thp: "TravelHealthPro のニュース", forth: "FORTH の原文" };
+
 function noticeItem(n, currentSlug) {
+  const src = n.source || "cdc";
   const onList = currentSlug && (n.matched_slugs || []).includes(currentSlug);
+  const titleJa =
+    src === "forth"
+      ? n.topic_ja || n.title_ja || n.title_en
+      : n.topic_ja
+      ? `${n.topic_ja}（${n.topic_en || n.topic_ja}）`
+      : n.topic_en || n.title_en;
+  const place = src === "forth" ? n.place_ja : n.place_en;
+  const summary = src === "forth" ? n.summary_ja || n.title_ja : n.summary_en;
+  const meta =
+    src === "cdc"
+      ? `${LEVEL_JA[n.level || 0]}｜掲載 ${fmtDate(n.published)}`
+      : `${SOURCES[src]?.name_short || SRC_SHORT[src]}｜掲載 ${fmtDate(n.published)}`;
   return el(
     "div",
     { class: "notice-item" },
     el(
       "div",
       { class: "notice-title" },
-      el("span", { class: `badge lvl${n.level || 0}`, text: `L${n.level || "?"}` }),
+      el("span", { class: `badge src-badge src-badge-${src}`, text: SRC_SHORT[src] }),
+      src === "cdc" && n.level
+        ? el("span", { class: `badge lvl${n.level}`, text: `L${n.level}` })
+        : null,
       " ",
-      n.topic_ja ? `${n.topic_ja}（${n.topic_en}）` : n.topic_en || n.title_en,
-      n.place_en ? ` — ${n.place_en}` : ""
+      titleJa,
+      place && !String(titleJa).includes(place) ? ` — ${place}` : ""
     ),
-    el("div", {
-      class: "notice-meta",
-      text: `${LEVEL_JA[n.level || 0]}｜掲載 ${fmtDate(n.published)}`,
-    }),
+    el("div", { class: "notice-meta", text: meta }),
     onList
       ? el("p", { class: "notice-summary warn", text: "▶ この渡航先も対象国リストに含まれています。" })
       : null,
-    n.summary_en ? el("p", { class: "notice-summary", text: n.summary_en }) : null,
+    summary ? el("p", { class: "notice-summary", text: summary }) : null,
     el(
       "div",
       { class: "notice-meta" },
-      el("a", { href: n.url, target: "_blank", rel: "noopener", text: "CDC の原文を開く →" })
+      el("a", { href: n.url, target: "_blank", rel: "noopener", text: `${SRC_LINK_JA[src]}を開く →` })
     )
   );
 }
@@ -732,6 +869,8 @@ function renderChangelog() {
   }
 }
 
+const CL_SRC_JA = { cdc: "CDC Travelers' Health", thp: "TravelHealthPro（NaTHNaC）", forth: "FORTH（厚生労働省検疫所）" };
+
 function changelogEntry(entry, open) {
   const wrap = el("article", { class: "cl-entry" });
   wrap.append(
@@ -748,58 +887,76 @@ function changelogEntry(entry, open) {
   );
   wrap.append(el("p", { class: "cl-summary", text: entry.summary_ja }));
 
-  const nd = entry.notices || {};
-  const dests = entry.destinations || [];
-  const hasDetail =
-    (nd.added && nd.added.length) ||
-    (nd.removed && nd.removed.length) ||
-    (nd.level_changed && nd.level_changed.length) ||
-    dests.length;
-  if (!hasDetail) return wrap;
+  const sources = entry.sources || {};
+  const anyDetail = ["cdc", "thp", "forth"].some((k) => {
+    const s = sources[k];
+    if (!s) return false;
+    const f = s.feed || {};
+    return (
+      (f.added && f.added.length) ||
+      (f.removed && f.removed.length) ||
+      (f.level_changed && f.level_changed.length) ||
+      (s.countries && s.countries.length)
+    );
+  });
+  if (!anyDetail) return wrap;
 
   const det = el("details", open ? { open: "" } : {});
-  det.append(el("summary", { text: "詳細（CDC 英語原文つき）" }));
+  det.append(el("summary", { text: "詳細（CDC/THP は英語原文、FORTH は日本語原文つき）" }));
 
-  if ((nd.added && nd.added.length) || (nd.level_changed && nd.level_changed.length) || (nd.removed && nd.removed.length)) {
-    const box = el("div", { class: "cl-block" }, el("h4", { text: "Travel Notices" }));
-    for (const n of nd.added || [])
-      box.append(clItem(`新規: ${noticeLabelJa(n)}`, n.title_en, n.summary_en, n.url));
-    for (const n of nd.level_changed || [])
-      box.append(
-        clItem(
-          `レベル変更: ${noticeLabelJa(n)}  Level ${n.level_from} → ${n.level_to}`,
-          n.title_en,
-          n.summary_en,
-          n.url
-        )
-      );
-    for (const n of nd.removed || [])
-      box.append(clItem(`掲載終了: ${noticeLabelJa(n)}`, n.title_en, "", n.url));
-    det.append(box);
-  }
+  for (const key of ["cdc", "thp", "forth"]) {
+    const s = sources[key];
+    if (!s) continue;
+    const f = s.feed || { added: [], removed: [], level_changed: [] };
+    const countries = s.countries || [];
+    const feedN = f.added.length + f.removed.length + f.level_changed.length;
+    if (feedN === 0 && countries.length === 0) continue;
 
-  const SHOW = 30;
-  for (const dd of dests.slice(0, SHOW)) {
-    const box = el("div", { class: "cl-block" }, el("h4", {}, `${dd.name_ja}（${dd.name_en}）`));
-    const ul = el("ul", { class: "cl-changes" });
-    for (const c of dd.changes) ul.append(el("li", {}, ...changeLine(c)));
-    box.append(ul);
-    det.append(box);
+    const srcBox = el("div", { class: "cl-src-block" }, el("h4", { class: "cl-src-head", text: CL_SRC_JA[key] }));
+
+    if (feedN) {
+      const fb = el("div", { class: "cl-block" }, el("h5", { text: "流行情報" }));
+      for (const n of f.added) fb.append(clItem(`新規: ${feedLabel(n)}`, feedOrig(n), feedBody(n), n.url, key));
+      for (const n of f.level_changed)
+        fb.append(clItem(`レベル変更: ${feedLabel(n)} L${n.level_from}→${n.level_to}`, feedOrig(n), feedBody(n), n.url, key));
+      for (const n of f.removed) fb.append(clItem(`掲載終了: ${feedLabel(n)}`, feedOrig(n), "", n.url, key));
+      srcBox.append(fb);
+    }
+
+    const SHOW = 25;
+    for (const dd of countries.slice(0, SHOW)) {
+      const box = el("div", { class: "cl-block" }, el("h5", {}, `${dd.name_ja}（${dd.name_en}）`));
+      const ul = el("ul", { class: "cl-changes" });
+      for (const c of dd.changes) ul.append(el("li", {}, ...changeLine(c)));
+      box.append(ul);
+      srcBox.append(box);
+    }
+    if (countries.length > SHOW)
+      srcBox.append(el("p", { class: "hint", text: `ほか ${countries.length - SHOW} 地域で変更があります。` }));
+    det.append(srcBox);
   }
-  if (dests.length > SHOW)
-    det.append(el("p", { class: "hint", text: `ほか ${dests.length - SHOW} 地域で変更があります。` }));
 
   wrap.append(det);
   return wrap;
 }
 
-function clItem(titleJa, enLine, enBody, url) {
+const feedLabel = (n) =>
+  n.source === "forth"
+    ? n.topic_ja || n.title_ja || ""
+    : n.topic_ja
+    ? `${n.topic_ja}（${n.topic_en || ""}）`
+    : n.topic_en || n.title_en;
+const feedOrig = (n) => (n.source === "forth" ? n.title_ja || "" : n.title_en || "");
+const feedBody = (n) => (n.source === "forth" ? n.summary_ja || "" : n.summary_en || "");
+
+function clItem(titleJa, enLine, enBody, url, src = "cdc") {
+  const linkText = { cdc: "CDC 原文 →", thp: "TravelHealthPro →", forth: "FORTH 原文 →" }[src] || "原文 →";
   const item = el("div", { class: "cl-item" }, el("div", { class: "cl-item-ja", text: titleJa }));
   if (enLine) item.append(el("div", { class: "cl-en cl-en-line", text: enLine }));
   if (enBody) item.append(el("blockquote", { class: "cl-en", text: enBody }));
   if (url)
     item.append(
-      el("a", { class: "cl-link", href: url, target: "_blank", rel: "noopener", text: "CDC 原文 →" })
+      el("a", { class: "cl-link", href: url, target: "_blank", rel: "noopener", text: linkText })
     );
   return item;
 }
@@ -842,6 +999,33 @@ function changeLine(c) {
     case "page_notice_level":
       out.push(ja(`地域の Travel Notice レベル: ${c.from} → ${c.to}`));
       break;
+    case "thp_vaccine_added":
+      out.push(ja(`ワクチン追加「${c.name_en}」— ${c.tier_ja}`));
+      if (c.desc_en) out.push(en(c.desc_en));
+      break;
+    case "thp_vaccine_tier":
+      out.push(ja(`ワクチン「${c.name_en}」の対象: ${c.from_ja} → ${c.to_ja}`));
+      if (c.desc_en) out.push(en(c.desc_en));
+      break;
+    case "thp_vaccine_removed":
+      out.push(ja(`ワクチン削除「${c.name_en}」（${c.from_ja}）`));
+      break;
+    case "thp_malaria_text":
+      out.push(ja("マラリアの記載が更新されました"));
+      out.push(en(c.text_en));
+      break;
+    case "forth_watch_added":
+      out.push(ja(`気をつけたい病気に追加「${c.name_ja}」`));
+      break;
+    case "forth_watch_removed":
+      out.push(ja(`気をつけたい病気から削除「${c.name_ja}」`));
+      break;
+    case "forth_vaccine_added":
+      out.push(ja(`予防接種リストに追加「${c.name_ja}」`));
+      break;
+    case "forth_vaccine_removed":
+      out.push(ja(`予防接種リストから削除「${c.name_ja}」`));
+      break;
     default:
       out.push(ja(JSON.stringify(c)));
   }
@@ -849,7 +1033,9 @@ function changeLine(c) {
 }
 
 function renderGlobalNotices(currentSlug) {
-  const globals = NOTICES.filter((n) => n.is_global).sort((a, b) => (b.level || 0) - (a.level || 0));
+  const globals = ALL_FEED.filter((n) => n.is_global).sort(
+    (a, b) => (b.published || "").localeCompare(a.published || "")
+  );
   if (globals.length === 0) return;
   $("#global-notices").hidden = false;
   $("#global-count").textContent = `（${globals.length}）`;

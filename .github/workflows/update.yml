@@ -10,6 +10,10 @@ on:
         description: "特定の渡航先 slug のみ取得（空欄で全件）"
         required: false
         default: ""
+      source:
+        description: "cdc / thp / forth / all（既定 all）"
+        required: false
+        default: "all"
 
 concurrency:
   group: cdc-refresh
@@ -21,8 +25,8 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    # 244 目的地 × Crawl-delay 20 秒 ≈ 81 分 + パース + Notices。余裕をみて 150 分。
-    timeout-minutes: 150
+    # CDC 244×20s≈81分 + THP 約240国×6s≈24分 + FORTH 約195国×6s≈20分 ＝ 約2時間。余裕をみて 240 分。
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
 
@@ -33,17 +37,26 @@ jobs:
 
       - run: npm ci
 
-      - name: Scrape CDC Travelers' Health
+      - name: Validate config & knowledge base
+        run: |
+          node scripts/build-config.mjs --check
+          node scripts/build-region-map.mjs --check
+          node scripts/build-source-map.mjs --check
+          node scripts/kb-check.mjs
+
+      - name: Scrape (CDC / TravelHealthPro / FORTH)
         env:
-          SCRAPE_DELAY_MS: "20000" # robots.txt の Crawl-delay を厳守
+          SCRAPE_DELAY_MS: "20000" # CDC の Crawl-delay を厳守（THP/FORTH は lib 側で 6 秒に上書き）
           SCRAPE_CONTACT: ${{ secrets.SCRAPE_CONTACT || 'travel-infection-app@users.noreply.github.com' }}
         run: |
-          if [ -n "${{ github.event.inputs.only }}" ]; then
-            node scripts/scrape.mjs --only="${{ github.event.inputs.only }}"
-          else
-            node scripts/scrape.mjs
-          fi
-        continue-on-error: true # 一部地域が失敗しても前回データは保持済み。差分コミットは行う。
+          ARGS="--source=${{ github.event.inputs.source || 'all' }}"
+          if [ -n "${{ github.event.inputs.only }}" ]; then ARGS="$ARGS --only=${{ github.event.inputs.only }}"; fi
+          node scripts/scrape.mjs $ARGS
+        continue-on-error: true # 一部が失敗しても前回データは保持済み。差分コミットは行う。
+
+      - name: Validate scraped sources
+        run: node scripts/sources-check.mjs
+        continue-on-error: true
 
       - name: Commit changes
         run: |

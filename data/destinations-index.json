@@ -7,7 +7,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "ireland",
@@ -17,7 +19,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "azerbaijan",
@@ -27,7 +31,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "azores",
@@ -39,7 +45,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "afghanistan",
@@ -49,7 +57,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "united-states",
@@ -63,7 +73,9 @@
     ],
     "has_data": false,
     "retrieved_at": null,
-    "page_notice_level": 0
+    "page_notice_level": 0,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "american-samoa",
@@ -73,7 +85,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "united-arab-emirates",
@@ -85,7 +99,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "algeria",
@@ -95,7 +111,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "argentina",
@@ -105,7 +123,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "aruba",
@@ -115,7 +135,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "albania",
@@ -125,7 +147,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "armenia",
@@ -135,7 +159,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "anguilla",
@@ -145,7 +171,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "angola",
@@ -155,7 +183,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "antigua-and-barbuda",
@@ -165,7 +195,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "andorra",
@@ -175,7 +207,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "easter-island",
@@ -185,7 +219,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "yemen",
@@ -195,7 +231,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "united-kingdom",
@@ -212,7 +250,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "israel",
@@ -226,7 +266,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "italy",
@@ -239,7 +281,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "iraq",
@@ -249,7 +293,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "iran",
@@ -259,7 +305,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "india",
@@ -269,7 +317,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "indonesia",
@@ -281,7 +331,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "wake-island",
@@ -291,7 +343,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "uganda",
@@ -301,7 +355,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "ukraine",
@@ -311,7 +367,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "uzbekistan",
@@ -321,7 +379,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "uruguay",
@@ -331,7 +391,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "ecuador",
@@ -343,7 +405,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "egypt",
@@ -353,7 +417,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "estonia",
@@ -363,7 +429,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "eswatini",
@@ -375,7 +443,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "ethiopia",
@@ -385,7 +455,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "eritrea",
@@ -395,7 +467,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "el-salvador",
@@ -405,7 +479,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "australia",
@@ -415,7 +491,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "austria",
@@ -425,7 +503,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "oman",
@@ -435,7 +515,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "netherlands",
@@ -448,7 +530,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "ghana",
@@ -458,7 +542,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "cape-verde",
@@ -470,7 +556,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "guyana",
@@ -480,7 +568,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "kazakhstan",
@@ -490,7 +580,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "qatar",
@@ -500,7 +592,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "canada",
@@ -510,7 +604,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "canary-islands",
@@ -520,7 +616,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "gabon",
@@ -530,7 +628,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "cameroon",
@@ -540,7 +640,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "the-gambia",
@@ -552,7 +654,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "cambodia",
@@ -562,7 +666,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "guinea",
@@ -574,7 +680,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "guinea-bissau",
@@ -584,7 +692,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "cyprus",
@@ -594,7 +704,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "cuba",
@@ -604,7 +716,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "curacao",
@@ -616,7 +730,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "greece",
@@ -626,7 +742,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "kiribati",
@@ -636,7 +754,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "kyrgyzstan",
@@ -648,7 +768,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "guatemala",
@@ -658,7 +780,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "guadeloupe",
@@ -668,7 +792,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "guam",
@@ -678,7 +804,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "kuwait",
@@ -688,7 +816,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "cook-islands",
@@ -698,7 +828,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "greenland",
@@ -708,7 +840,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "christmas-island",
@@ -718,7 +852,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "grenada",
@@ -728,7 +864,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "croatia",
@@ -738,7 +876,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "cayman-islands",
@@ -748,7 +888,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "kenya",
@@ -758,7 +900,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": true,
+    "forth": true
   },
   {
     "slug": "ivory-coast",
@@ -771,7 +915,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "cocos-islands",
@@ -783,7 +929,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "costa-rica",
@@ -793,7 +941,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "kosovo",
@@ -803,7 +953,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "comoros",
@@ -813,7 +965,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "colombia",
@@ -823,7 +977,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "congo",
@@ -836,7 +992,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "democratic-republic-of-congo",
@@ -849,7 +1007,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 4
+    "page_notice_level": 4,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "saudi-arabia",
@@ -859,7 +1019,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "south-georgia-south-sandwich-islands",
@@ -869,7 +1031,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "saba",
@@ -879,7 +1043,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "samoa",
@@ -889,7 +1055,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "saint-barthelemy",
@@ -901,7 +1069,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "saint-martin",
@@ -911,7 +1081,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "sao-tome-and-principe",
@@ -923,7 +1095,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "zambia",
@@ -933,7 +1107,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "saint-pierre-and-miquelon",
@@ -943,7 +1119,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "san-marino",
@@ -953,7 +1131,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "sierra-leone",
@@ -963,7 +1143,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "djibouti",
@@ -973,7 +1155,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "gibraltar",
@@ -983,7 +1167,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "jamaica",
@@ -993,7 +1179,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "georgia",
@@ -1003,7 +1191,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "syria",
@@ -1015,7 +1205,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "singapore",
@@ -1025,7 +1217,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "sint-maarten",
@@ -1035,7 +1229,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "sint-eustatius",
@@ -1047,7 +1243,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "zimbabwe",
@@ -1057,7 +1255,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "switzerland",
@@ -1067,7 +1267,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "sweden",
@@ -1077,7 +1279,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "sudan",
@@ -1087,7 +1291,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "spain",
@@ -1097,7 +1303,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "suriname",
@@ -1107,7 +1315,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "sri-lanka",
@@ -1117,7 +1327,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "slovakia",
@@ -1129,7 +1341,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "slovenia",
@@ -1139,7 +1353,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "seychelles",
@@ -1149,7 +1365,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "senegal",
@@ -1159,7 +1377,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "serbia",
@@ -1169,7 +1389,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "st-kitts-and-nevis",
@@ -1181,7 +1403,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "saint-vincent-and-the-grenadines",
@@ -1191,7 +1415,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "saint-helena",
@@ -1201,7 +1427,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "saint-lucia",
@@ -1211,7 +1439,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "somalia",
@@ -1221,7 +1451,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "solomon-islands",
@@ -1231,7 +1463,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "turks-and-caicos",
@@ -1241,7 +1475,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "thailand",
@@ -1251,7 +1487,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": true,
+    "forth": true
   },
   {
     "slug": "tajikistan",
@@ -1261,7 +1499,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "tanzania",
@@ -1274,7 +1514,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "czechia",
@@ -1286,7 +1528,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "chad",
@@ -1296,7 +1540,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "tunisia",
@@ -1306,7 +1552,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "chile",
@@ -1316,7 +1564,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "tuvalu",
@@ -1326,7 +1576,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "denmark",
@@ -1336,7 +1588,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "germany",
@@ -1346,7 +1600,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "togo",
@@ -1356,7 +1612,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "tokelau",
@@ -1366,7 +1624,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "dominican-republic",
@@ -1376,7 +1636,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "dominica",
@@ -1386,7 +1648,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "trinidad-and-tobago",
@@ -1396,7 +1660,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "turkmenistan",
@@ -1406,7 +1672,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "turkey",
@@ -1419,7 +1687,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "tonga",
@@ -1429,7 +1699,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "nigeria",
@@ -1439,7 +1711,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "nauru",
@@ -1449,7 +1723,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "namibia",
@@ -1459,7 +1735,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "niue",
@@ -1469,7 +1747,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "nicaragua",
@@ -1479,7 +1759,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "niger",
@@ -1489,7 +1771,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "new-caledonia",
@@ -1499,7 +1783,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "new-zealand",
@@ -1509,7 +1795,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "nepal",
@@ -1519,7 +1807,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "norfolk-island",
@@ -1529,7 +1819,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "norway",
@@ -1539,7 +1831,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "bahrain",
@@ -1549,7 +1843,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "haiti",
@@ -1559,7 +1855,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "pakistan",
@@ -1569,7 +1867,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "panama",
@@ -1579,7 +1879,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "vanuatu",
@@ -1589,7 +1891,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "the-bahamas",
@@ -1601,7 +1905,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "papua-new-guinea",
@@ -1611,7 +1917,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "bermuda",
@@ -1621,7 +1929,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "palau",
@@ -1631,7 +1941,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "paraguay",
@@ -1641,7 +1953,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "barbados",
@@ -1651,7 +1965,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "hungary",
@@ -1661,7 +1977,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "bangladesh",
@@ -1671,7 +1989,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "pitcairn-islands",
@@ -1681,7 +2001,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "fiji",
@@ -1691,7 +2013,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "philippines",
@@ -1703,7 +2027,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "finland",
@@ -1713,7 +2039,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "bhutan",
@@ -1723,7 +2051,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "puerto-rico",
@@ -1733,7 +2063,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "faroe-island",
@@ -1743,7 +2075,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "falkland-islands",
@@ -1755,7 +2089,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "brazil",
@@ -1765,7 +2101,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": true,
+    "forth": true
   },
   {
     "slug": "france",
@@ -1775,7 +2113,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "bulgaria",
@@ -1785,7 +2125,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "burkina-faso",
@@ -1795,7 +2137,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "brunei",
@@ -1805,7 +2149,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "burundi",
@@ -1815,7 +2161,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "vietnam",
@@ -1827,7 +2175,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": true,
+    "forth": true
   },
   {
     "slug": "benin",
@@ -1837,7 +2187,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "venezuela",
@@ -1847,7 +2199,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "belarus",
@@ -1857,7 +2211,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "belize",
@@ -1867,7 +2223,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "peru",
@@ -1877,7 +2235,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "belgium",
@@ -1887,7 +2247,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "poland",
@@ -1897,7 +2259,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "bosnia-and-herzegovina",
@@ -1907,7 +2271,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "botswana",
@@ -1917,7 +2283,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "bonaire",
@@ -1927,7 +2295,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "bolivia",
@@ -1937,7 +2307,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "portugal",
@@ -1947,7 +2319,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "honduras",
@@ -1957,7 +2331,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "marshall-islands",
@@ -1967,7 +2343,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "macau-sar",
@@ -1980,7 +2358,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "madagascar",
@@ -1990,7 +2370,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "madeira-islands",
@@ -2000,7 +2382,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "mayotte",
@@ -2010,7 +2394,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "malawi",
@@ -2020,7 +2406,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "mali",
@@ -2030,7 +2418,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "malta",
@@ -2040,7 +2430,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "martinique",
@@ -2050,7 +2442,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "malaysia",
@@ -2060,7 +2454,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "micronesia",
@@ -2076,7 +2472,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "burma",
@@ -2089,7 +2487,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "mexico",
@@ -2099,7 +2499,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "mauritius",
@@ -2109,7 +2511,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "mauritania",
@@ -2119,7 +2523,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "mozambique",
@@ -2129,7 +2535,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "monaco",
@@ -2139,7 +2547,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "maldives",
@@ -2149,7 +2559,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "moldova",
@@ -2159,7 +2571,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "morocco",
@@ -2169,7 +2583,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "mongolia",
@@ -2179,7 +2595,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "montenegro",
@@ -2189,7 +2607,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "montserrat",
@@ -2199,7 +2619,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "jordan",
@@ -2209,7 +2631,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "laos",
@@ -2219,7 +2643,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "latvia",
@@ -2229,7 +2655,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "lithuania",
@@ -2239,7 +2667,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "libya",
@@ -2249,7 +2679,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "liechtenstein",
@@ -2259,7 +2691,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "liberia",
@@ -2269,7 +2703,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "romania",
@@ -2279,7 +2715,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "luxembourg",
@@ -2289,7 +2727,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "rwanda",
@@ -2299,7 +2739,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "lesotho",
@@ -2309,7 +2751,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "lebanon",
@@ -2319,7 +2763,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "reunion",
@@ -2331,7 +2777,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "russia",
@@ -2343,7 +2791,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "british-indian-ocean-territory",
@@ -2353,7 +2803,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "british-virgin-islands",
@@ -2365,7 +2817,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "south-korea",
@@ -2378,7 +2832,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "hong-kong-sar",
@@ -2390,7 +2846,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "equatorial-guinea",
@@ -2400,7 +2858,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "taiwan",
@@ -2410,7 +2870,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "central-african-republic",
@@ -2420,7 +2882,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "china",
@@ -2432,7 +2896,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "east-timor",
@@ -2445,7 +2911,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "south-africa",
@@ -2455,7 +2923,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "south-sudan",
@@ -2467,7 +2937,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "antarctica",
@@ -2477,7 +2949,9 @@
     "aliases": [],
     "has_data": false,
     "retrieved_at": null,
-    "page_notice_level": 0
+    "page_notice_level": 0,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "japan",
@@ -2487,7 +2961,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "french-guiana",
@@ -2497,7 +2973,9 @@
     "aliases": [],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 2
+    "page_notice_level": 2,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "french-polynesia",
@@ -2510,7 +2988,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "usvirgin-islands",
@@ -2523,7 +3003,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "north-macedonia",
@@ -2535,7 +3017,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "northern-mariana-islands",
@@ -2549,7 +3033,9 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   },
   {
     "slug": "north-korea",
@@ -2561,6 +3047,8 @@
     ],
     "has_data": true,
     "retrieved_at": "2026-09-03",
-    "page_notice_level": 1
+    "page_notice_level": 1,
+    "thp": false,
+    "forth": false
   }
 ]

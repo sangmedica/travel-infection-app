@@ -1,0 +1,34 @@
+{
+  "_comment": "情報源のメタ情報。UI の出典表記・ライセンス表示に使う。★手管理。",
+  "sources": {
+    "cdc": {
+      "id": "cdc",
+      "name_ja": "CDC Travelers' Health（米国疾病予防管理センター）",
+      "name_short": "CDC",
+      "home_url": "https://wwwnc.cdc.gov/travel/",
+      "license_ja": "米国連邦政府の著作物（パブリックドメイン, 17 U.S.C. §105）。本アプリは非公式で CDC の承認を受けたものではありません。",
+      "attribution_ja": "出典: CDC Travelers' Health（https://wwwnc.cdc.gov/travel/）",
+      "lang": "en"
+    },
+    "thp": {
+      "id": "thp",
+      "name_ja": "TravelHealthPro（英国 国立渡航医学ネットワーク・センター NaTHNaC）",
+      "name_short": "TravelHealthPro",
+      "home_url": "https://travelhealthpro.org.uk/",
+      "license_ja": "© Crown Copyright。Open Government Licence v3.0 に基づき出典明記のうえ再利用。運営: UK Health Security Agency / NaTHNaC。本アプリは非公式です。",
+      "attribution_ja": "出典: TravelHealthPro（NaTHNaC）https://travelhealthpro.org.uk/ — Contains public sector information licensed under the Open Government Licence v3.0.",
+      "edited_note_ja": "本アプリが該当ページから項目を抽出・再構成しています（未加工の原本ではありません）。",
+      "lang": "en"
+    },
+    "forth": {
+      "id": "forth",
+      "name_ja": "FORTH（厚生労働省検疫所）",
+      "name_short": "FORTH",
+      "home_url": "https://www.forth.go.jp/",
+      "license_ja": "公共データ利用規約（第1.0版）に基づき、出典明記および編集・加工の明示のうえ再利用。本アプリは非公式です。",
+      "attribution_ja": "出典: 厚生労働省検疫所FORTHホームページ（該当ページのURL）",
+      "edited_note_ja": "本アプリが該当ページの本文から情報を抽出・再構成して表示しています。厚生労働省検疫所が作成した未加工の情報ではありません。",
+      "lang": "ja"
+    }
+  }
+}

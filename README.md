@@ -2,17 +2,22 @@
 
 フレームワーク不使用の静的 Web アプリ。2つのモードがあります。
 
-**① 流行疾患・推奨ワクチンの検索** — 渡航先の国・地域を入力すると、[CDC Travelers' Health](https://wwwnc.cdc.gov/travel/) のデータをもとに
-- **推奨ワクチン・医薬品**（推奨度別グルーピング）
-- **ワクチンで予防できない疾患**（感染経路別）
-- **現在の流行情報**（CDC Travel Notices / Level 1–4）＋世界的な注意喚起
-- **新規更新** — 月次更新の差分（英語原文つき）
+**① 流行疾患・推奨ワクチンの検索** — 渡航先の国・地域を入力すると、**3つの公的情報源**
+（[CDC](https://wwwnc.cdc.gov/travel/) ／ [TravelHealthPro（英国 NaTHNaC）](https://travelhealthpro.org.uk/) ／ [FORTH（厚労省検疫所）](https://www.forth.go.jp/)）のデータをもとに
+- **推奨ワクチン・医薬品**（CDC = 推奨度別 ／ THP = All/Most/Some ティア ／ FORTH = 予防接種リスト）
+- **ワクチンで予防できない疾患**（CDC 感染経路別）＋ FORTH「気をつけたい病気」
+- **現在の流行情報**（CDC Travel Notices / THP outbreaks RSS / FORTH 新着発生情報）を統合・ソース別バッジ＋世界的な注意喚起
+- **新規更新** — 月次更新の差分を**ソース別**にまとめ（CDC・THP は英語原文、FORTH は日本語原文つき）
+
+THP / FORTH は渡航先ページ内の折りたたみセクションで表示（出典・取得日・ライセンス明記）。
 
 **② 症状から鑑別** — 症状・曝露歴・検査所見・潜伏期・渡航先をクリックで選ぶと、想定される鑑別診断を
 No.1〜No.5 の優先度順で表示（各項目に一致所見・地理・潜伏期の根拠と CDC 英語原文つき）。手キュレートの
 疾患知識ベース（`data/kb/`）と決定論的スコアリング（`dx.js`）による**意思決定支援**で、確定診断ではありません。
 
-地域データは月1回 GitHub Actions が自動更新。症状知識ベースは静的（自動更新の対象外）。
+地域データ（3ソース）は月1回 GitHub Actions が自動更新（`node scripts/scrape.mjs --source=cdc|thp|forth|all`）。
+症状知識ベース（`data/kb/`）は静的（自動更新の対象外）。THP は robots.txt により `/news/` 個別記事を取得せず
+`rss-outbreaks.php` と `/countries/` のみ。FORTH は編集・加工の明示が必要（`data/sources.json` に規定、UI に表示）。
 
 > ⚠️ 情報提供のみを目的とし、医学的助言ではありません。渡航前に必ずトラベルクリニック／医師にご相談ください。
 
@@ -25,8 +30,14 @@ No.1〜No.5 の優先度順で表示（各項目に一致所見・地理・潜�
 | `index.html` / `app.js` / `styles.css` | フロントエンド（実行時は同梱 JSON を読むだけ・外部通信なし） |
 | `config/destinations.json` | 取得対象リスト（CDC 全 244 目的地）。`kind`: `country`=国 / `territory`=属領・地域。`scripts/build-config.mjs` で生成（直接編集も可） |
 | `data/translations.json` | ★手管理: 日本語対訳辞書 |
-| `data/notices.json` | 自動生成: Travel Notices 全件 |
-| `data/changelog.json` | 自動生成: 月次更新ごとの差分（トップの「新規更新」）。各項目に英語原文つき |
+| `data/notices.json` | 自動生成: CDC Travel Notices 全件 |
+| `data/sources.json` | ★手管理: 3ソースの名称・URL・ライセンス・出典表記 |
+| `config/source-map.json` | 生成: CDC slug → {thp, forth} 対応ページ（`scripts/build-source-map.mjs` ／ `--check`）|
+| `data/thp/outbreaks.json` ／ `data/thp/<slug>.json` | 自動: TravelHealthPro の流行 RSS ／ 国別ティア |
+| `data/forth/topics.json` ／ `data/forth/<slug>.json` | 自動: FORTH 新着発生情報 ／ 国別（気をつけたい病気・予防接種） |
+| `scripts/lib/thp.mjs` ／ `scripts/lib/forth.mjs` | ★TravelHealthPro ／ FORTH スクレイパ |
+| `scripts/sources-check.mjs` | source-map と data/thp・data/forth の整合性チェック（`npm run sources:check`）|
+| `data/changelog.json` | 自動生成: 月次差分（トップの「新規更新」）。`sources: {cdc,thp,forth}` 構造、各項目に原文つき |
 | `data/kb/findings.json` | ★手キュレート: 鑑別モードのクリック用リスト（症状・曝露歴・検査所見） |
 | `data/kb/diseases.json` | ★手キュレート: 疾患知識ベース（症状/検査の重み・潜伏期・鑑別ポイント・推奨検査・**治療の要点**・出典）。66疾患。日本語＋英語原文 |
 | `data/kb/region-map.json` | 生成: slug→地域タグ（`scripts/build-region-map.mjs`）。鑑別の地理判定用 |

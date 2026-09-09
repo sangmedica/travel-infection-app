@@ -14,7 +14,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level1/paratyphoid-fever-yemen",
     "published": "2026-08-26",
     "title_ja": null,
-    "topic_ja": "パラチフス"
+    "topic_ja": "パラチフス",
+    "source": "cdc"
   },
   {
     "id": "diphtheria-sub-saharan-africa",
@@ -47,7 +48,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level1/diphtheria-sub-saharan-africa",
     "published": "2026-08-25",
     "title_ja": null,
-    "topic_ja": "ジフテリア"
+    "topic_ja": "ジフテリア",
+    "source": "cdc"
   },
   {
     "id": "zika-indonesia",
@@ -64,7 +66,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/zika-indonesia",
     "published": "2026-08-07",
     "title_ja": null,
-    "topic_ja": "ジカウイルス感染症"
+    "topic_ja": "ジカウイルス感染症",
+    "source": "cdc"
   },
   {
     "id": "ebola-drc-provinces",
@@ -82,7 +85,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level4/ebola-drc-provinces",
     "published": "2026-08-04",
     "title_ja": null,
-    "topic_ja": "ブンディブギョウイルス病（エボラ属）"
+    "topic_ja": "ブンディブギョウイルス病（エボラ属）",
+    "source": "cdc"
   },
   {
     "id": "ebola-democratic-republic-of-the-congo",
@@ -100,7 +104,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level3/ebola-democratic-republic-of-the-congo",
     "published": "2026-08-04",
     "title_ja": null,
-    "topic_ja": "ブンディブギョウイルス病（エボラ属）"
+    "topic_ja": "ブンディブギョウイルス病（エボラ属）",
+    "source": "cdc"
   },
   {
     "id": "ebola-drc-uganda",
@@ -122,7 +127,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/ebola-drc-uganda",
     "published": "2026-08-04",
     "title_ja": null,
-    "topic_ja": "ブンディブギョウイルス病（エボラ属）"
+    "topic_ja": "ブンディブギョウイルス病（エボラ属）",
+    "source": "cdc"
   },
   {
     "id": "chikungunya-nicaragua",
@@ -139,7 +145,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-nicaragua",
     "published": "2026-08-03",
     "title_ja": null,
-    "topic_ja": "チクングニア熱"
+    "topic_ja": "チクングニア熱",
+    "source": "cdc"
   },
   {
     "id": "chikungunya-costa-rica",
@@ -156,7 +163,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-costa-rica",
     "published": "2026-07-30",
     "title_ja": null,
-    "topic_ja": "チクングニア熱"
+    "topic_ja": "チクングニア熱",
+    "source": "cdc"
   },
   {
     "id": "dengue-global",
@@ -196,7 +204,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level1/dengue-global",
     "published": "2026-07-30",
     "title_ja": null,
-    "topic_ja": "デング熱（世界的流行）"
+    "topic_ja": "デング熱（世界的流行）",
+    "source": "cdc"
   },
   {
     "id": "diphtheria-haiti",
@@ -213,7 +222,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level1/diphtheria-haiti",
     "published": "2026-06-25",
     "title_ja": null,
-    "topic_ja": "ジフテリア"
+    "topic_ja": "ジフテリア",
+    "source": "cdc"
   },
   {
     "id": "malaria-yemen",
@@ -230,7 +240,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/malaria-yemen",
     "published": "2026-06-11",
     "title_ja": null,
-    "topic_ja": "マラリア"
+    "topic_ja": "マラリア",
+    "source": "cdc"
   },
   {
     "id": "chikungunya-french-guiana",
@@ -247,7 +258,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-french-guiana",
     "published": "2026-06-04",
     "title_ja": null,
-    "topic_ja": "チクングニア熱"
+    "topic_ja": "チクングニア熱",
+    "source": "cdc"
   },
   {
     "id": "hepatitis-a-canada",
@@ -264,7 +276,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level1/hepatitis-a-canada",
     "published": "2026-06-04",
     "title_ja": null,
-    "topic_ja": "A型肝炎"
+    "topic_ja": "A型肝炎",
+    "source": "cdc"
   },
   {
     "id": "malaria-mayotte",
@@ -281,7 +294,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/malaria-mayotte",
     "published": "2026-06-02",
     "title_ja": null,
-    "topic_ja": "マラリア"
+    "topic_ja": "マラリア",
+    "source": "cdc"
   },
   {
     "id": "chikungunya-mauritius",
@@ -298,7 +312,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-mauritius",
     "published": "2026-05-14",
     "title_ja": null,
-    "topic_ja": "チクングニア熱"
+    "topic_ja": "チクングニア熱",
+    "source": "cdc"
   },
   {
     "id": "meningococcal-drc",
@@ -316,7 +331,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/meningococcal-drc",
     "published": "2026-03-24",
     "title_ja": null,
-    "topic_ja": "髄膜炎菌感染症"
+    "topic_ja": "髄膜炎菌感染症",
+    "source": "cdc"
   },
   {
     "id": "yellow-fever-venezuela",
@@ -333,7 +349,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/yellow-fever-venezuela",
     "published": "2026-03-16",
     "title_ja": null,
-    "topic_ja": "黄熱"
+    "topic_ja": "黄熱",
+    "source": "cdc"
   },
   {
     "id": "global-polio",
@@ -416,7 +433,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/global-polio",
     "published": "2026-03-09",
     "title_ja": null,
-    "topic_ja": "ポリオ（世界的流行）"
+    "topic_ja": "ポリオ（世界的流行）",
+    "source": "cdc"
   },
   {
     "id": "chikungunya-suriname",
@@ -433,7 +451,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-suriname",
     "published": "2026-02-17",
     "title_ja": null,
-    "topic_ja": "チクングニア熱"
+    "topic_ja": "チクングニア熱",
+    "source": "cdc"
   },
   {
     "id": "chikungunya-bolivia",
@@ -450,7 +469,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-bolivia",
     "published": "2026-02-11",
     "title_ja": null,
-    "topic_ja": "チクングニア熱"
+    "topic_ja": "チクングニア熱",
+    "source": "cdc"
   },
   {
     "id": "chikungunya-seychelles",
@@ -467,7 +487,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-seychelles",
     "published": "2026-02-05",
     "title_ja": null,
-    "topic_ja": "チクングニア熱"
+    "topic_ja": "チクングニア熱",
+    "source": "cdc"
   },
   {
     "id": "rmsf-mexico",
@@ -484,7 +505,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level1/rmsf-mexico",
     "published": "2025-12-23",
     "title_ja": null,
-    "topic_ja": "ロッキー山紅斑熱"
+    "topic_ja": "ロッキー山紅斑熱",
+    "source": "cdc"
   },
   {
     "id": "yellow-fever-colombia",
@@ -501,7 +523,8 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level2/yellow-fever-colombia",
     "published": "2025-09-02",
     "title_ja": null,
-    "topic_ja": "黄熱"
+    "topic_ja": "黄熱",
+    "source": "cdc"
   },
   {
     "id": "measles-globe",
@@ -1026,6 +1049,7 @@
     "url": "https://wwwnc.cdc.gov/travel/notices/level1/measles-globe",
     "published": "2025-05-28",
     "title_ja": null,
-    "topic_ja": "麻疹（世界的流行）"
+    "topic_ja": "麻疹（世界的流行）",
+    "source": "cdc"
   }
 ]

@@ -1,0 +1,986 @@
+{
+  "_comment": "cdc_slug -> { thp: TravelHealthPro /countries/<slug>, forth: FORTH /destinations/country/<page>.html }。null は対応ページなし。scripts/build-source-map.mjs で生成。",
+  "counts": {
+    "total": 244,
+    "thp": 240,
+    "forth": 195
+  },
+  "map": {
+    "afghanistan": {
+      "thp": "afghanistan",
+      "forth": null
+    },
+    "albania": {
+      "thp": "albania",
+      "forth": "e_europe"
+    },
+    "algeria": {
+      "thp": "algeria",
+      "forth": "sahara_n"
+    },
+    "american-samoa": {
+      "thp": "american-samoa-guam-northern-mariana-islands",
+      "forth": "polynesia"
+    },
+    "andorra": {
+      "thp": "andorra",
+      "forth": "n_europe"
+    },
+    "angola": {
+      "thp": "angola",
+      "forth": "m_africa"
+    },
+    "anguilla": {
+      "thp": "anguilla",
+      "forth": null
+    },
+    "antarctica": {
+      "thp": "antarctica",
+      "forth": null
+    },
+    "antigua-and-barbuda": {
+      "thp": "antigua-and-barbuda",
+      "forth": "cs"
+    },
+    "argentina": {
+      "thp": "argentina",
+      "forth": "argentina"
+    },
+    "armenia": {
+      "thp": "armenia",
+      "forth": "e_europe"
+    },
+    "aruba": {
+      "thp": "aruba--caribbean-islands-netherlands",
+      "forth": null
+    },
+    "australia": {
+      "thp": "australia",
+      "forth": "australia"
+    },
+    "austria": {
+      "thp": "austria",
+      "forth": "n_europe"
+    },
+    "azerbaijan": {
+      "thp": "azerbaijan",
+      "forth": "e_europe"
+    },
+    "azores": {
+      "thp": "azores-portugal",
+      "forth": null
+    },
+    "bahrain": {
+      "thp": "bahrain",
+      "forth": "tme_area"
+    },
+    "bangladesh": {
+      "thp": "bangladesh",
+      "forth": "bangladesh"
+    },
+    "barbados": {
+      "thp": "barbados",
+      "forth": "cs"
+    },
+    "belarus": {
+      "thp": "belarus",
+      "forth": "e_europe"
+    },
+    "belgium": {
+      "thp": "belgium",
+      "forth": "n_europe"
+    },
+    "belize": {
+      "thp": "belize",
+      "forth": "ca"
+    },
+    "benin": {
+      "thp": "benin",
+      "forth": "w_africa"
+    },
+    "bermuda": {
+      "thp": "bermuda",
+      "forth": null
+    },
+    "bhutan": {
+      "thp": "bhutan",
+      "forth": "nepal"
+    },
+    "bolivia": {
+      "thp": "bolivia",
+      "forth": "peru_bolivia_ecuador"
+    },
+    "bonaire": {
+      "thp": "bonaire--caribbean-islands-netherlands",
+      "forth": null
+    },
+    "bosnia-and-herzegovina": {
+      "thp": "bosnia-and-herzegovina",
+      "forth": "e_europe"
+    },
+    "botswana": {
+      "thp": "botswana",
+      "forth": "s_africa"
+    },
+    "brazil": {
+      "thp": "brazil",
+      "forth": "brazil"
+    },
+    "british-indian-ocean-territory": {
+      "thp": null,
+      "forth": null
+    },
+    "british-virgin-islands": {
+      "thp": "british-virgin-islands",
+      "forth": null
+    },
+    "brunei": {
+      "thp": "brunei",
+      "forth": null
+    },
+    "bulgaria": {
+      "thp": "bulgaria",
+      "forth": "e_europe"
+    },
+    "burkina-faso": {
+      "thp": "burkina-faso",
+      "forth": "w_africa"
+    },
+    "burma": {
+      "thp": "myanmar-burma",
+      "forth": "laos"
+    },
+    "burundi": {
+      "thp": "burundi",
+      "forth": "e_africa"
+    },
+    "cambodia": {
+      "thp": "cambodia",
+      "forth": "vietnam_cambodia"
+    },
+    "cameroon": {
+      "thp": "cameroon",
+      "forth": "m_africa"
+    },
+    "canada": {
+      "thp": "canada",
+      "forth": "canada"
+    },
+    "canary-islands": {
+      "thp": "canary-islands-spain",
+      "forth": null
+    },
+    "cape-verde": {
+      "thp": "cape-verde",
+      "forth": "w_africa"
+    },
+    "cayman-islands": {
+      "thp": "cayman-islands",
+      "forth": null
+    },
+    "central-african-republic": {
+      "thp": "central-african-republic",
+      "forth": "m_africa"
+    },
+    "chad": {
+      "thp": "chad",
+      "forth": "m_africa"
+    },
+    "chile": {
+      "thp": "chile",
+      "forth": "argentina"
+    },
+    "china": {
+      "thp": "china",
+      "forth": "china"
+    },
+    "christmas-island": {
+      "thp": "christmas-island-australia",
+      "forth": null
+    },
+    "cocos-islands": {
+      "thp": null,
+      "forth": null
+    },
+    "colombia": {
+      "thp": "colombia",
+      "forth": "colombia"
+    },
+    "comoros": {
+      "thp": "comoros",
+      "forth": null
+    },
+    "congo": {
+      "thp": "congo",
+      "forth": "m_africa"
+    },
+    "cook-islands": {
+      "thp": "cook-islands-niue-tokelau",
+      "forth": "polynesia"
+    },
+    "costa-rica": {
+      "thp": "costa-rica",
+      "forth": "ca"
+    },
+    "croatia": {
+      "thp": "croatia",
+      "forth": "e_europe"
+    },
+    "cuba": {
+      "thp": "cuba",
+      "forth": "cs"
+    },
+    "curacao": {
+      "thp": "curaao-caribbean-islands-netherlands",
+      "forth": null
+    },
+    "cyprus": {
+      "thp": "cyprus",
+      "forth": "e_europe"
+    },
+    "czechia": {
+      "thp": "czechia",
+      "forth": "e_europe"
+    },
+    "democratic-republic-of-congo": {
+      "thp": "democratic-republic-of-the-congo",
+      "forth": "m_africa"
+    },
+    "denmark": {
+      "thp": "denmark",
+      "forth": "n_europe"
+    },
+    "djibouti": {
+      "thp": "djibouti",
+      "forth": "e_africa"
+    },
+    "dominica": {
+      "thp": "dominica",
+      "forth": "cs"
+    },
+    "dominican-republic": {
+      "thp": "dominican-republic",
+      "forth": "cs"
+    },
+    "east-timor": {
+      "thp": "timor-leste",
+      "forth": null
+    },
+    "easter-island": {
+      "thp": "easter-island-chile",
+      "forth": null
+    },
+    "ecuador": {
+      "thp": "ecuador",
+      "forth": "peru_bolivia_ecuador"
+    },
+    "egypt": {
+      "thp": "egypt",
+      "forth": "egypt"
+    },
+    "el-salvador": {
+      "thp": "el-salvador",
+      "forth": "ca"
+    },
+    "equatorial-guinea": {
+      "thp": "equatorial-guinea",
+      "forth": "m_africa"
+    },
+    "eritrea": {
+      "thp": "eritrea",
+      "forth": "e_africa"
+    },
+    "estonia": {
+      "thp": "estonia",
+      "forth": "e_europe"
+    },
+    "eswatini": {
+      "thp": "eswatini",
+      "forth": "s_africa"
+    },
+    "ethiopia": {
+      "thp": "ethiopia",
+      "forth": "e_africa"
+    },
+    "falkland-islands": {
+      "thp": "falkland-islands",
+      "forth": null
+    },
+    "faroe-island": {
+      "thp": "faroe-islands-denmark",
+      "forth": null
+    },
+    "fiji": {
+      "thp": "fiji",
+      "forth": "melanesia"
+    },
+    "finland": {
+      "thp": "finland",
+      "forth": "n_europe"
+    },
+    "france": {
+      "thp": "france",
+      "forth": "n_europe"
+    },
+    "french-guiana": {
+      "thp": "french-guiana",
+      "forth": null
+    },
+    "french-polynesia": {
+      "thp": "french-polynesia",
+      "forth": "polynesia"
+    },
+    "gabon": {
+      "thp": "gabon",
+      "forth": "m_africa"
+    },
+    "georgia": {
+      "thp": "georgia",
+      "forth": "e_europe"
+    },
+    "germany": {
+      "thp": "germany",
+      "forth": "n_europe"
+    },
+    "ghana": {
+      "thp": "ghana",
+      "forth": "w_africa"
+    },
+    "gibraltar": {
+      "thp": "gibraltar",
+      "forth": null
+    },
+    "greece": {
+      "thp": "greece",
+      "forth": "n_europe"
+    },
+    "greenland": {
+      "thp": "greenland",
+      "forth": null
+    },
+    "grenada": {
+      "thp": "grenada",
+      "forth": "cs"
+    },
+    "guadeloupe": {
+      "thp": "guadeloupe--caribbean-islands-france",
+      "forth": null
+    },
+    "guam": {
+      "thp": "guam-american-samoa-northern-mariana-islands",
+      "forth": "guam"
+    },
+    "guatemala": {
+      "thp": "guatemala",
+      "forth": "ca"
+    },
+    "guinea": {
+      "thp": "guinea",
+      "forth": "w_africa"
+    },
+    "guinea-bissau": {
+      "thp": "guinea-bissau",
+      "forth": "w_africa"
+    },
+    "guyana": {
+      "thp": "guyana",
+      "forth": null
+    },
+    "haiti": {
+      "thp": "haiti",
+      "forth": "cs"
+    },
+    "honduras": {
+      "thp": "honduras",
+      "forth": "ca"
+    },
+    "hong-kong-sar": {
+      "thp": "hong-kong-china",
+      "forth": "hongkong"
+    },
+    "hungary": {
+      "thp": "hungary",
+      "forth": "e_europe"
+    },
+    "iceland": {
+      "thp": "iceland",
+      "forth": "n_europe"
+    },
+    "india": {
+      "thp": "india",
+      "forth": "india"
+    },
+    "indonesia": {
+      "thp": "indonesia",
+      "forth": "indonesia"
+    },
+    "iran": {
+      "thp": "iran",
+      "forth": "tme_area"
+    },
+    "iraq": {
+      "thp": "iraq",
+      "forth": "tme_area"
+    },
+    "ireland": {
+      "thp": "ireland",
+      "forth": "n_europe"
+    },
+    "israel": {
+      "thp": "israel",
+      "forth": "tme_area"
+    },
+    "italy": {
+      "thp": "italy",
+      "forth": "n_europe"
+    },
+    "ivory-coast": {
+      "thp": "cte-divoire",
+      "forth": "w_africa"
+    },
+    "jamaica": {
+      "thp": "jamaica",
+      "forth": "cs"
+    },
+    "japan": {
+      "thp": "japan",
+      "forth": null
+    },
+    "jordan": {
+      "thp": "jordan",
+      "forth": "tme_area"
+    },
+    "kazakhstan": {
+      "thp": "kazakhstan",
+      "forth": "ocac"
+    },
+    "kenya": {
+      "thp": "kenya",
+      "forth": "e_africa"
+    },
+    "kiribati": {
+      "thp": "kiribati",
+      "forth": "micronesia"
+    },
+    "kosovo": {
+      "thp": "kosovo",
+      "forth": "e_europe"
+    },
+    "kuwait": {
+      "thp": "kuwait",
+      "forth": "tme_area"
+    },
+    "kyrgyzstan": {
+      "thp": "kyrgyzstan",
+      "forth": "ocac"
+    },
+    "laos": {
+      "thp": "laos",
+      "forth": "laos"
+    },
+    "latvia": {
+      "thp": "latvia",
+      "forth": "e_europe"
+    },
+    "lebanon": {
+      "thp": "lebanon",
+      "forth": "tme_area"
+    },
+    "lesotho": {
+      "thp": "lesotho",
+      "forth": "s_africa"
+    },
+    "liberia": {
+      "thp": "liberia",
+      "forth": "w_africa"
+    },
+    "libya": {
+      "thp": "libya",
+      "forth": "sahara_n"
+    },
+    "liechtenstein": {
+      "thp": "liechtenstein",
+      "forth": "n_europe"
+    },
+    "lithuania": {
+      "thp": "lithuania",
+      "forth": "e_europe"
+    },
+    "luxembourg": {
+      "thp": "luxembourg",
+      "forth": "n_europe"
+    },
+    "macau-sar": {
+      "thp": "macao-china",
+      "forth": "hongkong"
+    },
+    "madagascar": {
+      "thp": "madagascar",
+      "forth": "e_africa"
+    },
+    "madeira-islands": {
+      "thp": "madeira-portugal",
+      "forth": null
+    },
+    "malawi": {
+      "thp": "malawi",
+      "forth": "e_africa"
+    },
+    "malaysia": {
+      "thp": "malaysia",
+      "forth": "malaysia_singapore"
+    },
+    "maldives": {
+      "thp": "maldives",
+      "forth": "maldives"
+    },
+    "mali": {
+      "thp": "mali",
+      "forth": "w_africa"
+    },
+    "malta": {
+      "thp": "malta",
+      "forth": "n_europe"
+    },
+    "marshall-islands": {
+      "thp": "marshall-islands",
+      "forth": "micronesia"
+    },
+    "martinique": {
+      "thp": "martinique",
+      "forth": null
+    },
+    "mauritania": {
+      "thp": "mauritania",
+      "forth": "w_africa"
+    },
+    "mauritius": {
+      "thp": "mauritius",
+      "forth": null
+    },
+    "mayotte": {
+      "thp": "mayotte",
+      "forth": null
+    },
+    "mexico": {
+      "thp": "mexico",
+      "forth": "mexico"
+    },
+    "micronesia": {
+      "thp": "micronesia",
+      "forth": "micronesia"
+    },
+    "moldova": {
+      "thp": "moldova",
+      "forth": "e_europe"
+    },
+    "monaco": {
+      "thp": "monaco",
+      "forth": "n_europe"
+    },
+    "mongolia": {
+      "thp": "mongolia",
+      "forth": null
+    },
+    "montenegro": {
+      "thp": "montenegro",
+      "forth": "e_europe"
+    },
+    "montserrat": {
+      "thp": "montserrat",
+      "forth": null
+    },
+    "morocco": {
+      "thp": "morocco",
+      "forth": "sahara_n"
+    },
+    "mozambique": {
+      "thp": "mozambique",
+      "forth": "e_africa"
+    },
+    "namibia": {
+      "thp": "namibia",
+      "forth": "s_africa"
+    },
+    "nauru": {
+      "thp": "nauru",
+      "forth": "micronesia"
+    },
+    "nepal": {
+      "thp": "nepal",
+      "forth": "nepal"
+    },
+    "netherlands": {
+      "thp": "netherlands",
+      "forth": "n_europe"
+    },
+    "new-caledonia": {
+      "thp": "new-caledonia",
+      "forth": "melanesia"
+    },
+    "new-zealand": {
+      "thp": "new-zealand",
+      "forth": "newzealand"
+    },
+    "nicaragua": {
+      "thp": "nicaragua",
+      "forth": "ca"
+    },
+    "niger": {
+      "thp": "niger",
+      "forth": "w_africa"
+    },
+    "nigeria": {
+      "thp": "nigeria",
+      "forth": "w_africa"
+    },
+    "niue": {
+      "thp": "niue-cook-islands-tokelau",
+      "forth": "polynesia"
+    },
+    "norfolk-island": {
+      "thp": null,
+      "forth": null
+    },
+    "north-korea": {
+      "thp": "north-korea",
+      "forth": null
+    },
+    "north-macedonia": {
+      "thp": "north-macedonia",
+      "forth": "e_europe"
+    },
+    "northern-mariana-islands": {
+      "thp": "northern-mariana-islands-american-samoa-guam",
+      "forth": "guam"
+    },
+    "norway": {
+      "thp": "norway",
+      "forth": "n_europe"
+    },
+    "oman": {
+      "thp": "oman",
+      "forth": "tme_area"
+    },
+    "pakistan": {
+      "thp": "pakistan",
+      "forth": "pakistan"
+    },
+    "palau": {
+      "thp": "palau",
+      "forth": "palau"
+    },
+    "panama": {
+      "thp": "panama",
+      "forth": "ca"
+    },
+    "papua-new-guinea": {
+      "thp": "papua-new-guinea",
+      "forth": "png"
+    },
+    "paraguay": {
+      "thp": "paraguay",
+      "forth": "argentina"
+    },
+    "peru": {
+      "thp": "peru",
+      "forth": "peru_bolivia_ecuador"
+    },
+    "philippines": {
+      "thp": "philippines",
+      "forth": "philippines"
+    },
+    "pitcairn-islands": {
+      "thp": "pitcairn-islands",
+      "forth": null
+    },
+    "poland": {
+      "thp": "poland",
+      "forth": "e_europe"
+    },
+    "portugal": {
+      "thp": "portugal",
+      "forth": "n_europe"
+    },
+    "puerto-rico": {
+      "thp": "puerto-rico",
+      "forth": null
+    },
+    "qatar": {
+      "thp": "qatar",
+      "forth": "tme_area"
+    },
+    "reunion": {
+      "thp": "runion",
+      "forth": null
+    },
+    "romania": {
+      "thp": "romania",
+      "forth": "e_europe"
+    },
+    "russia": {
+      "thp": "russia",
+      "forth": "russian"
+    },
+    "rwanda": {
+      "thp": "rwanda",
+      "forth": "e_africa"
+    },
+    "saba": {
+      "thp": "saba--caribbean-islands-netherlands",
+      "forth": null
+    },
+    "saint-barthelemy": {
+      "thp": "st-barthlemy-caribbean-islands-france",
+      "forth": null
+    },
+    "saint-helena": {
+      "thp": "st-helena-ascension-tristan-da-cunha",
+      "forth": null
+    },
+    "saint-lucia": {
+      "thp": "st-lucia",
+      "forth": "cs"
+    },
+    "saint-martin": {
+      "thp": "st-martin--caribbean-islands-france",
+      "forth": null
+    },
+    "saint-pierre-and-miquelon": {
+      "thp": "st-pierre-and-miquelon",
+      "forth": null
+    },
+    "saint-vincent-and-the-grenadines": {
+      "thp": "st-vincent-and-the-grenadines",
+      "forth": "cs"
+    },
+    "samoa": {
+      "thp": "samoa",
+      "forth": "polynesia"
+    },
+    "san-marino": {
+      "thp": "san-marino",
+      "forth": "n_europe"
+    },
+    "sao-tome-and-principe": {
+      "thp": "sao-tome-and-principe",
+      "forth": "m_africa"
+    },
+    "saudi-arabia": {
+      "thp": "saudi-arabia",
+      "forth": "tme_area"
+    },
+    "senegal": {
+      "thp": "senegal",
+      "forth": "w_africa"
+    },
+    "serbia": {
+      "thp": "serbia",
+      "forth": "e_europe"
+    },
+    "seychelles": {
+      "thp": "seychelles",
+      "forth": null
+    },
+    "sierra-leone": {
+      "thp": "sierra-leone",
+      "forth": "w_africa"
+    },
+    "singapore": {
+      "thp": "singapore",
+      "forth": "malaysia_singapore"
+    },
+    "sint-eustatius": {
+      "thp": "sint-eustatius--caribbean-islands-netherlands",
+      "forth": null
+    },
+    "sint-maarten": {
+      "thp": "sint-maarten--caribbean-islands-netherlands",
+      "forth": null
+    },
+    "slovakia": {
+      "thp": "slovakia",
+      "forth": "e_europe"
+    },
+    "slovenia": {
+      "thp": "slovenia",
+      "forth": "e_europe"
+    },
+    "solomon-islands": {
+      "thp": "solomon-islands",
+      "forth": "melanesia"
+    },
+    "somalia": {
+      "thp": "somalia",
+      "forth": "e_africa"
+    },
+    "south-africa": {
+      "thp": "south-africa",
+      "forth": "s_africa"
+    },
+    "south-georgia-south-sandwich-islands": {
+      "thp": null,
+      "forth": null
+    },
+    "south-korea": {
+      "thp": "south-korea",
+      "forth": "s_korea"
+    },
+    "south-sudan": {
+      "thp": "south-sudan",
+      "forth": "e_africa"
+    },
+    "spain": {
+      "thp": "spain",
+      "forth": "n_europe"
+    },
+    "sri-lanka": {
+      "thp": "sri-lanka",
+      "forth": "srilanka"
+    },
+    "st-kitts-and-nevis": {
+      "thp": "st-kitts-and-nevis",
+      "forth": "cs"
+    },
+    "sudan": {
+      "thp": "sudan",
+      "forth": "e_africa"
+    },
+    "suriname": {
+      "thp": "suriname",
+      "forth": "colombia"
+    },
+    "sweden": {
+      "thp": "sweden",
+      "forth": "n_europe"
+    },
+    "switzerland": {
+      "thp": "switzerland",
+      "forth": "n_europe"
+    },
+    "syria": {
+      "thp": "syria",
+      "forth": "tme_area"
+    },
+    "taiwan": {
+      "thp": "taiwan",
+      "forth": "taiwan"
+    },
+    "tajikistan": {
+      "thp": "tajikistan",
+      "forth": "ocac"
+    },
+    "tanzania": {
+      "thp": "tanzania",
+      "forth": "e_africa"
+    },
+    "thailand": {
+      "thp": "thailand",
+      "forth": "thailand"
+    },
+    "the-bahamas": {
+      "thp": "bahamas",
+      "forth": "cs"
+    },
+    "the-gambia": {
+      "thp": "the-gambia",
+      "forth": "w_africa"
+    },
+    "togo": {
+      "thp": "togo",
+      "forth": "w_africa"
+    },
+    "tokelau": {
+      "thp": "tokelau-cook-islands-niue",
+      "forth": "polynesia"
+    },
+    "tonga": {
+      "thp": "tonga",
+      "forth": "polynesia"
+    },
+    "trinidad-and-tobago": {
+      "thp": "trinidad-and-tobago",
+      "forth": "cs"
+    },
+    "tunisia": {
+      "thp": "tunisia",
+      "forth": "sahara_n"
+    },
+    "turkey": {
+      "thp": "turkey",
+      "forth": "turkey"
+    },
+    "turkmenistan": {
+      "thp": "turkmenistan",
+      "forth": "ocac"
+    },
+    "turks-and-caicos": {
+      "thp": "turks-and-caicos-islands",
+      "forth": null
+    },
+    "tuvalu": {
+      "thp": "tuvalu",
+      "forth": "polynesia"
+    },
+    "uganda": {
+      "thp": "uganda",
+      "forth": "e_africa"
+    },
+    "ukraine": {
+      "thp": "ukraine",
+      "forth": "e_europe"
+    },
+    "united-arab-emirates": {
+      "thp": "united-arab-emirates",
+      "forth": "tme_area"
+    },
+    "united-kingdom": {
+      "thp": "united-kingdom",
+      "forth": "n_europe"
+    },
+    "united-states": {
+      "thp": "usa",
+      "forth": "usa"
+    },
+    "uruguay": {
+      "thp": "uruguay",
+      "forth": "argentina"
+    },
+    "usvirgin-islands": {
+      "thp": "us-virgin-islands",
+      "forth": null
+    },
+    "uzbekistan": {
+      "thp": "uzbekistan",
+      "forth": "ocac"
+    },
+    "vanuatu": {
+      "thp": "vanuatu",
+      "forth": "melanesia"
+    },
+    "venezuela": {
+      "thp": "venezuela",
+      "forth": "colombia"
+    },
+    "vietnam": {
+      "thp": "vietnam",
+      "forth": "vietnam_cambodia"
+    },
+    "wake-island": {
+      "thp": "wake-island",
+      "forth": null
+    },
+    "yemen": {
+      "thp": "yemen",
+      "forth": "tme_area"
+    },
+    "zambia": {
+      "thp": "zambia",
+      "forth": "e_africa"
+    },
+    "zimbabwe": {
+      "thp": "zimbabwe",
+      "forth": "e_africa"
+    }
+  }
+}

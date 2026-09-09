@@ -1,14 +1,31 @@
-このアプリが表示するデータは、米国疾病予防管理センター（CDC）
-"Travelers' Health"（https://wwwnc.cdc.gov/travel/）から取得したものです。
+このアプリが表示するデータは、以下の3つの公的情報源から取得しています。
+本プロジェクトはいずれの機関の公式なものでもなく、推奨・承認を受けたものでもありません。
+医療上の助言を目的としたものではありません。
 
-CDC が作成したコンテンツは米国政府の著作物であり、原則としてパブリック
-ドメインです（17 U.S.C. § 105）。本プロジェクトは CDC の公式なものではなく、
-CDC による推奨・承認を受けたものでもありません。
+1) 米国疾病予防管理センター（CDC）"Travelers' Health"
+   https://wwwnc.cdc.gov/travel/
+   CDC が作成したコンテンツは米国政府の著作物であり、原則としてパブリックドメイン
+   です（17 U.S.C. § 105）。
+
+2) TravelHealthPro（英国 国立渡航医学ネットワーク・センター NaTHNaC）
+   https://travelhealthpro.org.uk/
+   © Crown Copyright。Open Government Licence v3.0 に基づき、出典を明記して再利用
+   しています。運営: UK Health Security Agency / NaTHNaC。
+   "Contains public sector information licensed under the Open Government Licence v3.0."
+   本アプリは該当ページから項目を抽出・再構成しています（未加工の原本ではありません）。
+   robots.txt により /news/ 配下の個別記事は取得せず、rss-outbreaks.php と
+   /countries/ のみを利用しています。
+
+3) FORTH（厚生労働省検疫所）
+   https://www.forth.go.jp/
+   「公共データ利用規約（第1.0版）」に基づき再利用しています。
+   出典: 厚生労働省検疫所FORTHホームページ（各データファイルの source_url を参照）。
+   本アプリが該当ページの本文から情報を抽出・再構成して表示しています。厚生労働省
+   検疫所が作成した未加工の情報ではありません。
 
 - データは scripts/scrape.mjs により取得・整形しています。
-- 取得時は robots.txt の Crawl-delay（20秒）を遵守しています。
-- 各データファイルには取得日（retrieved_at / last_run）を記録しています。
-- 日本語対訳（data/translations.json）は本プロジェクトによる補助的なものです。
-  正確性は保証されません。臨床判断は必ず CDC 原文に基づいて行ってください。
-
-医療上の助言を目的としたものではありません。
+- 取得時はサイトごとの Crawl-delay（CDC 20秒 / THP・FORTH 6秒）を守っています。
+- 各データファイルに取得日（retrieved_at / last_run）を記録しています。
+- 日本語対訳（data/translations.json）および疾患知識ベース（data/kb/）は本プロジェクト
+  による補助的なものです。正確性は保証されません。臨床判断は必ず各原文に基づいて
+  行ってください。

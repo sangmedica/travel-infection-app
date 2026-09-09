@@ -1,0 +1,88 @@
+{
+  "slug": "kenya",
+  "name_en": "Kenya",
+  "name_ja": "ケニア",
+  "source": "thp",
+  "source_url": "https://travelhealthpro.org.uk/countries/kenya",
+  "retrieved_at": "2026-09-09",
+  "tiers": {
+    "all": {
+      "intro_en": "Travellers should be up to date with routine vaccination courses and boosters as recommended in the UK according to their age, medical history and individual risks.",
+      "diseases": []
+    },
+    "most": {
+      "intro_en": "The vaccines in this section are recommended for most travellers visiting this country. Information on these vaccines can be found by clicking on the blue arrow. Vaccines are listed alphabetically.",
+      "diseases": [
+        {
+          "name_en": "Hepatitis A",
+          "name_ja": null,
+          "desc_en": "Hepatitis A is a viral infection transmitted through contaminated food and water or by direct contact with an infectious person. Symptoms are often mild or absent in young children, but the disease can be more serious with advancing age. Recovery can vary from weeks to months. Following hepatitis A infection immunity is lifelong. Prevention All travellers should take care with personal, food and water hygiene.Hepatitis A vaccination As hepatitis A vaccine is well tolerated and affords long-lasting protection, it is recommended for all previously unvaccinated travellers.Hepatitis A in brief"
+        },
+        {
+          "name_en": "Tetanus",
+          "name_ja": null,
+          "desc_en": "Tetanus is caused by a toxin released from Clostridium tetani bacteria and occurs worldwide. Tetanus bacteria are present in soil and manure and may be introduced through open wounds such as a puncture wound, burn or scratch. Prevention Travellers should thoroughly clean all wounds and seek medical attention for injuries such as animal bites/scratches, burns or wounds contaminated with soil.Tetanus vaccination Travellers should have completed a tetanus vaccination course according to the UK schedule. If travelling to a country or area where medical facilities may be limited, a booster dose of "
+        },
+        {
+          "name_en": "Typhoid",
+          "name_ja": null,
+          "desc_en": "Typhoid is a bacterial infection transmitted through contaminated food and water. Previous typhoid illness may only partially protect against re-infection. Vaccination is recommended for most travellers, particularly travellers visiting friends and relatives, those in contact with an infected person, young children, frequent or long-stay travellers visiting areas where sanitation and food hygiene are likely to be poor, and laboratory personnel who may handle the bacteria for their work. Prevention All travellers should take care with personal, food and water hygiene. Typhoid vaccination Oral a"
+        }
+      ]
+    },
+    "some": {
+      "intro_en": "The vaccines in this section are recommended for some travellers visiting this country. Information on when these vaccines should be considered can be found by clicking on the arrow. Vaccines are listed alphabetically.",
+      "diseases": [
+        {
+          "name_en": "Chikungunya",
+          "name_ja": null,
+          "desc_en": "Chikungunya is a viral infection spread by mosquitoes which bite mainly during daytime hours. It causes a flu-like illness and can cause severe joint and muscles pains which usually improve in 1–2 weeks but may persist for months or years. It is rarely fatal. Chikungunya in Kenya There is a risk of chikungunya in this country.Information on current outbreaks, where available, will be reported on our outbreak surveillance database.Prevention Travellers should avoid mosquito bites, particularly during daytime hours. Chikungunya vaccination Vaccination may be considered for individuals aged 12 ye"
+        },
+        {
+          "name_en": "Cholera",
+          "name_ja": null,
+          "desc_en": "Cholera is a bacterial infection spread by contaminated food and water. Cholera can cause severe watery diarrhoea, although mild infections are common. The risk of cholera for most travellers is low. Prevention All travellers should take care with personal, food and water hygiene. Cholera vaccination This oral vaccine is recommended for those whose activities or medical history put them at increased risk of infection or complications. This includes: humanitarian aid workers persons going to areas of cholera outbreaks who have limited access to safe water and medical care other travellers to ch"
+        },
+        {
+          "name_en": "Dengue",
+          "name_ja": null,
+          "desc_en": "Dengue is a viral infection spread by mosquitoes which mainly feed during daytime hours. It causes a flu-like illness, which can occasionally develop into a more serious life-threatening illness. Severe dengue is rare in travellers. The mosquitoes that spread dengue are more common in towns, cities and surrounding areas. Dengue in Kenya There is a risk of dengue in this country.Information on current outbreaks, where available, will be reported on our outbreak surveillance database.Prevention Travellers should avoid mosquito bites, particularly during daytime hours. Dengue vaccination Vaccinat"
+        },
+        {
+          "name_en": "Hepatitis B",
+          "name_ja": null,
+          "desc_en": "Hepatitis B is a viral infection spread through blood, semen and vaginal fluids. This mostly occurs during sexual contact or as a result of blood-to-blood contact (for example from contaminated equipment during medical and dental procedures, tattooing or body piercing procedures, and sharing of intravenous needles). Mothers with the virus can also pass on the infection to their baby during childbirth. Hepatitis B in Kenya This country is considered to have an intermediate or high prevalence of hepatitis B.Prevention Travellers should avoid contact with blood or body fluids. This includes: Avoi"
+        },
+        {
+          "name_en": "Measles",
+          "name_ja": null,
+          "desc_en": "Measles is a highly infectious viral illness, spread by airborne or droplet (coughing, sneezing, drops from mouth/nose) transmission. Measles usually starts with cold-like symptoms e.g. fever, cough, runny nose and conjunctivitis (sore, red eyes). This is followed by a blotchy rash starting on the face/head and spreading to the rest of the body. Complications of measles infection can include ear infections, diarrhoea, pneumonia and convulsions (fits). Life-threatening complications such as encephalitis (brain inflammation) can occur on rare occasions. Measles can have serious consequences espe"
+        },
+        {
+          "name_en": "Meningococcal disease",
+          "name_ja": null,
+          "desc_en": "Invasive meningococcal disease (IMD) is a serious bacterial infection spread by close or direct contact with respiratory droplets from an infected (usually asymptomatic) person, often through coughing and sneezing or sharing cooking utensils. This is usually after lengthy and/or frequent close contact. The most common types of IMD are meningococcal meningitis (infection of the protective lining around the brain) and septicaemia (blood poisoning). Non-invasive meningococcal disease includes conjunctivitis, which can put the individual traveller (and any of their close contacts) at risk of devel"
+        },
+        {
+          "name_en": "Rabies",
+          "name_ja": null,
+          "desc_en": "Rabies is a viral infection which is usually transmitted following contact with the saliva of an infected animal most often via a bite, scratch or lick to an open wound or mucous membrane (such as on the eye, nose or mouth). Although many different animals can transmit the virus, most cases follow a bite or scratch from an infected dog. In some parts of the world, bats are an important source of infection. Rabies symptoms can take some time to develop, but when they do, the condition is almost always fatal. The risk of exposure is increased by certain activities and length of stay (see below)."
+        },
+        {
+          "name_en": "Tuberculosis",
+          "name_ja": null,
+          "desc_en": "TB is a bacterial infection most commonly affecting the lungs but can affect any part of the body. When a person with TB in their lungs or throat coughs or sneezes they could pass TB on to other people. TB is curable but can be serious if not treated. The BCG vaccination helps to protect some people, particularly babies and young children who are at increased risk from TB. Tuberculosis in Kenya This country has reported an annual TB incidence of greater than or equal to 40 cases per 100,000 population at least once in the last five years (further details).Prevention Travellers should avoid clo"
+        },
+        {
+          "name_en": "Yellow fever",
+          "name_ja": null,
+          "desc_en": "Yellow fever is a viral infection transmitted by mosquitoes which predominantly feed between dawn and dusk, but may also bite at night, especially in the jungle environment. Symptoms may be absent or mild, but in severe cases it can cause internal bleeding, organ failure and death. Yellow fever in Kenya There is a risk of yellow fever transmission in parts of this country and a low potential for exposure to yellow fever in some areas (see below). Please note: in the first half of 2022, cases of yellow fever were reported in Garissa County which is outside of the recognised yellow fever transmi"
+        }
+      ]
+    }
+  },
+  "certificate_en": "Please read the information below carefully, as certificate requirements may be relevant to certain travellers only. For travellers further details, if required, should be sought from their healthcare professional. There is a risk of yellow fever transmission in parts of Kenya (see 'Some travellers' section below). Under International Health Regulations (2005), a yellow fever vaccination certificate is required from travellers over 1 year of age arriving from countries with risk of yellow fever transmission. According to World Health Organization (WHO), from 11 July 2016 (for all countries), the yellow fever certificate will be valid for the duration of the life of the person vaccinated. As a consequence, a valid certificate, presented by arriving travellers, cannot be rejected on the grounds that more than ten years have passed since the date vaccination became effective as stated on the certificate; and that boosters or revaccination cannot be required. View the WHO list of countries with risk of yellow fever transmission.",
+  "malaria_en": ".st0{fill:#F5B04D ;} Mpox clade I outbreak An outbreak of mpox clade I is ongoing. Monitor the news and outbreak sections on this page for updates. MalariaMalaria is a serious illness caused by infection of red blood cells with a parasite called Plasmodium. The disease is transmitted by mosquitoes which predominantly feed between dusk and dawn. Symptoms usually begin with a fever (high temperature) of 38°C (100°F) or more. Other symptoms may include feeling cold and shivery, headache, nausea, vomiting and aching muscles. Symptoms may appear between eight days and one year after the infected mosquito bite. Prompt diagnosis and treatment is required as people with malaria can deteriorate quickly. Those at higher risk of malaria, or of severe complications from malaria, include pregnant women, infants and young children, the elderly, travellers who do not have a functioning spleen and those visiting friends and relatives. PreventionTravellers should follow an ABCD guide to preventing malaria: Awareness of the risk – Risk depends on the specific location, season of travel, length of stay, activities and type of accommodation. Bite prevention – Travellers should take mosquito bite avoidance measures. Chemoprophylaxis – Travellers should take antimalarials (malaria prevention tablets) if appropriate for the area (see below). No antimalarials are 100% effective but taking them in combination with mosquito bite avoidance measures will give substantial protection against malaria. Diagnosis – Travellers who develop a fever of 38°C [100°F] or higher more than one week after being in a malaria risk area, or who develop any symptoms suggestive of malaria within a year of return should seek immediate medical care. Emergency standby treatment may be considered for those going to remote areas with limited access to medical attention. Risk areas There is a high risk of malaria in Kenya: atovaquone/proguanil OR doxycycline OR mefloquine recommended. There is very low risk in the city",
+  "other_risks_en": ".st0{fill:#F5B04D ;} Mpox clade I outbreak An outbreak of mpox clade I is ongoing. Monitor the news and outbreak sections on this page for updates. Other Risks There are some risks that are relevant to all travellers regardless of destination. These may for example include road traffic and other accidents, diseases transmitted by insects or ticks, diseases transmitted by contaminated food and water, or health issues related to the heat or cold. Some additional risks (which may be present in all or part of this country) are mentioned below and are presented alphabetically. Select risk to expand information. Altitude There is a risk of altitude illness when travelling to destinations of 2,500 metres (8,200 feet) or higher. Important risk factors are the altitude gained, rate of ascent and sleeping altitude. Rapid ascent without a period of acclimatisation puts a traveller at higher risk. There are three syndromes; acute mountain sickness (AMS), high-altitude cerebral oedema (HACE) and high-altitude pulmonary oedema (HAPE). HACE and HAPE require immediate descent and medical treatment. Altitude illness in Kenya There is a point of elevation in this country higher than 2,500 metres. An example place of interest, Mt Kenya 5,199m. Prevention Travellers should spend a few days at an altitude below 3,000m. Where possible travellers should avoid travel from altitudes less than 1,200m to altitudes greater than 3,500m in a single day. Ascent above 3,000m should be gradual. Travellers should avoid increasing sleeping elevation by more than 500m per day and ensure a rest day (at the same altitude) every three or four days. Acetazolamide can be used to assist with acclimatisation, but should not replace gradual ascent. Travellers who develop symptoms of AMS (headache, fatigue, loss of appetite, nausea and sleep disturbance) should avoid further ascent. In the absence of improvement or with progression of symptoms the first response should be to descend. Development of HACE or HAP",
+  "parse_ok": true
+}
