@@ -132,7 +132,25 @@ function tierDiseases($, tierName) {
           .trim()
           .slice(0, 600);
         if (name && !diseases.some((d) => d.name_en === name))
-          diseases.push({ name_en: name, name_ja: null, desc_en: desc });
+          diseases.push({ name_en: name, name_ja: null, desc_en: desc, risk_en: "" });
+      });
+    // 「<disease> in <country>」= 当該国でのリスク記述（h2/h3）
+    $(n)
+      .find("h2, h3")
+      .each((_, el) => {
+        const m = $(el).text().trim().match(/^(.+?)\s+in\s+.+$/i);
+        if (!m) return;
+        const dis = diseases.find((d) => d.name_en.toLowerCase() === m[1].toLowerCase());
+        if (dis && !dis.risk_en)
+          dis.risk_en = $(el)
+            .nextUntil("h2,h3")
+            .text()
+            .replace(/\s+/g, " ")
+            .split(/\s*\bPrevention\b/)[0]
+            .replace(/Information on current outbreaks[\s\S]*$/i, "")
+            .replace(/([a-z])\.([A-Z])/g, "$1. $2")
+            .trim()
+            .slice(0, 500);
       });
     n = n.next();
   }
@@ -162,6 +180,7 @@ export function parseThpCountry(html, meta) {
   };
   const malaria_en = panelBody("Malaria", "Malaria");
   const other_risks_en = panelBody("Other_Risks", "Other Risks");
+  const general_info_en = panelBody("General_Information", "General Information");
 
   const totalDiseases =
     tiers.all.diseases.length + tiers.most.diseases.length + tiers.some.diseases.length;
@@ -177,6 +196,7 @@ export function parseThpCountry(html, meta) {
     certificate_en: certificate_en.slice(0, 1400),
     malaria_en: malaria_en.slice(0, 2000),
     other_risks_en: other_risks_en.slice(0, 2000),
+    general_info_en: general_info_en.slice(0, 1400),
     parse_ok,
   };
 }

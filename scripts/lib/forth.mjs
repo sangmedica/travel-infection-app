@@ -178,6 +178,11 @@ export function parseForthCountry(html, meta) {
       Object.entries(notes).map(([k, v]) => ` *${k}：${v}`).join("");
   }
 
+  const medBody = forthSection($, "医療情報");
+  const medical_info_ja = medBody ? clean(medBody.text()).slice(0, 1200) : "";
+  const retBody = forthSection($, "帰国後の過ごし方・注意点");
+  const post_return_ja = retBody ? clean(retBody.text()).replace(/\s*(平成|令和)\d+年.*更新$/, "").slice(0, 1200) : "";
+
   const parse_ok = !!page_title_ja && (watch_diseases_ja.length > 0 || vaccines_ja.length > 0 || !!watch_text_ja);
   return {
     slug: meta.slug,
@@ -193,6 +198,8 @@ export function parseForthCountry(html, meta) {
     watch_text_ja,
     vaccine_line_ja,
     vaccines_ja,
+    medical_info_ja,
+    post_return_ja,
     parse_ok,
   };
 }

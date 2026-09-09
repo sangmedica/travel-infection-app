@@ -745,6 +745,7 @@ function renderThp(d) {
           "div",
           { class: "thp-dis" },
           el("b", { text: dis.name_en }),
+          dis.risk_en ? el("p", { class: "cl-en cl-en-line", text: `［この国でのリスク］ ${dis.risk_en}` }) : null,
           dis.desc_en ? el("p", { class: "cl-en", text: dis.desc_en }) : null
         )
       );
@@ -756,6 +757,8 @@ function renderThp(d) {
     wrap.append(el("div", { class: "thp-tier" }, el("h4", { text: "証明書要件（Certificate requirements）" }), el("p", { class: "cl-en", text: d.certificate_en })));
   if (d.other_risks_en)
     wrap.append(el("details", {}, el("summary", { text: "その他のリスク（Other risks）" }), el("p", { class: "cl-en", text: d.other_risks_en })));
+  if (d.general_info_en)
+    wrap.append(el("details", {}, el("summary", { text: "一般情報（General information）" }), el("p", { class: "cl-en", text: d.general_info_en })));
   wrap.append(srcAttribution("thp", d.source_url));
   return wrap;
 }
@@ -786,6 +789,14 @@ function renderForth(d) {
     wrap.append(ul);
   }
   if (d.vaccine_line_ja) wrap.append(el("blockquote", { class: "cl-en", text: d.vaccine_line_ja }));
+  if (d.medical_info_ja) {
+    wrap.append(el("h4", { text: "医療情報（FORTH 日本語原文）" }));
+    wrap.append(el("blockquote", { class: "cl-en", text: d.medical_info_ja }));
+  }
+  if (d.post_return_ja) {
+    wrap.append(el("h4", { text: "帰国後の過ごし方・注意点（FORTH 日本語原文）" }));
+    wrap.append(el("blockquote", { class: "cl-en", text: d.post_return_ja }));
+  }
   wrap.append(srcAttribution("forth", d.source_url));
   return wrap;
 }
