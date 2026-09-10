@@ -35,18 +35,22 @@ export function matchSchedule(nameEn, schedules) {
  * @param {object} opts
  * @param {string} opts.today             ISO 日付（例: "2026-09-10"）
  * @param {string} opts.departureDate     ISO 日付
+ * @param {string} [opts.firstVisitDate]  初回に接種を受けられる日（ISO）。未指定なら today。
+ *        過去日は today として扱う。ここを起点にタイムラインを引く。
  * @param {Array<{name_en:string, name_ja?:string, category?:string}>} opts.recommended
  *        渡航先の推奨ワクチン（CDC + THP をマージ済み）
  * @param {string[]} opts.doneIds         既接種として除外するスケジュール id
  * @param {boolean} opts.accelerated      迅速化スケジュールを優先
  * @param {{vaccines:Array}} opts.schedules   data/kb/vaccine-schedules.json
  * @param {boolean} opts.malaria          渡航先にマラリア予防内服の推奨があるか
- * @returns {{items:Array, leadItems:Array, warnings:string[], daysToDeparture:number|null, matched:number}}
+ * @returns {{items:Array, leadItems:Array, warnings:string[], daysToDeparture:number|null,
+ *           matched:number, start:string, firstVisit:string|null, visitDates:string[]}}
  */
 export function buildSchedule(opts) {
   const {
     today,
     departureDate,
+    firstVisitDate = null,
     recommended = [],
     doneIds = [],
     accelerated = false,
@@ -60,9 +64,31 @@ export function buildSchedule(opts) {
 
   const dtd = departureDate ? daysBetween(today, departureDate) : null;
   if (dtd == null || Number.isNaN(dtd)) {
-    return { items: [], leadItems: [], warnings: ["渡航予定日を入力してください。"], daysToDeparture: null, matched: 0 };
+    return {
+      items: [],
+      leadItems: [],
+      warnings: ["渡航予定日を入力してください。"],
+      daysToDeparture: null,
+      matched: 0,
+      start: today,
+      firstVisit: null,
+      visitDates: [],
+    };
   }
   if (dtd < 0) warnings.push("渡航予定日が過去の日付です。");
+
+  // 起点＝初回に接種を受けられる日（未指定・過去なら今日）
+  let start = today;
+  let firstVisit = null;
+  if (firstVisitDate) {
+    const fv = daysBetween(today, firstVisitDate);
+    if (!Number.isNaN(fv) && fv > 0) {
+      start = firstVisitDate;
+      firstVisit = firstVisitDate;
+      if (daysBetween(firstVisitDate, departureDate) < 0)
+        warnings.push("初回に接種を受けられる日が渡航予定日より後です。日程を見直してください。");
+    }
+  }
 
   const done = new Set(doneIds);
   const used = new Set();
@@ -78,7 +104,6 @@ export function buildSchedule(opts) {
     const offsets = useAccel ? sched.accelerated_days : sched.schedule_days;
     const lead = sched.last_dose_lead_days || 0;
     const total = offsets.length;
-    const start = today; // 可能な限り早く開始する前提でタイムラインを引く
 
     const mine = [];
     offsets.forEach((off, i) => {
@@ -166,9 +191,12 @@ export function buildSchedule(opts) {
     });
   }
 
-  if (dtd >= 0 && dtd < 14 && matched > 0) {
+  const windowDays = firstVisit ? daysBetween(firstVisit, departureDate) : dtd;
+  if (windowDays >= 0 && windowDays < 14 && matched > 0) {
     warnings.push(
-      `出発まで${dtd}日です。多くのワクチンは効果発現まで1〜2週間かかります。渡航医療機関に至急ご相談ください。`
+      firstVisit
+        ? `初回に接種を受けられる日から出発まで${windowDays}日です。多くのワクチンは効果発現まで1〜2週間かかります。受診日を前倒しできないか、渡航医療機関にご相談ください。`
+        : `出発まで${dtd}日です。多くのワクチンは効果発現まで1〜2週間かかります。渡航医療機関に至急ご相談ください。`
     );
   }
   if (matched === 0) {
@@ -183,5 +211,8 @@ export function buildSchedule(opts) {
       a.name_ja.localeCompare(b.name_ja, "ja") ||
       a.doseNo - b.doseNo
   );
-  return { items, leadItems, warnings, daysToDeparture: dtd, matched };
+  const visitDates = [
+    ...new Set(items.filter((it) => it.status !== "after").map((it) => it.date)),
+  ].sort();
+  return { items, leadItems, warnings, daysToDeparture: dtd, matched, start, firstVisit, visitDates };
 }

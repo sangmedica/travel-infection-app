@@ -126,5 +126,65 @@ console.log("渡航予定日なし");
   ok(r.daysToDeparture == null && r.warnings.length === 1, "警告のみ返す");
 }
 
+// --- 8. 初回に接種を受けられる日（起点）---
+console.log("初回受診日 = 14日後・日本脳炎（標準）・出発60日後 → 間に合う");
+{
+  const r = buildSchedule({
+    today: TODAY,
+    departureDate: addDays(TODAY, 60),
+    firstVisitDate: addDays(TODAY, 14),
+    recommended: rec("Japanese encephalitis"),
+    schedules,
+  });
+  const je = r.items.filter((i) => i.vaccineId === "japanese_encephalitis");
+  ok(r.start === addDays(TODAY, 14) && r.firstVisit === addDays(TODAY, 14), "起点が初回受診日になる");
+  ok(je[0].date === addDays(TODAY, 14) && je[1].date === addDays(TODAY, 42), "1回目=受診日、2回目=+28日");
+  ok(je.every((i) => i.status === "ok"), "両方 status=ok（+7日リードも確保）");
+  ok(r.visitDates.length === 2, "受診の目安は2回");
+}
+console.log("初回受診日 = 14日後・日本脳炎（標準）・出発40日後 → 完了不可（今日起点なら間に合う）");
+{
+  const fromToday = buildSchedule({
+    today: TODAY,
+    departureDate: addDays(TODAY, 40),
+    recommended: rec("Japanese encephalitis"),
+    schedules,
+  });
+  ok(!fromToday.warnings.some((w) => w.includes("日本脳炎")), "今日起点なら日本脳炎の警告なし");
+  const delayed = buildSchedule({
+    today: TODAY,
+    departureDate: addDays(TODAY, 40),
+    firstVisitDate: addDays(TODAY, 14),
+    recommended: rec("Japanese encephalitis"),
+    schedules,
+  });
+  ok(
+    delayed.warnings.some((w) => w.includes("日本脳炎") && w.includes("迅速化")),
+    "受診が14日遅れると標準では完了不可 → 迅速化を促す"
+  );
+}
+console.log("初回受診日 = 過去 → 今日として扱う");
+{
+  const r = buildSchedule({
+    today: TODAY,
+    departureDate: addDays(TODAY, 60),
+    firstVisitDate: addDays(TODAY, -5),
+    recommended: rec("Typhoid"),
+    schedules,
+  });
+  ok(r.firstVisit === null && r.start === TODAY, "過去日は無視して今日を起点");
+}
+console.log("初回受診日 > 渡航予定日 → 警告");
+{
+  const r = buildSchedule({
+    today: TODAY,
+    departureDate: addDays(TODAY, 20),
+    firstVisitDate: addDays(TODAY, 30),
+    recommended: rec("Typhoid"),
+    schedules,
+  });
+  ok(r.warnings.some((w) => w.includes("初回") && w.includes("渡航予定日より後")), "受診日が出発後なら警告");
+}
+
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);

@@ -931,8 +931,36 @@ table.diseases td .en {
 .sched-accel-row {
   margin-top: 10px;
 }
+.sched-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  align-items: flex-start;
+}
+.sched-date-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.sched-date-field .dx-label {
+  margin: 0;
+}
+.sched-visit-hint {
+  margin: 0;
+}
+.sched-dates .sched-accel-row {
+  flex-basis: 100%;
+  margin-top: 2px;
+}
 .sched-out {
   margin-top: 14px;
+}
+.sched-summary {
+  font-size: 0.83rem;
+  margin: 0 0 10px;
+  padding: 6px 10px;
+  background: var(--surface-2);
+  border-radius: 6px;
 }
 .sched-warn {
   border: 1px solid var(--lvl3);
@@ -1020,6 +1048,27 @@ table.sched-table th {
   bottom: 44px;
   height: 2px;
   background: var(--border);
+}
+.sched-tl-preblock {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 34px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--surface-2),
+    var(--surface-2) 5px,
+    transparent 5px,
+    transparent 10px
+  );
+  border-right: 1px dashed var(--text-dim);
+  opacity: 0.8;
+}
+.sched-tl-visit > span {
+  color: var(--text-dim);
+}
+.sched-tl-visit::before {
+  background: var(--text-dim);
 }
 .sched-tl-month {
   position: absolute;

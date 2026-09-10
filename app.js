@@ -1,5 +1,5 @@
 import { rankDifferentials, INCUBATION_BUCKETS } from "./dx.js";
-import { buildSchedule, matchSchedule, addDays } from "./schedule.js";
+import { buildSchedule, matchSchedule, addDays, daysBetween } from "./schedule.js";
 
 // ---- 表示メタ情報 -------------------------------------------------------------
 
@@ -1204,12 +1204,13 @@ function renderRefSchedule() {
     el("p", {
       class: "ref-lead",
       text:
-        "渡航先と渡航予定日を入れると、その国で推奨されるワクチンをいつ接種すればよいかを日付で逆算します。回数・接種間隔・迅速化の可否・出発前リードタイムは代表例です。",
+        "渡航先・渡航予定日・初回に接種を受けられる日を入れると、その国で推奨されるワクチンをいつ接種すればよいかを日付で逆算します。回数・接種間隔・迅速化の可否・出発前リードタイムは代表例です。",
     })
   );
 
   let dest = null;
   const dateInput = el("input", { id: "sched-date", type: "date", class: "ref-date" });
+  const visitInput = el("input", { id: "sched-visit", type: "date", class: "ref-date" });
   const accel = el("input", { id: "sched-accel", type: "checkbox" });
   const doneWrap = el("div", { class: "sched-done" });
   const out = el("div", { class: "sched-out" });
@@ -1275,10 +1276,15 @@ function renderRefSchedule() {
       out.append(el("p", { class: "empty" }, "渡航予定日を入力してください。"));
       return;
     }
+    if (visitInput.value && dateInput.value && visitInput.value > dateInput.value) {
+      out.append(el("p", { class: "empty" }, "初回に接種を受けられる日が渡航予定日より後です。"));
+      return;
+    }
     const done = [...doneWrap.querySelectorAll("input:checked")].map((c) => c.dataset.sid);
     const res = buildSchedule({
       today: today(),
       departureDate: dateInput.value,
+      firstVisitDate: visitInput.value || null,
       recommended: mergedRecs(dest),
       doneIds: done,
       accelerated: accel.checked,
@@ -1288,15 +1294,27 @@ function renderRefSchedule() {
     out.append(scheduleView(res));
   }
   dateInput.addEventListener("change", recompute);
+  visitInput.addEventListener("change", recompute);
   accel.addEventListener("change", recompute);
 
   root.append(df.wrap);
   root.append(
     el(
       "div",
-      { class: "dx-field" },
-      el("label", { class: "dx-label", for: "sched-date" }, "渡航予定日"),
-      dateInput,
+      { class: "dx-field sched-dates" },
+      el(
+        "div",
+        { class: "sched-date-field" },
+        el("label", { class: "dx-label", for: "sched-date" }, "渡航予定日"),
+        dateInput
+      ),
+      el(
+        "div",
+        { class: "sched-date-field" },
+        el("label", { class: "dx-label", for: "sched-visit" }, "初回に接種を受けられる日"),
+        visitInput,
+        el("span", { class: "hint sched-visit-hint" }, "未入力なら今日を起点に計算します")
+      ),
       el(
         "label",
         { class: "dx-chk sched-accel-row" },
@@ -1360,6 +1378,13 @@ function scheduleTimeline(res) {
 
   const track = el("div", { class: "sched-tl-track", style: `height:${86 + (maxLane + 1) * 40}px` });
 
+  // 初回に接種を受けられる日（起点）より前は「受診前」として淡く塗る
+  let fvP = 0;
+  if (res.firstVisit) {
+    fvP = pct(daysBetween(t0, res.firstVisit));
+    track.append(el("div", { class: "sched-tl-preblock", style: `width:${fvP}%` }));
+  }
+
   // 月の目盛り
   const d0 = new Date(t0 + "T00:00:00");
   const dEnd = new Date(depIso + "T00:00:00");
@@ -1378,6 +1403,15 @@ function scheduleTimeline(res) {
   track.append(
     el("div", { class: "sched-tl-end sched-tl-today", style: "left:0%" }, el("span", {}, "今日"), el("small", {}, fmtMD(t0)))
   );
+  if (res.firstVisit && fvP > 4 && fvP < 96)
+    track.append(
+      el(
+        "div",
+        { class: "sched-tl-end sched-tl-visit", style: `left:${fvP}%` },
+        el("span", {}, "初回受診"),
+        el("small", {}, fmtMD(res.firstVisit))
+      )
+    );
   track.append(
     el(
       "div",
@@ -1430,6 +1464,17 @@ function scheduleTimeline(res) {
 
 function scheduleView(res) {
   const box = el("div", {});
+  if (res.items.length && res.visitDates && res.visitDates.length) {
+    const start = res.firstVisit || res.start;
+    box.append(
+      el(
+        "p",
+        { class: "sched-summary" },
+        el("b", {}, `起点: ${res.firstVisit ? "初回受診日" : "今日"} ${fmtMD(start)}`),
+        `　／　出発前の受診はおおむね ${res.visitDates.length} 回（${res.visitDates.map(fmtMD).join(" ・ ")}）`
+      )
+    );
+  }
   if (res.warnings.length)
     box.append(
       el(
