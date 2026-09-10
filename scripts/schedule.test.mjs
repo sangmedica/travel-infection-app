@@ -24,7 +24,8 @@ const ok = (cond, name) => {
   }
 };
 
-const rec = (...names) => names.map((name_en) => ({ name_en, source: "cdc" }));
+const rec = (...names) =>
+  names.map((n) => (typeof n === "string" ? { name_en: n, source: "cdc" } : { source: "cdc", ...n }));
 
 // --- 1. マッチング ---
 console.log("マッチング");
@@ -184,6 +185,24 @@ console.log("初回受診日 > 渡航予定日 → 警告");
     schedules,
   });
   ok(r.warnings.some((w) => w.includes("初回") && w.includes("渡航予定日より後")), "受診日が出発後なら警告");
+}
+
+// --- 9. 推奨度（category）の伝播 ---
+console.log("推奨度カテゴリが各接種項目に付く");
+{
+  const r = buildSchedule({
+    today: TODAY,
+    departureDate: addDays(TODAY, 60),
+    recommended: [
+      { name_en: "Hepatitis A", source: "cdc", category: "most" },
+      { name_en: "Japanese encephalitis", source: "cdc", category: "some" },
+    ],
+    schedules,
+  });
+  const ha = r.items.filter((i) => i.vaccineId === "hepatitis_a");
+  const je = r.items.filter((i) => i.vaccineId === "japanese_encephalitis");
+  ok(ha.length && ha.every((i) => i.category === "most"), "A型肝炎の全回に category=most");
+  ok(je.length && je.every((i) => i.category === "some"), "日本脳炎の全回に category=some");
 }
 
 console.log(`\n${pass} passed, ${fail} failed`);

@@ -1,5 +1,5 @@
 import { rankDifferentials, INCUBATION_BUCKETS } from "./dx.js";
-import { buildSchedule, matchSchedule, addDays, daysBetween } from "./schedule.js";
+import { buildSchedule, matchSchedule, addDays, daysBetween, describeOffsets } from "./schedule.js";
 
 // ---- 表示メタ情報 -------------------------------------------------------------
 
@@ -1133,6 +1133,12 @@ const today = () => new Date().toISOString().slice(0, 10);
 const disclaimerNote = (text) => el("p", { class: "ref-disc" }, el("b", {}, "⚠ "), text);
 const fetchDest = (slug) => getJSON(`data/destinations/${slug}.json`).catch(() => null);
 
+/** CDC 推奨度カテゴリ（all/most/some/consider）→ 色つきバッジ */
+const catBadge = (cat) =>
+  cat && CATEGORY_META[cat]
+    ? el("span", { class: `badge cat-${cat} sched-cat`, text: CATEGORY_META[cat].ja })
+    : null;
+
 // 渡航先ページの推奨ワクチンのうち、スケジュール逆算・携行判定に使うカテゴリ
 const SCHED_CATS = new Set(["all", "most", "some", "consider"]);
 function mergedRecs(destData) {
@@ -1212,6 +1218,7 @@ function renderRefSchedule() {
   const dateInput = el("input", { id: "sched-date", type: "date", class: "ref-date" });
   const visitInput = el("input", { id: "sched-visit", type: "date", class: "ref-date" });
   const accel = el("input", { id: "sched-accel", type: "checkbox" });
+  const recWrap = el("div", { class: "sched-reclist" });
   const doneWrap = el("div", { class: "sched-done" });
   const out = el("div", { class: "sched-out" });
 
@@ -1219,6 +1226,7 @@ function renderRefSchedule() {
     if (!m) {
       dest = null;
       status.textContent = "渡航先を選ぶと、その国の推奨ワクチンでスケジュールを作ります。";
+      recWrap.replaceChildren();
       doneWrap.replaceChildren();
       recompute();
       return;
@@ -1226,6 +1234,7 @@ function renderRefSchedule() {
     if (!m.has_data) {
       dest = null;
       status.textContent = `${m.name_ja} は CDC データ未取得です。`;
+      recWrap.replaceChildren();
       doneWrap.replaceChildren();
       recompute();
       return;
@@ -1233,6 +1242,7 @@ function renderRefSchedule() {
     fetchDest(m.slug).then((d) => {
       dest = d;
       status.textContent = `${m.name_ja} の推奨ワクチン（CDC）で計算します。`;
+      buildRecList();
       buildDone();
       recompute();
     });
@@ -1246,10 +1256,32 @@ function renderRefSchedule() {
       const s = matchSchedule(r.name_en, VSCHED);
       if (s && !seen.has(s.id)) {
         seen.add(s.id);
-        list.push(s);
+        list.push({ id: s.id, name_ja: s.name_ja, name_en: s.name_en, category: r.category });
       }
     }
     return list;
+  }
+  function buildRecList() {
+    recWrap.replaceChildren();
+    const ms = matchedScheds();
+    if (!ms.length) return;
+    recWrap.append(el("div", { class: "dx-label" }, `${dest.name_ja} で対象になる渡航ワクチン（CDC 推奨度別）`));
+    const order = ["all", "most", "some", "consider"];
+    for (const key of order) {
+      const inGroup = ms.filter((s) => s.category === key);
+      if (!inGroup.length) continue;
+      recWrap.append(
+        el(
+          "div",
+          { class: "sched-recgroup" },
+          catBadge(key),
+          el("span", { class: "sched-recnames" }, inGroup.map((s) => s.name_ja).join(" / "))
+        )
+      );
+    }
+    recWrap.append(
+      el("p", { class: "hint" }, "推奨度は CDC 渡航先ページのワクチン推奨文からの自動分類です。最終判断は CDC 原文と診察に基づいてください。")
+    );
   }
   function buildDone() {
     doneWrap.replaceChildren();
@@ -1261,7 +1293,12 @@ function renderRefSchedule() {
       const cb = el("input", { type: "checkbox", "data-sid": s.id });
       cb.addEventListener("change", recompute);
       grid.append(
-        el("label", { class: "dx-chk" }, cb, el("span", {}, s.name_ja, el("span", { class: "en", text: " " + s.name_en })))
+        el(
+          "label",
+          { class: "dx-chk" },
+          cb,
+          el("span", {}, catBadge(s.category), " ", s.name_ja, el("span", { class: "en", text: " " + s.name_en }))
+        )
       );
     }
     doneWrap.append(grid);
@@ -1316,13 +1353,22 @@ function renderRefSchedule() {
         el("span", { class: "hint sched-visit-hint" }, "未入力なら今日を起点に計算します")
       ),
       el(
-        "label",
-        { class: "dx-chk sched-accel-row" },
-        accel,
-        el("span", {}, "迅速化スケジュールを優先する（対応ワクチンのみ）")
+        "div",
+        { class: "sched-accel-box" },
+        el(
+          "label",
+          { class: "dx-chk sched-accel-row" },
+          accel,
+          el("span", {}, "迅速化スケジュールを優先する（対応ワクチンのみ）")
+        ),
+        el("p", { class: "hint" },
+          "「迅速化スケジュール」＝出発まで日数がないときのために、接種間隔を短縮して承認されている接種法です。" +
+          "オンにすると、下記の対応ワクチンだけ短い間隔で逆算します（それ以外は通常どおり）。"),
+        accelDetails()
       )
     )
   );
+  root.append(recWrap);
   root.append(doneWrap);
   root.append(out);
   root.append(
@@ -1331,6 +1377,28 @@ function renderRefSchedule() {
     )
   );
   recompute();
+}
+
+/** 迅速化スケジュールがあるワクチンの一覧（標準 → 迅速化の間隔）を折りたたみで示す */
+function accelDetails() {
+  const withAccel = (VSCHED.vaccines || []).filter((v) => Array.isArray(v.accelerated_days));
+  if (!withAccel.length) return null;
+  const d = el("details", { class: "sched-accel-list" });
+  d.append(el("summary", {}, `迅速化スケジュールがあるワクチン（${withAccel.length}種）`));
+  const ul = el("ul", {});
+  for (const v of withAccel) {
+    ul.append(
+      el(
+        "li",
+        {},
+        el("b", {}, v.name_ja),
+        `：標準 ${describeOffsets(v.schedule_days)} → 迅速化 ${describeOffsets(v.accelerated_days)}`,
+        v.accelerated_ja ? el("div", { class: "hint", text: v.accelerated_ja }) : null
+      )
+    );
+  }
+  d.append(ul);
+  return d;
 }
 
 const fmtMD = (iso) => {
@@ -1439,7 +1507,8 @@ function scheduleTimeline(res) {
         { class: "sched-tl-callout" },
         el("b", {}, fmtMD(g.date)),
         el("span", {}, label),
-        g.items.some((i) => i.live) ? el("span", { class: "badge cl-badge-yes sched-badge", text: "生" }) : null
+        g.items.some((i) => i.live) ? el("span", { class: "badge cl-badge-yes sched-badge", text: "生" }) : null,
+        g.items.length === 1 ? catBadge(g.items[0].category) : null
       )
     );
     track.append(m);
@@ -1492,7 +1561,15 @@ function scheduleView(res) {
       el(
         "thead",
         {},
-        el("tr", {}, el("th", {}, "接種日"), el("th", {}, "内容"), el("th", {}, "出発まで"), el("th", {}, "状態"))
+        el(
+          "tr",
+          {},
+          el("th", {}, "接種日"),
+          el("th", {}, "推奨度"),
+          el("th", {}, "内容"),
+          el("th", {}, "出発まで"),
+          el("th", {}, "状態")
+        )
       )
     );
     const tb = el("tbody");
@@ -1503,6 +1580,7 @@ function scheduleView(res) {
           "tr",
           { class: `sched-row st-${it.status}` },
           el("td", { class: "sched-date-c" }, it.date),
+          el("td", {}, catBadge(it.category) || el("span", { class: "en" }, "—")),
           el(
             "td",
             {},
@@ -1520,7 +1598,7 @@ function scheduleView(res) {
       );
     }
     tbl.append(tb);
-    box.append(tbl);
+    box.append(el("div", { class: "sched-table-wrap" }, tbl));
   } else {
     box.append(el("p", { class: "empty" }, "スケジュール表に対応する渡航ワクチンの推奨が見つかりませんでした。"));
   }

@@ -125,6 +125,7 @@ export function buildSchedule(opts) {
         doseNo: i + 1,
         doseTotal: total,
         accelerated: useAccel,
+        category: rec.category || null,
         status,
         source_ja: rec.source === "thp" ? "TravelHealthPro" : rec.source === "forth" ? "FORTH" : "CDC",
       };
