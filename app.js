@@ -1210,7 +1210,7 @@ function renderRefSchedule() {
     el("p", {
       class: "ref-lead",
       text:
-        "渡航先・渡航予定日・初回に接種を受けられる日を入れると、その国で推奨されるワクチンをいつ接種すればよいかを日付で逆算します。回数・接種間隔・迅速化の可否・出発前リードタイムは代表例です。",
+        "渡航先を選ぶと推奨ワクチンが一覧表示されます。接種を希望するものにチェックを入れ、渡航予定日と初回に接種を受けられる日を入れると、いつ接種すればよいかを日付で逆算します。回数・接種間隔・迅速化の可否・出発前リードタイムは代表例です。",
     })
   );
 
@@ -1218,32 +1218,28 @@ function renderRefSchedule() {
   const dateInput = el("input", { id: "sched-date", type: "date", class: "ref-date" });
   const visitInput = el("input", { id: "sched-visit", type: "date", class: "ref-date" });
   const accel = el("input", { id: "sched-accel", type: "checkbox" });
-  const recWrap = el("div", { class: "sched-reclist" });
-  const doneWrap = el("div", { class: "sched-done" });
+  const pickWrap = el("div", { class: "sched-pick" });
   const out = el("div", { class: "sched-out" });
 
   const df = refDestField("sched-dest", "渡航先の国・地域", (m, status) => {
     if (!m) {
       dest = null;
-      status.textContent = "渡航先を選ぶと、その国の推奨ワクチンでスケジュールを作ります。";
-      recWrap.replaceChildren();
-      doneWrap.replaceChildren();
+      status.textContent = "渡航先を選ぶと、その国の推奨ワクチンが一覧表示されます。";
+      pickWrap.replaceChildren();
       recompute();
       return;
     }
     if (!m.has_data) {
       dest = null;
       status.textContent = `${m.name_ja} は CDC データ未取得です。`;
-      recWrap.replaceChildren();
-      doneWrap.replaceChildren();
+      pickWrap.replaceChildren();
       recompute();
       return;
     }
     fetchDest(m.slug).then((d) => {
       dest = d;
-      status.textContent = `${m.name_ja} の推奨ワクチン（CDC）で計算します。`;
-      buildRecList();
-      buildDone();
+      status.textContent = `${m.name_ja} の推奨ワクチン（CDC）から選択してください。`;
+      buildPick();
       recompute();
     });
   });
@@ -1261,52 +1257,64 @@ function renderRefSchedule() {
     }
     return list;
   }
-  function buildRecList() {
-    recWrap.replaceChildren();
+  function setAllPicks(on) {
+    for (const cb of pickWrap.querySelectorAll('input[type="checkbox"]')) cb.checked = on;
+    recompute();
+  }
+  function buildPick() {
+    pickWrap.replaceChildren();
     const ms = matchedScheds();
-    if (!ms.length) return;
-    recWrap.append(el("div", { class: "dx-label" }, `${dest.name_ja} で対象になる渡航ワクチン（CDC 推奨度別）`));
+    if (!ms.length) {
+      pickWrap.append(
+        el("p", { class: "empty" }, "この渡航先には、スケジュール表に対応する渡航ワクチンの推奨がありません（定期接種の最新化は別途ご確認ください）。")
+      );
+      return;
+    }
+    pickWrap.append(
+      el(
+        "div",
+        { class: "sched-pick-head" },
+        el("span", { class: "dx-label" }, `接種を希望するワクチン（${dest.name_ja}／推奨度別・初期状態は全選択）`),
+        el("span", { class: "sched-pick-btns" },
+          el("button", { class: "dx-mini-btn", type: "button" }, "全選択"),
+          el("button", { class: "dx-mini-btn", type: "button" }, "全解除"))
+      )
+    );
+    const [selBtn, clrBtn] = pickWrap.querySelectorAll(".sched-pick-btns button");
+    selBtn.addEventListener("click", () => setAllPicks(true));
+    clrBtn.addEventListener("click", () => setAllPicks(false));
+
     const order = ["all", "most", "some", "consider"];
     for (const key of order) {
       const inGroup = ms.filter((s) => s.category === key);
       if (!inGroup.length) continue;
-      recWrap.append(
-        el(
-          "div",
-          { class: "sched-recgroup" },
-          catBadge(key),
-          el("span", { class: "sched-recnames" }, inGroup.map((s) => s.name_ja).join(" / "))
-        )
-      );
+      const grp = el("div", { class: "sched-pick-group" }, el("div", { class: "sched-pick-gradelabel" }, catBadge(key)));
+      const grid = el("div", { class: "sched-pick-grid" });
+      for (const s of inGroup) {
+        const cb = el("input", { type: "checkbox", "data-sid": s.id });
+        cb.checked = true;
+        cb.addEventListener("change", recompute);
+        grid.append(
+          el("label", { class: "dx-chk" }, cb, el("span", {}, s.name_ja, el("span", { class: "en", text: " " + s.name_en })))
+        );
+      }
+      grp.append(grid);
+      pickWrap.append(grp);
     }
-    recWrap.append(
+    pickWrap.append(
       el("p", { class: "hint" }, "推奨度は CDC 渡航先ページのワクチン推奨文からの自動分類です。最終判断は CDC 原文と診察に基づいてください。")
     );
-  }
-  function buildDone() {
-    doneWrap.replaceChildren();
-    const ms = matchedScheds();
-    if (!ms.length) return;
-    doneWrap.append(el("div", { class: "dx-label" }, "すでに接種済み（スケジュールから除外）"));
-    const grid = el("div", { class: "sched-done-grid" });
-    for (const s of ms) {
-      const cb = el("input", { type: "checkbox", "data-sid": s.id });
-      cb.addEventListener("change", recompute);
-      grid.append(
-        el(
-          "label",
-          { class: "dx-chk" },
-          cb,
-          el("span", {}, catBadge(s.category), " ", s.name_ja, el("span", { class: "en", text: " " + s.name_en }))
-        )
-      );
-    }
-    doneWrap.append(grid);
   }
   function recompute() {
     out.replaceChildren();
     if (!dest) {
       out.append(el("p", { class: "empty" }, "渡航先を選択してください。"));
+      return;
+    }
+    const picked = new Set([...pickWrap.querySelectorAll("input:checked")].map((c) => c.dataset.sid));
+    const hasChoices = pickWrap.querySelectorAll('input[type="checkbox"]').length > 0;
+    if (hasChoices && picked.size === 0) {
+      out.append(el("p", { class: "empty" }, "接種を希望するワクチンを1つ以上選択してください。"));
       return;
     }
     if (!dateInput.value) {
@@ -1317,13 +1325,15 @@ function renderRefSchedule() {
       out.append(el("p", { class: "empty" }, "初回に接種を受けられる日が渡航予定日より後です。"));
       return;
     }
-    const done = [...doneWrap.querySelectorAll("input:checked")].map((c) => c.dataset.sid);
+    const recommended = mergedRecs(dest).filter((r) => {
+      const s = matchSchedule(r.name_en, VSCHED);
+      return s && picked.has(s.id);
+    });
     const res = buildSchedule({
       today: today(),
       departureDate: dateInput.value,
       firstVisitDate: visitInput.value || null,
-      recommended: mergedRecs(dest),
-      doneIds: done,
+      recommended,
       accelerated: accel.checked,
       schedules: VSCHED,
       malaria: destMalariaInfo(dest).risk,
@@ -1335,6 +1345,7 @@ function renderRefSchedule() {
   accel.addEventListener("change", recompute);
 
   root.append(df.wrap);
+  root.append(pickWrap);
   root.append(
     el(
       "div",
@@ -1368,8 +1379,6 @@ function renderRefSchedule() {
       )
     )
   );
-  root.append(recWrap);
-  root.append(doneWrap);
   root.append(out);
   root.append(
     disclaimerNote(

@@ -38,8 +38,7 @@ export function matchSchedule(nameEn, schedules) {
  * @param {string} [opts.firstVisitDate]  初回に接種を受けられる日（ISO）。未指定なら today。
  *        過去日は today として扱う。ここを起点にタイムラインを引く。
  * @param {Array<{name_en:string, name_ja?:string, category?:string}>} opts.recommended
- *        渡航先の推奨ワクチン（CDC + THP をマージ済み）
- * @param {string[]} opts.doneIds         既接種として除外するスケジュール id
+ *        接種を希望するワクチン（渡航先の推奨から利用者が選択したもの）
  * @param {boolean} opts.accelerated      迅速化スケジュールを優先
  * @param {{vaccines:Array}} opts.schedules   data/kb/vaccine-schedules.json
  * @param {boolean} opts.malaria          渡航先にマラリア予防内服の推奨があるか
@@ -52,7 +51,6 @@ export function buildSchedule(opts) {
     departureDate,
     firstVisitDate = null,
     recommended = [],
-    doneIds = [],
     accelerated = false,
     schedules = { vaccines: [] },
     malaria = false,
@@ -90,13 +88,12 @@ export function buildSchedule(opts) {
     }
   }
 
-  const done = new Set(doneIds);
   const used = new Set();
   let matched = 0;
 
   for (const rec of recommended) {
     const sched = matchSchedule(rec.name_en, schedules);
-    if (!sched || used.has(sched.id) || done.has(sched.id)) continue;
+    if (!sched || used.has(sched.id)) continue;
     used.add(sched.id);
     matched++;
 

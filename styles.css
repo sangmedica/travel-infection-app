@@ -919,14 +919,39 @@ table.diseases td .en {
 }
 
 /* --- ③ schedule --- */
-.sched-done:not(:empty) {
-  margin: 12px 0;
+.sched-pick:not(:empty) {
+  margin: 14px 0;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
-.sched-done-grid {
+.sched-pick-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-bottom: 8px;
+}
+.sched-pick-head .dx-label {
+  margin: 0;
+  flex: 1 1 auto;
+}
+.sched-pick-btns {
+  display: inline-flex;
+  gap: 6px;
+}
+.sched-pick-group {
+  margin: 8px 0;
+}
+.sched-pick-gradelabel {
+  margin-bottom: 4px;
+}
+.sched-pick-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 4px 14px;
-  margin-top: 6px;
+  padding-left: 4px;
 }
 .sched-accel-row {
   margin-top: 10px;
@@ -987,24 +1012,6 @@ table.diseases td .en {
 }
 .sched-accel-list li .hint {
   margin: 2px 0 0;
-}
-
-/* 推奨度別の対象ワクチン一覧 */
-.sched-reclist:not(:empty) {
-  margin: 12px 0;
-}
-.sched-recgroup {
-  display: flex;
-  gap: 8px;
-  align-items: baseline;
-  margin: 5px 0;
-  font-size: 0.85rem;
-}
-.sched-recgroup .sched-cat {
-  flex: 0 0 auto;
-}
-.sched-recnames {
-  flex: 1 1 auto;
 }
 
 /* 推奨度バッジ（表・一覧・タイムライン共通） */
