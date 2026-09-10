@@ -1,5 +1,5 @@
 import { rankDifferentials, INCUBATION_BUCKETS } from "./dx.js";
-import { buildSchedule, matchSchedule } from "./schedule.js";
+import { buildSchedule, matchSchedule, addDays } from "./schedule.js";
 
 // ---- 表示メタ情報 -------------------------------------------------------------
 
@@ -1315,6 +1315,119 @@ function renderRefSchedule() {
   recompute();
 }
 
+const fmtMD = (iso) => {
+  const [, m, d] = iso.split("-");
+  return `${+m}/${+d}`;
+};
+
+/** 今日→出発日の横型カレンダー（接種日をビジュアルに表示） */
+function scheduleTimeline(res) {
+  const wrap = el("div", { class: "sched-tl-wrap" });
+  const dtd = res.daysToDeparture;
+  if (!dtd || dtd <= 0) return wrap; // 逆算タイムラインは出発が未来のときだけ
+  const t0 = today();
+  const depIso = addDays(t0, dtd);
+  const onAxis = res.items.filter((it) => it.status !== "after");
+  if (!onAxis.length) return wrap;
+  const afterN = res.items.length - onAxis.length;
+  const pct = (days) => Math.max(0, Math.min(100, (days / dtd) * 100));
+
+  // 同一日をまとめる
+  const groups = [];
+  const gmap = new Map();
+  for (const it of onAxis) {
+    if (!gmap.has(it.date)) {
+      const g = { date: it.date, days: it.dayFromToday, items: [] };
+      gmap.set(it.date, g);
+      groups.push(g);
+    }
+    gmap.get(it.date).items.push(it);
+  }
+  groups.sort((a, b) => a.days - b.days);
+
+  // 吹き出しの横方向の重なりを避けるレーン割当（先に置いた吹き出しと GAP%% 未満なら次の段へ）
+  const GAP = 20;
+  const laneEnd = [];
+  for (const g of groups) {
+    g.p = pct(g.days);
+    let lane = 0;
+    while (lane < 4 && laneEnd[lane] != null && g.p - laneEnd[lane] < GAP) lane++;
+    if (lane === 4) lane = 0;
+    laneEnd[lane] = g.p;
+    g.lane = lane;
+  }
+  const maxLane = groups.reduce((m, g) => Math.max(m, g.lane), 0);
+
+  const track = el("div", { class: "sched-tl-track", style: `height:${86 + (maxLane + 1) * 40}px` });
+
+  // 月の目盛り
+  const d0 = new Date(t0 + "T00:00:00");
+  const dEnd = new Date(depIso + "T00:00:00");
+  const mk = new Date(d0.getFullYear(), d0.getMonth() + 1, 1);
+  while (mk <= dEnd) {
+    const days = Math.round((mk - d0) / 86400000);
+    track.append(
+      el("div", { class: "sched-tl-month", style: `left:${pct(days)}%` }, el("span", {}, `${mk.getMonth() + 1}月`))
+    );
+    mk.setMonth(mk.getMonth() + 1);
+  }
+
+  track.append(el("div", { class: "sched-tl-axis" }));
+
+  // 端点
+  track.append(
+    el("div", { class: "sched-tl-end sched-tl-today", style: "left:0%" }, el("span", {}, "今日"), el("small", {}, fmtMD(t0)))
+  );
+  track.append(
+    el(
+      "div",
+      { class: "sched-tl-end sched-tl-dep", style: "left:100%" },
+      el("span", {}, "✈ 出発"),
+      el("small", {}, fmtMD(depIso))
+    )
+  );
+
+  // 接種マーカー
+  for (const g of groups) {
+    const st = g.items.some((i) => i.status === "tight") ? "tight" : "ok";
+    const names = g.items.map((i) => i.name_ja.replace(/（.*?）/g, "").trim());
+    const label = names.length > 2 ? `${names.slice(0, 2).join(" / ")} ほか${names.length - 2}` : names.join(" / ");
+    const edge = g.p < 8 ? " edge-l" : g.p > 92 ? " edge-r" : "";
+    const m = el("div", {
+      class: `sched-tl-marker st-${st}${edge}`,
+      style: `left:${g.p}%; --lane:${g.lane}`,
+    });
+    m.append(el("div", { class: "sched-tl-stem" }));
+    m.append(el("div", { class: "sched-tl-dot" }));
+    m.append(
+      el(
+        "div",
+        { class: "sched-tl-callout" },
+        el("b", {}, fmtMD(g.date)),
+        el("span", {}, label),
+        g.items.some((i) => i.live) ? el("span", { class: "badge cl-badge-yes sched-badge", text: "生" }) : null
+      )
+    );
+    track.append(m);
+  }
+
+  wrap.append(el("div", { class: "sched-tl" }, track));
+  if (afterN)
+    wrap.append(
+      el("p", { class: "sched-tl-after" }, `＋ 出発後の接種予定 ${afterN} 回（帰国後に接種。下の表を参照）`)
+    );
+  wrap.append(
+    el(
+      "div",
+      { class: "sched-tl-legend" },
+      el("span", { class: "lg lg-ok" }, "余裕あり"),
+      el("span", { class: "lg lg-tight" }, "ぎりぎり"),
+      el("span", { class: "lg lg-live" }, "生ワクチン")
+    )
+  );
+  return wrap;
+}
+
 function scheduleView(res) {
   const box = el("div", {});
   if (res.warnings.length)
@@ -1326,6 +1439,7 @@ function scheduleView(res) {
         el("ul", {}, ...res.warnings.map((w) => el("li", { text: w })))
       )
     );
+  if (res.items.length) box.append(scheduleTimeline(res));
   if (res.items.length) {
     const tbl = el(
       "table",
