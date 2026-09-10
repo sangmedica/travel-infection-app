@@ -20,6 +20,7 @@ import { fetchDestination } from "./lib/destination.mjs";
 import { fetchThpOutbreaks, fetchThpCountry } from "./lib/thp.mjs";
 import { fetchForthTopics, fetchForthCountry } from "./lib/forth.mjs";
 import { loadDict, makeTranslator, writeUntranslated } from "./lib/translate.mjs";
+import { buildEntryRequirements } from "./lib/entry.mjs";
 import {
   diffFeed,
   diffDestination,
@@ -289,6 +290,20 @@ async function main() {
   const indexPath = path.join(DATA_DIR, "destinations-index.json");
   if (changedVsDisk(indexPath, index)) anyChange = true;
   writeJSON(indexPath, index);
+
+  // ============ entry-requirements.json（機能⑤: 入国・出国要件の横断表） ============
+  // ネットワーク取得はせず、既存の CDC 渡航先 JSON・THP 国別 JSON・entry-supplement.json から組み立てる。
+  try {
+    const supplement = readJSON(path.join(DATA_DIR, "kb", "entry-supplement.json"), { supplements: {} });
+    const entryReq = buildEntryRequirements({ cfg, dataDir: DATA_DIR, supplement });
+    const entryPath = path.join(DATA_DIR, "entry-requirements.json");
+    if (changedVsDisk(entryPath, entryReq)) anyChange = true;
+    writeJSON(entryPath, entryReq);
+    console.log(`● entry-requirements: ${entryReq.counts.with_content}/${entryReq.counts.total} 地域に内容あり`);
+  } catch (err) {
+    console.error(`  ✗ entry-requirements: ${err.message}`);
+    errors.push({ source: "cdc", scope: "entry-requirements", reason: err.message });
+  }
 
   // ============ 未対訳ログ ============
   const missingCount = writeUntranslated(tr.dumpMissing(), { dryRun: DRY, partial });

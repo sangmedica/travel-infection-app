@@ -10,10 +10,13 @@
     "serve": "node scripts/serve.mjs",
     "kb:check": "node scripts/kb-check.mjs",
     "kb:test": "node scripts/dx.test.mjs",
+    "schedule:test": "node scripts/schedule.test.mjs",
     "sources:check": "node scripts/sources-check.mjs",
     "build:config": "node scripts/build-config.mjs",
     "build:regions": "node scripts/build-region-map.mjs",
-    "build:sourcemap": "node scripts/build-source-map.mjs"
+    "build:sourcemap": "node scripts/build-source-map.mjs",
+    "build:entry": "node scripts/build-entry-requirements.mjs",
+    "validate": "node scripts/build-config.mjs --check && node scripts/build-region-map.mjs --check && node scripts/build-source-map.mjs --check && node scripts/kb-check.mjs && node scripts/sources-check.mjs && node scripts/build-entry-requirements.mjs --check && node scripts/dx.test.mjs && node scripts/schedule.test.mjs"
   },
   "dependencies": {
     "cheerio": "^1.0.0"

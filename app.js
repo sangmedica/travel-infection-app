@@ -1,4 +1,5 @@
 import { rankDifferentials, INCUBATION_BUCKETS } from "./dx.js";
+import { buildSchedule, matchSchedule } from "./schedule.js";
 
 // ---- 表示メタ情報 -------------------------------------------------------------
 
@@ -78,6 +79,14 @@ let SOURCES = {};
 let THP_OUTBREAKS = [];
 let FORTH_TOPICS = [];
 let ALL_FEED = []; // CDC + THP + FORTH の流行情報を統合した配列
+// 機能③〜⑧（診療リファレンス）用の手キュレート KB
+let VSCHED = { vaccines: [] };
+let MDRUGS = { drugs: [] };
+let POSTRETURN = null;
+let SPECIALPOP = { populations: [] };
+let PACKING = { categories: [], conditional_rules: [] };
+let ALTITUDE = { destinations: {} };
+let ENTRYREQ = { destinations: [] };
 
 async function init() {
   try {
@@ -94,6 +103,15 @@ async function init() {
         getJSON("data/thp/outbreaks.json").catch(() => []),
         getJSON("data/forth/topics.json").catch(() => []),
       ]);
+    [VSCHED, MDRUGS, POSTRETURN, SPECIALPOP, PACKING, ALTITUDE, ENTRYREQ] = await Promise.all([
+      getJSON("data/kb/vaccine-schedules.json").catch(() => ({ vaccines: [] })),
+      getJSON("data/kb/malaria-drugs.json").catch(() => ({ drugs: [] })),
+      getJSON("data/kb/post-return.json").catch(() => null),
+      getJSON("data/kb/special-populations.json").catch(() => ({ populations: [] })),
+      getJSON("data/kb/packing.json").catch(() => ({ categories: [], conditional_rules: [] })),
+      getJSON("data/kb/altitude.json").catch(() => ({ destinations: {} })),
+      getJSON("data/entry-requirements.json").catch(() => ({ destinations: [] })),
+    ]);
   } catch (err) {
     $("#search-hint").textContent = "データの読み込みに失敗しました: " + err.message;
     return;
@@ -183,33 +201,85 @@ async function init() {
   // モード切替
   $("#tab-region").addEventListener("click", () => setMode("region"));
   $("#tab-dx").addEventListener("click", () => setMode("dx"));
+  $("#tab-ref").addEventListener("click", () => setMode("ref"));
+  for (const b of document.querySelectorAll(".ref-subtab"))
+    b.addEventListener("click", () => setRefTab(b.id.replace("reftab-", "")));
 
-  // ?d=slug / ?mode=dx ディープリンク
+  // ?d=slug / ?mode=dx|ref / ?ref=<panel> ディープリンク
   const params = new URLSearchParams(location.search);
   const q = params.get("d");
   if (q) {
     input.value = q;
     resolveAndShow(q);
   }
-  if (params.get("mode") === "dx") setMode("dx");
+  const mode = params.get("mode");
+  if (mode === "dx") setMode("dx");
+  else if (mode === "ref") {
+    setMode("ref");
+    const rp = params.get("ref");
+    if (rp && $(`#reftab-${rp}`)) setRefTab(rp);
+  }
 }
 
 // ---- モード管理 -----------------------------------------------------------
 
 let dxBuilt = false;
+let currentMode = "region";
+let refTab = "schedule";
+const refBuilt = new Set();
 
 function setMode(m) {
-  const dx = m === "dx";
-  $("#mode-region").hidden = dx;
-  $("#mode-dx").hidden = !dx;
-  $("#tab-region").classList.toggle("is-active", !dx);
-  $("#tab-dx").classList.toggle("is-active", dx);
+  currentMode = m;
+  $("#mode-region").hidden = m !== "region";
+  $("#mode-dx").hidden = m !== "dx";
+  $("#mode-ref").hidden = m !== "ref";
+  $("#tab-region").classList.toggle("is-active", m === "region");
+  $("#tab-dx").classList.toggle("is-active", m === "dx");
+  $("#tab-ref").classList.toggle("is-active", m === "ref");
   const u = new URL(location.href);
-  if (dx) u.searchParams.set("mode", "dx");
-  else u.searchParams.delete("mode");
+  if (m === "region") {
+    u.searchParams.delete("mode");
+    u.searchParams.delete("ref");
+  } else {
+    u.searchParams.set("mode", m);
+    if (m === "ref") u.searchParams.set("ref", refTab);
+    else u.searchParams.delete("ref");
+  }
   history.replaceState(null, "", u);
-  if (dx && !dxBuilt) buildDxView();
+  if (m === "dx" && !dxBuilt) buildDxView();
+  if (m === "ref") renderRefTab();
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function setRefTab(name) {
+  refTab = name;
+  for (const b of document.querySelectorAll(".ref-subtab"))
+    b.classList.toggle("is-active", b.id === `reftab-${name}`);
+  for (const p of document.querySelectorAll(".ref-panel")) p.hidden = p.id !== `ref-${name}`;
+  const u = new URL(location.href);
+  u.searchParams.set("mode", "ref");
+  u.searchParams.set("ref", name);
+  history.replaceState(null, "", u);
+  renderRefTab();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+const REF_RENDERERS = {
+  schedule: renderRefSchedule,
+  malaria: renderRefMalaria,
+  entry: renderRefEntry,
+  postreturn: renderRefPostReturn,
+  special: renderRefSpecial,
+  packing: renderRefPacking,
+};
+
+function renderRefTab() {
+  if (refBuilt.has(refTab)) return;
+  const fn = REF_RENDERERS[refTab];
+  if (fn) {
+    fn();
+    refBuilt.add(refTab);
+  }
 }
 
 // ---- モード②: 症状から鑑別 ----------------------------------------------
@@ -1053,6 +1123,748 @@ function renderGlobalNotices(currentSlug) {
   const body = $("#global-notices-body");
   body.replaceChildren();
   for (const n of globals) body.append(noticeItem(n, currentSlug));
+}
+
+// ======================================================================
+//  モード③: 診療リファレンス（機能③〜⑧）
+// ======================================================================
+
+const today = () => new Date().toISOString().slice(0, 10);
+const disclaimerNote = (text) => el("p", { class: "ref-disc" }, el("b", {}, "⚠ "), text);
+const fetchDest = (slug) => getJSON(`data/destinations/${slug}.json`).catch(() => null);
+
+// 渡航先ページの推奨ワクチンのうち、スケジュール逆算・携行判定に使うカテゴリ
+const SCHED_CATS = new Set(["all", "most", "some", "consider"]);
+function mergedRecs(destData) {
+  if (!destData) return [];
+  return (destData.vaccines || [])
+    .filter((v) => SCHED_CATS.has(v.category))
+    .map((v) => ({ name_en: v.name_en, name_ja: v.name_ja, category: v.category, source: "cdc" }));
+}
+function destMalariaInfo(destData) {
+  const mv = (destData?.vaccines || []).find((v) => /^\s*malaria/i.test(v.name_en));
+  const txt = mv?.recommendation_en || "";
+  const risk =
+    !!mv && /take prescription medicine to prevent malaria|recommended chemoprophylaxis/i.test(txt);
+  return { risk, cdcText: txt || null, category: mv?.category || null };
+}
+
+/** 渡航先入力フィールド（ref パネル共用）。onPick(match|null, statusEl) を呼ぶ。 */
+function refDestField(id, labelJa, onPick) {
+  const inp = el("input", {
+    id,
+    type: "text",
+    list: "dest-list",
+    autocomplete: "off",
+    class: "ref-dest-input",
+    placeholder: "例: タイ / Thailand（未選択でも可）",
+  });
+  const clear = el("button", { class: "dx-mini-btn", type: "button" }, "クリア");
+  const status = el("p", { class: "hint" });
+  const trigger = () => {
+    if (!inp.value.trim()) {
+      onPick(null, status);
+      return;
+    }
+    const m = matchDestination(inp.value);
+    if (!m) {
+      status.textContent = `「${inp.value}」に一致する渡航先がありません。`;
+      return;
+    }
+    onPick(m, status);
+  };
+  inp.addEventListener("change", trigger);
+  inp.addEventListener("input", () => {
+    const s = inp.value.trim().toLowerCase();
+    if (INDEX.some((d) => [d.slug, d.name_ja, d.name_en].some((x) => x.toLowerCase() === s))) trigger();
+  });
+  clear.addEventListener("click", () => {
+    inp.value = "";
+    onPick(null, status);
+  });
+  return {
+    wrap: el(
+      "div",
+      { class: "dx-field" },
+      el("label", { class: "dx-label", for: id }, labelJa),
+      el("div", { class: "ref-dest-row" }, inp, clear),
+      status
+    ),
+    input: inp,
+  };
+}
+
+// ---- ③ 出発前スケジュール ------------------------------------------------
+
+function renderRefSchedule() {
+  const root = $("#ref-schedule");
+  root.replaceChildren();
+  root.append(el("h2", { class: "ref-h2" }, "③ 出発前スケジュール（接種タイミング逆算）"));
+  root.append(
+    el("p", {
+      class: "ref-lead",
+      text:
+        "渡航先と渡航予定日を入れると、その国で推奨されるワクチンをいつ接種すればよいかを日付で逆算します。回数・接種間隔・迅速化の可否・出発前リードタイムは代表例です。",
+    })
+  );
+
+  let dest = null;
+  const dateInput = el("input", { id: "sched-date", type: "date", class: "ref-date" });
+  const accel = el("input", { id: "sched-accel", type: "checkbox" });
+  const doneWrap = el("div", { class: "sched-done" });
+  const out = el("div", { class: "sched-out" });
+
+  const df = refDestField("sched-dest", "渡航先の国・地域", (m, status) => {
+    if (!m) {
+      dest = null;
+      status.textContent = "渡航先を選ぶと、その国の推奨ワクチンでスケジュールを作ります。";
+      doneWrap.replaceChildren();
+      recompute();
+      return;
+    }
+    if (!m.has_data) {
+      dest = null;
+      status.textContent = `${m.name_ja} は CDC データ未取得です。`;
+      doneWrap.replaceChildren();
+      recompute();
+      return;
+    }
+    fetchDest(m.slug).then((d) => {
+      dest = d;
+      status.textContent = `${m.name_ja} の推奨ワクチン（CDC）で計算します。`;
+      buildDone();
+      recompute();
+    });
+  });
+
+  function matchedScheds() {
+    if (!dest) return [];
+    const seen = new Set();
+    const list = [];
+    for (const r of mergedRecs(dest)) {
+      const s = matchSchedule(r.name_en, VSCHED);
+      if (s && !seen.has(s.id)) {
+        seen.add(s.id);
+        list.push(s);
+      }
+    }
+    return list;
+  }
+  function buildDone() {
+    doneWrap.replaceChildren();
+    const ms = matchedScheds();
+    if (!ms.length) return;
+    doneWrap.append(el("div", { class: "dx-label" }, "すでに接種済み（スケジュールから除外）"));
+    const grid = el("div", { class: "sched-done-grid" });
+    for (const s of ms) {
+      const cb = el("input", { type: "checkbox", "data-sid": s.id });
+      cb.addEventListener("change", recompute);
+      grid.append(
+        el("label", { class: "dx-chk" }, cb, el("span", {}, s.name_ja, el("span", { class: "en", text: " " + s.name_en })))
+      );
+    }
+    doneWrap.append(grid);
+  }
+  function recompute() {
+    out.replaceChildren();
+    if (!dest) {
+      out.append(el("p", { class: "empty" }, "渡航先を選択してください。"));
+      return;
+    }
+    if (!dateInput.value) {
+      out.append(el("p", { class: "empty" }, "渡航予定日を入力してください。"));
+      return;
+    }
+    const done = [...doneWrap.querySelectorAll("input:checked")].map((c) => c.dataset.sid);
+    const res = buildSchedule({
+      today: today(),
+      departureDate: dateInput.value,
+      recommended: mergedRecs(dest),
+      doneIds: done,
+      accelerated: accel.checked,
+      schedules: VSCHED,
+      malaria: destMalariaInfo(dest).risk,
+    });
+    out.append(scheduleView(res));
+  }
+  dateInput.addEventListener("change", recompute);
+  accel.addEventListener("change", recompute);
+
+  root.append(df.wrap);
+  root.append(
+    el(
+      "div",
+      { class: "dx-field" },
+      el("label", { class: "dx-label", for: "sched-date" }, "渡航予定日"),
+      dateInput,
+      el(
+        "label",
+        { class: "dx-chk sched-accel-row" },
+        accel,
+        el("span", {}, "迅速化スケジュールを優先する（対応ワクチンのみ）")
+      )
+    )
+  );
+  root.append(doneWrap);
+  root.append(out);
+  root.append(
+    disclaimerNote(
+      "用量・回数・接種間隔・迅速化の可否・禁忌・小児量は代表例です。実施前に必ず添付文書と渡航医学ガイドラインで確認してください。定期接種（麻疹・破傷風など）の最新化は別途ご確認ください。"
+    )
+  );
+  recompute();
+}
+
+function scheduleView(res) {
+  const box = el("div", {});
+  if (res.warnings.length)
+    box.append(
+      el(
+        "div",
+        { class: "sched-warn" },
+        el("b", {}, "⚠ 注意"),
+        el("ul", {}, ...res.warnings.map((w) => el("li", { text: w })))
+      )
+    );
+  if (res.items.length) {
+    const tbl = el(
+      "table",
+      { class: "sched-table" },
+      el(
+        "thead",
+        {},
+        el("tr", {}, el("th", {}, "接種日"), el("th", {}, "内容"), el("th", {}, "出発まで"), el("th", {}, "状態"))
+      )
+    );
+    const tb = el("tbody");
+    const stJa = { ok: "余裕あり", tight: "ぎりぎり", after: "出発後", past: "過去日" };
+    for (const it of res.items) {
+      tb.append(
+        el(
+          "tr",
+          { class: `sched-row st-${it.status}` },
+          el("td", { class: "sched-date-c" }, it.date),
+          el(
+            "td",
+            {},
+            `${it.name_ja}（第${it.doseNo}/${it.doseTotal}回）`,
+            it.live ? el("span", { class: "badge cl-badge-yes sched-badge", text: "生" }) : null,
+            it.accelerated ? el("span", { class: "sched-tag", text: "迅速化" }) : null
+          ),
+          el(
+            "td",
+            {},
+            it.dayFromDeparture >= 0 ? `${it.dayFromDeparture}日前` : `${-it.dayFromDeparture}日後`
+          ),
+          el("td", {}, stJa[it.status] || it.status)
+        )
+      );
+    }
+    tbl.append(tb);
+    box.append(tbl);
+  } else {
+    box.append(el("p", { class: "empty" }, "スケジュール表に対応する渡航ワクチンの推奨が見つかりませんでした。"));
+  }
+  if (res.leadItems.length)
+    box.append(
+      el(
+        "ul",
+        { class: "sched-lead" },
+        ...res.leadItems.map((l) => el("li", {}, el("b", {}, l.name_ja + "："), l.text_ja))
+      )
+    );
+  return box;
+}
+
+// ---- ④ マラリア予防薬 --------------------------------------------------
+
+function renderRefMalaria() {
+  const root = $("#ref-malaria");
+  root.replaceChildren();
+  root.append(el("h2", { class: "ref-h2" }, "④ マラリア予防薬"));
+  root.append(
+    el("p", {
+      class: "ref-lead",
+      text:
+        "渡航先を選ぶと、その地域のマラリアに関する CDC の記載（地域別リスク・薬剤耐性・原虫種・推奨薬）と TravelHealthPro の記載を表示します。下部の予防内服レジメン表は共通の参考情報です。",
+    })
+  );
+  const info = el("div", { class: "ref-country-box" });
+  const df = refDestField("mal-dest", "渡航先の国・地域", (m, status) => {
+    info.replaceChildren();
+    if (!m) {
+      status.textContent = "";
+      return;
+    }
+    if (!m.has_data) {
+      status.textContent = `${m.name_ja} は CDC データ未取得です。`;
+      return;
+    }
+    fetchDest(m.slug).then((d) => {
+      status.textContent = "";
+      const mi = destMalariaInfo(d);
+      info.append(el("h3", { class: "ref-h3" }, `${d.name_ja} のマラリア（CDC）`));
+      if (mi.cdcText) info.append(el("div", { class: "rec-text", text: mi.cdcText }));
+      else
+        info.append(
+          el("p", { class: "empty" }, "この渡航先ページにマラリアの記載はありません（リスクの記載なし、または対象外）。")
+        );
+      info.append(
+        el("a", { class: "cl-link", href: d.source_url, target: "_blank", rel: "noopener", text: "CDC 原文 →" })
+      );
+      if (INDEX.find((x) => x.slug === d.slug)?.thp)
+        getJSON(`data/thp/${d.slug}.json`)
+          .then((t) => {
+            if (t?.malaria_en)
+              info.append(
+                el(
+                  "div",
+                  { class: "ref-thp-mal" },
+                  el("h4", {}, "マラリア（TravelHealthPro・英国）"),
+                  el("p", { class: "cl-en", text: t.malaria_en }),
+                  el("a", {
+                    class: "cl-link",
+                    href: t.source_url,
+                    target: "_blank",
+                    rel: "noopener",
+                    text: "TravelHealthPro →",
+                  })
+                )
+              );
+          })
+          .catch(() => {});
+    });
+  });
+  root.append(df.wrap, info, malariaDrugTable());
+  root.append(
+    disclaimerNote(
+      "用量は成人の代表例です。小児量・妊娠／授乳・G6PD・腎肝機能・併用薬・地域の薬剤耐性は必ず添付文書・CDC Yellow Book・マラリアホットラインで確認してください。予防内服は防蚊対策と必ず併用します。"
+    )
+  );
+}
+
+const costKey = (s) => (String(s).includes("高") ? "high" : String(s).includes("中") ? "mid" : "low");
+
+function malariaDrugTable() {
+  const box = el("div", { class: "ref-drugs" }, el("h3", { class: "ref-h3" }, "予防内服レジメン（共通の参考情報）"));
+  if (MDRUGS.general_note_ja) box.append(el("p", { class: "ref-lead", text: MDRUGS.general_note_ja }));
+  for (const d of MDRUGS.drugs || []) {
+    const c = el("details", { class: "drug-card" });
+    c.append(
+      el(
+        "summary",
+        {},
+        el("b", {}, d.name_ja),
+        el("span", { class: "en", text: " " + d.name_en }),
+        d.brand_ja && d.brand_ja !== "—" ? el("span", { class: "drug-brand", text: " / " + d.brand_ja }) : null,
+        el("span", { class: `drug-cost cost-${costKey(d.cost_tier_ja)}`, text: d.cost_tier_ja })
+      )
+    );
+    const dl = el("dl", { class: "drug-dl" });
+    const row = (k, v) => {
+      if (v) dl.append(el("dt", { text: k }), el("dd", { text: v }));
+    };
+    row("スケジュール", d.schedule_ja);
+    row("開始", d.start_ja);
+    row("滞在中", d.during_ja);
+    row("帰国後", d.after_ja);
+    row("成人用量", d.adult_dose_ja);
+    row("小児", d.pediatric_ja);
+    row("G6PD 事前検査", d.g6pd_required ? "必要（定量的 G6PD 活性の測定）" : "不要");
+    row("妊娠・授乳", d.pregnancy_ja);
+    row("禁忌・慎重投与", d.contraindications_ja);
+    row("主な副作用", d.adverse_ja);
+    row("特徴", d.advantages_ja);
+    row("出典", d.source_ja);
+    c.append(dl);
+    box.append(c);
+  }
+  return box;
+}
+
+// ---- ⑤ 証明書・入国要件 ----------------------------------------------
+
+const YF_STATUS_JA = {
+  required_from_risk: "要（危険国からの入国時）",
+  not_required: "不要",
+  unknown: "要確認",
+};
+
+function renderRefEntry() {
+  const root = $("#ref-entry");
+  root.replaceChildren();
+  root.append(el("h2", { class: "ref-h2" }, "⑤ 予防接種証明書・入国要件"));
+  root.append(
+    el("p", {
+      class: "ref-lead",
+      text:
+        "黄熱の証明書要件（CDC・TravelHealthPro 原文）と、ポリオの出国接種・ハッジの髄膜炎菌など補足要件の横断表です。要否・年齢下限・免除条件は出発地と最新情報で変わります。必ず各国大使館と原文で確認してください。",
+    })
+  );
+
+  const rows = (ENTRYREQ.destinations || []).slice().sort((a, b) => a.name_ja.localeCompare(b.name_ja, "ja"));
+  const q = el("input", { type: "text", placeholder: "国・地域名で絞り込み…", class: "ref-filter-input" });
+  const only = el("input", { type: "checkbox" });
+  const onlyReq = el("input", { type: "checkbox" });
+  const list = el("div", { class: "entry-list" });
+  const draw = () => {
+    list.replaceChildren();
+    const s = q.value.trim().toLowerCase();
+    let shown = 0;
+    for (const r of rows) {
+      if (s && !`${r.name_ja} ${r.name_en} ${r.slug}`.toLowerCase().includes(s)) continue;
+      if (only.checked && !r.has_content) continue;
+      if (onlyReq.checked && r.yellow_fever.cdc_cert_status !== "required_from_risk") continue;
+      list.append(entryCard(r));
+      shown++;
+    }
+    if (!shown) list.append(el("p", { class: "empty" }, "該当する地域がありません。"));
+  };
+  q.addEventListener("input", draw);
+  only.addEventListener("change", draw);
+  onlyReq.addEventListener("change", draw);
+  root.append(
+    el(
+      "div",
+      { class: "ref-filter" },
+      q,
+      el("label", { class: "dx-chk" }, only, el("span", {}, "何らかの要件がある地域のみ")),
+      el("label", { class: "dx-chk" }, onlyReq, el("span", {}, "黄熱証明書『要』の地域のみ"))
+    ),
+    list
+  );
+  root.append(
+    disclaimerNote(
+      "黄熱の要否・年齢下限・免除規定は出発国・経由国により異なります。渡航先国大使館と CDC / TravelHealthPro 原文で必ず確認してください。ポリオ出国接種は WHO の一時的勧告により四半期ごとに見直されます。"
+    )
+  );
+  draw();
+}
+
+function entryCard(r) {
+  const yf = r.yellow_fever;
+  const d = el("details", { class: "entry-card" });
+  d.append(
+    el(
+      "summary",
+      {},
+      el("b", {}, r.name_ja),
+      el("span", { class: "en", text: " " + r.name_en }),
+      el("span", { class: `badge yf-${yf.cdc_cert_status}`, text: "黄熱証明書: " + (YF_STATUS_JA[yf.cdc_cert_status] || "?") }),
+      r.polio_exit_note_ja ? el("span", { class: "badge entry-extra", text: "ポリオ出国接種" }) : null,
+      r.meningococcal_note_ja ? el("span", { class: "badge entry-extra", text: "髄膜炎菌" }) : null
+    )
+  );
+  const body = el("div", { class: "entry-body" });
+  if (yf.cdc_certificate_en)
+    body.append(
+      el("div", {}, el("h4", {}, "黄熱 — 入国要件（CDC 原文）"), el("div", { class: "cl-en", text: yf.cdc_certificate_en }))
+    );
+  if (yf.cdc_recommendation_en)
+    body.append(
+      el(
+        "details",
+        {},
+        el("summary", { text: "CDC の黄熱ワクチン推奨（全文）" }),
+        el("div", { class: "cl-en", text: yf.cdc_recommendation_en })
+      )
+    );
+  if (yf.thp_certificate_en)
+    body.append(
+      el(
+        "div",
+        {},
+        el("h4", {}, "黄熱 — Certificate requirements（TravelHealthPro 原文）"),
+        el("div", { class: "cl-en", text: yf.thp_certificate_en })
+      )
+    );
+  if (r.polio_exit_note_ja)
+    body.append(
+      el(
+        "div",
+        {},
+        el("h4", {}, "ポリオ 出国時接種"),
+        el("p", { class: "cl-change-ja", text: r.polio_exit_note_ja }),
+        r.supplement_source_ja ? el("p", { class: "src-attr", text: "出典: " + r.supplement_source_ja }) : null
+      )
+    );
+  if (r.meningococcal_note_ja)
+    body.append(
+      el(
+        "div",
+        {},
+        el("h4", {}, "髄膜炎菌（巡礼要件など）"),
+        el("p", { class: "cl-change-ja", text: r.meningococcal_note_ja }),
+        r.supplement_source_ja ? el("p", { class: "src-attr", text: "出典: " + r.supplement_source_ja }) : null
+      )
+    );
+  const links = el("div", { class: "notice-meta" });
+  if (r.sources?.cdc)
+    links.append(
+      el("a", { class: "cl-link", href: r.sources.cdc, target: "_blank", rel: "noopener", text: "CDC 原文 →" }),
+      " "
+    );
+  if (r.sources?.thp)
+    links.append(
+      el("a", { class: "cl-link", href: r.sources.thp, target: "_blank", rel: "noopener", text: "TravelHealthPro →" })
+    );
+  body.append(links);
+  d.append(body);
+  return d;
+}
+
+// ---- ⑥ 帰国後の初期対応フロー --------------------------------------
+
+function renderRefPostReturn() {
+  const root = $("#ref-postreturn");
+  root.replaceChildren();
+  if (!POSTRETURN) {
+    root.append(el("p", { class: "empty" }, "データを読み込めませんでした。"));
+    return;
+  }
+  root.append(el("h2", { class: "ref-h2" }, "⑥ 帰国後の発熱・下痢・皮疹 初期対応フロー"));
+  root.append(
+    el("p", {
+      class: "ref-lead",
+      text:
+        "症候別の初期 workup の順序・red flags・鑑別の入口、ウイルス性出血熱（VHF）の隔離判断、感染症法の届出対象をまとめています。初期対応の目安であり、個別の病歴・診察・検査に代わるものではありません。",
+    })
+  );
+
+  root.append(
+    el(
+      "div",
+      { class: "pr-common" },
+      el("h3", { class: "ref-h3" }, "帰国後の発熱：全例で行うこと"),
+      el("ol", { class: "pr-ol" }, ...POSTRETURN.common_first_line_ja.map((t) => el("li", { text: t })))
+    )
+  );
+
+  const nav = el("div", { class: "pr-nav" });
+  const content = el("div", { class: "pr-content" });
+  const drawSyn = (syn) => {
+    content.replaceChildren();
+    content.append(el("h3", { class: "ref-h3" }, syn.label_ja));
+    content.append(el("h4", {}, "初期 workup（順序の目安）"));
+    content.append(el("ol", { class: "pr-ol" }, ...syn.initial_workup_ja.map((t) => el("li", { text: t }))));
+    content.append(el("h4", { class: "pr-red" }, "🚩 Red flags"));
+    content.append(el("ul", { class: "pr-red-list" }, ...syn.red_flags_ja.map((t) => el("li", { text: t }))));
+    content.append(el("h4", {}, "鑑別の入口"));
+    const dl = el("div", { class: "pr-dx" });
+    for (const df of syn.differentials_ja) {
+      const dis = df.dx_id ? DISEASES.find((x) => x.id === df.dx_id) : null;
+      const item = el("div", { class: "pr-dx-item" }, el("b", {}, df.name_ja), " ", el("span", { class: "en", text: df.note_ja }));
+      if (dis?.cdc_url)
+        item.append(
+          " ",
+          el("a", { class: "cl-link", href: dis.cdc_url, target: "_blank", rel: "noopener", text: "CDC Yellow Book →" })
+        );
+      dl.append(item);
+    }
+    content.append(dl);
+    content.append(el("h4", {}, "紹介・専門科の目安"));
+    content.append(el("p", { text: syn.when_to_refer_ja }));
+  };
+  POSTRETURN.syndromes.forEach((syn, i) => {
+    const b = el("button", { class: "pr-nav-btn" + (i === 0 ? " is-active" : ""), type: "button", text: syn.label_ja });
+    b.addEventListener("click", () => {
+      for (const x of nav.children) x.classList.remove("is-active");
+      b.classList.add("is-active");
+      drawSyn(syn);
+    });
+    nav.append(b);
+  });
+  root.append(nav, content);
+  drawSyn(POSTRETURN.syndromes[0]);
+
+  const vhf = POSTRETURN.vhf_isolation_ja;
+  root.append(
+    el(
+      "div",
+      { class: "pr-vhf" },
+      el("h3", { class: "ref-h3" }, "🧫 " + vhf.title_ja),
+      el("h4", {}, "疑う基準（両方を満たす）"),
+      el("ul", {}, ...vhf.criteria_ja.map((t) => el("li", { text: t }))),
+      el("h4", {}, "直ちに行うこと"),
+      el("ol", { class: "pr-ol" }, ...vhf.immediate_actions_ja.map((t) => el("li", { text: t }))),
+      vhf.endemic_hint_ja ? el("p", { class: "hint", text: vhf.endemic_hint_ja }) : null
+    )
+  );
+
+  const nt = POSTRETURN.notifiable_ja;
+  const ntBox = el(
+    "div",
+    { class: "pr-notify" },
+    el("h3", { class: "ref-h3" }, "📋 " + nt.title_ja),
+    el("p", { class: "hint", text: nt.note_ja })
+  );
+  for (const c of nt.categories)
+    ntBox.append(
+      el("div", { class: "pr-notify-row" }, el("b", { text: c.class_ja }), el("span", { text: "：" + c.diseases_ja.join("、") }))
+    );
+  root.append(ntBox);
+  root.append(
+    disclaimerNote(
+      "初期対応の目安です。用量・抗菌薬選択・隔離手順・届出の要否は、最新のガイドライン・厚生労働省 感染症法 届出基準・地域の感染症専門医／検疫所／保健所に確認してください。"
+    )
+  );
+}
+
+// ---- ⑦ 特殊集団の渡航 ------------------------------------------------
+
+function renderRefSpecial() {
+  const root = $("#ref-special");
+  root.replaceChildren();
+  root.append(el("h2", { class: "ref-h2" }, "⑦ 特殊集団の渡航"));
+  root.append(
+    el("p", {
+      class: "ref-lead",
+      text:
+        "集団を選ぶと、生ワクチンの可否・黄熱の扱い・マラリア予防薬の選択・高山病・その他の注意を表示します。可否・用量の最終判断は主治医／専門科と個別に行ってください。",
+    })
+  );
+  const nav = el("div", { class: "pr-nav" });
+  const content = el("div", { class: "pr-content" });
+  const draw = (p) => {
+    content.replaceChildren();
+    content.append(el("h3", { class: "ref-h3" }, p.label_ja));
+    content.append(el("p", { class: "sp-summary", text: p.summary_ja }));
+    const sect = (title, node) => content.append(el("div", { class: "sp-sect" }, el("h4", {}, title), node));
+    sect(
+      "生ワクチン",
+      el(
+        "div",
+        {},
+        el("p", {}, el("span", { class: "badge sp-live", text: p.live_vaccines_ja.status }), " ", p.live_vaccines_ja.detail_ja),
+        p.live_vaccines_ja.examples_ja && p.live_vaccines_ja.examples_ja.length
+          ? el("p", { class: "hint" }, "対象例: " + p.live_vaccines_ja.examples_ja.join("、"))
+          : null
+      )
+    );
+    sect("黄熱ワクチン", el("p", { text: p.yellow_fever_ja }));
+    sect(
+      "マラリア予防薬",
+      el(
+        "div",
+        {},
+        el("p", {}, el("b", {}, "推奨: "), p.malaria_ja.preferred_ja),
+        el("p", {}, el("b", {}, "避ける: "), p.malaria_ja.avoid_ja),
+        p.malaria_ja.notes_ja ? el("p", { class: "hint", text: p.malaria_ja.notes_ja }) : null
+      )
+    );
+    sect("高山病・高地", el("p", { text: p.altitude_ja }));
+    sect("その他の注意", el("ul", {}, ...p.other_ja.map((t) => el("li", { text: t }))));
+    content.append(el("p", { class: "src-attr", text: "出典: " + p.source_ja }));
+  };
+  SPECIALPOP.populations.forEach((p, i) => {
+    const b = el("button", { class: "pr-nav-btn" + (i === 0 ? " is-active" : ""), type: "button", text: p.label_ja });
+    b.addEventListener("click", () => {
+      for (const x of nav.children) x.classList.remove("is-active");
+      b.classList.add("is-active");
+      draw(p);
+    });
+    nav.append(b);
+  });
+  root.append(nav, content);
+  draw(SPECIALPOP.populations[0]);
+  root.append(
+    disclaimerNote(
+      "生ワクチンの可否・マラリア薬選択・高地の可否・用量は、免疫抑制の程度・妊娠週数・月齢・腎肝機能で変わります。主治医・専門科と個別に判断してください。"
+    )
+  );
+}
+
+// ---- ⑧ 携行医薬品・トラベルキット ---------------------------------
+
+function packingFlags(destData, slug) {
+  const vax = destData.vaccines || [];
+  const dis = destData.diseases || [];
+  const hasVax = (re) => vax.some((v) => re.test(v.name_en) && SCHED_CATS.has(v.category));
+  const hasDis = (re) => dis.some((d) => re.test(d.name_en));
+  const altPts = (ALTITUDE.destinations || {})[slug] || [];
+  const maxAlt = altPts.reduce((m, p) => Math.max(m, p.m || 0), 0);
+  return {
+    malaria: destMalariaInfo(destData).risk,
+    yellow_fever: hasVax(/yellow fever/i) || hasDis(/yellow fever/i),
+    freshwater: hasDis(/schistosomiasis|leptospirosis/i),
+    dengue: hasDis(/dengue/i) || hasVax(/dengue/i),
+    je: hasVax(/japanese encephalitis/i),
+    cholera: hasVax(/cholera/i),
+    rabies: hasVax(/rabies/i) || hasDis(/rabies/i),
+    typhoid: hasVax(/typhoid/i),
+    altitude_m: maxAlt,
+    altitude_points: altPts,
+  };
+}
+function ruleMatches(when, flags) {
+  for (const [k, v] of Object.entries(when || {})) {
+    if (k === "altitude_m_gte") {
+      if (!(flags.altitude_m >= v)) return false;
+    } else if (!flags[k]) return false;
+  }
+  return true;
+}
+
+function renderRefPacking() {
+  const root = $("#ref-packing");
+  root.replaceChildren();
+  root.append(el("h2", { class: "ref-h2" }, "⑧ 携行医薬品・トラベルキット"));
+  root.append(
+    el("p", {
+      class: "ref-lead",
+      text:
+        "全渡航共通のベースキットに加え、渡航先を選ぶと、その地域の流行疾患・標高から追加すべき項目を表示します。自己治療薬の処方・用量は渡航者個々のリスク・基礎疾患・アレルギー・併用薬に応じて医師が判断してください。",
+    })
+  );
+  const addBox = el("div", { class: "pack-add" });
+  const df = refDestField("pack-dest", "渡航先の国・地域（任意）", (m, status) => {
+    addBox.replaceChildren();
+    if (!m) {
+      status.textContent = "";
+      return;
+    }
+    if (!m.has_data) {
+      status.textContent = `${m.name_ja} は CDC データ未取得です（共通キットのみ表示）。`;
+      return;
+    }
+    fetchDest(m.slug).then((d) => {
+      status.textContent = "";
+      const flags = packingFlags(d, m.slug);
+      const rules = (PACKING.conditional_rules || []).filter((r) => ruleMatches(r.when, flags));
+      addBox.append(el("h3", { class: "ref-h3" }, `${d.name_ja} で追加すべき項目`));
+      if (!rules.length) {
+        addBox.append(
+          el("p", { class: "empty" }, "この渡航先で自動追加される項目はありません（共通ベースキットをご確認ください）。")
+        );
+      } else {
+        for (const r of rules)
+          addBox.append(
+            el(
+              "div",
+              { class: "pack-rule" },
+              el("h4", {}, r.title_ja),
+              el("ul", {}, ...r.add_ja.map((t) => el("li", { text: t }))),
+              r.note_ja ? el("p", { class: "hint", text: r.note_ja }) : null
+            )
+          );
+      }
+      if (flags.altitude_points.length)
+        addBox.append(
+          el("p", { class: "hint" }, "高地の例: " + flags.altitude_points.map((p) => `${p.place_ja} ${p.m}m`).join(" / "))
+        );
+    });
+  });
+  root.append(df.wrap, addBox);
+  root.append(el("h3", { class: "ref-h3" }, "共通ベースキット"));
+  for (const c of PACKING.categories || [])
+    root.append(
+      el("div", { class: "pack-cat" }, el("h4", {}, c.title_ja), el("ul", {}, ...c.items_ja.map((t) => el("li", { text: t }))))
+    );
+  root.append(
+    disclaimerNote(
+      "自己治療用抗菌薬・アセタゾラミド・ステロイドなどの処方は、渡航者個々のリスク評価に基づき医師が行ってください。数量・用量は代表例です。"
+    )
+  );
 }
 
 init();

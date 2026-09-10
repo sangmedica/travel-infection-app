@@ -822,6 +822,409 @@ table.diseases td .en {
   border-radius: 6px;
 }
 
+/* ---------- mode③: 診療リファレンス ---------- */
+.ref-subtabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 14px 0 12px;
+  border-bottom: 1px solid var(--border);
+}
+.ref-subtab {
+  appearance: none;
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.ref-subtab.is-active {
+  color: var(--text);
+  background: var(--surface);
+  border-color: var(--border);
+  margin-bottom: -1px;
+}
+.ref-h2 {
+  font-size: 1.2rem;
+  margin: 6px 0 6px;
+}
+.ref-h3 {
+  font-size: 1rem;
+  margin: 18px 0 8px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--border);
+}
+.ref-panel h4 {
+  font-size: 0.9rem;
+  margin: 14px 0 6px;
+}
+.ref-lead {
+  font-size: 0.86rem;
+  color: var(--text-dim);
+  margin: 0 0 14px;
+}
+.ref-disc {
+  margin: 18px 0 8px;
+  padding: 10px 12px;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--lvl3);
+  border-radius: 8px;
+}
+.ref-disc b {
+  color: var(--lvl3);
+}
+.ref-dest-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.ref-dest-input,
+.ref-date,
+.ref-filter-input {
+  flex: 1 1 auto;
+  padding: 9px 12px;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+}
+.ref-date {
+  flex: 0 0 auto;
+}
+.ref-country-box:not(:empty) {
+  margin: 12px 0;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.ref-country-box .rec-text {
+  white-space: pre-wrap;
+  font-size: 0.84rem;
+  color: var(--text-dim);
+  margin: 6px 0;
+}
+.ref-thp-mal {
+  margin-top: 10px;
+  border-top: 1px dashed var(--border);
+  padding-top: 8px;
+}
+
+/* --- ③ schedule --- */
+.sched-done:not(:empty) {
+  margin: 12px 0;
+}
+.sched-done-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 4px 14px;
+  margin-top: 6px;
+}
+.sched-accel-row {
+  margin-top: 10px;
+}
+.sched-out {
+  margin-top: 14px;
+}
+.sched-warn {
+  border: 1px solid var(--lvl3);
+  border-left: 4px solid var(--lvl3);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+  background: var(--surface);
+}
+.sched-warn ul {
+  margin: 6px 0 0;
+  padding-left: 1.2em;
+}
+.sched-warn li {
+  margin-bottom: 4px;
+}
+table.sched-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+table.sched-table th,
+table.sched-table td {
+  border: 1px solid var(--border);
+  padding: 7px 9px;
+  text-align: left;
+  vertical-align: top;
+}
+table.sched-table th {
+  background: var(--surface-2);
+}
+.sched-date-c {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.sched-row.st-tight {
+  background: rgba(201, 130, 10, 0.12);
+}
+.sched-row.st-after,
+.sched-row.st-past {
+  color: var(--text-dim);
+  background: var(--surface-2);
+}
+.sched-badge {
+  margin-left: 6px;
+}
+.sched-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0 6px;
+  margin-left: 6px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+}
+.sched-lead {
+  margin: 12px 0 0;
+  padding-left: 1.2em;
+  font-size: 0.83rem;
+  color: var(--text-dim);
+}
+.sched-lead li {
+  margin-bottom: 6px;
+}
+
+/* --- ④ malaria drug cards --- */
+.ref-drugs {
+  margin-top: 8px;
+}
+.drug-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+}
+.drug-card > summary {
+  cursor: pointer;
+  font-size: 0.92rem;
+}
+.drug-brand {
+  color: var(--text-dim);
+  font-weight: 400;
+  font-size: 0.85em;
+}
+.drug-cost {
+  float: right;
+  font-size: 0.72rem;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+}
+.drug-cost.cost-high {
+  border-color: var(--lvl3);
+  color: var(--lvl3);
+}
+.drug-cost.cost-low {
+  border-color: var(--lvl1);
+  color: var(--lvl1);
+}
+dl.drug-dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 12px;
+  margin: 8px 0 2px;
+  font-size: 0.83rem;
+}
+dl.drug-dl dt {
+  font-weight: 700;
+  color: var(--text-dim);
+}
+dl.drug-dl dd {
+  margin: 0;
+}
+
+/* --- ⑤ entry requirements --- */
+.ref-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.entry-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.entry-card > summary {
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: baseline;
+}
+.entry-card > summary .badge {
+  margin-left: 4px;
+}
+.badge.yf-required_from_risk {
+  background: var(--lvl2);
+}
+.badge.yf-not_required {
+  background: var(--cat-muted);
+}
+.badge.yf-unknown {
+  background: var(--cat-consider);
+}
+.badge.entry-extra {
+  background: var(--lvl3);
+}
+.entry-body {
+  margin-top: 8px;
+  font-size: 0.84rem;
+}
+.entry-body h4 {
+  margin: 10px 0 4px;
+}
+
+/* --- ⑥ post-return & ⑦ special populations --- */
+.pr-common,
+.pr-vhf,
+.pr-notify {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 14px 0;
+}
+.pr-vhf {
+  border-left: 4px solid var(--lvl4);
+}
+.pr-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 14px 0 0;
+}
+.pr-nav-btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-dim);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pr-nav-btn.is-active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+.pr-content {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0 8px 8px 8px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+}
+ol.pr-ol {
+  margin: 6px 0;
+  padding-left: 1.3em;
+  font-size: 0.85rem;
+}
+ol.pr-ol > li {
+  margin-bottom: 6px;
+}
+h4.pr-red {
+  color: var(--lvl4);
+}
+.pr-red-list {
+  margin: 6px 0;
+  padding-left: 1.2em;
+  font-size: 0.85rem;
+}
+.pr-red-list > li {
+  margin-bottom: 4px;
+}
+.pr-dx-item {
+  border-top: 1px solid var(--border);
+  padding: 6px 0;
+  font-size: 0.85rem;
+}
+.pr-dx-item:first-child {
+  border-top: 0;
+}
+.pr-dx-item .en {
+  color: var(--text-dim);
+}
+.pr-notify-row {
+  font-size: 0.82rem;
+  margin: 6px 0;
+  padding-left: 8px;
+  border-left: 2px solid var(--border);
+}
+.sp-summary {
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+.sp-sect {
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+.sp-sect p {
+  margin: 4px 0;
+}
+.sp-sect ul {
+  margin: 4px 0;
+  padding-left: 1.2em;
+}
+.badge.sp-live {
+  background: var(--lvl3);
+}
+
+/* --- ⑧ packing --- */
+.pack-add:not(:empty) {
+  margin: 12px 0;
+}
+.pack-rule,
+.pack-cat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin-bottom: 8px;
+}
+.pack-rule {
+  border-left: 4px solid var(--cat-most);
+}
+.pack-rule ul,
+.pack-cat ul {
+  margin: 4px 0;
+  padding-left: 1.2em;
+  font-size: 0.84rem;
+}
+.pack-rule li,
+.pack-cat li {
+  margin-bottom: 3px;
+}
+
 /* ---------- footer ---------- */
 .site-footer {
   max-width: 940px;

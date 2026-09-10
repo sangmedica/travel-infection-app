@@ -22,7 +22,7 @@ npm ci                 # 依存は cheerio のみ（スクレイパ用）。閲�
 ```bash
 npm run serve          # → http://localhost:8000   （静的サーバー。ビルド不要）
 ```
-`index.html` / `app.js` / `styles.css` / `dx.js` ＋ `data/**` だけで動作します（実行時の外部通信なし）。
+`index.html` / `app.js` / `styles.css` / `dx.js` / `schedule.js` ＋ `data/**` だけで動作します（実行時の外部通信なし）。
 
 ### データを再取得（CDC スクレイプ）
 ```bash
@@ -31,13 +31,23 @@ node scripts/scrape.mjs                          # 全 244 目的地（Crawl-del
 node scripts/scrape.mjs --retranslate            # ネット取得なし・対訳辞書だけ再適用
 ```
 
-### 知識ベース（鑑別モード）の検証
+### 知識ベース・エンジンの検証
 ```bash
-npm run kb:check       # data/kb/ の整合性（id 参照・244 slug 網羅・潜伏期の妥当性・治療欄の有無）
+npm run validate       # CI と同じ一式（下記をすべて実行）
+npm run kb:check       # data/kb/ の整合性（id 参照・244 slug 網羅・潜伏期・③〜⑧ の追加 KB スキーマ）
 npm run kb:test        # dx.js の臨床ビネット 8 件
+npm run schedule:test  # schedule.js（③ 出発前スケジュール逆算）のビネット
+node scripts/build-entry-requirements.mjs         # data/entry-requirements.json を再生成（⑤用）
+node scripts/build-entry-requirements.mjs --check
 node scripts/build-region-map.mjs --check
 node scripts/build-config.mjs --check
 ```
+
+### モード③「診療リファレンス」の構成
+- `schedule.js` — ③出発前スケジュールの逆算エンジン（`buildSchedule()` / `matchSchedule()`）。`app.js` と `scripts/schedule.test.mjs` が import。
+- `data/kb/vaccine-schedules.json`（③）／`malaria-drugs.json`（④）／`post-return.json`（⑥）／`special-populations.json`（⑦）／`packing.json`・`altitude.json`（⑧）／`entry-supplement.json`（⑤補足）はすべて★手キュレート・自動更新の対象外（作り切り）。
+- `data/entry-requirements.json`（⑤）はスクレイプ時に `scripts/lib/entry.mjs` が既存の CDC・THP データ＋`entry-supplement.json` から再生成（ネットワーク取得なし）。
+- UI は `?mode=ref&ref=schedule|malaria|entry|postreturn|special|packing` で各パネルに直リンク可能。
 
 ## GitHub 側の再セットアップ（リポジトリを作り直す場合）
 
@@ -54,7 +64,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\setup-github.ps1
 - `.github/workflows/update.yml` — 毎月1日 03:00 UTC に `scripts/scrape.mjs` を実行し、
   `data/` に差分があれば `main` へコミット（`chore: monthly CDC data refresh <日付>`）。
 - `.github/workflows/deploy.yml` — `main` への push、または update.yml の完了（`workflow_run`）で
-  GitHub Pages を再デプロイ。デプロイ前に config / region-map / KB / ビネットを検証。
+  GitHub Pages を再デプロイ。デプロイ前に config / region-map / source-map / entry-requirements の
+  `--check`、kb-check、sources-check、dx.test、schedule.test を実行（`npm run validate` と同じ）。
+  静的サイトには `schedule.js` も同梱。
 
 ## 更新時の運用
 

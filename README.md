@@ -1,6 +1,6 @@
 # 渡航先 感染症・推奨ワクチン検索
 
-フレームワーク不使用の静的 Web アプリ。2つのモードがあります。
+フレームワーク不使用の静的 Web アプリ。3つのモードがあります。
 
 **① 流行疾患・推奨ワクチンの検索** — 渡航先の国・地域を入力すると、**3つの公的情報源**
 （[CDC](https://wwwnc.cdc.gov/travel/) ／ [TravelHealthPro（英国 NaTHNaC）](https://travelhealthpro.org.uk/) ／ [FORTH（厚労省検疫所）](https://www.forth.go.jp/)）のデータをもとに
@@ -15,7 +15,18 @@ THP / FORTH は渡航先ページ内の折りたたみセクションで表示�
 No.1〜No.5 の優先度順で表示（各項目に一致所見・地理・潜伏期の根拠と CDC 英語原文つき）。手キュレートの
 疾患知識ベース（`data/kb/`）と決定論的スコアリング（`dx.js`）による**意思決定支援**で、確定診断ではありません。
 
+**③ 診療リファレンス** — 渡航先に依存しない外来向けの参照ツール（すべて手キュレート KB、`?mode=ref&ref=<panel>` で直リンク可）。
+- **③ 出発前スケジュール** — 渡航先＋渡航予定日 → 推奨ワクチンの接種日を逆算（迅速化スケジュール切替、間に合わない場合の警告、生ワクチン間隔・マラリア内服開始時期の注意）。エンジンは `schedule.js`（ブラウザ／Node 共用）
+- **④ マラリア予防薬** — 渡航先の CDC / THP のマラリア記載＋予防内服5剤（アトバコン・プログアニル／ドキシサイクリン／メフロキン／タフェノキン／クロロキン／プリマキン）の用量・開始終了・禁忌・G6PD・費用
+- **⑤ 証明書・入国要件** — 黄熱の証明書要件（CDC・THP 原文）とポリオ出国接種・ハッジ髄膜炎菌の横断表（国名・要件で絞り込み）
+- **⑥ 帰国後の初期対応** — 症候別（発熱／下痢／皮疹／好酸球増多／黄疸／呼吸器）の workup 順・red flags・鑑別の入口＋VHF 隔離判断＋感染症法の届出対象
+- **⑦ 特殊集団の渡航** — 妊娠／免疫不全／無脾／小児／高齢／慢性疾患 × 生ワクチン可否・黄熱・マラリア薬選択・高山病・注意点
+- **⑧ 携行医薬品・キット** — 共通ベースキット＋渡航先条件（マラリア地域・標高・淡水・黄熱等）で自動追加
+
+> ⚠️ ③〜⑧ は臨床意思決定支援・教育目的です。用量・回数・禁忌・入国要件・届出基準は代表例であり、必ず最新の添付文書・ガイドライン・一次資料で確認してください。確定診断・確定処方ではありません。
+
 地域データ（3ソース）は月1回 GitHub Actions が自動更新（`node scripts/scrape.mjs --source=cdc|thp|forth|all`）。
+`data/entry-requirements.json`（⑤用）は毎回のスクレイプで既存データ＋`data/kb/entry-supplement.json` から再生成されます。
 症状知識ベース（`data/kb/`）は静的（自動更新の対象外）。THP は robots.txt により `/news/` 個別記事を取得せず
 `rss-outbreaks.php` と `/countries/` のみ。FORTH は編集・加工の明示が必要（`data/sources.json` に規定、UI に表示）。
 
@@ -28,6 +39,16 @@ No.1〜No.5 の優先度順で表示（各項目に一致所見・地理・潜�
 | パス | 役割 |
 |---|---|
 | `index.html` / `app.js` / `styles.css` | フロントエンド（実行時は同梱 JSON を読むだけ・外部通信なし） |
+| `schedule.js` | ③出発前スケジュールの逆算エンジン（決定論的・ESM。ブラウザと Node で共用） |
+| `data/kb/vaccine-schedules.json` | ★手キュレート: ③用。約20ワクチンの回数・間隔・迅速化・出発前リードタイム・禁忌・生ワクチン区分・出典 |
+| `data/kb/malaria-drugs.json` | ★手キュレート: ④用。予防内服薬の用量・開始終了・禁忌・G6PD・副作用・費用・出典 |
+| `data/kb/entry-supplement.json` | ★手管理: ⑤用の補足（ポリオ出国接種・ハッジ髄膜炎菌）。黄熱要件は自動抽出のため含めない |
+| `data/entry-requirements.json` | 自動生成: ⑤用。CDC 黄熱行＋THP certificate_en＋entry-supplement をマージ（`scripts/build-entry-requirements.mjs` ／ `--check`） |
+| `data/kb/post-return.json` | ★手キュレート: ⑥用。症候別 workup・red flags・鑑別（`dx_id` で diseases.json 参照）・VHF 隔離・感染症法 届出 |
+| `data/kb/special-populations.json` | ★手キュレート: ⑦用。特殊集団 × 生ワクチン／黄熱／マラリア薬／高地／注意点 |
+| `data/kb/packing.json` | ★手キュレート: ⑧用。共通ベースキット＋渡航先条件つき追加ルール |
+| `data/kb/altitude.json` | ★手キュレート: ⑧補助。高地の渡航先と代表地点・標高 |
+| `scripts/schedule.test.mjs` | ③スケジュール逆算エンジンのビネットテスト（`npm run schedule:test`） |
 | `config/destinations.json` | 取得対象リスト（CDC 全 244 目的地）。`kind`: `country`=国 / `territory`=属領・地域。`scripts/build-config.mjs` で生成（直接編集も可） |
 | `data/translations.json` | ★手管理: 日本語対訳辞書 |
 | `data/notices.json` | 自動生成: CDC Travel Notices 全件 |
@@ -73,6 +94,10 @@ SCRAPE_DELAY_MS=2000 node scripts/scrape.mjs --only=thailand  # 開発時は間�
 # プレビュー（ポート8000。初回に Windows ファイアウォールの許可ダイアログが出ることがあります。
 # 「キャンセル」でも localhost からは利用できます）
 npm run serve   # → http://localhost:8000
+
+# 検証（CI と同じ一式: config/region-map/source-map/entry-requirements の --check、
+# kb-check、sources-check、dx.test、schedule.test）
+npm run validate
 ```
 
 ## 月次メンテナンス（GitHub Actions が自動実行）

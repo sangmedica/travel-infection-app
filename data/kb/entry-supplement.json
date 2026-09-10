@@ -1,0 +1,44 @@
+{
+  "_comment": "入国・出国時の予防接種要件のうち、CDC/THP の渡航先ページに載らない・載りにくい補足事項を手キュレート。黄熱の証明書要件は data/destinations/<slug>.json（CDC）と data/thp/<slug>.json（THP certificate_en）から scripts/build-entry-requirements.mjs が機械抽出するため、ここには含めない。ポリオの出国接種は WHO の一時的勧告（IHR 緊急委員会）に基づき四半期ごとに見直されるため、渡航直前に必ず WHO の最新リストを確認すること。髄膜炎菌はサウジアラビアのハッジ／ウムラ要件。出典: WHO International Travel and Health / WHO Poliovirus IHR Temporary Recommendations / サウジアラビア保健省・巡礼要件。",
+  "retrieved": "2026-09-10",
+  "polio_note_ja": "下記はポリオ常在国／伝播国からの長期滞在者（通常4週間以上）に出国時のポリオ接種証明が求められうる国。WHO の一時的勧告は四半期ごとに更新されるため、渡航前に必ず https://www.who.int/ および FORTH で最新情報を確認すること。",
+  "supplements": {
+    "saudi-arabia": {
+      "meningococcal_note_ja": "ハッジ・ウムラの巡礼者は入国時に4価髄膜炎菌ワクチン（ACWY）の接種証明が必須。接種は入国の10日以上前かつ3年以内（多糖体）／5年以内（結合型）で、結合型が望ましい。巡礼シーズンには到着時に経口シプロフロキサシン等の予防内服が行われることがある。",
+      "polio_exit_note_ja": "ポリオ伝播国からの渡航者に対し、入国時のポリオ接種証明を求める場合がある（サウジ保健省の巡礼要件）。",
+      "source_ja": "サウジアラビア保健省 巡礼（ハッジ・ウムラ）健康要件 / WHO International Travel and Health"
+    },
+    "afghanistan": {
+      "polio_exit_note_ja": "野生型ポリオウイルス常在国。4週間以上滞在した渡航者は、出国の4週間〜12か月前に経口ポリオ（bOPV）または不活化ポリオ（IPV）を1回接種し、国際予防接種証明書（黄色いカード）に記載しておくことが WHO により勧告されている（出国時に提示を求められうる）。",
+      "source_ja": "WHO Poliovirus IHR Temporary Recommendations"
+    },
+    "pakistan": {
+      "polio_exit_note_ja": "野生型ポリオウイルス常在国。4週間以上滞在した渡航者は、出国の4週間〜12か月前にポリオ（bOPV/IPV）を1回追加接種し、国際予防接種証明書に記載しておくことが WHO により勧告されている。",
+      "source_ja": "WHO Poliovirus IHR Temporary Recommendations"
+    },
+    "nigeria": {
+      "polio_exit_note_ja": "循環型ワクチン由来ポリオウイルス（cVDPV）の伝播国とされることがあり、長期滞在者に出国時のポリオ追加接種が勧告される場合がある。渡航前に WHO の最新分類を確認すること。",
+      "source_ja": "WHO Poliovirus IHR Temporary Recommendations"
+    },
+    "democratic-republic-of-congo": {
+      "polio_exit_note_ja": "cVDPV の伝播国とされることがあり、長期滞在者に出国時のポリオ追加接種が勧告される場合がある。渡航前に WHO の最新分類を確認すること。",
+      "source_ja": "WHO Poliovirus IHR Temporary Recommendations"
+    },
+    "yemen": {
+      "polio_exit_note_ja": "cVDPV の伝播国とされることがあり、長期滞在者に出国時のポリオ追加接種が勧告される場合がある。渡航前に WHO の最新分類を確認すること。",
+      "source_ja": "WHO Poliovirus IHR Temporary Recommendations"
+    },
+    "somalia": {
+      "polio_exit_note_ja": "cVDPV の伝播国とされることがあり、長期滞在者に出国時のポリオ追加接種が勧告される場合がある。渡航前に WHO の最新分類を確認すること。",
+      "source_ja": "WHO Poliovirus IHR Temporary Recommendations"
+    },
+    "chad": {
+      "polio_exit_note_ja": "cVDPV の伝播国とされることがあり、長期滞在者に出国時のポリオ追加接種が勧告される場合がある。渡航前に WHO の最新分類を確認すること。",
+      "source_ja": "WHO Poliovirus IHR Temporary Recommendations"
+    },
+    "niger": {
+      "polio_exit_note_ja": "cVDPV の伝播国とされることがあり、長期滞在者に出国時のポリオ追加接種が勧告される場合がある。渡航前に WHO の最新分類を確認すること。",
+      "source_ja": "WHO Poliovirus IHR Temporary Recommendations"
+    }
+  }
+}

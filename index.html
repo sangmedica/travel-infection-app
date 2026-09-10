@@ -32,6 +32,7 @@
       <div class="mode-switch" role="tablist" aria-label="表示モード">
         <button id="tab-region" class="mode-tab is-active" type="button" role="tab">① 流行疾患・推奨ワクチンの検索</button>
         <button id="tab-dx" class="mode-tab" type="button" role="tab">② 症状から鑑別</button>
+        <button id="tab-ref" class="mode-tab" type="button" role="tab">③ 診療リファレンス</button>
       </div>
 
       <datalist id="dest-list"></datalist>
@@ -125,6 +126,37 @@
         </section>
 
         <section id="dx-result" class="dx-result"></section>
+      </div>
+
+      <div id="mode-ref" hidden>
+        <div class="dx-disclaimer" role="note">
+          <strong>診療リファレンスについて</strong>
+          臨床意思決定支援・教育を目的とした参考情報です。<strong>確定診断・確定処方ではありません。</strong>
+          用量・投与経路・期間・相互作用・禁忌・妊娠／腎肝機能・小児量・地域の薬剤耐性、
+          入国要件・届出基準は、必ず最新の添付文書・ガイドライン・一次資料
+          （<a href="https://www.cdc.gov/yellow-book/" target="_blank" rel="noopener">CDC Yellow Book</a>、
+          <a href="https://travelhealthpro.org.uk/" target="_blank" rel="noopener">TravelHealthPro</a>、
+          <a href="https://www.forth.go.jp/" target="_blank" rel="noopener">FORTH</a>、
+          <a href="https://www.who.int/" target="_blank" rel="noopener">WHO</a>、
+          厚生労働省 感染症法 届出基準、各国大使館）でご確認ください。
+          帰国後の初期対応は<strong>目安であり、個別の病歴・診察・検査に代わるものではありません</strong>。
+        </div>
+
+        <div class="ref-subtabs" role="tablist" aria-label="診療リファレンスの項目">
+          <button id="reftab-schedule" class="ref-subtab is-active" type="button" role="tab">③ 出発前スケジュール</button>
+          <button id="reftab-malaria" class="ref-subtab" type="button" role="tab">④ マラリア予防薬</button>
+          <button id="reftab-entry" class="ref-subtab" type="button" role="tab">⑤ 証明書・入国要件</button>
+          <button id="reftab-postreturn" class="ref-subtab" type="button" role="tab">⑥ 帰国後の初期対応</button>
+          <button id="reftab-special" class="ref-subtab" type="button" role="tab">⑦ 特殊集団の渡航</button>
+          <button id="reftab-packing" class="ref-subtab" type="button" role="tab">⑧ 携行医薬品・キット</button>
+        </div>
+
+        <section id="ref-schedule" class="ref-panel"></section>
+        <section id="ref-malaria" class="ref-panel" hidden></section>
+        <section id="ref-entry" class="ref-panel" hidden></section>
+        <section id="ref-postreturn" class="ref-panel" hidden></section>
+        <section id="ref-special" class="ref-panel" hidden></section>
+        <section id="ref-packing" class="ref-panel" hidden></section>
       </div>
     </main>
 
