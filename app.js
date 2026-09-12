@@ -2113,4 +2113,116 @@ function renderRefPacking() {
   );
 }
 
+// ======================================================================
+//  英語原文の Google 翻訳（ワンボタン・機械翻訳）
+// ======================================================================
+// 利用者がボタンを押したときだけ translate.googleapis.com へ問い合わせる。
+// 英語原文は常に残し、日本語訳はその下に「機械翻訳・要確認」として併記する。
+// 失敗時は Google 翻訳を新しいタブで開く。
+
+const TR_SELECTOR = ".rec-text, .guide-text, .cl-en";
+const TR_BTN_LABEL = "🌐 日本語訳";
+const trCache = new Map();
+
+function trLooksEnglish(text) {
+  const latin = (text.match(/[A-Za-z]/g) || []).length;
+  if (latin < 15) return false;
+  const cjk = (text.match(/[぀-ヿ㐀-鿿豈-﫿]/g) || []).length;
+  return cjk <= latin * 0.15;
+}
+
+async function gTranslate(text) {
+  if (trCache.has(text)) return trCache.get(text);
+  const chunks = text.match(/[\s\S]{1,1500}(?=\s|$)|[\s\S]{1,1500}/g) || [text];
+  const parts = [];
+  for (const c of chunks) {
+    const url =
+      "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ja&dt=t&q=" +
+      encodeURIComponent(c);
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    parts.push((data[0] || []).map((s) => s[0]).join("").trim());
+  }
+  const ja = parts.join("");
+  trCache.set(text, ja);
+  return ja;
+}
+
+function openGoogleTranslateTab(text) {
+  window.open(
+    "https://translate.google.com/?sl=en&tl=ja&op=translate&text=" + encodeURIComponent(text.slice(0, 4800)),
+    "_blank",
+    "noopener"
+  );
+}
+
+async function toggleTranslate(elm, btn) {
+  const next = btn.nextElementSibling;
+  if (next && next.classList.contains("tr-out")) {
+    next.remove();
+    btn.textContent = TR_BTN_LABEL;
+    btn.classList.remove("tr-on");
+    return;
+  }
+  const text = (elm.textContent || "").replace(/\s+/g, " ").trim();
+  if (!text) return;
+  btn.disabled = true;
+  btn.textContent = "翻訳中…";
+  try {
+    const ja = await gTranslate(text);
+    const out = el(
+      "div",
+      { class: "tr-out" },
+      el("span", { class: "tr-out-label" }, "Google 翻訳（機械翻訳・要確認／最終判断は英語原文で）"),
+      el("div", { class: "tr-out-body", text: ja })
+    );
+    btn.insertAdjacentElement("afterend", out);
+    btn.textContent = "翻訳を隠す";
+    btn.classList.add("tr-on");
+  } catch (e) {
+    btn.textContent = "🌐 Google 翻訳を開く";
+    openGoogleTranslateTab(text);
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+function trAttach(elm) {
+  if (elm.dataset.trReady) return;
+  const text = (elm.textContent || "").replace(/\s+/g, " ").trim();
+  if (!trLooksEnglish(text)) return;
+  elm.dataset.trReady = "1";
+  const btn = el(
+    "button",
+    { class: "tr-btn", type: "button", title: "Google 翻訳で日本語にする（機械翻訳）" },
+    TR_BTN_LABEL
+  );
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleTranslate(elm, btn);
+  });
+  elm.insertAdjacentElement("afterend", btn);
+}
+
+function trScan(root) {
+  for (const elm of (root || document).querySelectorAll(TR_SELECTOR)) trAttach(elm);
+}
+
+function initTranslate() {
+  trScan(document);
+  const target = document.querySelector("main") || document.body;
+  new MutationObserver((muts) => {
+    for (const m of muts) {
+      for (const n of m.addedNodes) {
+        if (n.nodeType !== 1) continue;
+        if (n.matches && n.matches(TR_SELECTOR)) trAttach(n);
+        if (n.querySelectorAll) trScan(n);
+      }
+    }
+  }).observe(target, { childList: true, subtree: true });
+}
+
 init();
+initTranslate();

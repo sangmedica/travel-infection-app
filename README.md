@@ -25,6 +25,8 @@ No.1〜No.5 の優先度順で表示（各項目に一致所見・地理・潜�
 
 > ⚠️ ③〜⑧ は臨床意思決定支援・教育目的です。用量・回数・禁忌・入国要件・届出基準は代表例であり、必ず最新の添付文書・ガイドライン・一次資料で確認してください。確定診断・確定処方ではありません。
 
+**英語原文の Google 翻訳（ワンボタン）** — ページ内の英語原文ブロック（CDC/THP の推奨文・鑑別モードの discriminators/treatment・入国要件の証明書原文など）には自動で「🌐 日本語訳」ボタンが付き、押すと `translate.googleapis.com` に問い合わせて機械翻訳を英語原文の直下に表示します（原文は消えません・トグルで隠せます）。利用者がボタンを押したときだけ通信が発生し、送信されるのは表示中の公的機関の公開テキストのみです。通信に失敗した場合は `translate.google.com` を新しいタブで開くフォールバックになります（`app.js` の `trAttach`/`toggleTranslate`、日本語ブロックは簡易な文字種判定で自動的に対象外）。
+
 地域データ（3ソース）は月1回 GitHub Actions が自動更新（`node scripts/scrape.mjs --source=cdc|thp|forth|all`）。
 `data/entry-requirements.json`（⑤用）は毎回のスクレイプで既存データ＋`data/kb/entry-supplement.json` から再生成されます。
 症状知識ベース（`data/kb/`）は静的（自動更新の対象外）。THP は robots.txt により `/news/` 個別記事を取得せず
@@ -38,7 +40,7 @@ No.1〜No.5 の優先度順で表示（各項目に一致所見・地理・潜�
 
 | パス | 役割 |
 |---|---|
-| `index.html` / `app.js` / `styles.css` | フロントエンド（実行時は同梱 JSON を読むだけ・外部通信なし） |
+| `index.html` / `app.js` / `styles.css` | フロントエンド（実行時は同梱 JSON を読むだけで動作。任意機能として、利用者が「🌐 日本語訳」ボタンを押した場合のみ `translate.googleapis.com` へ通信） |
 | `schedule.js` | ③出発前スケジュールの逆算エンジン（決定論的・ESM。ブラウザと Node で共用） |
 | `data/kb/vaccine-schedules.json` | ★手キュレート: ③用。約20ワクチンの回数・間隔・迅速化・出発前リードタイム・禁忌・生ワクチン区分・出典 |
 | `data/kb/malaria-drugs.json` | ★手キュレート: ④用。予防内服薬の用量・開始終了・禁忌・G6PD・副作用・費用・出典 |

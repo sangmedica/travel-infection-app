@@ -22,7 +22,11 @@ npm ci                 # 依存は cheerio のみ（スクレイパ用）。閲�
 ```bash
 npm run serve          # → http://localhost:8000   （静的サーバー。ビルド不要）
 ```
-`index.html` / `app.js` / `styles.css` / `dx.js` / `schedule.js` ＋ `data/**` だけで動作します（実行時の外部通信なし）。
+`index.html` / `app.js` / `styles.css` / `dx.js` / `schedule.js` ＋ `data/**` だけで動作します（既定では外部通信なし）。
+唯一の例外は「🌐 日本語訳」ボタン：利用者が押したときだけ `translate.googleapis.com`（無料・無認証の
+Google 翻訳エンドポイント）に問い合わせ、失敗時は `translate.google.com` を新規タブで開きます
+（`app.js` の `trAttach`/`gTranslate`/`toggleTranslate`、対象は `.rec-text`/`.guide-text`/`.cl-en` のうち
+英語と判定されたものだけ）。
 
 ### データを再取得（CDC スクレイプ）
 ```bash
