@@ -1,0 +1,17 @@
+# Netlify 用のビルド設定。
+# GitHub Pages（.github/workflows/deploy.yml）と同じ検証・組み立て手順を踏む。
+# 依存は cheerio のみ（検証スクリプト自体は不要だが、npm ci で確実に揃える）。
+
+[build]
+  command = "npm ci && npm run validate && mkdir -p _site && cp index.html app.js styles.css dx.js schedule.js _site/ && cp -r data _site/ && cp -r assets _site/ && touch _site/.nojekyll"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA ではないため通常のリライトは不要。存在しないパスは Netlify の既定 404 に任せる。
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
