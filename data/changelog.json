@@ -1,12 +1,1082 @@
 [
   {
+    "date": "2026-10-01",
+    "has_changes": true,
+    "summary_ja": "CDC: 流行情報 新規 1、掲載終了 2、国別の変更 43 件（40 地域） ／ TravelHealthPro: 流行情報 新規 13、掲載終了 14",
+    "sources": {
+      "cdc": {
+        "has_changes": true,
+        "feed": {
+          "added": [
+            {
+              "id": "hepatitis-a-costa-rica",
+              "source": "cdc",
+              "level": 1,
+              "title_en": "Level 1 - Hepatitis A in Costa Rica",
+              "title_ja": null,
+              "topic_en": "Hepatitis A",
+              "topic_ja": "A型肝炎",
+              "place_en": "Costa Rica",
+              "place_ja": null,
+              "summary_en": "There is an outbreak of hepatitis A (HAV) in Costa Rica. Most cases have been reported in San José province.",
+              "summary_ja": null,
+              "url": "https://wwwnc.cdc.gov/travel/notices/level1/hepatitis-a-costa-rica"
+            }
+          ],
+          "removed": [
+            {
+              "id": "yellow-fever-venezuela",
+              "source": "cdc",
+              "level": 2,
+              "title_en": "Level 2 - Yellow Fever in Venezuela",
+              "title_ja": null,
+              "topic_en": "Yellow Fever",
+              "topic_ja": "黄熱",
+              "place_en": "Venezuela",
+              "place_ja": null,
+              "summary_en": "An increased number of cases of yellow fever have been reported throughout Venezuela.",
+              "summary_ja": null,
+              "url": "https://wwwnc.cdc.gov/travel/notices/level2/yellow-fever-venezuela"
+            },
+            {
+              "id": "chikungunya-seychelles",
+              "source": "cdc",
+              "level": 2,
+              "title_en": "Level 2 - Chikungunya in Seychelles",
+              "title_ja": null,
+              "topic_en": "Chikungunya",
+              "topic_ja": "チクングニア熱",
+              "place_en": "Seychelles",
+              "place_ja": null,
+              "summary_en": "There is an outbreak of chikungunya in Seychelles. You can protect yourself by preventing mosquito bites.",
+              "summary_ja": null,
+              "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-seychelles"
+            }
+          ],
+          "level_changed": []
+        },
+        "countries": [
+          {
+            "slug": "france",
+            "name_ja": "フランス",
+            "name_en": "France",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Dengue",
+                "name_ja": "デング熱",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite"
+              },
+              {
+                "type": "disease_removed",
+                "source": "cdc",
+                "name_en": "Zika",
+                "name_ja": "ジカウイルス感染症"
+              }
+            ]
+          },
+          {
+            "slug": "seychelles",
+            "name_ja": "セーシェル",
+            "name_en": "Seychelles",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 2,
+                "to": 1
+              },
+              {
+                "type": "vaccine_category",
+                "source": "cdc",
+                "name_en": "Chikungunya",
+                "name_ja": "チクングニア熱",
+                "from_ja": "一部の渡航者に推奨（条件付き）",
+                "to_ja": "推奨しない",
+                "recommendation_en": "All travelers should take steps to prevent mosquito bites. Chikungunya vaccination is generally not recommended. Travelers who wish to consider vaccination can visit “What to consider before traveling” on the chikungunya vaccines page to learn more."
+              }
+            ]
+          },
+          {
+            "slug": "togo",
+            "name_ja": "トーゴ",
+            "name_en": "Togo",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 1,
+                "to": 2
+              },
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Dengue",
+                "name_ja": "デング熱",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite"
+              }
+            ]
+          },
+          {
+            "slug": "andorra",
+            "name_ja": "アンドラ",
+            "name_en": "Andorra",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Dengue",
+                "name_ja": "デング熱",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite"
+              }
+            ]
+          },
+          {
+            "slug": "belize",
+            "name_ja": "ベリーズ",
+            "name_en": "Belize",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "New World Screwworm Myiasis",
+                "name_ja": "新世界ラセンウジバエ症（皮膚ハエ蛆症）",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Eggs of the New World screwworm fly"
+              }
+            ]
+          },
+          {
+            "slug": "brazil",
+            "name_ja": "ブラジル",
+            "name_en": "Brazil",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Ciguatera Fish Poisoning",
+                "name_ja": "シガテラ中毒",
+                "transmission_en": "Avoid contaminated food and water",
+                "spread_en": "• Eating contaminated fish"
+              }
+            ]
+          },
+          {
+            "slug": "burkina-faso",
+            "name_ja": "ブルキナファソ",
+            "name_en": "Burkina Faso",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 2,
+                "to": 1
+              }
+            ]
+          },
+          {
+            "slug": "cameroon",
+            "name_ja": "カメルーン",
+            "name_en": "Cameroon",
+            "changes": [
+              {
+                "type": "disease_removed",
+                "source": "cdc",
+                "name_en": "Monkeypox",
+                "name_ja": "エムポックス（サル痘）"
+              }
+            ]
+          },
+          {
+            "slug": "costa-rica",
+            "name_ja": "コスタリカ",
+            "name_en": "Costa Rica",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "New World Screwworm Myiasis",
+                "name_ja": "新世界ラセンウジバエ症（皮膚ハエ蛆症）",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Eggs of the New World screwworm fly"
+              }
+            ]
+          },
+          {
+            "slug": "egypt",
+            "name_ja": "エジプト",
+            "name_en": "Egypt",
+            "changes": [
+              {
+                "type": "disease_removed",
+                "source": "cdc",
+                "name_en": "Zika",
+                "name_ja": "ジカウイルス感染症"
+              }
+            ]
+          },
+          {
+            "slug": "el-salvador",
+            "name_ja": "エルサルバドル",
+            "name_en": "El Salvador",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "New World Screwworm Myiasis",
+                "name_ja": "新世界ラセンウジバエ症（皮膚ハエ蛆症）",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Eggs of the New World screwworm fly"
+              }
+            ]
+          },
+          {
+            "slug": "gabon",
+            "name_ja": "ガボン",
+            "name_en": "Gabon",
+            "changes": [
+              {
+                "type": "disease_removed",
+                "source": "cdc",
+                "name_en": "Monkeypox",
+                "name_ja": "エムポックス（サル痘）"
+              }
+            ]
+          },
+          {
+            "slug": "guatemala",
+            "name_ja": "グアテマラ",
+            "name_en": "Guatemala",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "New World Screwworm Myiasis",
+                "name_ja": "新世界ラセンウジバエ症（皮膚ハエ蛆症）",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Eggs of the New World screwworm fly"
+              }
+            ]
+          },
+          {
+            "slug": "guinea",
+            "name_ja": "ギニア",
+            "name_en": "Guinea",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 2,
+                "to": 1
+              }
+            ]
+          },
+          {
+            "slug": "honduras",
+            "name_ja": "ホンジュラス",
+            "name_en": "Honduras",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "New World Screwworm Myiasis",
+                "name_ja": "新世界ラセンウジバエ症（皮膚ハエ蛆症）",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Eggs of the New World screwworm fly"
+              }
+            ]
+          },
+          {
+            "slug": "hong-kong-sar",
+            "name_ja": "香港",
+            "name_en": "Hong Kong",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Dengue",
+                "name_ja": "デング熱",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite"
+              }
+            ]
+          },
+          {
+            "slug": "italy",
+            "name_ja": "イタリア",
+            "name_en": "Italy",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Dengue",
+                "name_ja": "デング熱",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite"
+              }
+            ]
+          },
+          {
+            "slug": "ivory-coast",
+            "name_ja": "コートジボワール",
+            "name_en": "Côte d'Ivoire (Ivory Coast)",
+            "changes": [
+              {
+                "type": "disease_removed",
+                "source": "cdc",
+                "name_en": "Monkeypox",
+                "name_ja": "エムポックス（サル痘）"
+              }
+            ]
+          },
+          {
+            "slug": "japan",
+            "name_ja": "日本",
+            "name_en": "Japan",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Dengue",
+                "name_ja": "デング熱",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite"
+              }
+            ]
+          },
+          {
+            "slug": "madagascar",
+            "name_ja": "マダガスカル",
+            "name_en": "Madagascar",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Zika",
+                "name_ja": "ジカウイルス感染症",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite\n• An infected pregnant woman can spread it to her unborn baby"
+              }
+            ]
+          },
+          {
+            "slug": "malawi",
+            "name_ja": "マラウイ",
+            "name_en": "Malawi",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 1,
+                "to": 2
+              }
+            ]
+          },
+          {
+            "slug": "mali",
+            "name_ja": "マリ",
+            "name_en": "Mali",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 1,
+                "to": 2
+              }
+            ]
+          },
+          {
+            "slug": "mexico",
+            "name_ja": "メキシコ",
+            "name_en": "Mexico",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "New World Screwworm Myiasis",
+                "name_ja": "新世界ラセンウジバエ症（皮膚ハエ蛆症）",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Eggs of the New World screwworm fly"
+              }
+            ]
+          },
+          {
+            "slug": "nicaragua",
+            "name_ja": "ニカラグア",
+            "name_en": "Nicaragua",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "New World Screwworm Myiasis",
+                "name_ja": "新世界ラセンウジバエ症（皮膚ハエ蛆症）",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Eggs of the New World screwworm fly"
+              }
+            ]
+          },
+          {
+            "slug": "niger",
+            "name_ja": "ニジェール",
+            "name_en": "Niger",
+            "changes": [
+              {
+                "type": "disease_removed",
+                "source": "cdc",
+                "name_en": "Zika",
+                "name_ja": "ジカウイルス感染症"
+              }
+            ]
+          },
+          {
+            "slug": "nigeria",
+            "name_ja": "ナイジェリア",
+            "name_en": "Nigeria",
+            "changes": [
+              {
+                "type": "disease_removed",
+                "source": "cdc",
+                "name_en": "Monkeypox",
+                "name_ja": "エムポックス（サル痘）"
+              }
+            ]
+          },
+          {
+            "slug": "niue",
+            "name_ja": "ニウエ",
+            "name_en": "Niue",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Dengue",
+                "name_ja": "デング熱",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite"
+              }
+            ]
+          },
+          {
+            "slug": "pakistan",
+            "name_ja": "パキスタン",
+            "name_en": "Pakistan",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Zika",
+                "name_ja": "ジカウイルス感染症",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite\n• An infected pregnant woman can spread it to her unborn baby"
+              }
+            ]
+          },
+          {
+            "slug": "panama",
+            "name_ja": "パナマ",
+            "name_en": "Panama",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "New World Screwworm Myiasis",
+                "name_ja": "新世界ラセンウジバエ症（皮膚ハエ蛆症）",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Eggs of the New World screwworm fly"
+              }
+            ]
+          },
+          {
+            "slug": "poland",
+            "name_ja": "ポーランド",
+            "name_en": "Poland",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 2,
+                "to": 1
+              }
+            ]
+          },
+          {
+            "slug": "portugal",
+            "name_ja": "ポルトガル",
+            "name_en": "Portugal",
+            "changes": [
+              {
+                "type": "disease_removed",
+                "source": "cdc",
+                "name_en": "Zika",
+                "name_ja": "ジカウイルス感染症"
+              }
+            ]
+          },
+          {
+            "slug": "sao-tome-and-principe",
+            "name_ja": "サントメ・プリンシペ",
+            "name_en": "São Tomé and Príncipe",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Dengue",
+                "name_ja": "デング熱",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite"
+              }
+            ]
+          },
+          {
+            "slug": "senegal",
+            "name_ja": "セネガル",
+            "name_en": "Senegal",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 2,
+                "to": 1
+              }
+            ]
+          },
+          {
+            "slug": "spain",
+            "name_ja": "スペイン",
+            "name_en": "Spain",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Dengue",
+                "name_ja": "デング熱",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite"
+              }
+            ]
+          },
+          {
+            "slug": "the-gambia",
+            "name_ja": "ガンビア",
+            "name_en": "The Gambia",
+            "changes": [
+              {
+                "type": "disease_removed",
+                "source": "cdc",
+                "name_en": "Zika",
+                "name_ja": "ジカウイルス感染症"
+              }
+            ]
+          },
+          {
+            "slug": "tokelau",
+            "name_ja": "トケラウ",
+            "name_en": "Tokelau",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Dengue",
+                "name_ja": "デング熱",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite"
+              }
+            ]
+          },
+          {
+            "slug": "tonga",
+            "name_ja": "トンガ",
+            "name_en": "Tonga",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Dengue",
+                "name_ja": "デング熱",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite"
+              }
+            ]
+          },
+          {
+            "slug": "venezuela",
+            "name_ja": "ベネズエラ",
+            "name_en": "Venezuela",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 2,
+                "to": 1
+              }
+            ]
+          },
+          {
+            "slug": "yemen",
+            "name_ja": "イエメン",
+            "name_en": "Yemen",
+            "changes": [
+              {
+                "type": "disease_added",
+                "source": "cdc",
+                "name_en": "Zika",
+                "name_ja": "ジカウイルス感染症",
+                "transmission_en": "Avoid bugs",
+                "spread_en": "• Mosquito bite\n• An infected pregnant woman can spread it to her unborn baby"
+              }
+            ]
+          },
+          {
+            "slug": "zambia",
+            "name_ja": "ザンビア",
+            "name_en": "Zambia",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 1,
+                "to": 2
+              }
+            ]
+          }
+        ]
+      },
+      "thp": {
+        "has_changes": true,
+        "feed": {
+          "added": [
+            {
+              "id": "diphtheria-in-senegal",
+              "source": "thp",
+              "level": null,
+              "title_en": "Diphtheria in Senegal",
+              "title_ja": null,
+              "topic_en": "Diphtheria",
+              "topic_ja": null,
+              "place_en": "Senegal",
+              "place_ja": null,
+              "summary_en": "As of 13 August 2026, a total of 13 cases of diphtheria and two deaths have been reported. Please see our Topics in Brief article for further details on diphtheria.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "diphtheria-in-nigeria",
+              "source": "thp",
+              "level": null,
+              "title_en": "Diphtheria in Nigeria",
+              "title_ja": null,
+              "topic_en": "Diphtheria",
+              "topic_ja": null,
+              "place_en": "Nigeria",
+              "place_ja": null,
+              "summary_en": "Between 1 January and 23 August 2026, a total of 16,997 cases of diphtheria and 596 deaths have been reported. Most cases have been reported from Kano, Bauchi, Katsina, Borno and Sokoto states. Please see our Topics in Brief article for further details on diphtheria.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-kosovo",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in Kosovo",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "Kosovo",
+              "place_ja": null,
+              "summary_en": "In 2026, up to 23 September, two locally acquired human cases of West Nile virus have been reported in Kosovo, in two areas. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-north-macedonia",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in North Macedonia",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "North Macedonia",
+              "place_ja": null,
+              "summary_en": "In 2026, up to 23 September, 69 locally acquired human cases of West Nile virus have been reported in North Macedonia, in five areas. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-romania",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in Romania",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "Romania",
+              "place_ja": null,
+              "summary_en": "In 2026, up to 23 September, 91 locally acquired human cases of West Nile virus have been reported in Romania, across 22 areas. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-france",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in France",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "France",
+              "place_ja": null,
+              "summary_en": "As of 21 September 2026, 117 autochthonous cases of West Nile virus have been recorded in Provence-Alpes-Cote d'Azur, Occitanie, Ile-de-France, Auvergne-Rhone-Alpes, Nouvelle-Aquitaine, Pays de la Loire and Centre-Val de Loire. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-germany",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in Germany",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "Germany",
+              "place_ja": null,
+              "summary_en": "In 2026, up to 23 September, four locally acquired human cases of West Nile virus have been reported in Germany. Cases have been reported from Berlin, Leipzig Kreisfreie Stadt and Rhein-Pfalz-Kreis. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "hepatitis-a-in-usa",
+              "source": "thp",
+              "level": null,
+              "title_en": "Hepatitis A in USA",
+              "title_ja": null,
+              "topic_en": "Hepatitis A",
+              "topic_ja": null,
+              "place_en": "USA",
+              "place_ja": null,
+              "summary_en": "As of 17 September 2026, 37 cases of hepatitis A have been reported from four states: Massachusetts, Minnesota, New York and Pennsylvania. Cases are associated with consumption of raw/undercooked shellfish imported from Ecuador. Please see our Topics in Brief article for further details on hepatitis A.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "chikungunya-in-usa",
+              "source": "thp",
+              "level": null,
+              "title_en": "Chikungunya in USA",
+              "title_ja": null,
+              "topic_en": "Chikungunya",
+              "topic_ja": null,
+              "place_en": "USA",
+              "place_ja": null,
+              "summary_en": "Between 6 and 12 September 2026, one case of locally acquired chikungunya was reported in Florida, USA. Please see our Topics in Brief article for further details on chikungunya.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "chikungunya-in-hong-kong",
+              "source": "thp",
+              "level": null,
+              "title_en": "Chikungunya in Hong Kong",
+              "title_ja": null,
+              "topic_en": "Chikungunya",
+              "topic_ja": null,
+              "place_en": "Hong Kong",
+              "place_ja": null,
+              "summary_en": "On 17 September 2026, a locally acquired case of chikungunya was reported. This is the first locally acquired case of chikungunya in Hong Kong in 2026. Please see our Topics in Brief article for further details on chikungunya.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "mpox-in-estonia",
+              "source": "thp",
+              "level": null,
+              "title_en": "Mpox in Estonia",
+              "title_ja": null,
+              "topic_en": "Mpox",
+              "topic_ja": null,
+              "place_en": "Estonia",
+              "place_ja": null,
+              "summary_en": "In August 2026, one new clade I mpox case was reported in Estonia. This is the first case of clade I mpox in Estonia. Please see our Topics in Brief article for further details on mpox.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "mpox-in-iceland",
+              "source": "thp",
+              "level": null,
+              "title_en": "Mpox in Iceland",
+              "title_ja": null,
+              "topic_en": "Mpox",
+              "topic_ja": null,
+              "place_en": "Iceland",
+              "place_ja": null,
+              "summary_en": "In August 2026, one new clade I mpox case was reported in Iceland. This is the first case of clade I mpox in Iceland. Please see our Topics in Brief article for further details on mpox.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "mpox-in-malta",
+              "source": "thp",
+              "level": null,
+              "title_en": "Mpox in Malta",
+              "title_ja": null,
+              "topic_en": "Mpox",
+              "topic_ja": null,
+              "place_en": "Malta",
+              "place_ja": null,
+              "summary_en": "In August 2026, three new clade I mpox cases were reported in Malta. These are the first cases of clade I mpox in Malta. Please see our Topics in Brief article for further details on mpox.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            }
+          ],
+          "removed": [
+            {
+              "id": "lassa-fever-in-nigeria",
+              "source": "thp",
+              "level": null,
+              "title_en": "Lassa fever in Nigeria",
+              "title_ja": null,
+              "topic_en": "Lassa fever",
+              "topic_ja": null,
+              "place_en": "Nigeria",
+              "place_ja": null,
+              "summary_en": "As of 23 August 2026, a total of 1,056 confirmed Lassa fever cases, with 7,580 suspected cases, six probable cases and 253 deaths, have been reported across 24 states in Nigeria for 2026. Please see our Topics in Brief article for further details on Lassa fever.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "dengue-in-marshall-islands",
+              "source": "thp",
+              "level": null,
+              "title_en": "Dengue in Marshall Islands",
+              "title_ja": null,
+              "topic_en": "Dengue",
+              "topic_ja": null,
+              "place_en": "Marshall Islands",
+              "place_ja": null,
+              "summary_en": "As of 24 August 2026, Marshall Island's Ministry of Health and Human Services has reported 17 confirmed dengue cases. DENV-1 has been confirmed in circulation. Please see our Topics in Brief article for further details on dengue.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "dengue-in-vanuatu",
+              "source": "thp",
+              "level": null,
+              "title_en": "Dengue in Vanuatu",
+              "title_ja": null,
+              "topic_en": "Dengue",
+              "topic_ja": null,
+              "place_en": "Vanuatu",
+              "place_ja": null,
+              "summary_en": "As of 31 August 2026, a total of 112 confirmed dengue cases have been reported in Vanuatu since 14 June 2026. The outbreak remains active, with ongoing local transmission in affected communities across South-West Efate, Shefa Province. The most affected areas continue to be Erakor (31%), Port Vila (22%), Eratap (21%), and Pango (16%). DENV-1 has been confirmed as the circulating serotype. Please see our Topics in Brief article for further details on dengue.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-usa",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in USA",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "USA",
+              "place_ja": null,
+              "summary_en": "As of 1 September 2026, a total of 407 human cases of West Nile virus have been reported across 40 states in the United States. Of these, 285 cases were reported to be the neuroinvasive form. The highest number of cases have been reported in Arizona (88 cases), California (66 cases) and Texas (46 cases). Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "diphtheria-in-italy",
+              "source": "thp",
+              "level": null,
+              "title_en": "Diphtheria in Italy",
+              "title_ja": null,
+              "topic_en": "Diphtheria",
+              "topic_ja": null,
+              "place_en": "Italy",
+              "place_ja": null,
+              "summary_en": "On 20 August 2026, a fatal case of diphtheria has been confirmed in a child in Palermo, Sicily. A second probable case has been reported in another child who is unwell and is a contact of the first case. A further ten family members are reported to have tested positive, but remain well. Please see our Topics in Brief article for further details on diphtheria.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "cyclosporiasis-in-usa",
+              "source": "thp",
+              "level": null,
+              "title_en": "Cyclosporiasis in USA",
+              "title_ja": null,
+              "topic_en": "Cyclosporiasis",
+              "topic_ja": null,
+              "place_en": "USA",
+              "place_ja": null,
+              "summary_en": "As of 24 August 2026, 17,180 confirmed locally acquired cyclosporiasis cases, including two deaths have been reported in 48 states and the district of Columbia in the USA. A further 11,844 cases are under investigation.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "measles-in-sweden",
+              "source": "thp",
+              "level": null,
+              "title_en": "Measles in Sweden",
+              "title_ja": null,
+              "topic_en": "Measles",
+              "topic_ja": null,
+              "place_en": "Sweden",
+              "place_ja": null,
+              "summary_en": "As of 27 August 2026, a total of 35 measles cases have been reported in Sweden in connection with the Ukult festival which took place between 30 July and 2 August 2026. Please see our Topics in Brief article for further details on measles.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "dengue-in-france",
+              "source": "thp",
+              "level": null,
+              "title_en": "Dengue in France",
+              "title_ja": null,
+              "topic_en": "Dengue",
+              "topic_ja": null,
+              "place_en": "France",
+              "place_ja": null,
+              "summary_en": "As of 26 August 2026, five locally acquired cases of dengue have been reported in the Tarn and Herault (both in Occitanie), la Dordogne (Nouvelle-Aquitaine) and Bouches-du-Rh&ocirc;ne (Provence-Alpes-C&ocirc;te d'Azur) departments in France. Please see our Topics in Brief article for further details on dengue.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "usutu-virus-in-italy",
+              "source": "thp",
+              "level": null,
+              "title_en": "Usutu virus in Italy",
+              "title_ja": null,
+              "topic_en": "Usutu virus",
+              "topic_ja": null,
+              "place_en": "Italy",
+              "place_ja": null,
+              "summary_en": "As of 26 August 2026, a total of 10 Usutu virus cases have been reported in five regions of Italy during 2026.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "mpox-in-taiwan",
+              "source": "thp",
+              "level": null,
+              "title_en": "Mpox in Taiwan",
+              "title_ja": null,
+              "topic_en": "Mpox",
+              "topic_ja": null,
+              "place_en": "Taiwan",
+              "place_ja": null,
+              "summary_en": "On 26 August 2026, Taiwan's Centers for Disease Control confirmed two locally acquired clade Ib mpox cases in 2026. These are the first locally acquired clade Ib mpox cases in Taiwan. Please see our Topics in Brief article for further details on Mpox.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "diphtheria-in-australia",
+              "source": "thp",
+              "level": null,
+              "title_en": "Diphtheria in Australia",
+              "title_ja": null,
+              "topic_en": "Diphtheria",
+              "topic_ja": null,
+              "place_en": "Australia",
+              "place_ja": null,
+              "summary_en": "As of 26 August 2026, a total of 539 confirmed diphtheria cases have now been reported across Australia during 2026. The majority of cases have been reported in the Northern Territory (289 cases) and Western Australia (227 cases). Please see our Topics in Brief article for further details on diphtheria.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "dermatophilus-congolensis-in-austria",
+              "source": "thp",
+              "level": null,
+              "title_en": "Dermatophilus congolensis in Austria",
+              "title_ja": null,
+              "topic_en": "Dermatophilus congolensis",
+              "topic_ja": null,
+              "place_en": "Austria",
+              "place_ja": null,
+              "summary_en": "As of 20 August 2026, a total of 20 confirmed cases of dermatophilosis caused by Dermatophilus congolensis have been reported in Austria between 2025 and July 2026. This includes 18 cases reported in Vienna and two in Salzburg.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "dermatophilus-congolensis-in-denmark",
+              "source": "thp",
+              "level": null,
+              "title_en": "Dermatophilus congolensis in Denmark",
+              "title_ja": null,
+              "topic_en": "Dermatophilus congolensis",
+              "topic_ja": null,
+              "place_en": "Denmark",
+              "place_ja": null,
+              "summary_en": "As of 20 August 2026, one confirmed case of dermatophilosis caused by Dermatophilus congolensis has been reported in Denmark.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "dermatophilus-congolensis-in-france",
+              "source": "thp",
+              "level": null,
+              "title_en": "Dermatophilus congolensis in France",
+              "title_ja": null,
+              "topic_en": "Dermatophilus congolensis",
+              "topic_ja": null,
+              "place_en": "France",
+              "place_ja": null,
+              "summary_en": "As of 20 August 2026, a total of 70 confirmed cases of dermatophilosis caused by Dermatophilus congolensis have been reported in France. Cases were predominantly, but not exclusively, among gay, bisexual and other men who have sex with men.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            }
+          ],
+          "level_changed": []
+        },
+        "countries": []
+      },
+      "forth": {
+        "has_changes": false,
+        "feed": {
+          "added": [],
+          "removed": [],
+          "level_changed": []
+        },
+        "countries": []
+      }
+    }
+  },
+  {
     "date": "2026-09-09",
     "has_changes": true,
     "summary_ja": "情報源に TravelHealthPro（英国 NaTHNaC）と FORTH（厚生労働省検疫所）を追加しました。以降は毎月、CDC を含む3ソースそれぞれの流行情報・国別データの変更点を、ソース別にこの「新規更新」へ日付つきで要約します（誤訳防止のため CDC/THP は英語原文、FORTH は日本語原文を併記）。",
     "sources": {
-      "cdc": { "has_changes": false, "feed": { "added": [], "removed": [], "level_changed": [] }, "countries": [] },
-      "thp": { "has_changes": false, "feed": { "added": [], "removed": [], "level_changed": [] }, "countries": [] },
-      "forth": { "has_changes": false, "feed": { "added": [], "removed": [], "level_changed": [] }, "countries": [] }
+      "cdc": {
+        "has_changes": false,
+        "feed": {
+          "added": [],
+          "removed": [],
+          "level_changed": []
+        },
+        "countries": []
+      },
+      "thp": {
+        "has_changes": false,
+        "feed": {
+          "added": [],
+          "removed": [],
+          "level_changed": []
+        },
+        "countries": []
+      },
+      "forth": {
+        "has_changes": false,
+        "feed": {
+          "added": [],
+          "removed": [],
+          "level_changed": []
+        },
+        "countries": []
+      }
     }
   },
   {
@@ -14,9 +1084,33 @@
     "has_changes": true,
     "summary_ja": "初回公開。CDC Travelers' Health の全244目的地（うち242地域でデータ取得）と Travel Notice 24件を掲載しました。",
     "sources": {
-      "cdc": { "has_changes": true, "feed": { "added": [], "removed": [], "level_changed": [] }, "countries": [] },
-      "thp": { "has_changes": false, "feed": { "added": [], "removed": [], "level_changed": [] }, "countries": [] },
-      "forth": { "has_changes": false, "feed": { "added": [], "removed": [], "level_changed": [] }, "countries": [] }
+      "cdc": {
+        "has_changes": true,
+        "feed": {
+          "added": [],
+          "removed": [],
+          "level_changed": []
+        },
+        "countries": []
+      },
+      "thp": {
+        "has_changes": false,
+        "feed": {
+          "added": [],
+          "removed": [],
+          "level_changed": []
+        },
+        "countries": []
+      },
+      "forth": {
+        "has_changes": false,
+        "feed": {
+          "added": [],
+          "removed": [],
+          "level_changed": []
+        },
+        "countries": []
+      }
     }
   }
 ]

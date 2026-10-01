@@ -4,7 +4,7 @@
   "name_ja": "ケニア",
   "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/kenya",
-  "retrieved_at": "2026-09-03",
+  "retrieved_at": "2026-10-01",
   "page_notice_level": 1,
   "vaccines": [
     {
@@ -143,8 +143,8 @@
     {
       "name_en": "African Tick-Bite Fever",
       "name_ja": "アフリカダニ咬熱",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Tick bite",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Rickettsial Diseases"
@@ -152,8 +152,8 @@
     {
       "name_en": "Crimean-Congo Hemorrhagic fever",
       "name_ja": "クリミア・コンゴ出血熱",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Tick bite\n• Touching the body fluids of a person or animal infected with CCHF",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Post-Travel Evaluation to Rule Out Viral Special Pathogen Infection"
@@ -161,17 +161,17 @@
     {
       "name_en": "Dengue",
       "name_ja": "デング熱",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Mosquito bite",
       "advice_en": "• Avoid bug bites",
-      "clinical_guidance_en": "Dengue"
+      "clinical_guidance_en": "Dengue - CDC Yellow Book\nMap: Dengue risk for Africa and Europe"
     },
     {
       "name_en": "Leishmaniasis",
       "name_ja": "リーシュマニア症",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Sand fly bite",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Leishmaniasis"
@@ -179,8 +179,8 @@
     {
       "name_en": "Zika",
       "name_ja": "ジカウイルス感染症",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Mosquito bite\n• An infected pregnant woman can spread it to her unborn baby",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Zika"
@@ -190,7 +190,7 @@
       "name_ja": "マールブルグ病",
       "transmission_en": "Avoid animals",
       "transmission_ja": "動物との接触を避ける",
-      "spread_en": "• Touching infected animals (including bats and primates) or their body fluids\n• Touching body fluids (blood or sweat) from an infected person\n• Touching objects contaminated with the body fluids of a person infected with Ebola or Marburg virus",
+      "spread_en": "• Touching infected animals (including bats and primates) or their body fluids\n• Touching body fluids (blood or sweat) from an infected person\n• Touching objects contaminated with the body fluids of a person infected with Marburg virus",
       "advice_en": "• Avoid sick people\n• Avoid animals and areas where they live",
       "clinical_guidance_en": "Post-Travel Evaluation to Rule Out Viral Special Pathogen Infection"
     },

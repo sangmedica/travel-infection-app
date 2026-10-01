@@ -1,5 +1,23 @@
 [
   {
+    "id": "topics-newpage-00582-html",
+    "source": "forth",
+    "level": null,
+    "title_ja": "エボラ出血熱に係る検疫について（2026年9月16日）",
+    "title_en": null,
+    "topic_ja": null,
+    "topic_en": null,
+    "place_ja": null,
+    "place_en": null,
+    "is_outbreak": false,
+    "is_global": false,
+    "matched_slugs": [],
+    "summary_ja": "",
+    "summary_en": null,
+    "url": "https://www.forth.go.jp/topics/newpage_00582.html",
+    "published": "2026-09-17"
+  },
+  {
     "id": "topics-2026-20260902-00001-html",
     "source": "forth",
     "level": null,
@@ -16,24 +34,6 @@
     "summary_en": null,
     "url": "https://www.forth.go.jp/topics/2026/20260902_00001.html",
     "published": "2026-09-02"
-  },
-  {
-    "id": "topics-newpage-00582-html",
-    "source": "forth",
-    "level": null,
-    "title_ja": "エボラ出血熱に係る検疫について（2026年8月28日更新）",
-    "title_en": null,
-    "topic_ja": null,
-    "topic_en": null,
-    "place_ja": null,
-    "place_en": null,
-    "is_outbreak": false,
-    "is_global": false,
-    "matched_slugs": [],
-    "summary_ja": "",
-    "summary_en": null,
-    "url": "https://www.forth.go.jp/topics/newpage_00582.html",
-    "published": "2026-08-28"
   },
   {
     "id": "topics-2026-20260825-00001-html",

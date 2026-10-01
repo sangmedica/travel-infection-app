@@ -1,0 +1,47 @@
+{
+  "slug": "netherlands",
+  "name_en": "The Netherlands",
+  "name_ja": "オランダ",
+  "source": "thp",
+  "source_url": "https://travelhealthpro.org.uk/countries/netherlands",
+  "retrieved_at": "2026-10-01",
+  "tiers": {
+    "all": {
+      "intro_en": "Travellers should be up to date with routine vaccination courses and boosters as recommended in the UK according to their age, medical history and individual risks.",
+      "diseases": []
+    },
+    "most": {
+      "intro_en": "The vaccines in this section are recommended for most travellers visiting this country. Information on these vaccines can be found by clicking on the blue arrow. Vaccines are listed alphabetically.",
+      "diseases": [
+        {
+          "name_en": "Tetanus",
+          "name_ja": null,
+          "desc_en": "Tetanus is caused by a toxin released from Clostridium tetani bacteria and occurs worldwide. Tetanus bacteria are present in soil and manure and may be introduced through open wounds such as a puncture wound, burn or scratch.",
+          "risk_en": ""
+        }
+      ]
+    },
+    "some": {
+      "intro_en": "The vaccines in this section are recommended for some travellers visiting this country. Information on when these vaccines should be considered can be found by clicking on the arrow. Vaccines are listed alphabetically.",
+      "diseases": [
+        {
+          "name_en": "Rabies (Bat Lyssavirus)",
+          "name_ja": null,
+          "desc_en": "Although rare, bat lyssaviruses (bat rabies) can be transmitted to humans or other animals following contact with the saliva of an infected bat most often by a bite. The disease can also be transmitted if the saliva of an infected bat gets into open wounds or mucous membranes (such as on the eye, nose or mouth). Bat lyssaviruses can cause disease in humans that is indistinguishable from rabies. Symptoms can take some time to develop, but when they do the condition is almost always fatal. The risk to most travellers is low. However, it is increased for certain occupations for example bat handle",
+          "risk_en": ""
+        },
+        {
+          "name_en": "Tick-borne encephalitis",
+          "name_ja": null,
+          "desc_en": "Tick-borne encephalitis (TBE) is a viral infection spread by the bite of infected ticks. Occasionally cases of TBE occur after consumption of raw (unpasteurised) milk or dairy products from infected animals (e.g. cows, goats and sheep). Travellers are at increased risk of exposure during outdoor activities in areas of vegetation such as gardens, parks, meadows, woods, forest fringes and glades. This includes urban parks and woodland areas in cities. Ticks are usually most active between early spring and late autumn. Tick-borne encephalitis in Netherlands There is a risk of TBE in some areas of",
+          "risk_en": "There is a risk of TBE in some areas of this country. The transmission season varies, however, ticks are most active during early spring to late autumn. Cases have been reported in Flevopolder, Gelderland, Noord-Brabant, Overijssel and Utrecht provinces. There is a possible risk in Limburg province."
+        }
+      ]
+    }
+  },
+  "certificate_en": "There are no certificate requirements under International Health Regulations.",
+  "malaria_en": "Malaria",
+  "other_risks_en": "There are some risks that are relevant to all travellers regardless of destination. These may for example include road traffic and other accidents, diseases transmitted by insects or ticks, diseases transmitted by contaminated food and water, or health issues related to the heat or cold. Some additional risks (which may be present in all or part of this country) are mentioned below and are presented alphabetically. Select risk to expand information. Biting insects or ticks Insects or tick bites can cause irritation and infections of the skin at the site of a bite. They can also spread certain diseases. Diseases in Western Europe There is a risk of insect or tick-borne diseases in some areas of Western Europe. This includes diseases such as West Nile virus. Prevention All travellers should avoid insect and tick bites day and night There are no vaccinations (or medications) to prevent these disease Further information about specific insect or tick-borne diseases for this country can be found, if appropriate on this page, in other sections of the country information pages and the insect and tick bite avoidance factsheet. Influenza Seasonal influenza is a viral infection of the respiratory tract and spreads easily from person to person via respiratory droplets when coughing and sneezing. Symptoms appear rapidly and include fever, muscle aches, headache, malaise (feeling unwell), cough, sore throat and a runny nose. In healthy individuals, symptoms improve without treatment within two to seven days. Severe illness is more common in those aged 65 years or over, those under 2 years of age, or those who have underlying medical conditions that increase their risk for complications of influenza. Seasonal influenza in Netherlands Seasonal influenza occurs throughout the world. In the northern hemisphere (including the UK), most influenza occurs from as early as October through to March. In the southern hemisphere, influenza mostly occurs between April and September. In the tro",
+  "general_info_en": "The information on these pages should be used to research health risks and to inform the pre-travel consultation. Travellers should check the Foreign, Commonwealth & Development Office (FCDO) country-specific travel advice page (where available) which provides information on travel entry requirements in addition to safety and security advice. Travellers should ideally arrange an appointment with their health professional at least four to six weeks before travel. However, even if time is short, an appointment is still worthwhile. This appointment provides an opportunity to assess health risks taking into account a number of factors including destination, medical history, and planned activities. For those with pre-existing health problems, an earlier appointment is recommended. All travellers should ensure they have adequate travel health insurance. If visiting European Union (EU) and/or European Economic Area (EEA) countries, carry an European Health Insurance Card (EHIC) or a Global Health Insurance Card (GHIC) as this will allow access to necessary state-provided healthcare in some countries on the same basis as a resident of that country. This may be free or it may require a payment equivalent to that which a local resident would pay. The EHIC and GHIC, however, are not alternatives to travel insurance. Check the NHS website for guidance. A list of useful resources including ",
+  "parse_ok": true
+}

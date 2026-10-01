@@ -4,7 +4,7 @@
   "name_ja": "シント・ユースタティウス",
   "kind": "territory",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/sint-eustatius",
-  "retrieved_at": "2026-09-03",
+  "retrieved_at": "2026-10-01",
   "page_notice_level": 1,
   "vaccines": [
     {
@@ -93,17 +93,17 @@
     {
       "name_en": "Dengue",
       "name_ja": "デング熱",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Mosquito bite",
       "advice_en": "• Avoid bug bites",
-      "clinical_guidance_en": "Dengue"
+      "clinical_guidance_en": "Dengue - CDC Yellow Book\nMap: Dengue risk in the Americas and Caribbean"
     },
     {
       "name_en": "Zika",
       "name_ja": "ジカウイルス感染症",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Mosquito bite\n• An infected pregnant woman can spread it to her unborn baby",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Zika"

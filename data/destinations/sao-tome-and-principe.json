@@ -4,7 +4,7 @@
   "name_ja": "サントメ・プリンシペ",
   "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/sao-tome-and-principe",
-  "retrieved_at": "2026-09-03",
+  "retrieved_at": "2026-10-01",
   "page_notice_level": 1,
   "vaccines": [
     {
@@ -106,6 +106,15 @@
       "spread_en": "• Wading, swimming, bathing, or washing in contaminated freshwater streams, rivers, ponds, lakes, or untreated pools.",
       "advice_en": "• Avoid contaminated water",
       "clinical_guidance_en": "Schistosomiasis"
+    },
+    {
+      "name_en": "Dengue",
+      "name_ja": "デング熱",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
+      "spread_en": "• Mosquito bite",
+      "advice_en": "• Avoid bug bites",
+      "clinical_guidance_en": "Dengue - CDC Yellow Book\nMap: Dengue risk for Africa and Europe"
     },
     {
       "name_en": "Hantavirus",

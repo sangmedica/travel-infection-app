@@ -4,7 +4,7 @@
   "name_ja": "エクアドル",
   "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/ecuador",
-  "retrieved_at": "2026-09-03",
+  "retrieved_at": "2026-10-01",
   "page_notice_level": 1,
   "vaccines": [
     {
@@ -118,8 +118,8 @@
     {
       "name_en": "Chagas disease (American Trypanosomiasis)",
       "name_ja": "シャーガス病（アメリカトリパノソーマ症）",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Accidentally rub feces (poop) of the triatomine bug into the bug bite, other breaks in the skin, your eyes, or mouth\n• From pregnant woman to her baby, contaminated blood products (transfusions), or contaminated food or drink.",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Post-Travel Parasitic Disease Including Evaluation of Eosinophilia"
@@ -127,17 +127,17 @@
     {
       "name_en": "Dengue",
       "name_ja": "デング熱",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Mosquito bite",
       "advice_en": "• Avoid bug bites",
-      "clinical_guidance_en": "Dengue"
+      "clinical_guidance_en": "Dengue - CDC Yellow Book\nMap: Dengue risk in the Americas and Caribbean"
     },
     {
       "name_en": "Leishmaniasis",
       "name_ja": "リーシュマニア症",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Sand fly bite",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Leishmaniasis"
@@ -145,17 +145,17 @@
     {
       "name_en": "New World Screwworm Myiasis",
       "name_ja": "新世界ラセンウジバエ症（皮膚ハエ蛆症）",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
-      "spread_en": "• Fly lays eggs on open wound or mucous membranes (e.g., mouth, nasal passages)",
-      "advice_en": "• Avoid bug bites\n• Clean and cover wounds\n• Sleep in a room with screened windows, or under a bed net, or inside a screened tent\n• Avoid spending time around livestock",
-      "clinical_guidance_en": "New World Screwworm Myiasis"
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
+      "spread_en": "• Eggs of the New World screwworm fly",
+      "advice_en": "• Avoid bugs\n• Clean and cover all wounds\n• Sleep in a room with screened windows, or under a bed net, or inside a screened tent\n• Avoid spending time around livestock",
+      "clinical_guidance_en": "New World screwworm"
     },
     {
       "name_en": "Zika",
       "name_ja": "ジカウイルス感染症",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Mosquito bite\n• An infected pregnant woman can spread it to her unborn baby",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Zika"

@@ -4,7 +4,7 @@
   "name_ja": "香港",
   "kind": "territory",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/hong-kong-sar",
-  "retrieved_at": "2026-09-03",
+  "retrieved_at": "2026-10-01",
   "page_notice_level": 1,
   "vaccines": [
     {
@@ -98,6 +98,15 @@
       "spread_en": "• Contact with contaminated fresh water, mud, or soil, especially after heavy rains\n• Drinking contaminated water\n• Breathing in contaminated dust or water droplets, especially during severe weather",
       "advice_en": "• Avoid floodwater and contact with soil or muddy water, particularly after heavy rains\n• Bandage open wounds, cuts, or burns to protect them from coming into contact with soil or water",
       "clinical_guidance_en": "Melioidosis"
+    },
+    {
+      "name_en": "Dengue",
+      "name_ja": "デング熱",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
+      "spread_en": "• Mosquito bite",
+      "advice_en": "• Avoid bug bites",
+      "clinical_guidance_en": "Dengue - CDC Yellow Book\nMap: Dengue risk for Asia"
     },
     {
       "name_en": "Hantavirus",

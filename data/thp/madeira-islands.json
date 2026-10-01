@@ -1,0 +1,41 @@
+{
+  "slug": "madeira-islands",
+  "name_en": "Madeira Islands",
+  "name_ja": "マデイラ諸島",
+  "source": "thp",
+  "source_url": "https://travelhealthpro.org.uk/countries/madeira-portugal",
+  "retrieved_at": "2026-10-01",
+  "tiers": {
+    "all": {
+      "intro_en": "Travellers should be up to date with routine vaccination courses and boosters as recommended in the UK according to their age, medical history and individual risks.",
+      "diseases": []
+    },
+    "most": {
+      "intro_en": "The vaccines in this section are recommended for most travellers visiting this country. Information on these vaccines can be found by clicking on the blue arrow. Vaccines are listed alphabetically.",
+      "diseases": [
+        {
+          "name_en": "Tetanus",
+          "name_ja": null,
+          "desc_en": "Tetanus is caused by a toxin released from Clostridium tetani bacteria and occurs worldwide. Tetanus bacteria are present in soil and manure and may be introduced through open wounds such as a puncture wound, burn or scratch.",
+          "risk_en": ""
+        }
+      ]
+    },
+    "some": {
+      "intro_en": "The vaccines in this section are recommended for some travellers visiting this country. Information on when these vaccines should be considered can be found by clicking on the arrow. Vaccines are listed alphabetically.",
+      "diseases": [
+        {
+          "name_en": "Rabies (Bat Lyssavirus)",
+          "name_ja": null,
+          "desc_en": "Although rare, bat lyssaviruses (bat rabies) can be transmitted to humans or other animals following contact with the saliva of an infected bat most often by a bite. The disease can also be transmitted if the saliva of an infected bat gets into open wounds or mucous membranes (such as on the eye, nose or mouth). Bat lyssaviruses can cause disease in humans that is indistinguishable from rabies. Symptoms can take some time to develop, but when they do the condition is almost always fatal. The risk to most travellers is low. However, it is increased for certain occupations for example bat handle",
+          "risk_en": ""
+        }
+      ]
+    }
+  },
+  "certificate_en": "There are no certificate requirements under International Health Regulations.",
+  "malaria_en": "Malaria",
+  "other_risks_en": "There are some risks that are relevant to all travellers regardless of destination. These may for example include road traffic and other accidents, diseases transmitted by insects or ticks, diseases transmitted by contaminated food and water, or health issues related to the heat or cold. Some additional risks (which may be present in all or part of this country) are mentioned below and are presented alphabetically. Select risk to expand information. Biting insects or ticks Insect or tick bites can cause irritation and infections of the skin at the site of a bite. They can also spread certain diseases. Diseases in Southern Europe There is a risk of insect or tick-borne diseases in some areas of Southern Europe. This includes diseases such as Crimean-Congo haemorrhagic fever, leishmaniasis and West Nile virus. Prevention All travellers should avoid insect and tick bites day and night. There are no vaccinations (or medications) to prevent these diseases. Further information about specific insect or tick-borne diseases for this country can be found, if appropriate on this page, in other sections of the country information pages and the insect and tick bite avoidance factsheet. Dengue Dengue is a viral infection spread by mosquitoes which mainly feed during daytime hours. It causes a flu-like illness, which can occasionally develop into a more serious life-threatening illness. Severe dengue is rare in travellers. The mosquitoes that spread dengue are more common in towns, cities and surrounding areas. Dengue in Madeira (Portugal) There is a risk of dengue in Madeira. Information on current outbreaks, where available, will be reported on our outbreak surveillance database.Prevention Vaccination is not recommended. Travellers should avoid mosquito bites, particularly during daytime hours. Dengue in brief Influenza Seasonal influenza is a viral infection of the respiratory tract and spreads easily from person to person via respiratory droplets when coughing and sneezing. Sy",
+  "general_info_en": "The information on these pages should be used to research health risks and to inform the pre-travel consultation. Travellers should check the Foreign, Commonwealth & Development Office (FCDO) country-specific travel advice page (where available) which provides information on travel entry requirements in addition to safety and security advice. Travellers should ideally arrange an appointment with their health professional at least four to six weeks before travel. However, even if time is short, an appointment is still worthwhile. This appointment provides an opportunity to assess health risks taking into account a number of factors including destination, medical history, and planned activities. For those with pre-existing health problems, an earlier appointment is recommended. All travellers should ensure they have adequate travel health insurance. If visiting European Union (EU) and/or European Economic Area (EEA) countries, carry an European Health Insurance Card (EHIC) or a Global Health Insurance Card (GHIC) as this will allow access to necessary state-provided healthcare in some countries on the same basis as a resident of that country. This may be free or it may require a payment equivalent to that which a local resident would pay. The EHIC and GHIC, however, are not alternatives to travel insurance. Check the NHS website for guidance. A list of useful resources including ",
+  "parse_ok": true
+}

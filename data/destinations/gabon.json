@@ -4,7 +4,7 @@
   "name_ja": "ガボン",
   "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/gabon",
-  "retrieved_at": "2026-09-03",
+  "retrieved_at": "2026-10-01",
   "page_notice_level": 1,
   "vaccines": [
     {
@@ -127,8 +127,8 @@
     {
       "name_en": "African Sleeping Sickness (African Trypanosomiasis)",
       "name_ja": "アフリカ睡眠病（アフリカトリパノソーマ症）",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Tsetse fly bite",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Post-Travel Parasitic Disease Including Evaluation of Eosinophilia"
@@ -136,8 +136,8 @@
     {
       "name_en": "African Tick-Bite Fever",
       "name_ja": "アフリカダニ咬熱",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Tick bite",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Rickettsial Diseases"
@@ -145,17 +145,17 @@
     {
       "name_en": "Dengue",
       "name_ja": "デング熱",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Mosquito bite",
       "advice_en": "• Avoid bug bites",
-      "clinical_guidance_en": "Dengue"
+      "clinical_guidance_en": "Dengue - CDC Yellow Book\nMap: Dengue risk for Africa and Europe"
     },
     {
       "name_en": "Zika",
       "name_ja": "ジカウイルス感染症",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Mosquito bite\n• An infected pregnant woman can spread it to her unborn baby",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Zika"
@@ -165,18 +165,9 @@
       "name_ja": "エボラ出血熱",
       "transmission_en": "Avoid animals",
       "transmission_ja": "動物との接触を避ける",
-      "spread_en": "• Touching infected animals (including bats and primates) or their body fluids\n• Touching body fluids (blood or sweat) from an infected person\n• Touching objects contaminated with the body fluids of a person infected with Ebola or Marburg virus",
+      "spread_en": "• Touching infected animals (including bats and primates) or their body fluids\n• Touching body fluids (blood or sweat) from an infected person\n• Touching objects contaminated with the body fluids of a person infected with Ebola virus",
       "advice_en": "• Avoid sick people\n• Avoid animals and areas where they live",
       "clinical_guidance_en": "Post-Travel Evaluation to Rule Out Viral Special Pathogen Infection"
-    },
-    {
-      "name_en": "Monkeypox",
-      "name_ja": "エムポックス（サル痘）",
-      "transmission_en": "Avoid animals",
-      "transmission_ja": "動物との接触を避ける",
-      "spread_en": "• Scratched or bitten by an infected animal such as a rodent or primate\n• Touching an infected animal or touching animal products, including skins and meat\n• Being near an infected person who is coughing or sneezing\n• Touching the body fluids or rash of a person with monkeypox",
-      "advice_en": "• Avoid animals and animal products\n• Avoid people who are sick",
-      "clinical_guidance_en": "Sex and Travel"
     },
     {
       "name_en": "Hantavirus",

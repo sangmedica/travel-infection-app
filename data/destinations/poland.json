@@ -4,8 +4,8 @@
   "name_ja": "ポーランド",
   "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/poland",
-  "retrieved_at": "2026-09-03",
-  "page_notice_level": 2,
+  "retrieved_at": "2026-10-01",
+  "page_notice_level": 1,
   "vaccines": [
     {
       "name_en": "Routine vaccines",

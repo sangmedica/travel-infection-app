@@ -4,7 +4,7 @@
   "name_ja": "ニジェール",
   "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/niger",
-  "retrieved_at": "2026-09-03",
+  "retrieved_at": "2026-10-01",
   "page_notice_level": 2,
   "vaccines": [
     {
@@ -143,8 +143,8 @@
     {
       "name_en": "African Tick-Bite Fever",
       "name_ja": "アフリカダニ咬熱",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Tick bite",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Rickettsial Diseases"
@@ -152,29 +152,20 @@
     {
       "name_en": "Dengue",
       "name_ja": "デング熱",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Mosquito bite",
       "advice_en": "• Avoid bug bites",
-      "clinical_guidance_en": "Dengue"
+      "clinical_guidance_en": "Dengue - CDC Yellow Book"
     },
     {
       "name_en": "Leishmaniasis",
       "name_ja": "リーシュマニア症",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
+      "transmission_en": "Avoid bugs",
+      "transmission_ja": null,
       "spread_en": "• Sand fly bite",
       "advice_en": "• Avoid bug bites",
       "clinical_guidance_en": "Leishmaniasis"
-    },
-    {
-      "name_en": "Zika",
-      "name_ja": "ジカウイルス感染症",
-      "transmission_en": "Avoid bug bites",
-      "transmission_ja": "虫刺されを避ける",
-      "spread_en": "• Mosquito bite\n• An infected pregnant woman can spread it to her unborn baby",
-      "advice_en": "• Avoid bug bites",
-      "clinical_guidance_en": "Zika"
     },
     {
       "name_en": "Hantavirus",
