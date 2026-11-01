@@ -4,7 +4,7 @@
   "name_ja": "リビア",
   "source": "thp",
   "source_url": "https://travelhealthpro.org.uk/countries/libya",
-  "retrieved_at": "2026-10-01",
+  "retrieved_at": "2026-11-01",
   "tiers": {
     "all": {
       "intro_en": "Travellers should be up to date with routine vaccination courses and boosters as recommended in the UK according to their age, medical history and individual risks.",
@@ -41,6 +41,12 @@
           "name_ja": null,
           "desc_en": "Measles is a highly infectious viral illness, spread by airborne or droplet (coughing, sneezing, drops from mouth/nose) transmission. Measles usually starts with cold-like symptoms e.g. fever, cough, runny nose and conjunctivitis (sore, red eyes). This is followed by a blotchy rash starting on the face/head and spreading to the rest of the body. Complications of measles infection can include ear infections, diarrhoea, pneumonia and convulsions (fits). Life-threatening complications such as encephalitis (brain inflammation) can occur on rare occasions. Measles can have serious consequences espe",
           "risk_en": "Measles is either 'endemic' (continuous transmission in a 12-month period) and/or the measles risk is assessed to be greater than in the UK due to current outbreaks, conflict, damaged infrastructure, travel-related cases or poor vaccine coverage."
+        },
+        {
+          "name_en": "Polio",
+          "name_ja": null,
+          "desc_en": "Polio is caused by one of three types of polio virus and is transmitted by contaminated food and water. Previous infection with one type of polio virus does not protect against other types of the virus. Those at increased risk include travellers who are unvaccinated or under-vaccinated visiting friends and relatives, those in direct contact with an infected person, long-stay travellers, and those visiting areas of poor sanitation. Polio in Libya Circulating vaccine-derived poliovirus type 2 (cVDPV2) has been detected in two environmental (sewage) samples in Sabha district in Libya in June and ",
+          "risk_en": "Circulating vaccine-derived poliovirus type 2 (cVDPV2) has been detected in two environmental (sewage) samples in Sabha district in Libya in June and July 2026."
         },
         {
           "name_en": "Rabies",

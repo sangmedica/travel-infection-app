@@ -1,51 +1,83 @@
 [
   {
-    "id": "diphtheria-in-senegal",
+    "id": "yellow-fever-in-venezuela",
     "source": "thp",
     "level": null,
-    "title_en": "Diphtheria in Senegal",
-    "topic_en": "Diphtheria",
-    "place_en": "Senegal",
+    "title_en": "Yellow fever in Venezuela",
+    "topic_en": "Yellow fever",
+    "place_en": "Venezuela",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "senegal"
+      "venezuela"
     ],
-    "summary_en": "As of 13 August 2026, a total of 13 cases of diphtheria and two deaths have been reported. Please see our Topics in Brief article for further details on diphtheria.",
+    "summary_en": "As of 10 October 2026, a total of 12 confirmed yellow fever cases, with four deaths, have now been reported in Venezuela during 2026; in the states of Aragua, Barinas, Delta Amacuro, La Guaira, Lara and Monagas. Yellow fever has also been detected in monkeys along the country's jungle corridors. Please see our Topics in Brief article for further details on yellow fever.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-30"
+    "published": "2026-10-29"
   },
   {
-    "id": "diphtheria-in-nigeria",
+    "id": "dengue-in-peru",
     "source": "thp",
     "level": null,
-    "title_en": "Diphtheria in Nigeria",
-    "topic_en": "Diphtheria",
-    "place_en": "Nigeria",
+    "title_en": "Dengue in Peru",
+    "topic_en": "Dengue",
+    "place_en": "Peru",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "nigeria"
+      "peru"
     ],
-    "summary_en": "Between 1 January and 23 August 2026, a total of 16,997 cases of diphtheria and 596 deaths have been reported. Most cases have been reported from Kano, Bauchi, Katsina, Borno and Sokoto states. Please see our Topics in Brief article for further details on diphtheria.",
+    "summary_en": "As of 17 October 2026, a total of 76,784 dengue cases (59,728 confirmed) and 81 deaths have now been reported in Peru during 2026. Serotypes DENV-1, DENV-2 and DENV-3 have been identified. Please see our Topics in Brief article for further details on dengue.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-30"
+    "published": "2026-10-28"
   },
   {
-    "id": "chikungunya-in-france",
+    "id": "dengue-in-colombia",
     "source": "thp",
     "level": null,
-    "title_en": "Chikungunya in France",
-    "topic_en": "Chikungunya",
-    "place_en": "France",
+    "title_en": "Dengue in Colombia",
+    "topic_en": "Dengue",
+    "place_en": "Colombia",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "france"
+      "colombia"
     ],
-    "summary_en": "As of 28 September 2026, 125 locally acquired cases of chikungunya have been identified in France, in Tarn, Lot, Gard (Occitanie), Gironde, Landes (Nouvelle-Aquitaine), Val-de-Marne (Ile-de-France) and Var (Provence-Alpes-Cote d'Azur). Please see our Topics in Brief article for further details on chikungunya.",
+    "summary_en": "As of 17 October 2026, a total of 91,419 dengue cases (64, 333 confirmed) and 69 deaths have now been reported in Columbia during 2026. Serotypes DENV-1, DENV-2, DENV-3 and DENV-4 have been identified. Please see our Topics in Brief article for further details on dengue.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-30"
+    "published": "2026-10-28"
+  },
+  {
+    "id": "yellow-fever-in-ghana",
+    "source": "thp",
+    "level": null,
+    "title_en": "Yellow fever in Ghana",
+    "topic_en": "Yellow fever",
+    "place_en": "Ghana",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "ghana"
+    ],
+    "summary_en": "As of 19 October 2026, a total of 121 yellow fever cases (19 confirmed), with three deaths, have now been reported in the Upper West Region of Ghana. The outbreak response, including an emergency vaccination campaign, continues. Please see our Topics in Brief article for further details on yellow fever.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-10-28"
+  },
+  {
+    "id": "dengue-in-chad",
+    "source": "thp",
+    "level": null,
+    "title_en": "Dengue in Chad",
+    "topic_en": "Dengue",
+    "place_en": "Chad",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "chad"
+    ],
+    "summary_en": "As of 21 October 2026, a total of 4,004 suspected dengue cases (including 311 confirmed and 11 deaths) have been reported in Chad during 2026. Six provinces have been affected: Ennedi Ouest, Batha, N'Djamena, Ouadda&iuml;, Sila and Wadi Fira. Please see our Topics in Brief article for further details on dengue.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-10-27"
   },
   {
     "id": "ebola-disease-in-drc",
@@ -57,267 +89,238 @@
     "countries": [],
     "is_global": false,
     "matched_slugs": [
+      "congo",
       "democratic-republic-of-congo"
     ],
-    "summary_en": "As of 26 September 2026, 8,067 confirmed Ebola disease (Bundibugyo virus) cases and 3,901 deaths have been reported in seven provinces: Ituri, North Kivu, South Kivu, Tshopo, Haut-Uele, Bas-Uele and South Ubangi. Please see our Topics in Brief article for further details on Ebola disease.",
+    "summary_en": "As of 25 October 2026, a total of 10,060 confirmed Ebola disease (Bundibugyo virus) cases and 4,887 deaths have been reported in The Democratic Republic of Congo. Eight provinces have reported cases: Ituri, North Kivu, South Kivu, Tshopo, Haut-Uele, Bas-Uele, South Ubangi and North Ubangi. Please see our Topics in Brief article for further details on Ebola disease.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-29"
+    "published": "2026-10-27"
   },
   {
-    "id": "west-nile-virus-in-kosovo",
+    "id": "measles-in-usa",
     "source": "thp",
     "level": null,
-    "title_en": "West Nile virus in Kosovo",
-    "topic_en": "West Nile virus",
-    "place_en": "Kosovo",
+    "title_en": "Measles in USA",
+    "topic_en": "Measles",
+    "place_en": "USA",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "kosovo"
+      "united-states"
     ],
-    "summary_en": "In 2026, up to 23 September, two locally acquired human cases of West Nile virus have been reported in Kosovo, in two areas. Please see our Topics in Brief article for further details on West Nile virus.",
+    "summary_en": "As of 23 October 2026, 4,588 confirmed measles cases have been reported across 47 states/jurisdictions in the United States, during 2026. This exceeds the number of cases reported for the whole of 2025 and is the highest number of measles cases reported in the US for 35 years. The highest number of cases have been reported in Pennsylvania (1,327), followed by South Carolina (670) and Utah (535). Please see our Topics in Brief article for further details on measles.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-25"
+    "published": "2026-10-27"
   },
   {
-    "id": "west-nile-virus-in-north-macedonia",
+    "id": "cholera-in-zambia",
     "source": "thp",
     "level": null,
-    "title_en": "West Nile virus in North Macedonia",
-    "topic_en": "West Nile virus",
-    "place_en": "North Macedonia",
+    "title_en": "Cholera in Zambia",
+    "topic_en": "Cholera",
+    "place_en": "Zambia",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "north-macedonia"
+      "zambia"
     ],
-    "summary_en": "In 2026, up to 23 September, 69 locally acquired human cases of West Nile virus have been reported in North Macedonia, in five areas. Please see our Topics in Brief article for further details on West Nile virus.",
+    "summary_en": "As of 27 October 2026, a total of 1,548 cases (227 confirmed cases and 30 deaths) have been reported in Zambia since the cholera outbreak was declared on 28 July 2026. Cases have been reported across 18 districts in six provinces with the highest numbers reported in Lusaka and Chibombo districts. Please see our Topics in Brief article for further details on cholera.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-25"
+    "published": "2026-10-27"
   },
   {
-    "id": "west-nile-virus-in-romania",
+    "id": "dengue-in-india",
     "source": "thp",
     "level": null,
-    "title_en": "West Nile virus in Romania",
-    "topic_en": "West Nile virus",
-    "place_en": "Romania",
+    "title_en": "Dengue in India",
+    "topic_en": "Dengue",
+    "place_en": "India",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "romania"
+      "india"
     ],
-    "summary_en": "In 2026, up to 23 September, 91 locally acquired human cases of West Nile virus have been reported in Romania, across 22 areas. Please see our Topics in Brief article for further details on West Nile virus.",
+    "summary_en": "As of 19 October 2026, a total of a total of 70,140 dengue cases have been reported in India during 2026. Please see our Topics in Brief article for further details on dengue.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-25"
+    "published": "2026-10-26"
   },
   {
-    "id": "west-nile-virus-in-france",
+    "id": "yellow-fever-in-c-te-d-ivoire",
     "source": "thp",
     "level": null,
-    "title_en": "West Nile virus in France",
-    "topic_en": "West Nile virus",
+    "title_en": "Yellow fever in Côte d'Ivoire",
+    "topic_en": "Yellow fever",
+    "place_en": "Côte d'Ivoire",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [],
+    "summary_en": "As of 14 October 2026, a total of 23 yellow fever cases, with 11 deaths, have now been reported in C&ocirc;te d'Ivoire for 2026. An outbreak response, including an emergency vaccination campaign, is ongoing. Please see our Topics in Brief article for further details on yellow fever.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-10-26"
+  },
+  {
+    "id": "ebola-disease-in-kenya",
+    "source": "thp",
+    "level": null,
+    "title_en": "Ebola disease in Kenya",
+    "topic_en": "Ebola disease",
+    "place_en": "Kenya",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "congo",
+      "democratic-republic-of-congo",
+      "kenya"
+    ],
+    "summary_en": "As of 23 October 2026, a second Ebola disease (Bundibugyo virus) death has been reported in Kenya. This second fatal case was a direct close contact of the first case imported from the Democratic Republic of the Congo. All nine confirmed Ebola disease (Bundibugyo virus) cases in Kenya are linked to this index case and there is no evidence of community spread. Please see our Topics in Brief article for further details on Ebola disease.",
+    "url": "https://travelhealthpro.org.uk/news",
+    "published": "2026-10-26"
+  },
+  {
+    "id": "shamonda-virus-in-france",
+    "source": "thp",
+    "level": null,
+    "title_en": "Shamonda virus in France",
+    "topic_en": "Shamonda virus",
     "place_en": "France",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
       "france"
     ],
-    "summary_en": "As of 21 September 2026, 117 autochthonous cases of West Nile virus have been recorded in Provence-Alpes-Cote d'Azur, Occitanie, Ile-de-France, Auvergne-Rhone-Alpes, Nouvelle-Aquitaine, Pays de la Loire and Centre-Val de Loire. Please see our Topics in Brief article for further details on West Nile virus.",
+    "summary_en": "On 22 October 2026, French health authorities reported the first ever known case of Shamonda virus (SHAV) infection in a human. The case was severely immunosuppressed and died in early October. Some brain complications prior to his death were likely linked to the infection. It is thought that the individual contracted the virus following a bite from a midge in the East of France, where the virus has been been circulating in animals (mainly cattle) since spring/summer 2026. Local health authorities have advised there is no risk to the general population at present as this appears to be an isolated and exceptional case. Please see World Organisation for Animal Health for further details on Shamonda virus.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-25"
+    "published": "2026-10-22"
   },
   {
-    "id": "west-nile-virus-in-germany",
+    "id": "crimean-congo-haemorrhagic-fever-in-afghanistan",
     "source": "thp",
     "level": null,
-    "title_en": "West Nile virus in Germany",
-    "topic_en": "West Nile virus",
-    "place_en": "Germany",
+    "title_en": "Crimean-Congo haemorrhagic fever in Afghanistan",
+    "topic_en": "Crimean-Congo haemorrhagic fever",
+    "place_en": "Afghanistan",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "germany"
+      "afghanistan",
+      "congo"
     ],
-    "summary_en": "In 2026, up to 23 September, four locally acquired human cases of West Nile virus have been reported in Germany. Cases have been reported from Berlin, Leipzig Kreisfreie Stadt and Rhein-Pfalz-Kreis. Please see our Topics in Brief article for further details on West Nile virus.",
+    "summary_en": "The World Health Organization have reported 1,669 suspected cases (71 deaths) of Crimean-Congo haemorrhagic fever (CCHF) across Afghanistan, Jan-Sept 2026. 220 cases were reported in September alone. Please see our Topics in Brief article for further details on CCHF.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-25"
+    "published": "2026-10-22"
   },
   {
-    "id": "west-nile-virus-in-netherlands",
+    "id": "usutu-virus-in-italy",
     "source": "thp",
     "level": null,
-    "title_en": "West Nile virus in Netherlands",
-    "topic_en": "West Nile virus",
-    "place_en": "Netherlands",
-    "countries": [],
-    "is_global": false,
-    "matched_slugs": [
-      "netherlands"
-    ],
-    "summary_en": "In 2026, up to 23 September, 44 cases of West Nile virus, including 5 deaths, have been reported in the Netherlands. Cases have been reported from South Holland, Utrecht, North Holland, North Brabant, Gelderland and Overijssel provinces. Please see our Topics in Brief article for further details on West Nile virus.",
-    "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-25"
-  },
-  {
-    "id": "dengue-in-italy",
-    "source": "thp",
-    "level": null,
-    "title_en": "Dengue in Italy",
-    "topic_en": "Dengue",
+    "title_en": "Usutu virus in Italy",
+    "topic_en": "Usutu virus",
     "place_en": "Italy",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
       "italy"
     ],
-    "summary_en": "As of 22 September 2026, a total of 47 confirmed locally acquired dengue cases have been reported for 2026 in Italy. The cases have been reported in Puglia (13), Tuscany (31), Lombardy (2), Campania (1) regions of Italy. Please see our Topics in Brief article for further details on dengue.",
+    "summary_en": "As of 14 October 2026, a total of 18 Usutu virus cases have been reported in seven regions of Italy during 2026. Of these, eight have been reported in Lombardy, three in Lazio, two in Veneto and Marche and one case in each of Emilia-Romagna, Friuli-Venezia Giulia and Piedmont.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-25"
+    "published": "2026-10-22"
   },
   {
-    "id": "hepatitis-a-in-usa",
+    "id": "cvdpv2-in-kenya",
     "source": "thp",
     "level": null,
-    "title_en": "Hepatitis A in USA",
-    "topic_en": "Hepatitis A",
-    "place_en": "USA",
+    "title_en": "cVDPV2 in Kenya",
+    "topic_en": "cVDPV2",
+    "place_en": "Kenya",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "ecuador",
-      "united-states"
+      "kenya"
     ],
-    "summary_en": "As of 17 September 2026, 37 cases of hepatitis A have been reported from four states: Massachusetts, Minnesota, New York and Pennsylvania. Cases are associated with consumption of raw/undercooked shellfish imported from Ecuador. Please see our Topics in Brief article for further details on hepatitis A.",
+    "summary_en": "One case of circulating vaccine-derived poliovirus type 2 (cVDPV2) has been detected in Kenya, during 2026. Please see our Topics in Brief article for further details on polio.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-23"
+    "published": "2026-10-21"
   },
   {
-    "id": "ebola-disease-in-drc",
+    "id": "ebola-disease-in-nigeria-ex-uganda-drc",
     "source": "thp",
     "level": null,
-    "title_en": "Ebola disease in DRC",
+    "title_en": "Ebola disease in Nigeria ex Uganda & DRC",
     "topic_en": "Ebola disease",
-    "place_en": "DRC",
+    "place_en": "Nigeria ex Uganda & DRC",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "democratic-republic-of-congo"
+      "democratic-republic-of-congo",
+      "nigeria",
+      "uganda"
     ],
-    "summary_en": "As of 21 September 2026, 7,773 confirmed Ebola disease (Bundibugyo virus) cases and 3,759 deaths have been reported in seven provinces: Ituri, North Kivu, South Kivu, Tshopo, Haut-Uele, Bas-Uele and South Ubangi. Please see our Topics in Brief article for further details on Ebola disease.",
+    "summary_en": "On 20 October 2026, according to the Federal Ministry of Health and Social Welfare of Nigeria, one case of Ebola disease (Bundibugyo virus) has been confirmed in the Federal Capital Territory, in a woman with a recent travel history to Uganda. According to the Ugandan Ministry of Health this individual had travelled through Uganda from DRC. Please see our Topics in Brief article for further details on Ebola disease.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-23"
+    "published": "2026-10-21"
   },
   {
-    "id": "chikungunya-in-usa",
+    "id": "diphtheria-in-morocco",
     "source": "thp",
     "level": null,
-    "title_en": "Chikungunya in USA",
-    "topic_en": "Chikungunya",
-    "place_en": "USA",
+    "title_en": "Diphtheria in Morocco",
+    "topic_en": "Diphtheria",
+    "place_en": "Morocco",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "united-states"
+      "morocco"
     ],
-    "summary_en": "Between 6 and 12 September 2026, one case of locally acquired chikungunya was reported in Florida, USA. Please see our Topics in Brief article for further details on chikungunya.",
+    "summary_en": "On 15 October 2026, the US Embassy and Consulate in Morocco stated that on 28 September 2026, the Ministry of Health of Morocco reported a small diphtheria outbreak, with clusters in multiple regions in Morocco. Health teams are tracing contacts and providing preventive treatment and vaccines. Please see our Topics in Brief article for further details on diphtheria.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-21"
+    "published": "2026-10-20"
   },
   {
-    "id": "chikungunya-in-hong-kong",
+    "id": "west-nile-virus-in-albania",
     "source": "thp",
     "level": null,
-    "title_en": "Chikungunya in Hong Kong",
-    "topic_en": "Chikungunya",
-    "place_en": "Hong Kong",
+    "title_en": "West Nile virus in Albania",
+    "topic_en": "West Nile virus",
+    "place_en": "Albania",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "hong-kong-sar"
+      "albania"
     ],
-    "summary_en": "On 17 September 2026, a locally acquired case of chikungunya was reported. This is the first locally acquired case of chikungunya in Hong Kong in 2026. Please see our Topics in Brief article for further details on chikungunya.",
+    "summary_en": "As of 16 October 2026, a total of seven cases of locally acquired West Nile virus have been reported in Albania during 2026. Please see our Topics in Brief article for further details on West Nile virus.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-18"
+    "published": "2026-10-20"
   },
   {
-    "id": "mpox-in-estonia",
+    "id": "west-nile-virus-in-bulgaria",
     "source": "thp",
     "level": null,
-    "title_en": "Mpox in Estonia",
-    "topic_en": "Mpox",
-    "place_en": "Estonia",
+    "title_en": "West Nile virus in Bulgaria",
+    "topic_en": "West Nile virus",
+    "place_en": "Bulgaria",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "estonia"
+      "bulgaria"
     ],
-    "summary_en": "In August 2026, one new clade I mpox case was reported in Estonia. This is the first case of clade I mpox in Estonia. Please see our Topics in Brief article for further details on mpox.",
+    "summary_en": "As of 16 October 2026, a total of seven cases of locally acquired West Nile virus have been reported in Bulgaria during 2026. Please see our Topics in Brief article for further details on West Nile virus.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-18"
+    "published": "2026-10-20"
   },
   {
-    "id": "mpox-in-iceland",
+    "id": "west-nile-virus-in-slovenia",
     "source": "thp",
     "level": null,
-    "title_en": "Mpox in Iceland",
-    "topic_en": "Mpox",
-    "place_en": "Iceland",
+    "title_en": "West Nile virus in Slovenia",
+    "topic_en": "West Nile virus",
+    "place_en": "Slovenia",
     "countries": [],
     "is_global": false,
     "matched_slugs": [
-      "iceland"
+      "slovenia"
     ],
-    "summary_en": "In August 2026, one new clade I mpox case was reported in Iceland. This is the first case of clade I mpox in Iceland. Please see our Topics in Brief article for further details on mpox.",
+    "summary_en": "As of 16 October 2026, a total of three cases of locally acquired West Nile virus have been reported in Slovenia during 2026. Please see our Topics in Brief article for further details on West Nile virus.",
     "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-18"
-  },
-  {
-    "id": "mpox-in-malta",
-    "source": "thp",
-    "level": null,
-    "title_en": "Mpox in Malta",
-    "topic_en": "Mpox",
-    "place_en": "Malta",
-    "countries": [],
-    "is_global": false,
-    "matched_slugs": [
-      "malta"
-    ],
-    "summary_en": "In August 2026, three new clade I mpox cases were reported in Malta. These are the first cases of clade I mpox in Malta. Please see our Topics in Brief article for further details on mpox.",
-    "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-18"
-  },
-  {
-    "id": "dengue-in-usa",
-    "source": "thp",
-    "level": null,
-    "title_en": "Dengue in USA",
-    "topic_en": "Dengue",
-    "place_en": "USA",
-    "countries": [],
-    "is_global": false,
-    "matched_slugs": [
-      "united-states"
-    ],
-    "summary_en": "Between 6 and 12 September 2026, 41 new cases of locally acquired dengue were reported in Florida, bringing the total for 2026 to 152. Please see our Topics in Brief article for further details on dengue.",
-    "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-18"
-  },
-  {
-    "id": "malaria-in-germany",
-    "source": "thp",
-    "level": null,
-    "title_en": "Malaria in Germany",
-    "topic_en": "Malaria",
-    "place_en": "Germany",
-    "countries": [],
-    "is_global": false,
-    "matched_slugs": [
-      "germany"
-    ],
-    "summary_en": "On 17 September 2026, one fatal case of malaria was reported in Schwanheim district, Frankfurt, Germany. The case was one of two cases of malaria, resident in the Schwanheim district. The case was believed to have been infected by a mosquito introduced from an endemic area by aircraft to Frankfurt Airport and neither worked at the airport or had recent travel history. The latest infections and death brings the total to eight infections and three fatal cases. Please see our Topics in Brief article for further details on malaria.",
-    "url": "https://travelhealthpro.org.uk/news",
-    "published": "2026-09-18"
+    "published": "2026-10-20"
   }
 ]

@@ -3,7 +3,7 @@
     "id": "topics-newpage-00582-html",
     "source": "forth",
     "level": null,
-    "title_ja": "エボラ出血熱に係る検疫について（2026年9月16日）",
+    "title_ja": "エボラ出血熱に係る検疫について（2026年10月23日）",
     "title_en": null,
     "topic_ja": null,
     "topic_en": null,
@@ -15,7 +15,27 @@
     "summary_ja": "",
     "summary_en": null,
     "url": "https://www.forth.go.jp/topics/newpage_00582.html",
-    "published": "2026-09-17"
+    "published": "2026-10-23"
+  },
+  {
+    "id": "topics-2026-20261002-00001-html",
+    "source": "forth",
+    "level": null,
+    "title_ja": "ブンディブギョウイルスによるエボラ出血熱－コンゴ民主共和国（2026年８月28日）",
+    "title_en": null,
+    "topic_ja": "ブンディブギョウイルスによるエボラ出血熱",
+    "topic_en": null,
+    "place_ja": "コンゴ民主共和国",
+    "place_en": null,
+    "is_outbreak": true,
+    "is_global": false,
+    "matched_slugs": [
+      "democratic-republic-of-congo"
+    ],
+    "summary_ja": "",
+    "summary_en": null,
+    "url": "https://www.forth.go.jp/topics/2026/20261002_00001.html",
+    "published": "2026-10-02"
   },
   {
     "id": "topics-2026-20260902-00001-html",
@@ -950,25 +970,5 @@
     "summary_en": null,
     "url": "https://www.forth.go.jp/topics/2024/20241206_00001.html",
     "published": "2024-12-06"
-  },
-  {
-    "id": "topics-2024-20241125-00001-html",
-    "source": "forth",
-    "level": null,
-    "title_ja": "ウエストナイルウイルス－バルバドス",
-    "title_en": null,
-    "topic_ja": "ウエストナイルウイルス",
-    "topic_en": null,
-    "place_ja": "バルバドス",
-    "place_en": null,
-    "is_outbreak": true,
-    "is_global": false,
-    "matched_slugs": [
-      "barbados"
-    ],
-    "summary_ja": "",
-    "summary_en": null,
-    "url": "https://www.forth.go.jp/topics/2024/20241125_00001.html",
-    "published": "2024-11-25"
   }
 ]

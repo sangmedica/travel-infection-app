@@ -4,8 +4,8 @@
   "name_ja": "ガーナ",
   "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/ghana",
-  "retrieved_at": "2026-10-01",
-  "page_notice_level": 1,
+  "retrieved_at": "2026-11-01",
+  "page_notice_level": 2,
   "vaccines": [
     {
       "name_en": "Routine vaccines",

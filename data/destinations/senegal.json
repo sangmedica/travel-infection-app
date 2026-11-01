@@ -4,7 +4,7 @@
   "name_ja": "セネガル",
   "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/senegal",
-  "retrieved_at": "2026-10-01",
+  "retrieved_at": "2026-11-01",
   "page_notice_level": 1,
   "vaccines": [
     {
@@ -78,14 +78,6 @@
       "category_ja": "一部の渡航者に推奨（条件付き）",
       "recommendation_en": "Monkeypox vaccination is recommended for any adult who anticipates any of the following activities during travel:\n• Sexual or intimate contact with a new partner\n• Sexual or intimate contact at a commercial sex venue, like a sex club or bathhouse\n• Sexual or intimate contact in exchange for money, goods, drugs, or other trade\n• Sexual or intimate contact in association with a large public event, such as a rave, party, or festival\nGet your first monkeypox vaccine at least 6 weeks before traveling if you can, or as far as possible before travel if fewer than 6 weeks before you leave. Two doses of vaccine, given 4 weeks apart, are recommended. After completing your first and second vaccine doses it takes about 2 more weeks to get the best protection against monkeypox. Whether or not you've been vaccinated, continue to take steps to reduce your risk of getting monkeypox while you are away.",
       "clinical_guidance_en": "Monkeypox Vaccination | Monkeypox | CDC"
-    },
-    {
-      "name_en": "Polio",
-      "name_ja": "ポリオ（急性灰白髄炎）",
-      "category": "other",
-      "category_ja": "その他（CDC原文を参照）",
-      "recommendation_en": "In Senegal, poliovirus has been identified in the past year.\nTravelers to Senegal are at increased risk of exposure to poliovirus.\nVaccine recommendations: Adults traveling to Senegal who received a complete polio vaccination series as children may receive a single lifetime booster dose of inactivated polio vaccine; travelers who are unvaccinated or not fully vaccinated should receive a complete polio vaccination series before travel. Children who are not fully vaccinated will be considered for an accelerated vaccination schedule.",
-      "clinical_guidance_en": "Polio - CDC Yellow Book\nPolio Vaccination for International Travelers"
     },
     {
       "name_en": "Rabies",

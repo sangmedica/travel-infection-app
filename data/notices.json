@@ -1,5 +1,109 @@
 [
   {
+    "id": "ebola-kenya",
+    "level": 1,
+    "title_en": "Level 1 - Ebola Bundibugyo Virus Disease in Kenya",
+    "topic_en": "Ebola Bundibugyo Virus Disease",
+    "place_en": "Kenya",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "kenya"
+    ],
+    "summary_en": "The Kenyan Ministry of Health has confirmed an imported case, as well as other linked cases, of Ebola disease caused by Bundibugyo virus in Nairobi, Kenya.",
+    "url": "https://wwwnc.cdc.gov/travel/notices/level1/ebola-kenya",
+    "published": "2026-10-19",
+    "source": "cdc",
+    "title_ja": null,
+    "topic_ja": "ブンディブギョウイルス病（エボラ属）"
+  },
+  {
+    "id": "yellow-fever-ghana",
+    "level": 2,
+    "title_en": "Level 2 - Yellow Fever in Ghana",
+    "topic_en": "Yellow Fever",
+    "place_en": "Ghana",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "ghana"
+    ],
+    "summary_en": "There is an outbreak of yellow fever in the Upper West Region of Ghana. Travelers to the Upper West Region should take steps to prevent yellow fever by getting vaccinated at least 10 days before travel and taking steps to prevent mosquito bites.",
+    "url": "https://wwwnc.cdc.gov/travel/notices/level2/yellow-fever-ghana",
+    "published": "2026-10-16",
+    "source": "cdc",
+    "title_ja": null,
+    "topic_ja": "黄熱"
+  },
+  {
+    "id": "yellow-fever-colombia",
+    "level": 2,
+    "title_en": "Level 2 - Yellow Fever in Colombia",
+    "topic_en": "Yellow Fever",
+    "place_en": "Colombia",
+    "countries": [],
+    "is_global": false,
+    "matched_slugs": [
+      "colombia"
+    ],
+    "summary_en": "An increased number of cases of yellow fever have been reported in Colombia.",
+    "url": "https://wwwnc.cdc.gov/travel/notices/level2/yellow-fever-colombia",
+    "published": "2026-10-16",
+    "source": "cdc",
+    "title_ja": null,
+    "topic_ja": "黄熱"
+  },
+  {
+    "id": "dengue-global",
+    "level": 1,
+    "title_en": "Level 1 - Global Dengue",
+    "topic_en": "Global Dengue",
+    "place_en": "",
+    "countries": [
+      "Colombia",
+      "Vietnam",
+      "Maldives",
+      "Bolivia",
+      "Cambodia",
+      "Kenya",
+      "Malaysia",
+      "Sri Lanka",
+      "Bangladesh",
+      "Costa Rica",
+      "Marshall Islands",
+      "Vanuatu",
+      "Cuba",
+      "Ecua",
+      "Ecuador",
+      "including the Galápagos Islands",
+      "Panama"
+    ],
+    "is_global": true,
+    "matched_slugs": [
+      "bangladesh",
+      "bolivia",
+      "cambodia",
+      "colombia",
+      "costa-rica",
+      "cuba",
+      "ecuador",
+      "kenya",
+      "malaysia",
+      "maldives",
+      "marshall-islands",
+      "panama",
+      "sri-lanka",
+      "vanuatu",
+      "vietnam"
+    ],
+    "summary_en": "Dengue is a year-round risk in many parts of the world, with outbreaks commonly occurring every 2–5 years. Travelers to risk areas should prevent mosquito bites.",
+    "url": "https://wwwnc.cdc.gov/travel/notices/level1/dengue-global",
+    "published": "2026-10-02",
+    "source": "cdc",
+    "title_ja": null,
+    "topic_ja": "デング熱（世界的流行）"
+  },
+  {
     "id": "global-polio",
     "level": 2,
     "title_en": "Level 2 - Global Polio",
@@ -85,24 +189,6 @@
     "topic_ja": "ポリオ（世界的流行）"
   },
   {
-    "id": "yellow-fever-colombia",
-    "level": 2,
-    "title_en": "Level 2 - Yellow Fever in Colombia",
-    "topic_en": "Yellow Fever",
-    "place_en": "Colombia",
-    "countries": [],
-    "is_global": false,
-    "matched_slugs": [
-      "colombia"
-    ],
-    "summary_en": "An increased number of cases of yellow fever have been reported in Colombia.",
-    "url": "https://wwwnc.cdc.gov/travel/notices/level2/yellow-fever-colombia",
-    "published": "2026-09-18",
-    "source": "cdc",
-    "title_ja": null,
-    "topic_ja": "黄熱"
-  },
-  {
     "id": "hepatitis-a-costa-rica",
     "level": 1,
     "title_en": "Level 1 - Hepatitis A in Costa Rica",
@@ -137,48 +223,6 @@
     "source": "cdc",
     "title_ja": null,
     "topic_ja": "チクングニア熱"
-  },
-  {
-    "id": "dengue-global",
-    "level": 1,
-    "title_en": "Level 1 - Global Dengue",
-    "topic_en": "Global Dengue",
-    "place_en": "",
-    "countries": [
-      "Colombia",
-      "Vietnam",
-      "Maldives",
-      "Bolivia",
-      "Cambodia",
-      "Kenya",
-      "Malaysia",
-      "Sri Lanka",
-      "Bangladesh",
-      "Costa Rica",
-      "Marshall Islands",
-      "Vanuatu"
-    ],
-    "is_global": true,
-    "matched_slugs": [
-      "bangladesh",
-      "bolivia",
-      "cambodia",
-      "colombia",
-      "costa-rica",
-      "kenya",
-      "malaysia",
-      "maldives",
-      "marshall-islands",
-      "sri-lanka",
-      "vanuatu",
-      "vietnam"
-    ],
-    "summary_en": "Dengue is a year-round risk in many parts of the world, with outbreaks commonly occurring every 2–5 years. Travelers to risk areas should prevent mosquito bites.",
-    "url": "https://wwwnc.cdc.gov/travel/notices/level1/dengue-global",
-    "published": "2026-09-03",
-    "source": "cdc",
-    "title_ja": null,
-    "topic_ja": "デング熱（世界的流行）"
   },
   {
     "id": "ebola-drc-uganda",
@@ -421,24 +465,6 @@
     "topic_ja": "マラリア"
   },
   {
-    "id": "chikungunya-mauritius",
-    "level": 2,
-    "title_en": "Level 2 - Chikungunya in Mauritius",
-    "topic_en": "Chikungunya",
-    "place_en": "Mauritius",
-    "countries": [],
-    "is_global": false,
-    "matched_slugs": [
-      "mauritius"
-    ],
-    "summary_en": "There is an outbreak of chikungunya in Mauritius. You can protect yourself by preventing mosquito bites.",
-    "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-mauritius",
-    "published": "2026-05-14",
-    "source": "cdc",
-    "title_ja": null,
-    "topic_ja": "チクングニア熱"
-  },
-  {
     "id": "meningococcal-drc",
     "level": 2,
     "title_en": "Level 2 - Meningococcal Disease in the Democratic Republic of the Congo",
@@ -456,42 +482,6 @@
     "source": "cdc",
     "title_ja": null,
     "topic_ja": "髄膜炎菌感染症"
-  },
-  {
-    "id": "chikungunya-suriname",
-    "level": 2,
-    "title_en": "Level 2 - Chikungunya in Suriname",
-    "topic_en": "Chikungunya",
-    "place_en": "Suriname",
-    "countries": [],
-    "is_global": false,
-    "matched_slugs": [
-      "suriname"
-    ],
-    "summary_en": "There is an outbreak of chikungunya in Suriname. You can protect yourself by preventing mosquito bites.",
-    "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-suriname",
-    "published": "2026-02-17",
-    "source": "cdc",
-    "title_ja": null,
-    "topic_ja": "チクングニア熱"
-  },
-  {
-    "id": "chikungunya-bolivia",
-    "level": 2,
-    "title_en": "Level 2 - Chikungunya in Bolivia",
-    "topic_en": "Chikungunya",
-    "place_en": "Bolivia",
-    "countries": [],
-    "is_global": false,
-    "matched_slugs": [
-      "bolivia"
-    ],
-    "summary_en": "There is an outbreak of chikungunya in Santa Cruz and Cochabamba Departments, Bolivia. You can protect yourself by preventing mosquito bites.",
-    "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-bolivia",
-    "published": "2026-02-11",
-    "source": "cdc",
-    "title_ja": null,
-    "topic_ja": "チクングニア熱"
   },
   {
     "id": "rmsf-mexico",

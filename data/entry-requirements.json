@@ -1,6 +1,6 @@
 {
   "_comment": "入国・出国時の予防接種要件。CDC 渡航先ページの黄熱ワクチン行と TravelHealthPro の Certificate requirements から機械抽出し、data/kb/entry-supplement.json（ポリオ出国接種・ハッジ髄膜炎菌）をマージ。黄熱の要否・年齢下限・免除条件は国と出発地により異なるため、必ず CDC / THP 原文と渡航先国大使館の最新情報を確認すること。",
-  "retrieved_at": "2026-10-01",
+  "retrieved_at": "2026-11-01",
   "counts": {
     "total": 244,
     "with_content": 244
@@ -5283,7 +5283,7 @@
         "cdc_recommendation_en": "CDC recommendations: Vaccine is recommended for all travelers ≥9 months old.\nCountry entry requirements: Vaccine is required for all arriving travelers ≥1 year old.",
         "cdc_certificate_en": "Vaccine is required for all arriving travelers ≥1 year old.",
         "cdc_cert_status": "required_from_risk",
-        "thp_certificate_en": "Please read the information below carefully, as certificate requirements may be relevant to certain travellers only. For travellers further details, if required, should be sought from their healthcare professional. There is a risk of yellow fever transmission throughout Uganda (see 'Most travellers' section below). Under International Health Regulations (2005), a certificate of yellow fever vaccination is required from all travellers aged 1 year or over. According to World Health Organization (WHO), from 11 July 2016 (for all countries), the yellow fever certificate will be valid for the duration of the life of the person vaccinated. As a consequence, a valid certificate, presented by arriving travellers, cannot be rejected on the grounds that more than ten years have passed since the date vaccination became effective as stated on the certificate; and that boosters or revaccination cannot be required. The yellow fever vaccine is not suitable for all travellers, there are specific undesirable effects associated with it. This vaccine is only available at registered yellow fever vaccination centres. Health professionals should carefully assess the risks and benefits of the vaccine, and seek specialist advice if necessary."
+        "thp_certificate_en": "According to the Ministry of Internal Affairs, Uganda, as of October 2026, there are no certificate requirements under International Health Regulations. There is a risk of yellow fever transmission throughout Uganda (see 'Most travellers' section below)."
       },
       "polio_exit_note_ja": null,
       "polio_exit_en": null,

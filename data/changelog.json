@@ -1,5 +1,882 @@
 [
   {
+    "date": "2026-11-01",
+    "has_changes": true,
+    "summary_ja": "CDC: 流行情報 新規 2、掲載終了 3、国別の変更 15 件（12 地域） ／ TravelHealthPro: 流行情報 新規 19、掲載終了 18、国別の変更 2 件（2 地域） ／ FORTH: 流行情報 新規 1、掲載終了 1",
+    "sources": {
+      "cdc": {
+        "has_changes": true,
+        "feed": {
+          "added": [
+            {
+              "id": "ebola-kenya",
+              "source": "cdc",
+              "level": 1,
+              "title_en": "Level 1 - Ebola Bundibugyo Virus Disease in Kenya",
+              "title_ja": null,
+              "topic_en": "Ebola Bundibugyo Virus Disease",
+              "topic_ja": "ブンディブギョウイルス病（エボラ属）",
+              "place_en": "Kenya",
+              "place_ja": null,
+              "summary_en": "The Kenyan Ministry of Health has confirmed an imported case, as well as other linked cases, of Ebola disease caused by Bundibugyo virus in Nairobi, Kenya.",
+              "summary_ja": null,
+              "url": "https://wwwnc.cdc.gov/travel/notices/level1/ebola-kenya"
+            },
+            {
+              "id": "yellow-fever-ghana",
+              "source": "cdc",
+              "level": 2,
+              "title_en": "Level 2 - Yellow Fever in Ghana",
+              "title_ja": null,
+              "topic_en": "Yellow Fever",
+              "topic_ja": "黄熱",
+              "place_en": "Ghana",
+              "place_ja": null,
+              "summary_en": "There is an outbreak of yellow fever in the Upper West Region of Ghana. Travelers to the Upper West Region should take steps to prevent yellow fever by getting vaccinated at least 10 days before travel and taking steps to prevent mosquito bites.",
+              "summary_ja": null,
+              "url": "https://wwwnc.cdc.gov/travel/notices/level2/yellow-fever-ghana"
+            }
+          ],
+          "removed": [
+            {
+              "id": "chikungunya-mauritius",
+              "source": "cdc",
+              "level": 2,
+              "title_en": "Level 2 - Chikungunya in Mauritius",
+              "title_ja": null,
+              "topic_en": "Chikungunya",
+              "topic_ja": "チクングニア熱",
+              "place_en": "Mauritius",
+              "place_ja": null,
+              "summary_en": "There is an outbreak of chikungunya in Mauritius. You can protect yourself by preventing mosquito bites.",
+              "summary_ja": null,
+              "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-mauritius"
+            },
+            {
+              "id": "chikungunya-suriname",
+              "source": "cdc",
+              "level": 2,
+              "title_en": "Level 2 - Chikungunya in Suriname",
+              "title_ja": null,
+              "topic_en": "Chikungunya",
+              "topic_ja": "チクングニア熱",
+              "place_en": "Suriname",
+              "place_ja": null,
+              "summary_en": "There is an outbreak of chikungunya in Suriname. You can protect yourself by preventing mosquito bites.",
+              "summary_ja": null,
+              "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-suriname"
+            },
+            {
+              "id": "chikungunya-bolivia",
+              "source": "cdc",
+              "level": 2,
+              "title_en": "Level 2 - Chikungunya in Bolivia",
+              "title_ja": null,
+              "topic_en": "Chikungunya",
+              "topic_ja": "チクングニア熱",
+              "place_en": "Bolivia",
+              "place_ja": null,
+              "summary_en": "There is an outbreak of chikungunya in Santa Cruz and Cochabamba Departments, Bolivia. You can protect yourself by preventing mosquito bites.",
+              "summary_ja": null,
+              "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-bolivia"
+            }
+          ],
+          "level_changed": []
+        },
+        "countries": [
+          {
+            "slug": "bolivia",
+            "name_ja": "ボリビア",
+            "name_en": "Bolivia",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 2,
+                "to": 1
+              },
+              {
+                "type": "vaccine_category",
+                "source": "cdc",
+                "name_en": "Chikungunya",
+                "name_ja": "チクングニア熱",
+                "from_ja": "一部の渡航者に推奨（条件付き）",
+                "to_ja": "推奨しない",
+                "recommendation_en": "All travelers should take steps to prevent mosquito bites. Chikungunya vaccination is generally not recommended. Travelers who wish to consider vaccination can visit “What to consider before traveling” on the chikungunya vaccines page to learn more."
+              }
+            ]
+          },
+          {
+            "slug": "mauritius",
+            "name_ja": "モーリシャス",
+            "name_en": "Mauritius",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 2,
+                "to": 1
+              },
+              {
+                "type": "vaccine_category",
+                "source": "cdc",
+                "name_en": "Chikungunya",
+                "name_ja": "チクングニア熱",
+                "from_ja": "一部の渡航者に推奨（条件付き）",
+                "to_ja": "推奨しない",
+                "recommendation_en": "All travelers should take steps to prevent mosquito bites. Chikungunya vaccination is generally not recommended. Travelers who wish to consider vaccination can visit “What to consider before traveling” on the chikungunya vaccines page to learn more."
+              }
+            ]
+          },
+          {
+            "slug": "suriname",
+            "name_ja": "スリナム",
+            "name_en": "Suriname",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 2,
+                "to": 1
+              },
+              {
+                "type": "vaccine_category",
+                "source": "cdc",
+                "name_en": "Chikungunya",
+                "name_ja": "チクングニア熱",
+                "from_ja": "一部の渡航者に推奨（条件付き）",
+                "to_ja": "推奨しない",
+                "recommendation_en": "All travelers should take steps to prevent mosquito bites. Chikungunya vaccination is generally not recommended. Travelers who wish to consider vaccination can visit “What to consider before traveling” on the chikungunya vaccines page to learn more."
+              }
+            ]
+          },
+          {
+            "slug": "burkina-faso",
+            "name_ja": "ブルキナファソ",
+            "name_en": "Burkina Faso",
+            "changes": [
+              {
+                "type": "vaccine_removed",
+                "source": "cdc",
+                "name_en": "Polio",
+                "name_ja": "ポリオ（急性灰白髄炎）"
+              }
+            ]
+          },
+          {
+            "slug": "ghana",
+            "name_ja": "ガーナ",
+            "name_en": "Ghana",
+            "changes": [
+              {
+                "type": "page_notice_level",
+                "source": "cdc",
+                "from": 1,
+                "to": 2
+              }
+            ]
+          },
+          {
+            "slug": "guinea",
+            "name_ja": "ギニア",
+            "name_en": "Guinea",
+            "changes": [
+              {
+                "type": "vaccine_removed",
+                "source": "cdc",
+                "name_en": "Polio",
+                "name_ja": "ポリオ（急性灰白髄炎）"
+              }
+            ]
+          },
+          {
+            "slug": "malawi",
+            "name_ja": "マラウイ",
+            "name_en": "Malawi",
+            "changes": [
+              {
+                "type": "vaccine_added",
+                "source": "cdc",
+                "name_en": "Polio",
+                "name_ja": "ポリオ（急性灰白髄炎）",
+                "category_ja": "その他",
+                "recommendation_en": "In Malawi, poliovirus has been identified in the past year.\nTravelers to Malawi are at increased risk of exposure to poliovirus.\nVaccine recommendations: Adults traveling to Malawi who received a complete polio vaccination series as children may receive a single lifetime booster dose of inactivated polio vaccine; travelers who are unvaccinated or not fully vaccinated should receive a complete polio vaccination series before travel. Children who are not fully vaccinated will be considered for an accelerated vaccination schedule."
+              }
+            ]
+          },
+          {
+            "slug": "mali",
+            "name_ja": "マリ",
+            "name_en": "Mali",
+            "changes": [
+              {
+                "type": "vaccine_added",
+                "source": "cdc",
+                "name_en": "Polio",
+                "name_ja": "ポリオ（急性灰白髄炎）",
+                "category_ja": "その他",
+                "recommendation_en": "In Mali, poliovirus has been identified in the past year.\nTravelers to Mali are at increased risk of exposure to poliovirus.\nVaccine recommendations: Adults traveling to Mali who received a complete polio vaccination series as children may receive a single lifetime booster dose of inactivated polio vaccine; travelers who are unvaccinated or not fully vaccinated should receive a complete polio vaccination series before travel. Children who are not fully vaccinated will be considered for an accelerated vaccination schedule."
+              }
+            ]
+          },
+          {
+            "slug": "poland",
+            "name_ja": "ポーランド",
+            "name_en": "Poland",
+            "changes": [
+              {
+                "type": "vaccine_removed",
+                "source": "cdc",
+                "name_en": "Polio",
+                "name_ja": "ポリオ（急性灰白髄炎）"
+              }
+            ]
+          },
+          {
+            "slug": "senegal",
+            "name_ja": "セネガル",
+            "name_en": "Senegal",
+            "changes": [
+              {
+                "type": "vaccine_removed",
+                "source": "cdc",
+                "name_en": "Polio",
+                "name_ja": "ポリオ（急性灰白髄炎）"
+              }
+            ]
+          },
+          {
+            "slug": "togo",
+            "name_ja": "トーゴ",
+            "name_en": "Togo",
+            "changes": [
+              {
+                "type": "vaccine_added",
+                "source": "cdc",
+                "name_en": "Polio",
+                "name_ja": "ポリオ（急性灰白髄炎）",
+                "category_ja": "その他",
+                "recommendation_en": "In Togo, poliovirus has been identified in the past year.\nTravelers to Togo are at increased risk of exposure to poliovirus.\nVaccine recommendations: Adults traveling to Togo who received a complete polio vaccination series as children may receive a single lifetime booster dose of inactivated polio vaccine; travelers who are unvaccinated or not fully vaccinated should receive a complete polio vaccination series before travel. Children who are not fully vaccinated will be considered for an accelerated vaccination schedule."
+              }
+            ]
+          },
+          {
+            "slug": "zambia",
+            "name_ja": "ザンビア",
+            "name_en": "Zambia",
+            "changes": [
+              {
+                "type": "vaccine_added",
+                "source": "cdc",
+                "name_en": "Polio",
+                "name_ja": "ポリオ（急性灰白髄炎）",
+                "category_ja": "その他",
+                "recommendation_en": "In Zambia, poliovirus has been identified in the past year.\nTravelers to Zambia are at increased risk of exposure to poliovirus.\nVaccine recommendations: Adults traveling to Zambia who received a complete polio vaccination series as children may receive a single lifetime booster dose of inactivated polio vaccine; travelers who are unvaccinated or not fully vaccinated should receive a complete polio vaccination series before travel. Children who are not fully vaccinated will be considered for an accelerated vaccination schedule."
+              }
+            ]
+          }
+        ]
+      },
+      "thp": {
+        "has_changes": true,
+        "feed": {
+          "added": [
+            {
+              "id": "yellow-fever-in-venezuela",
+              "source": "thp",
+              "level": null,
+              "title_en": "Yellow fever in Venezuela",
+              "title_ja": null,
+              "topic_en": "Yellow fever",
+              "topic_ja": null,
+              "place_en": "Venezuela",
+              "place_ja": null,
+              "summary_en": "As of 10 October 2026, a total of 12 confirmed yellow fever cases, with four deaths, have now been reported in Venezuela during 2026; in the states of Aragua, Barinas, Delta Amacuro, La Guaira, Lara and Monagas. Yellow fever has also been detected in monkeys along the country's jungle corridors. Please see our Topics in Brief article for further details on yellow fever.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "dengue-in-peru",
+              "source": "thp",
+              "level": null,
+              "title_en": "Dengue in Peru",
+              "title_ja": null,
+              "topic_en": "Dengue",
+              "topic_ja": null,
+              "place_en": "Peru",
+              "place_ja": null,
+              "summary_en": "As of 17 October 2026, a total of 76,784 dengue cases (59,728 confirmed) and 81 deaths have now been reported in Peru during 2026. Serotypes DENV-1, DENV-2 and DENV-3 have been identified. Please see our Topics in Brief article for further details on dengue.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "dengue-in-colombia",
+              "source": "thp",
+              "level": null,
+              "title_en": "Dengue in Colombia",
+              "title_ja": null,
+              "topic_en": "Dengue",
+              "topic_ja": null,
+              "place_en": "Colombia",
+              "place_ja": null,
+              "summary_en": "As of 17 October 2026, a total of 91,419 dengue cases (64, 333 confirmed) and 69 deaths have now been reported in Columbia during 2026. Serotypes DENV-1, DENV-2, DENV-3 and DENV-4 have been identified. Please see our Topics in Brief article for further details on dengue.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "yellow-fever-in-ghana",
+              "source": "thp",
+              "level": null,
+              "title_en": "Yellow fever in Ghana",
+              "title_ja": null,
+              "topic_en": "Yellow fever",
+              "topic_ja": null,
+              "place_en": "Ghana",
+              "place_ja": null,
+              "summary_en": "As of 19 October 2026, a total of 121 yellow fever cases (19 confirmed), with three deaths, have now been reported in the Upper West Region of Ghana. The outbreak response, including an emergency vaccination campaign, continues. Please see our Topics in Brief article for further details on yellow fever.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "dengue-in-chad",
+              "source": "thp",
+              "level": null,
+              "title_en": "Dengue in Chad",
+              "title_ja": null,
+              "topic_en": "Dengue",
+              "topic_ja": null,
+              "place_en": "Chad",
+              "place_ja": null,
+              "summary_en": "As of 21 October 2026, a total of 4,004 suspected dengue cases (including 311 confirmed and 11 deaths) have been reported in Chad during 2026. Six provinces have been affected: Ennedi Ouest, Batha, N'Djamena, Ouadda&iuml;, Sila and Wadi Fira. Please see our Topics in Brief article for further details on dengue.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "measles-in-usa",
+              "source": "thp",
+              "level": null,
+              "title_en": "Measles in USA",
+              "title_ja": null,
+              "topic_en": "Measles",
+              "topic_ja": null,
+              "place_en": "USA",
+              "place_ja": null,
+              "summary_en": "As of 23 October 2026, 4,588 confirmed measles cases have been reported across 47 states/jurisdictions in the United States, during 2026. This exceeds the number of cases reported for the whole of 2025 and is the highest number of measles cases reported in the US for 35 years. The highest number of cases have been reported in Pennsylvania (1,327), followed by South Carolina (670) and Utah (535). Please see our Topics in Brief article for further details on measles.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "cholera-in-zambia",
+              "source": "thp",
+              "level": null,
+              "title_en": "Cholera in Zambia",
+              "title_ja": null,
+              "topic_en": "Cholera",
+              "topic_ja": null,
+              "place_en": "Zambia",
+              "place_ja": null,
+              "summary_en": "As of 27 October 2026, a total of 1,548 cases (227 confirmed cases and 30 deaths) have been reported in Zambia since the cholera outbreak was declared on 28 July 2026. Cases have been reported across 18 districts in six provinces with the highest numbers reported in Lusaka and Chibombo districts. Please see our Topics in Brief article for further details on cholera.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "dengue-in-india",
+              "source": "thp",
+              "level": null,
+              "title_en": "Dengue in India",
+              "title_ja": null,
+              "topic_en": "Dengue",
+              "topic_ja": null,
+              "place_en": "India",
+              "place_ja": null,
+              "summary_en": "As of 19 October 2026, a total of a total of 70,140 dengue cases have been reported in India during 2026. Please see our Topics in Brief article for further details on dengue.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "yellow-fever-in-c-te-d-ivoire",
+              "source": "thp",
+              "level": null,
+              "title_en": "Yellow fever in Côte d'Ivoire",
+              "title_ja": null,
+              "topic_en": "Yellow fever",
+              "topic_ja": null,
+              "place_en": "Côte d'Ivoire",
+              "place_ja": null,
+              "summary_en": "As of 14 October 2026, a total of 23 yellow fever cases, with 11 deaths, have now been reported in C&ocirc;te d'Ivoire for 2026. An outbreak response, including an emergency vaccination campaign, is ongoing. Please see our Topics in Brief article for further details on yellow fever.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "ebola-disease-in-kenya",
+              "source": "thp",
+              "level": null,
+              "title_en": "Ebola disease in Kenya",
+              "title_ja": null,
+              "topic_en": "Ebola disease",
+              "topic_ja": null,
+              "place_en": "Kenya",
+              "place_ja": null,
+              "summary_en": "As of 23 October 2026, a second Ebola disease (Bundibugyo virus) death has been reported in Kenya. This second fatal case was a direct close contact of the first case imported from the Democratic Republic of the Congo. All nine confirmed Ebola disease (Bundibugyo virus) cases in Kenya are linked to this index case and there is no evidence of community spread. Please see our Topics in Brief article for further details on Ebola disease.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "shamonda-virus-in-france",
+              "source": "thp",
+              "level": null,
+              "title_en": "Shamonda virus in France",
+              "title_ja": null,
+              "topic_en": "Shamonda virus",
+              "topic_ja": null,
+              "place_en": "France",
+              "place_ja": null,
+              "summary_en": "On 22 October 2026, French health authorities reported the first ever known case of Shamonda virus (SHAV) infection in a human. The case was severely immunosuppressed and died in early October. Some brain complications prior to his death were likely linked to the infection. It is thought that the individual contracted the virus following a bite from a midge in the East of France, where the virus has been been circulating in animals (mainly cattle) since spring/summer 2026. Local health authorities have advised there is no risk to the general population at present as this appears to be an isolated and exceptional case. Please see World Organisation for Animal Health for further details on Shamonda virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "crimean-congo-haemorrhagic-fever-in-afghanistan",
+              "source": "thp",
+              "level": null,
+              "title_en": "Crimean-Congo haemorrhagic fever in Afghanistan",
+              "title_ja": null,
+              "topic_en": "Crimean-Congo haemorrhagic fever",
+              "topic_ja": null,
+              "place_en": "Afghanistan",
+              "place_ja": null,
+              "summary_en": "The World Health Organization have reported 1,669 suspected cases (71 deaths) of Crimean-Congo haemorrhagic fever (CCHF) across Afghanistan, Jan-Sept 2026. 220 cases were reported in September alone. Please see our Topics in Brief article for further details on CCHF.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "usutu-virus-in-italy",
+              "source": "thp",
+              "level": null,
+              "title_en": "Usutu virus in Italy",
+              "title_ja": null,
+              "topic_en": "Usutu virus",
+              "topic_ja": null,
+              "place_en": "Italy",
+              "place_ja": null,
+              "summary_en": "As of 14 October 2026, a total of 18 Usutu virus cases have been reported in seven regions of Italy during 2026. Of these, eight have been reported in Lombardy, three in Lazio, two in Veneto and Marche and one case in each of Emilia-Romagna, Friuli-Venezia Giulia and Piedmont.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "cvdpv2-in-kenya",
+              "source": "thp",
+              "level": null,
+              "title_en": "cVDPV2 in Kenya",
+              "title_ja": null,
+              "topic_en": "cVDPV2",
+              "topic_ja": null,
+              "place_en": "Kenya",
+              "place_ja": null,
+              "summary_en": "One case of circulating vaccine-derived poliovirus type 2 (cVDPV2) has been detected in Kenya, during 2026. Please see our Topics in Brief article for further details on polio.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "ebola-disease-in-nigeria-ex-uganda-drc",
+              "source": "thp",
+              "level": null,
+              "title_en": "Ebola disease in Nigeria ex Uganda & DRC",
+              "title_ja": null,
+              "topic_en": "Ebola disease",
+              "topic_ja": null,
+              "place_en": "Nigeria ex Uganda & DRC",
+              "place_ja": null,
+              "summary_en": "On 20 October 2026, according to the Federal Ministry of Health and Social Welfare of Nigeria, one case of Ebola disease (Bundibugyo virus) has been confirmed in the Federal Capital Territory, in a woman with a recent travel history to Uganda. According to the Ugandan Ministry of Health this individual had travelled through Uganda from DRC. Please see our Topics in Brief article for further details on Ebola disease.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "diphtheria-in-morocco",
+              "source": "thp",
+              "level": null,
+              "title_en": "Diphtheria in Morocco",
+              "title_ja": null,
+              "topic_en": "Diphtheria",
+              "topic_ja": null,
+              "place_en": "Morocco",
+              "place_ja": null,
+              "summary_en": "On 15 October 2026, the US Embassy and Consulate in Morocco stated that on 28 September 2026, the Ministry of Health of Morocco reported a small diphtheria outbreak, with clusters in multiple regions in Morocco. Health teams are tracing contacts and providing preventive treatment and vaccines. Please see our Topics in Brief article for further details on diphtheria.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-albania",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in Albania",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "Albania",
+              "place_ja": null,
+              "summary_en": "As of 16 October 2026, a total of seven cases of locally acquired West Nile virus have been reported in Albania during 2026. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-bulgaria",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in Bulgaria",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "Bulgaria",
+              "place_ja": null,
+              "summary_en": "As of 16 October 2026, a total of seven cases of locally acquired West Nile virus have been reported in Bulgaria during 2026. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-slovenia",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in Slovenia",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "Slovenia",
+              "place_ja": null,
+              "summary_en": "As of 16 October 2026, a total of three cases of locally acquired West Nile virus have been reported in Slovenia during 2026. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            }
+          ],
+          "removed": [
+            {
+              "id": "diphtheria-in-senegal",
+              "source": "thp",
+              "level": null,
+              "title_en": "Diphtheria in Senegal",
+              "title_ja": null,
+              "topic_en": "Diphtheria",
+              "topic_ja": null,
+              "place_en": "Senegal",
+              "place_ja": null,
+              "summary_en": "As of 13 August 2026, a total of 13 cases of diphtheria and two deaths have been reported. Please see our Topics in Brief article for further details on diphtheria.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "diphtheria-in-nigeria",
+              "source": "thp",
+              "level": null,
+              "title_en": "Diphtheria in Nigeria",
+              "title_ja": null,
+              "topic_en": "Diphtheria",
+              "topic_ja": null,
+              "place_en": "Nigeria",
+              "place_ja": null,
+              "summary_en": "Between 1 January and 23 August 2026, a total of 16,997 cases of diphtheria and 596 deaths have been reported. Most cases have been reported from Kano, Bauchi, Katsina, Borno and Sokoto states. Please see our Topics in Brief article for further details on diphtheria.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "chikungunya-in-france",
+              "source": "thp",
+              "level": null,
+              "title_en": "Chikungunya in France",
+              "title_ja": null,
+              "topic_en": "Chikungunya",
+              "topic_ja": null,
+              "place_en": "France",
+              "place_ja": null,
+              "summary_en": "As of 28 September 2026, 125 locally acquired cases of chikungunya have been identified in France, in Tarn, Lot, Gard (Occitanie), Gironde, Landes (Nouvelle-Aquitaine), Val-de-Marne (Ile-de-France) and Var (Provence-Alpes-Cote d'Azur). Please see our Topics in Brief article for further details on chikungunya.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-kosovo",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in Kosovo",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "Kosovo",
+              "place_ja": null,
+              "summary_en": "In 2026, up to 23 September, two locally acquired human cases of West Nile virus have been reported in Kosovo, in two areas. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-north-macedonia",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in North Macedonia",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "North Macedonia",
+              "place_ja": null,
+              "summary_en": "In 2026, up to 23 September, 69 locally acquired human cases of West Nile virus have been reported in North Macedonia, in five areas. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-romania",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in Romania",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "Romania",
+              "place_ja": null,
+              "summary_en": "In 2026, up to 23 September, 91 locally acquired human cases of West Nile virus have been reported in Romania, across 22 areas. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-france",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in France",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "France",
+              "place_ja": null,
+              "summary_en": "As of 21 September 2026, 117 autochthonous cases of West Nile virus have been recorded in Provence-Alpes-Cote d'Azur, Occitanie, Ile-de-France, Auvergne-Rhone-Alpes, Nouvelle-Aquitaine, Pays de la Loire and Centre-Val de Loire. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-germany",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in Germany",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "Germany",
+              "place_ja": null,
+              "summary_en": "In 2026, up to 23 September, four locally acquired human cases of West Nile virus have been reported in Germany. Cases have been reported from Berlin, Leipzig Kreisfreie Stadt and Rhein-Pfalz-Kreis. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "west-nile-virus-in-netherlands",
+              "source": "thp",
+              "level": null,
+              "title_en": "West Nile virus in Netherlands",
+              "title_ja": null,
+              "topic_en": "West Nile virus",
+              "topic_ja": null,
+              "place_en": "Netherlands",
+              "place_ja": null,
+              "summary_en": "In 2026, up to 23 September, 44 cases of West Nile virus, including 5 deaths, have been reported in the Netherlands. Cases have been reported from South Holland, Utrecht, North Holland, North Brabant, Gelderland and Overijssel provinces. Please see our Topics in Brief article for further details on West Nile virus.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "dengue-in-italy",
+              "source": "thp",
+              "level": null,
+              "title_en": "Dengue in Italy",
+              "title_ja": null,
+              "topic_en": "Dengue",
+              "topic_ja": null,
+              "place_en": "Italy",
+              "place_ja": null,
+              "summary_en": "As of 22 September 2026, a total of 47 confirmed locally acquired dengue cases have been reported for 2026 in Italy. The cases have been reported in Puglia (13), Tuscany (31), Lombardy (2), Campania (1) regions of Italy. Please see our Topics in Brief article for further details on dengue.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "hepatitis-a-in-usa",
+              "source": "thp",
+              "level": null,
+              "title_en": "Hepatitis A in USA",
+              "title_ja": null,
+              "topic_en": "Hepatitis A",
+              "topic_ja": null,
+              "place_en": "USA",
+              "place_ja": null,
+              "summary_en": "As of 17 September 2026, 37 cases of hepatitis A have been reported from four states: Massachusetts, Minnesota, New York and Pennsylvania. Cases are associated with consumption of raw/undercooked shellfish imported from Ecuador. Please see our Topics in Brief article for further details on hepatitis A.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "chikungunya-in-usa",
+              "source": "thp",
+              "level": null,
+              "title_en": "Chikungunya in USA",
+              "title_ja": null,
+              "topic_en": "Chikungunya",
+              "topic_ja": null,
+              "place_en": "USA",
+              "place_ja": null,
+              "summary_en": "Between 6 and 12 September 2026, one case of locally acquired chikungunya was reported in Florida, USA. Please see our Topics in Brief article for further details on chikungunya.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "chikungunya-in-hong-kong",
+              "source": "thp",
+              "level": null,
+              "title_en": "Chikungunya in Hong Kong",
+              "title_ja": null,
+              "topic_en": "Chikungunya",
+              "topic_ja": null,
+              "place_en": "Hong Kong",
+              "place_ja": null,
+              "summary_en": "On 17 September 2026, a locally acquired case of chikungunya was reported. This is the first locally acquired case of chikungunya in Hong Kong in 2026. Please see our Topics in Brief article for further details on chikungunya.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "mpox-in-estonia",
+              "source": "thp",
+              "level": null,
+              "title_en": "Mpox in Estonia",
+              "title_ja": null,
+              "topic_en": "Mpox",
+              "topic_ja": null,
+              "place_en": "Estonia",
+              "place_ja": null,
+              "summary_en": "In August 2026, one new clade I mpox case was reported in Estonia. This is the first case of clade I mpox in Estonia. Please see our Topics in Brief article for further details on mpox.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "mpox-in-iceland",
+              "source": "thp",
+              "level": null,
+              "title_en": "Mpox in Iceland",
+              "title_ja": null,
+              "topic_en": "Mpox",
+              "topic_ja": null,
+              "place_en": "Iceland",
+              "place_ja": null,
+              "summary_en": "In August 2026, one new clade I mpox case was reported in Iceland. This is the first case of clade I mpox in Iceland. Please see our Topics in Brief article for further details on mpox.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "mpox-in-malta",
+              "source": "thp",
+              "level": null,
+              "title_en": "Mpox in Malta",
+              "title_ja": null,
+              "topic_en": "Mpox",
+              "topic_ja": null,
+              "place_en": "Malta",
+              "place_ja": null,
+              "summary_en": "In August 2026, three new clade I mpox cases were reported in Malta. These are the first cases of clade I mpox in Malta. Please see our Topics in Brief article for further details on mpox.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "dengue-in-usa",
+              "source": "thp",
+              "level": null,
+              "title_en": "Dengue in USA",
+              "title_ja": null,
+              "topic_en": "Dengue",
+              "topic_ja": null,
+              "place_en": "USA",
+              "place_ja": null,
+              "summary_en": "Between 6 and 12 September 2026, 41 new cases of locally acquired dengue were reported in Florida, bringing the total for 2026 to 152. Please see our Topics in Brief article for further details on dengue.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            },
+            {
+              "id": "malaria-in-germany",
+              "source": "thp",
+              "level": null,
+              "title_en": "Malaria in Germany",
+              "title_ja": null,
+              "topic_en": "Malaria",
+              "topic_ja": null,
+              "place_en": "Germany",
+              "place_ja": null,
+              "summary_en": "On 17 September 2026, one fatal case of malaria was reported in Schwanheim district, Frankfurt, Germany. The case was one of two cases of malaria, resident in the Schwanheim district. The case was believed to have been infected by a mosquito introduced from an endemic area by aircraft to Frankfurt Airport and neither worked at the airport or had recent travel history. The latest infections and death brings the total to eight infections and three fatal cases. Please see our Topics in Brief article for further details on malaria.",
+              "summary_ja": null,
+              "url": "https://travelhealthpro.org.uk/news"
+            }
+          ],
+          "level_changed": []
+        },
+        "countries": [
+          {
+            "slug": "kenya",
+            "name_ja": "ケニア",
+            "name_en": "Kenya",
+            "changes": [
+              {
+                "type": "thp_vaccine_added",
+                "source": "thp",
+                "name_en": "Polio",
+                "tier_ja": "一部の渡航者",
+                "desc_en": "Polio is caused by one of three types of polio virus and is transmitted by contaminated food and water. Previous infection with one type of polio virus does not protect against other types of the virus. Those at increased risk include travellers who are unvaccinated or under-vaccinated visiting friends and relatives, those in direct contact with an infected person, long-stay travellers, and those visiting areas of poor sanitation. Polio in Kenya This country has reported cases of circulating vaccine-derived poliovirus type 2 (cVDPV2)."
+              }
+            ]
+          },
+          {
+            "slug": "libya",
+            "name_ja": "リビア",
+            "name_en": "Libya",
+            "changes": [
+              {
+                "type": "thp_vaccine_added",
+                "source": "thp",
+                "name_en": "Polio",
+                "tier_ja": "一部の渡航者",
+                "desc_en": "Polio is caused by one of three types of polio virus and is transmitted by contaminated food and water. Previous infection with one type of polio virus does not protect against other types of the virus. Those at increased risk include travellers who are unvaccinated or under-vaccinated visiting friends and relatives, those in direct contact with an infected person, long-stay travellers, and those visiting areas of poor sanitation. Polio in Libya Circulating vaccine-derived poliovirus type 2 (cVDPV2) has been detected in two environmental (sewage) samples in Sabha district in Libya in June and "
+              }
+            ]
+          }
+        ]
+      },
+      "forth": {
+        "has_changes": true,
+        "feed": {
+          "added": [
+            {
+              "id": "topics-2026-20261002-00001-html",
+              "source": "forth",
+              "level": null,
+              "title_en": "",
+              "title_ja": "ブンディブギョウイルスによるエボラ出血熱－コンゴ民主共和国（2026年８月28日）",
+              "topic_en": "",
+              "topic_ja": "ブンディブギョウイルスによるエボラ出血熱",
+              "place_en": "",
+              "place_ja": "コンゴ民主共和国",
+              "summary_en": "",
+              "summary_ja": null,
+              "url": "https://www.forth.go.jp/topics/2026/20261002_00001.html"
+            }
+          ],
+          "removed": [
+            {
+              "id": "topics-2024-20241125-00001-html",
+              "source": "forth",
+              "level": null,
+              "title_en": "",
+              "title_ja": "ウエストナイルウイルス－バルバドス",
+              "topic_en": "",
+              "topic_ja": "ウエストナイルウイルス",
+              "place_en": "",
+              "place_ja": "バルバドス",
+              "summary_en": "",
+              "summary_ja": null,
+              "url": "https://www.forth.go.jp/topics/2024/20241125_00001.html"
+            }
+          ],
+          "level_changed": []
+        },
+        "countries": []
+      }
+    }
+  },
+  {
     "date": "2026-10-01",
     "has_changes": true,
     "summary_ja": "CDC: 流行情報 新規 1、掲載終了 2、国別の変更 43 件（40 地域） ／ TravelHealthPro: 流行情報 新規 13、掲載終了 14",

@@ -4,8 +4,8 @@
   "name_ja": "ボリビア",
   "kind": "country",
   "source_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/bolivia",
-  "retrieved_at": "2026-10-01",
-  "page_notice_level": 2,
+  "retrieved_at": "2026-11-01",
+  "page_notice_level": 1,
   "vaccines": [
     {
       "name_en": "Routine vaccines",
@@ -26,10 +26,10 @@
     {
       "name_en": "Chikungunya",
       "name_ja": "チクングニア熱",
-      "category": "some",
-      "category_ja": "一部の渡航者に推奨（条件付き）",
-      "recommendation_en": "There is an outbreak of chikungunya in Bolivia. Chikungunya vaccination is recommended for people traveling to an area with a chikungunya outbreak.",
-      "clinical_guidance_en": "Travel health notice: Chikungunya in Bolivia\nChikungunya - CDC Yellow Book"
+      "category": "not_recommended",
+      "category_ja": "推奨しない",
+      "recommendation_en": "All travelers should take steps to prevent mosquito bites. Chikungunya vaccination is generally not recommended. Travelers who wish to consider vaccination can visit “What to consider before traveling” on the chikungunya vaccines page to learn more.",
+      "clinical_guidance_en": "Chikungunya - CDC Yellow Book"
     },
     {
       "name_en": "Hepatitis A",

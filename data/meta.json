@@ -1,16 +1,16 @@
 {
   "sources_note": "CDC Travelers' Health / TravelHealthPro (NaTHNaC) / FORTH（厚生労働省検疫所）",
-  "last_run": "2026-10-01",
-  "last_change": "2026-10-01",
+  "last_run": "2026-11-01",
+  "last_change": "2026-11-01",
   "counts": {
     "destinations_configured": 244,
     "destinations_with_data": 242,
-    "notices": 23,
+    "notices": 22,
     "untranslated": 1
   },
   "sources": {
     "cdc": {
-      "last_run": "2026-10-01",
+      "last_run": "2026-11-01",
       "errors": [
         {
           "source": "cdc",
@@ -25,11 +25,11 @@
       ],
       "counts": {
         "destinations_with_data": 242,
-        "notices": 23
+        "notices": 22
       }
     },
     "thp": {
-      "last_run": "2026-10-01",
+      "last_run": "2026-11-01",
       "errors": [],
       "counts": {
         "countries": 240,
@@ -37,7 +37,7 @@
       }
     },
     "forth": {
-      "last_run": "2026-10-01",
+      "last_run": "2026-11-01",
       "errors": [],
       "counts": {
         "countries": 195,
